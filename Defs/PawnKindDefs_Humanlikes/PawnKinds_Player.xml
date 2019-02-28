@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PawnKindDefs>
+
+
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>Commander</defName>
+    <label>Commander</label>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <backstoryCategory>Commander</backstoryCategory>
+    <chemicalAddictionChance>0.00</chemicalAddictionChance>
+    <itemQuality>Normal</itemQuality>
+    <maxGenerationAge>60</maxGenerationAge>
+    <apparelTags>
+      <!-- <li>Astronaut</li> -->
+	  <li>Spacer</li>
+    </apparelTags>
+	<apparelRequired>
+ <!--     <li>Apparel_PowerArmorHelmet</li>
+	  <li>Apparel_PowerArmor</li>
+ 	  	  <li>Apparel_Pants</li>
+		  	  <li>Apparel_BasicShirt</li> -->
+    </apparelRequired>
+    <apparelMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>Colonist</defName>
+    <label>colonist</label>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <backstoryCategory>Civil</backstoryCategory>
+    <chemicalAddictionChance>0.00</chemicalAddictionChance>
+    <itemQuality>Normal</itemQuality>
+    <maxGenerationAge>60</maxGenerationAge>
+    <apparelTags>
+      <!-- <li>Astronaut</li> -->
+	  <li>Spacer</li>
+    </apparelTags>
+	<apparelRequired>
+ <!--     <li>Apparel_PowerArmorHelmet</li>
+	  <li>Apparel_PowerArmor</li>
+ 	  	  <li>Apparel_Pants</li>
+		  	  <li>Apparel_BasicShirt</li> -->
+    </apparelRequired>
+    <apparelMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>Civilian</defName>
+    <label>Civilian</label>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <backstoryCategory>Civilian</backstoryCategory>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <itemQuality>Normal</itemQuality>
+    <maxGenerationAge>60</maxGenerationAge>
+    <apparelTags>
+      <!-- <li>Astronaut</li> -->
+	  <li>Spacer</li>
+    </apparelTags>
+	<apparelRequired>
+ <!--     <li>Apparel_PowerArmorHelmet</li>
+	  <li>Apparel_PowerArmor</li>
+ 	  	  <li>Apparel_Pants</li>
+		  	  <li>Apparel_BasicShirt</li> -->
+    </apparelRequired>
+    <apparelMoney>
+      <min>9999</min>
+      <max>9999</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+</PawnKindDefs> 

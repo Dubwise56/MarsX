@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <NeedDef>
+    <DefName>Mood</DefName>
+    <needClass>Need_Mood</needClass>
+    <label>mood</label>
+    <description>Mood represents how happy or stressed someone is. If mood gets too low, the person may suffer a mental break.</description>
+    <showOnNeedList>false</showOnNeedList>
+    <minIntelligence>Humanlike</minIntelligence>
+    <baseLevel>0.50</baseLevel>
+    <seekerRisePerHour>0.12</seekerRisePerHour>
+    <seekerFallPerHour>0.04</seekerFallPerHour>
+    <listPriority>1000</listPriority>
+    <major>true</major>
+    <freezeWhileSleeping>true</freezeWhileSleeping>
+  </NeedDef>
+  
+    <NeedDef>
+    <DefName>o2Saturation</DefName>
+    <needClass>mars.Need_O2</needClass>
+    <label>O2 Saturation</label>
+    <description>O2 Saturation is the level of oxygen in the blood, if the saturation becomes low they will suffer from hypoxia or even death.</description>
+    <listPriority>900</listPriority>
+    <major>true</major>
+	<baseLevel>1</baseLevel>
+	<seekerRisePerHour>0.90</seekerRisePerHour>
+    <seekerFallPerHour>0.85</seekerFallPerHour>
+  </NeedDef>
+  
+  <NeedDef>
+    <DefName>Food</DefName>
+    <needClass>Need_Food</needClass>
+    <label>food</label>
+    <description>Food is the amount of nutrition a creature has consumed recently. If it is at zero, a creature will take starvation damage over time.</description>
+    <listPriority>800</listPriority>
+    <major>true</major>
+  </NeedDef>
+  
+    <NeedDef>
+    <DefName>Bladder</DefName>
+    <needClass>mars.Need_Bladder</needClass>
+    <label>bladder</label>
+    <description>Defecation is the final act of digestion, by which organisms eliminate solid, semisolid, and/or liquid waste material from the digestive tract via the anus.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+    <baseLevel>0.4</baseLevel>
+    <listPriority>750</listPriority>
+  </NeedDef>
+  
+  <NeedDef>
+    <DefName>Rest</DefName>
+    <needClass>Need_Rest</needClass>
+    <label>rest</label>
+    <description>Rest is how much sleep a creature has gotten recently.</description>
+    <listPriority>700</listPriority>
+  </NeedDef>
+
+  <NeedDef>
+    <defName>Joy</defName>
+    <needClass>Need_Joy</needClass>
+    <label>joy</label>
+    <description>Joy represents the need to do something pleasurable from time to time. Note that repeating the same kind of activity makes it less effective in gaining joy.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistsOnly>true</colonistsOnly>
+    <listPriority>500</listPriority>
+    <freezeWhileSleeping>true</freezeWhileSleeping>
+  </NeedDef>
+  
+    <NeedDef>
+    <DefName>Fitness</DefName>
+    <needClass>mars.Need_Fitness</needClass>
+    <label>fitness</label>
+    <description>Fitness is a indication of how physically fit a person is, poor fitness level can result in diseases such as Osteoporosis.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+    <baseLevel>0.4</baseLevel>
+	<seekerRisePerHour>0.05</seekerRisePerHour>
+    <seekerFallPerHour>0.15</seekerFallPerHour>
+    <listPriority>400</listPriority>
+  </NeedDef>
+  
+  <NeedDef>
+    <DefName>Hygiene</DefName>
+    <needClass>mars.Need_Hygiene</needClass>
+    <label>hygiene</label>
+    <description>Good personal hygiene is one of the most effective ways to protect ourselves and others from many illnesses, such as gastroenteritis. Wash your hands regularly, especially before preparing or eating food and after going to the toilet.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+    <baseLevel>0.4</baseLevel>
+    <listPriority>320</listPriority>
+  </NeedDef>
+  
+  <NeedDef>
+    <DefName>Beauty</DefName>
+    <needClass>Need_Beauty</needClass>
+    <label>beauty</label>
+    <description>Beauty reflects how visually pleasing a person has found their surroundings recently.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+    <baseLevel>0.4</baseLevel>
+    <seekerRisePerHour>0.32</seekerRisePerHour>
+    <seekerFallPerHour>0.08</seekerFallPerHour>
+    <listPriority>300</listPriority>
+    <freezeWhileSleeping>true</freezeWhileSleeping>
+  </NeedDef>
+
+  <NeedDef>
+    <DefName>Comfort</DefName>
+    <needClass>Need_Comfort</needClass>
+    <label>comfort</label>
+    <description>Comfort is gained by sitting in or sleeping on comfortable furniture.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+    <seekerRisePerHour>0.60</seekerRisePerHour>
+    <seekerFallPerHour>0.04</seekerFallPerHour>
+    <listPriority>200</listPriority>
+  </NeedDef>
+
+  <NeedDef>
+    <DefName>Space</DefName>
+    <needClass>mars.Need_SpaceMars</needClass>
+    <label>space</label>
+    <description>Space reflects a sense of being physically free and able to move around. It is harmed by spending extended periods in cramped rooms.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+    <seekerRisePerHour>1.8</seekerRisePerHour>
+    <seekerFallPerHour>1.8</seekerFallPerHour>
+    <listPriority>100</listPriority>
+    <freezeWhileSleeping>true</freezeWhileSleeping>
+  </NeedDef>
+
+
+</Defs>

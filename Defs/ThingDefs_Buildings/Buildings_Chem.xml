@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>h2oStorageTank</defName>
+		<label>H2O Storage Tank</label>
+		<description>A tank for storing Water (H2O).</description>
+		<graphicData>
+			<texPath>Things/Building/h2oTank</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<blockWind>true</blockWind>
+		<rotatable>true</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(4,2)</size>
+		<tickerType>Normal</tickerType>
+		<costList>
+			<Steel>65</Steel>
+			<Component>1</Component>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Water</mode>
+			</li>
+			<li Class="mars.CompProperties_LiquidTank">
+				<compClass>mars.CompLiquidTank</compClass>
+				<compounds>
+					<li>H2O</li>
+				</compounds>	
+				<capacity>					
+					<li>100000</li>
+				</capacity>
+				<start>					
+					<li>0</li>
+				</start>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationCategory>Ship</designationCategory>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>sphereTank</defName>
+		<label>Gas Storage Tank</label>
+		<description>A tank for containing compressed gas.</description>
+		<graphicData>
+			<texPath>Things/Building/n2Tank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.2,3.2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<blockWind>true</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,3)</size>
+		<tickerType>Normal</tickerType>
+		<costList>
+			<Steel>65</Steel>
+			<Component>1</Component>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+			<li Class="mars.CompProperties_StorageTank">
+				<compClass>mars.CompStorageTank</compClass>
+				<assignable>true</assignable>
+				<defaultCapacity>200000</defaultCapacity>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationCategory>Ship</designationCategory>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>CylinderTank</defName>
+		<label>Gas Storage Tank</label>
+		<description>A tank for containing compressed gas.</description>
+		<!-- <thingClass>mars.Building_gasTank</thingClass> -->
+		<graphicData>
+			<texPath>Things/Building/o2StorageTank</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.2,2.2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<blockWind>true</blockWind>
+		<rotatable>true</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(4,2)</size>
+		<tickerType>Normal</tickerType>
+		<costList>
+			<Steel>65</Steel>
+			<Component>1</Component>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+			<li Class="mars.CompProperties_StorageTank">
+				<compClass>mars.CompStorageTank</compClass>
+				<assignable>true</assignable>
+				<defaultCapacity>250000</defaultCapacity>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationCategory>Ship</designationCategory>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>o2Tank</defName>
+		<label>O2 Tank</label>
+		<description>A tank for containing compressed O2.</description>
+		<graphicData>
+			<texPath>Things/Building/o2tank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<blockWind>true</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<tickerType>Normal</tickerType>
+		<costList>
+			<Steel>65</Steel>
+			<Component>1</Component>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<comps>
+		</comps>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>WaterProduction</defName>
+		<label>MIWEX</label>
+		<description>Mars In-Situ Water Extractor (MIWEX) uses microwaves to heat martian soil and evaporate water molecules into a collector and removing toxic compounds such as perchlorates.</description>
+		<thingClass>mars.Building_IceCrystalExtractor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/miwex/miwex_1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,5)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>8</pathCost>
+		<Size>(4,3)</Size>
+		<costList>
+			<Steel>75</Steel>
+			<Plasteel>45</Plasteel>
+			<Component>3</Component>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<designationCategory>Ship</designationCategory>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<designationHotKey>Misc11</designationHotKey>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Water</mode>
+			</li>
+						<li Class="mars.CompProperties_LiquidTank">
+				<compClass>mars.CompLiquidTank</compClass>
+				<compounds>
+					<li>H2O</li>
+				</compounds>	
+				<capacity>					
+					<li>2000</li>
+				</capacity>
+				<start>					
+					<li>0</li>
+				</start>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>415</basePowerConsumption>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+						<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="BuildingBase">
+		<defName>atmosphericWaterGenerator</defName>
+		<label>AWG</label>
+		<description>The atmospheric water generator (AWG) is a device that extracts water from humid ambient air.</description>
+		<thingClass>mars.Building_AWG</thingClass>
+		<graphicData>
+			<texPath>Things/Building/AWG</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,4)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>8</pathCost>
+		<Size>(3,2)</Size>
+		<costList>
+			<Steel>75</Steel>
+			<Plasteel>45</Plasteel>
+			<Component>3</Component>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<designationCategory>Ship</designationCategory>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<designationHotKey>Misc11</designationHotKey>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Water</mode>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>350</basePowerConsumption>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<soundAmbient>MOXIE_Ambience</soundAmbient>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>FuelProduction</defName>
+		<label>MISPP</label>
+		<description>The Mars In-Situ Propellant Plant (MISPP) manufactures methane propellant from H2O and CO2 via the Sabatier process.</description>
+		<thingClass>mars.Building_FuelProduction</thingClass>
+		<graphicData>
+			<texPath>Things/Building/mispp/mispp0</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,4)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>8</pathCost>
+		<Size>(3,2)</Size>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>45</Plasteel>
+			<Component>6</Component>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<designationCategory>Ship</designationCategory>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<designationHotKey>Misc11</designationHotKey>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Water</mode>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>750</basePowerConsumption>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+	</ThingDef>
+
+</Defs>

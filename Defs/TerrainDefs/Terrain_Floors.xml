@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef ParentName="FloorBase">
+    <DefName>MetalTile</DefName>
+    <label>metal tile</label>
+    <RenderPrecedence>240</RenderPrecedence>
+    <Description>Metal tiles, for that spaceship look. Pretty.</Description>
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <color>(0.369, 0.369, 0.369)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToBuild>500</WorkToBuild>
+    </statBases>
+    <CostList>
+      <Steel>3</Steel>
+    </CostList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotkey>Misc1</designationHotkey>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FloorBase">
+    <DefName>AluminiumTile</DefName>
+    <label>Aluminium tile</label>
+    <RenderPrecedence>240</RenderPrecedence>
+    <Description>Aluminium tiles, for that spaceship look.</Description>
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <color>(0.45, 0.45, 0.45)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToBuild>500</WorkToBuild>
+    </statBases>
+    <CostList>
+      <Plasteel>3</Plasteel>
+    </CostList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotkey>Misc1</designationHotkey>
+  </TerrainDef>
+  
+    <TerrainDef ParentName="FloorBase">
+    <DefName>PolymerTile</DefName>
+    <label>Polymer tile</label>
+    <RenderPrecedence>240</RenderPrecedence>
+    <Description>Polymer tiles, for that spaceship look.</Description>
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <color>(0.352, 0.431, 0.498)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+      <WorkToBuild>500</WorkToBuild>
+    </statBases>
+    <CostList>
+      <Polymer>3</Polymer>
+    </CostList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotkey>Misc1</designationHotkey>
+  </TerrainDef>
+  
+  
+        <!-- <TerrainDef ParentName="FloorBase"> -->
+    <!-- <defName>Space</defName> -->
+    <!-- <label>Space</label> -->
+    <!-- <texturePath>Terrain/space</texturePath> -->
+    <!-- <EdgeType>FadeRough</EdgeType> -->
+    <!-- <RenderPrecedence>350</RenderPrecedence> -->
+    <!-- <PathCost>4</PathCost> -->
+    <!-- <statBases> -->
+      <!-- <Beauty>-1</Beauty> -->
+      <!-- <Cleanliness>-1</Cleanliness> -->
+    <!-- </statBases> -->
+    <!-- <ScatterType>Stars</ScatterType> -->
+    <!-- <affordances> -->
+      <!-- <li>Light</li> -->
+      <!-- <li>Heavy</li> -->
+      <!-- <li>Diggable</li> -->
+    <!-- </affordances> -->
+    <!-- <Fertility>0.0</Fertility> -->
+    <!-- <TakeFootprints>False</TakeFootprints> -->
+	  <!-- <designationCategory>Production</designationCategory> -->
+  <!-- </TerrainDef> -->
+  
+</TerrainDefs>

@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase" Name="PipeBase" Abstract="True">
+		<label>pipe</label>
+		<thingClass>mars.Building_Pipe</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/WaterPipe_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom5</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>35</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationHotKey>Misc1</designationHotKey>
+		<placeWorkers>
+			<li>mars.PlaceWorker_CoolingPipe</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="PipeBase">
+		<defName>waterPipe</defName>
+		<label>Water pipe</label>
+		<description>Water pipe for connecting water storage tanks to facilities that generate or require water.</description>
+		<graphicData>
+			<texPath>Things/Building/WaterPipe_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom5</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/WaterPipe_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>UI/WaterPipe</uiIconPath>
+		<comps>	
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Water</mode>
+			</li>
+		</comps>
+		<designationCategory>Temperature</designationCategory>
+		<placeWorkers>
+			<li>mars.PlaceWorker_WaterPipe</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>waterValve</defName>
+		<label>Water valve</label>
+		<thingClass>mars.Building_ValveWater</thingClass>
+		<description>Opens or closes connections between water pipes.</description>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<isEdifice>false</isEdifice>
+		</building>
+		<graphicData>
+			<texPath>Things/Building/WaterValve</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>	
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Water</mode>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>350</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<designationCategory>Temperature</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<placeWorkers>
+			<li>mars.PlaceWorker_WaterPipe</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>MoisturePump</defName>
+		<label>Irrigation pump</label>
+		<thingClass>mars.Building_fertilizerPump</thingClass>
+		<description>Pumps fresh water into growing soil from water tanks connected via pipes.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/MoisturePump</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.25, 0.5, 0.25)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Water</mode>
+			</li>			
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>150</basePowerConsumption>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-8</Beauty>
+		</statBases>
+		<fillPercent>0.15</fillPercent>
+		<costList>
+			<Steel>75</Steel>
+			<Component>5</Component>
+		</costList>
+		<specialDisplayRadius>5.9</specialDisplayRadius>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<pathCost>25</pathCost>
+		<designationCategory>Temperature</designationCategory>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SkyLight</defName>
+		<label>SkyLight</label>
+		<description>Lets daylight in through a window in the roof.</description>
+		<thingClass>mars.Building_skyLight</thingClass>
+		<graphicData>
+			<texPath>Things/Building/skylight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawSize>(1.0,1.0)</drawSize>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Weather</altitudeLayer>
+		<passability>Standable</passability>
+		<selectable>true</selectable>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>35</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<overlightRadius>0</overlightRadius>
+				<glowRadius>0</glowRadius>
+				<glowColor>(0,0,0,0)</glowColor>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>mars.PlaceWorker_Skylight</li>
+		</placeWorkers>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<designationCategory>Furniture</designationCategory> 
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationHotKey>Misc11</designationHotKey>
+	</ThingDef>
+
+
+	<ThingDef ParentName="PipeBase">
+		<defName>gasPipe</defName>
+		<label>Gas pipe</label>
+		<description>Gas pipe for connecting gas storage tanks to facilities that generate or require gas.</description>
+		<graphicData>
+			<texPath>Things/Building/GasPipe_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom5</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/GasPipe_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>UI/GasPipe</uiIconPath>
+		<comps>	
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Gas</mode>
+				<col>yellow</col>
+			</li>
+		</comps>
+		<designationCategory>Temperature</designationCategory>
+		<placeWorkers>
+			<li>mars.PlaceWorker_GasPipe</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>gasValve</defName>
+		<label>Gas valve</label>
+		<thingClass>mars.Building_ValveGas</thingClass>
+		<description>Opens or closes connections between gas pipes.</description>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<graphicData>
+			<texPath>Things/Building/GasValve</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>	
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>350</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<designationCategory>Temperature</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<placeWorkers>
+			<li>mars.PlaceWorker_GasPipe</li>
+		</placeWorkers>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SuitStation</defName>
+		<label>EVA Suit Station</label>
+		<description>Stores a single EVA suit, recharges the air tanks, and provides options for auto switching allowed areas.</description>
+		<thingClass>mars.Building_suitStation</thingClass>
+		<graphicData>
+			<texPath>Things/Building/suitCharge_Full</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.2,2.2)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>8</pathCost>
+		<Size>(1,2)</Size>
+		<costList>
+			<Steel>50</Steel>
+			<Component>6</Component>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<designationHotKey>Misc11</designationHotKey>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Gas</mode>				
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(150,215,227,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>215</basePowerConsumption>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<building>
+			<isInert>true</isInert>
+			<preventDeterioration>true</preventDeterioration>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<categories>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<designationCategory>Temperature</designationCategory> 
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>airOutlet</defName>
+		<label>Air Outlet</label>
+		<description>A outlet which allows air to flow into a room from a MOXIE or MOXI connected via gas pipes.</description>
+		<thingClass>mars.Building_AirOutlet</thingClass>
+		<graphicData>
+			<texPath>Things/Building/AirGen</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<blockWind>false</blockWind>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+
+		<costList>
+			<Steel>65</Steel>
+			<Component>1</Component>
+		</costList>
+		<building>
+			<isTrap>true</isTrap>
+		</building>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>55</basePowerConsumption>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationCategory>Temperature</designationCategory>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>co2scrubber</defName>
+		<label>CO2 Scrubber</label>
+		<description>The CO2 Scrubber uses a fan to circulate air through a Lithium Hydroxide Cell that reacts with CO2 to produce Lithium Carbonate also known as Limestone.</description>
+		<thingClass>mars.Building_co2scrubber</thingClass>
+		<graphicData>
+			<texPath>Things/Building/co2Scrubber</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<blockWind>true</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+
+		<costList>
+			<Steel>65</Steel>
+			<Component>1</Component>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>40</basePowerConsumption>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationCategory>Temperature</designationCategory>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Moxie</defName>
+		<label>MOXIE</label>
+		<description>Mars Oxygen In-situ Experiment (MOXIE) collects CO2 from the Martian atmosphere, compresses and stores it, then electrochemically splits the CO2 molecules into O2 and CO. The O2 is then analyzed for purity before being vented through available Air outlets while the toxic CO and other exhaust products are vented directly out of exhaust ports.</description>
+		<thingClass>mars.Building_MOXI</thingClass>
+		<graphicData>
+			<texPath>Things/Building/moxie</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/moxie</uiIconPath>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<pathCost>8</pathCost>
+		<costList>
+			<Steel>50</Steel>
+			<Component>6</Component>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<designationHotKey>Misc11</designationHotKey>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>150</basePowerConsumption>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li Class="mars.CompProperties_StorageTank">
+				<compClass>mars.CompStorageTank</compClass>
+				<compounds>
+					<li>O2</li>
+					<li>N2</li>
+					<li>CO2</li>
+				</compounds>	
+				<capacity>					
+					<li>1000</li>
+					<li>1000</li>
+					<li>100</li>
+				</capacity>
+				<start>					
+					<li>0</li>
+					<li>0</li>
+					<li>0</li>
+				</start>			
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<soundAmbient>MOXIE_Ambience</soundAmbient>
+		</building>
+	</ThingDef>	
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AGS</defName>
+		<label>AGS</label>
+		<description>The Atmosphere Generating System is a unit designed to electrochemically split CO2 molecules into O2 and CO as well as filtering out nitrogen and argon from the martian atmosphere to create breathable air.</description>
+		<thingClass>mars.Building_MOXI</thingClass>
+		<graphicData>
+			<texPath>Things/Building/moxi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>8</pathCost>
+		<Size>(4,3)</Size>
+		<costList>
+			<Steel>140</Steel>
+			<Plasteel>45</Plasteel>
+			<Component>3</Component>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<designationCategory>Temperature</designationCategory>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<designationHotKey>Misc11</designationHotKey>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>600</basePowerConsumption>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li Class="mars.CompProperties_StorageTank">
+				<compClass>mars.CompStorageTank</compClass>
+				<compounds>
+					<li>O2</li>
+					<li>N2</li>
+					<li>CO2</li>
+				</compounds>	
+				<capacity>					
+					<li>10000</li>
+					<li>10000</li>
+					<li>1000</li>
+				</capacity>
+				<start>					
+					<li>0</li>
+					<li>0</li>
+					<li>0</li>
+				</start>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<soundAmbient>MOXIE_Ambience</soundAmbient>
+		</building>
+	</ThingDef>
+
+
+</Defs>

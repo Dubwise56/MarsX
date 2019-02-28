@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThoughtDef>
+    <defName>FitnessLevel</defName>
+    <workerClass>mars.ThoughtWorker_Fitness</workerClass>
+    <stages>
+      <li>
+        <label>muscle atrophy</label>
+        <description>It's so hard to move, everything aches.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+      <li>
+        <label>unfit</label>
+        <description>I feel like a lazy slob.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>fit</label>
+        <description>I'm feeling limber.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>pumped</label>
+        <description>I'm totally pumped!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HygieneLevel</defName>
+    <workerClass>mars.ThoughtWorker_Hygiene</workerClass>
+    <stages>
+      <li>
+        <label>Filthy</label>
+        <description>What's that smell?</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+      <li>
+        <label>grimy</label>
+        <description>I feel a little grimy.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>Clean</label>
+        <description>I feel fresh and clean.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>Squeaky Clean</label>
+        <description>I'm squueky clean!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+    <ThoughtDef>
+    <defName>BowelLevel</defName>
+    <workerClass>mars.ThoughtWorker_Bowel</workerClass>
+    <stages>
+      <li>
+        <label>Busting</label>
+        <description>I need to go so bad I'm about to burst!</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+      <li>
+        <label>need the bathroom</label>
+        <description>I need to go to the bathroom.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+</Defs>

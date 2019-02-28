@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ANNOYING -->
+
+	<IncidentDef>
+		<defName>Accident</defName>    
+		<targetType>BaseMap</targetType>
+		<label>Accident</label>
+		<workerClass>mars.IncidentWorker_Accidents</workerClass>
+		<baseChance>5</baseChance>
+		<minRefireDays>2</minRefireDays>
+		<category>ThreatSmall</category>
+	</IncidentDef>
+
+
+	<!-- BAD EVENTS -->
+
+	<IncidentDef>
+		<defName>DustStorm</defName>  
+		<targetType>BaseMap</targetType>
+		<label>dust storm</label>
+		<WorkerClass>mars.IncidentWorker_DustStorm</WorkerClass>
+		<letterLabel>Dust storm</letterLabel>
+		<letterText>A dust storm has developed nearby and is heading our way.</letterText>
+		<letterType>BadNonUrgent</letterType>
+		<baseChance>3</baseChance>
+		<earliestDay>10</earliestDay>
+		<minRefireDays>10</minRefireDays>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>HighAltitudePlume</defName>  
+		<targetType>BaseMap</targetType>
+		<label>high altitude plume</label>
+		<WorkerClass>IncidentWorker_MakeMapCondition</WorkerClass>
+		<mapCondition>HighAltitudePlume</mapCondition>
+		<letterLabel>Plume</letterLabel>
+		<letterText>A plume is seen reaching high above the surface of the planet and blocks the sun.</letterText>
+		<letterType>BadNonUrgent</letterType>
+		<baseChance>1</baseChance>
+		<durationDays>
+			<min>0.75</min>
+			<max>1.25</max>
+		</durationDays>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>DustDevils</defName>  
+		<targetType>BaseMap</targetType>
+		<label>Dust Devils</label>
+		<workerClass>mars.IncidentWorker_DustDevils</workerClass>
+		<letterLabel>Dust Devils</letterLabel>
+		<letterText>A group of dust devils are moving through this region.</letterText>
+		<letterType>BadNonUrgent</letterType>
+		<baseChance>5</baseChance>
+		<minRefireDays>5</minRefireDays>
+	</IncidentDef>
+
+
+	<IncidentDef>
+		<defName>ConstructionSetback</defName>   
+		<targetType>BaseMap</targetType>
+		<label>Construction Setback</label>
+		<workerClass>mars.IncidentWorker_ConstructionSetback</workerClass>
+		<letterLabel>Construction Setback</letterLabel>
+		<letterText>Construction Setback</letterText>
+		<letterType>BadNonUrgent</letterType>
+		<baseChance>1</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>MissionScrub</defName>  
+		<targetType>BaseMap</targetType>
+		<label>Mission Delay</label>
+		<workerClass>mars.IncidentWorker_MissionScrub</workerClass>
+		<letterLabel>Mission Delay</letterLabel>
+		<letterText>The launch date for the next crew of colonists was pushed back.</letterText>
+		<letterType>BadNonUrgent</letterType>
+		<baseChance>1</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>CargoLost</defName>   
+		<targetType>BaseMap</targetType>
+		<label>Cargo Lost</label>
+		<workerClass>mars.IncidentWorker_LostCargo</workerClass>
+		<letterLabel>Cargo Lost</letterLabel>
+		<letterText>There was an accident onboard the colonist ship and some of the cargo was lost.</letterText>
+		<letterType>BadNonUrgent</letterType>
+		<baseChance>1</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>SickCrewMember</defName>  
+		<targetType>BaseMap</targetType>
+		<label>Sick Crew Member</label>
+		<workerClass>mars.IncidentWorker_SickCrewMember</workerClass>
+		<letterLabel>Sick Crew Member</letterLabel>
+		<letterText>A member of the crew was diagnosed with a condition and has been replaced.</letterText>
+		<letterType>BadNonUrgent</letterType>
+		<baseChance>1</baseChance>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>suitBreach</defName>
+		<targetType>BaseMap</targetType>
+		<label>suit breach</label>
+		<workerClass>mars.IncidentWorker_SuitBreach</workerClass>
+		<letterLabel>Suit breach</letterLabel>
+		<letterText>A suit was breached but the breach has been secured.</letterText>
+		<letterType>BadNonUrgent</letterType>
+		<baseChance>3</baseChance>
+		<minRefireDays>10</minRefireDays>
+	</IncidentDef>
+
+
+	<IncidentDef>
+		<defName>ToxicVenting</defName>
+		<targetType>BaseMap</targetType>
+		<label>Toxic venting</label>
+		<workerClass>mars.IncidentWorker_ToxicVenting</workerClass>
+		<letterLabel>Suit breach</letterLabel>
+		<letterText>An air outlet has broken down and is venting toxic gas.</letterText>
+		<letterType>BadNonUrgent</letterType>
+		<baseChance>1</baseChance>
+	</IncidentDef>
+	
+		<IncidentDef>
+		<defName>CO2Venting</defName>
+		<targetType>BaseMap</targetType>
+		<label>CO2 venting</label>
+		<workerClass>mars.IncidentWorker_co2Venting</workerClass>
+		<letterLabel>Suit breach</letterLabel>
+		<letterText>An air outlet has broken down and is venting too much CO2.</letterText>
+		<letterType>BadNonUrgent</letterType>
+		<baseChance>1</baseChance>
+	</IncidentDef>
+
+
+	<!-- SUPER BAD -->
+
+	<IncidentDef>
+		<defName>SolarFlare</defName>
+		<targetType>BaseMap</targetType>
+		<label>SPE</label>
+		<workerClass>IncidentWorker_MakeMapCondition</workerClass>
+		<mapCondition>SolarFlare</mapCondition>
+		<letterLabel>SPE</letterLabel>
+		<letterText>A solar particle event has begun.\n\nThe intense radiation will shut down all electrical devices and cause radiation poisoning to anyone outside.\n\nIt should pass in about a day.</letterText>
+		<letterType>BadUrgent</letterType>
+		<category>ThreatBig</category>
+		<baseChance>2.0</baseChance>
+		<minRefireDays>20</minRefireDays>
+		<durationDays>
+			<min>0.35</min>
+			<max>1</max>
+		</durationDays>
+		<earliestDay>10</earliestDay>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>MajorDustStorm</defName>  
+		<targetType>BaseMap</targetType>
+		<label>major dust storm</label>
+		<WorkerClass>mars.IncidentWorker_MajorDustStorm</WorkerClass>
+		<letterLabel>Major dust storm</letterLabel>
+		<letterText>dust storm.</letterText>
+		<letterType>BadUrgent</letterType>
+		<baseChance>0.5</baseChance>
+		<category>ThreatBig</category>
+		<earliestDay>10</earliestDay>
+	</IncidentDef>
+
+
+	<IncidentDef>
+		<defName>DustDevilBig</defName>
+		<targetType>BaseMap</targetType>
+		<label>Huge Dust Devil</label>
+		<workerClass>mars.IncidentWorker_DustDevilBig</workerClass>
+		<letterLabel>Huge Dust Devil</letterLabel>
+		<letterText>A huge dust devil is moving through this area.</letterText>
+		<letterType>BadUrgent</letterType>
+		<baseChance>1.5</baseChance>
+		<category>ThreatBig</category>
+		<earliestDay>5</earliestDay>
+	</IncidentDef>
+
+
+	<IncidentDef>
+		<defName>RandomDeath</defName>  
+		<targetType>BaseMap</targetType>
+		<label>Crew death</label>
+		<workerClass>mars.IncidentWorker_RandomDeath</workerClass>
+		<letterLabel>Fatal accident</letterLabel>
+		<letterText>A member of the next crew to arrive has died in an accident.</letterText>
+		<letterType>BadNonUrgent</letterType>
+		<baseChance>0.1</baseChance>
+		<category>ThreatBig</category>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>Decompression</defName>    
+		<targetType>BaseMap</targetType>
+		<label>decompression</label>
+		<workerClass>mars.IncidentWorker_Blowout</workerClass>
+		<letterLabel>Rapid Decompression</letterLabel>
+		<letterText>An outside door has had a catasrophic failure resulting in rapid decompression and the room is exposed to the martian atmosphere.</letterText>
+		<letterType>BadUrgent</letterType>
+		<baseChance>1.5</baseChance>
+		<category>ThreatBig</category>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>
+
+
+
+</Defs>

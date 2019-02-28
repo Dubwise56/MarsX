@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+
+  <DamageDef ParentName="LocalInjuryBase">
+    <defName>Decompressed</defName>
+    <label>blunt</label>
+    <externalViolence>true</externalViolence>
+    <battleWound>true</battleWound>
+    <deathMessage>{0} has died from decompression.</deathMessage>
+    <hediff>Crush</hediff>
+    <hediffSkin>Bruise</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <hasChanceToAdditionallyDamageInnerSolidParts>true</hasChanceToAdditionallyDamageInnerSolidParts>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+  </DamageDef>
+
+</Defs>

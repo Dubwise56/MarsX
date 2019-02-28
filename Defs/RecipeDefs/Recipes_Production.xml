@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef>
+    <defName>SmeltSteelFromIron</defName>
+    <label>smelt steel from iron</label>
+    <description>Use heat to smelt steel from iron and carbon.</description>
+    <jobString>Smelting steel from iron.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Iron</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <!-- Switched to standard products so we can do "do until you have X"
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>-->
+    <products>
+      <Steel>10</Steel>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Iron</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeSoil</defName>
+    <label>create soil</label>
+    <description>Create soil from a mixture of minerals and organic matter.</description>
+    <jobString>Making soil.</jobString>
+    <workAmount>600</workAmount>
+    <workSpeedStat>PlantWorkSpeed</workSpeedStat>
+    <effectWorking>ConstructDirt</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+	<workSkill>Growing</workSkill>
+    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SandBag</li>
+			<li>IceSandBag</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <!-- Switched to standard products so we can do "do until you have X"
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>-->
+    <products>
+      <SoilBag>30</SoilBag>
+    </products>
+    <fixedIngredientFilter>
+	          <thingDefs>
+            <li>SandBag</li>
+			   <li>IceSandBag</li>
+          </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+
+</RecipeDefs>

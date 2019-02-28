@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StorytellerDefs>
+
+  <StorytellerDef>
+		<defName>Cassandra</defName>
+    <label>Classic</label>
+    <description>A steadily-increasing curve of challenge and tension.</description>
+    <portraitLarge>UI/classic</portraitLarge>
+    <portraitTiny>UI/classic</portraitTiny>
+    <listOrder>20</listOrder>
+    <desiredPopulationMin>4</desiredPopulationMin>
+    <desiredPopulationMax>13</desiredPopulationMax>
+    <desiredPopulationCritical>18</desiredPopulationCritical>
+    <comps>
+      <li Class="StorytellerCompProperties_ClassicIntro"/>
+      <li Class="StorytellerCompProperties_ThreatCycle">
+        <minDaysPassed>5</minDaysPassed>
+        <mtbDaysThreatSmall>3.75</mtbDaysThreatSmall>
+        <mtbDaysThreatBig>2.20</mtbDaysThreatBig>
+        <threatOffDays>5.8</threatOffDays>
+        <threatOnDays>4.6</threatOnDays>
+        <minDaysBetweenThreatBigs>2.9</minDaysBetweenThreatBigs>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryMTB">
+        <minDaysPassed>5</minDaysPassed>
+        <category>Misc</category>
+        <mtbDays>1.60</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_AllyInteraction">
+        <minDaysPassed>5</minDaysPassed>
+        <baseMtb>6</baseMtb>
+      </li>
+      <li Class="StorytellerCompProperties_SingleMTB">
+        <incident>OrbitalTraderArrival</incident>
+        <mtbDays>13</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_ShipChunkDrop"/>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>5</minDaysPassed>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+        <category>CaravanTarget</category>
+      </li>
+      <li Class="StorytellerCompProperties_JourneyOffer"/>
+    </comps>
+  </StorytellerDef>
+  
+	<StorytellerDef>
+		<defName>Phoebe</defName>
+    <label>Spaced</label>
+		<description>Lots of time between disasters to relax and build your colony.</description>
+    <portraitLarge>UI/spaced</portraitLarge>
+    <portraitTiny>UI/spaced</portraitTiny>
+    <listOrder>30</listOrder>
+    <desiredPopulationMin>4</desiredPopulationMin>
+    <desiredPopulationMax>13</desiredPopulationMax>
+    <desiredPopulationCritical>18</desiredPopulationCritical>
+    <comps>
+      <li Class="StorytellerCompProperties_ClassicIntro"/>
+      <li Class="StorytellerCompProperties_ThreatCycle">
+        <minDaysPassed>5</minDaysPassed>
+        <mtbDaysThreatSmall>8</mtbDaysThreatSmall>
+        <mtbDaysThreatBig>2.25</mtbDaysThreatBig>
+        <threatOffDays>8.5</threatOffDays>
+        <threatOnDays>8.5</threatOnDays>
+        <minDaysBetweenThreatBigs>12.5</minDaysBetweenThreatBigs>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryMTB">
+        <minDaysPassed>5</minDaysPassed>
+        <category>Misc</category>
+        <mtbDays>2.50</mtbDays>
+      </li>  
+      <li Class="StorytellerCompProperties_AllyInteraction">
+        <minDaysPassed>5</minDaysPassed>
+        <baseMtb>6</baseMtb>
+      </li>
+      <li Class="StorytellerCompProperties_SingleMTB">
+        <incident>OrbitalTraderArrival</incident>
+        <mtbDays>13</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_ShipChunkDrop"/>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>5</minDaysPassed>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+        <category>CaravanTarget</category>
+      </li>
+      <li Class="StorytellerCompProperties_JourneyOffer"/>
+    </comps>
+  </StorytellerDef>
+
+	<StorytellerDef>
+		<defName>Randy</defName>
+    <label>Random</label>
+		<description>Random events</description>
+    <portraitLarge>UI/random</portraitLarge>
+    <portraitTiny>UI/random</portraitTiny>
+    <listOrder>40</listOrder>
+    <desiredPopulationMin>4</desiredPopulationMin>
+    <desiredPopulationMax>13</desiredPopulationMax>
+    <desiredPopulationCritical>50</desiredPopulationCritical>
+    <comps>
+      <li Class="StorytellerCompProperties_RandomMain">
+        <minDaysPassed>1</minDaysPassed>
+        <incidentMtb>0.87</incidentMtb>
+        <maxThreatBigIntervalDays>13</maxThreatBigIntervalDays>
+        <categoryWeights>
+          <Misc>5.5</Misc>
+          <OrbitalVisitor>1</OrbitalVisitor>
+          <AllyArrival>1</AllyArrival>
+          <ShipChunkDrop>0.5</ShipChunkDrop>
+          <ThreatSmall>1</ThreatSmall>
+          <ThreatBig>2</ThreatBig>
+        </categoryWeights>
+      </li>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>0</minDaysPassed>
+      </li>
+      <li Class="StorytellerCompProperties_JourneyOffer"/>
+    </comps>
+  </StorytellerDef>
+
+  <StorytellerDef>
+    <defName>Tutor</defName>
+    <label>Tutor Hidden</label>
+    <desiredPopulationMin>4</desiredPopulationMin>
+    <desiredPopulationMax>13</desiredPopulationMax>
+    <desiredPopulationCritical>50</desiredPopulationCritical>
+    <listVisible>false</listVisible>
+    <listOrder>1000</listOrder>
+    <tutorialMode>true</tutorialMode>
+    <disableAdaptiveTraining>true</disableAdaptiveTraining>
+    <disableAlerts>true</disableAlerts>
+    <disablePermadeath>true</disablePermadeath>
+    <forcedDifficulty>VeryEasy</forcedDifficulty>
+    <comps>
+    </comps>
+  </StorytellerDef>
+
+</StorytellerDefs>

@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ScenarioDef>
+		<defName>TheRichExplorer</defName>		
+		<label>Martian Colony</label>
+		<description>Your mission is to colonize mars. Start with 3 colonists, 4 extra ships, and turbo fleet timer speed.</description>
+		<scenario>
+			<summary>Martian Colony (Easy)</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>PlayerColony</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- STARTING MATERIALS -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>3</pawnCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>"I would like to die on Mars. Just not on impact." Elon Musk\n\nWe survived the impact, now we just have to survive\n\nWe have limited supplies so planning is key.\nFirst we need to construct a basic hab to fit 3 people and supply it with air using the moxie, and power using the batteries on the MAV.\nOnce the hab is pressurized to safe levels we can remove our suits and work faster.\nThe next step will be to create some soil and start growing food\n</text>
+					<closeSound>marsy</closeSound>
+				</li>
+
+				<li Class="mars.ScenPart_ColonyMission">
+					<def>missionMode</def>
+					<MissionMode>Colony</MissionMode>
+					<shipCount>4</shipCount>
+					<fastMode>true</fastMode>
+				</li>
+
+				<!-- DISABLED INCIDENTS -->
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Eclipse</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>RefugeePodCrash</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Disease_Plague</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Disease_Malaria</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Disease_FibrousMechanites</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Disease_SensoryMechanites</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>RaidEnemy</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>ManhunterPack</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Infestation</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>PsychicEmanatorShipPartCrash</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>PoisonShipPartCrash</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>AnimalInsanityMass</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>AnimalInsanitySingle</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>PsychicDrone</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Alphabeavers</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>OrbitalTraderArrival</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>TraderCaravanArrival</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>VisitorGroup</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>TravelerGroup</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>RaidFriendly</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>WandererJoin</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>PsychicSoothe</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>SelfTame</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>FarmAnimalsWanderIn</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>RefugeeChased</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>ThrumboPasses</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>RansomDemand</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>CropBlight</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>ResourcePodCrash</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>ToxicFallout</incident>
+				</li>
+
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>JourneyOffer</incident>
+				</li>
+
+
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Ambush</incident>
+				</li>
+
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>ManhunterAmbush</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>CaravanMeeting</incident>
+				</li>
+
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+
+
+
+	<ScenarioDef>
+		<defName>LostTribe</defName>
+
+
+		<label>Martian Colony</label>
+		<description>Your mission is to colonize mars. Start with 3 colonists, 1 extra ship, and normal fleet timer speed.</description>
+		<scenario>
+			<summary>Martian Colony (Rough)</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>PlayerColony</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- STARTING MATERIALS -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>3</pawnCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>"I would like to die on Mars. Just not on impact." Elon Musk\n\nWe survived the impact, now we just have to survive\n\nWe have limited supplies so planning is key.\nFirst we need to construct a basic hab to fit 3 people and supply it with air using the moxie, and power using the batteries on the MAV.\nOnce the hab is pressurized to safe levels we can remove our suits and work faster.\nThe next step will be to create some soil and start growing food\n\n</text>
+					<closeSound>marsy</closeSound>
+				</li>
+
+				<li Class="mars.ScenPart_ColonyMission">
+					<def>missionMode</def>
+					<MissionMode>Colony</MissionMode>
+					<shipCount>1</shipCount>
+					<fastMode>false</fastMode>
+				</li>
+
+				<!-- DISABLED INCIDENTS -->
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Eclipse</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>RefugeePodCrash</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Disease_Plague</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Disease_Malaria</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Disease_FibrousMechanites</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Disease_SensoryMechanites</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>RaidEnemy</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>ManhunterPack</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Infestation</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>PsychicEmanatorShipPartCrash</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>PoisonShipPartCrash</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>AnimalInsanityMass</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>AnimalInsanitySingle</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>PsychicDrone</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Alphabeavers</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>OrbitalTraderArrival</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>TraderCaravanArrival</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>VisitorGroup</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>TravelerGroup</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>RaidFriendly</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>WandererJoin</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>PsychicSoothe</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>SelfTame</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>FarmAnimalsWanderIn</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>RefugeeChased</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>ThrumboPasses</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>RansomDemand</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>CropBlight</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>ResourcePodCrash</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>ToxicFallout</incident>
+				</li>
+
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>JourneyOffer</incident>
+				</li>
+
+
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>Ambush</incident>
+				</li>
+
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>ManhunterAmbush</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>CaravanMeeting</incident>
+				</li>
+
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ======== Unlandable biomes ==========-->
+<!-- not used -->
+  <BiomeDef>
+    <defName>Ocean</defName>
+    <label>mars</label>
+    <description>The average temperature on Mars is minus 80 degrees Fahrenheit -- way below freezing! Its surface is rocky, with canyons, volcanoes, dry lake beds and craters all over it. Red dust covers most of its surface. Mars has clouds and wind just like Earth.</description>
+    <workerClass>BiomeWorker_Ocean</workerClass>
+	 <implemented>false</implemented>
+     <canBuildBase>false</canBuildBase>
+	 		 <texture>Terrain/marsSurface</texture>
+    <hideTerrain>true</hideTerrain>
+  </BiomeDef>
+
+  <!-- ======== Buildable biomes ==========-->
+<!-- not used -->
+  <BiomeDef  ParentName="BiomeBase">
+    <defName>TemperateForest</defName>
+    <label>mars equator edge</label>
+    <workerClass>BiomeWorker_TemperateForest</workerClass>
+			 <texture>Terrain/mars6</texture>
+  </BiomeDef>
+<!-- not used -->
+  <BiomeDef  ParentName="BiomeBase">
+    <defName>TropicalRainforest</defName>
+    <label>mars equator</label>
+    <workerClass>BiomeWorker_TropicalRainforest</workerClass>
+			 <texture>Terrain/mars1</texture>
+  </BiomeDef>
+</Defs>

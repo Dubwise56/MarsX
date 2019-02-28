@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MapConditionDefs>
+
+   <MapConditionDef>
+    <defName>MartianAtmosphere</defName>
+    <conditionClass>mars.MapCondition_MartianAtmosphere</conditionClass>
+    <label>martian atmosphere</label>
+    <description>The atmosphere of Mars is less than 1% of Earth's, so it does not protect the planet from the Sun's radiation nor does it do much to retain heat at the surface. It consists of 95% carbon dioxide, 3% nitrogen, 1.6% argon, and the remainder is trace amounts of oxygen, water vapor, and other gases.</description>
+    <endMessage>error</endMessage>
+    <canBePermanent>true</canBePermanent>
+  </MapConditionDef>
+  
+     <MapConditionDef>
+    <defName>MajorDustStorm</defName>
+    <conditionClass>mars.MapCondition_BigDustStorm</conditionClass>
+    <label>Massive Dust Storm</label>
+    <description>A dust storm can develop in a matter of hours and envelope the entire planet within a few days. After developing, it can take weeks for a dust storm on Mars to completely expend itself.</description>
+    <endMessage>The dust storm has passed.</endMessage>
+    <canBePermanent>false</canBePermanent>
+  </MapConditionDef>
+  
+       <MapConditionDef>
+    <defName>DustStorm</defName>
+    <conditionClass>mars.MapCondition_DustStorm</conditionClass>
+    <label>Dust Storm</label>
+    <description>Local dust storms pop up frequently.</description>
+    <endMessage>The dust storm has passed.</endMessage>
+    <canBePermanent>false</canBePermanent>
+  </MapConditionDef>
+  
+    <MapConditionDef>
+    <defName>HighAltitudePlume</defName>
+    <conditionClass>mars.MapCondition_Plume</conditionClass>
+    <label>plume</label>
+    <description>A plume is seen reaching high above the surface of the planet and blocks the sun.</description>
+    <endMessage>The plume is vanishing.</endMessage>
+    <canBePermanent>false</canBePermanent>
+  </MapConditionDef>
+ 
+
+</MapConditionDefs>

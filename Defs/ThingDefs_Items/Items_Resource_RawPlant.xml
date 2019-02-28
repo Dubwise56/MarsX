@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" Name="CondimentRawBase" ParentName="OrganicProductBase">
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <tasteThought>AteRawFood</tasteThought>
+      <nutrition>0.05</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <thingCategories>
+      <li>Condiment</li>
+    </thingCategories>
+	    <statBases>
+      <MarketValue>2.1</MarketValue>
+	  <Mass>0.01</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_FoodPoisoningChance" />
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="CondimentRawBase">
+    <defName>Ketchup</defName>
+    <label>ketchup</label>
+    <description>Packet of ketchup.</description>
+    <graphicData>
+      <texPath>Things/Resource/ketchup</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.1</MarketValue>
+	  <Mass>0.4</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>242</daysToRotStart>
+      </li>
+    </comps>
+    <ingestible>
+	      <preferability>RawTasty</preferability>
+
+      <foodType>VegetableOrFruit</foodType>
+	  
+    </ingestible>
+  </ThingDef>
+  
+    <ThingDef ParentName="CondimentRawBase">
+    <defName>BBQ</defName>
+    <label>BBQ Sauce</label>
+    <description>Packet of BBQ Sauce.</description>
+    <graphicData>
+      <texPath>Things/Resource/bbq</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>242</daysToRotStart>
+      </li>
+    </comps>
+    <ingestible>
+	      <preferability>RawTasty</preferability>
+
+      <foodType>VegetableOrFruit</foodType>
+	  
+    </ingestible>
+  </ThingDef>
+  
+    <ThingDef ParentName="CondimentRawBase">
+    <defName>Mayo</defName>
+    <label>mayonnaise</label>
+    <description>Packet of mayonnaise.</description>
+    <graphicData>
+      <texPath>Things/Resource/mayo</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>242</daysToRotStart>
+      </li>
+    </comps>
+    <ingestible>
+	      <preferability>RawTasty</preferability>
+
+      <foodType>VegetableOrFruit</foodType>
+	  
+    </ingestible>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DriedFruit</defName>
+    <label>dried fruit</label>
+    <description>Assorted dried fruit. Nice to eat raw.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/Berries</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>142</daysToRotStart>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+
+</Defs>

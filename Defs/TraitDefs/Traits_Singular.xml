@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TraitDefs>
+
+  <TraitDef>
+    <defName>Claustrophile</defName>
+    <commonality>0.1</commonality>
+    <degreeDatas>
+      <li>
+        <label>Claustrophile</label>
+        <description>NAME has a love of closed-in spaces. HECAP enjoys the cosy feeling of an EVA suit.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+  
+    <TraitDef>
+    <defName>Claustrophobe</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Claustrophobe</label>
+        <description>NAME has an abnormal fear of being in narrow or enclosed spaces. HECAP hates wearing an EVA suit.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</TraitDefs>

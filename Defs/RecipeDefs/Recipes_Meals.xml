@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef>
+		<defName>CookMealFine</defName>
+		<label>cook fine meal</label>
+		<description>Cooks a somewhat complex meal from a combination of ketchup and raw plant ingredients.</description>
+		<jobString>Cooking fine meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Condiment</li>
+					</categories>
+				 </filter>
+				<count>0.1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealFine>1</MealFine>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+      </disallowedSpecialFilters>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+				<li>Human_Meat</li>
+			</exceptedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>0</minLevel>
+			</li>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+
+
+</RecipeDefs>

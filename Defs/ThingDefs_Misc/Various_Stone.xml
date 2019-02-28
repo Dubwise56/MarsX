@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef>
+		<defName>UraniumNitride</defName>
+		<label>Nuclear Fuel Module</label>
+		<graphicData>
+			<texPath>Things/Resource/plutonium</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<soundDrop>ChunkSlag_Drop</soundDrop>
+		<category>Item</category>
+		<altitudeLayer>Item</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>10</Flammability>
+			<Beauty>-10</Beauty>
+			<Cleanliness>-2</Cleanliness>
+			<MarketValue>10.42</MarketValue>
+			<Mass>55</Mass>
+		</statBases>
+		<comps>
+					<li Class="mars.CompProperties_NuclearFuel" />
+			<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<selectable>true</selectable>
+		<pathCost>55</pathCost>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		<randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
+		<saveCompressible>false</saveCompressible>
+		<stackLimit>1</stackLimit>
+		<tradeability>Never</tradeability>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>NuclearProduct</li>
+		</thingCategories> 
+		<alwaysHaulable>true</alwaysHaulable>
+	</ThingDef>
+	
+	<ThingDef>
+		<defName>coreVessel</defName>
+		<label>Nuclear core components</label>
+		<graphicData>
+			<texPath>Things/Resource/plutonium</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<soundDrop>ChunkSlag_Drop</soundDrop>
+		<category>Item</category>
+		<altitudeLayer>Item</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>10</Flammability>
+			<Beauty>-10</Beauty>
+			<Cleanliness>-2</Cleanliness>
+			<MarketValue>10.42</MarketValue>
+			<Mass>355</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<selectable>true</selectable>
+		<pathCost>55</pathCost>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		<randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
+		<saveCompressible>false</saveCompressible>
+		<stackLimit>1</stackLimit>
+		<tradeability>Never</tradeability>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>NuclearProduct</li>
+		</thingCategories> 
+		<alwaysHaulable>true</alwaysHaulable>
+	</ThingDef>
+</Defs>

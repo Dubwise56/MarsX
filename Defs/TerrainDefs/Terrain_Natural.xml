@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+    <TerrainDef>
+    <defName>DrySand</defName>
+    <label>Sand</label>
+    <texturePath>Terrain/MarsSand</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>350</RenderPrecedence>
+    <PathCost>4</PathCost>
+    <statBases>
+      <Beauty>-4</Beauty>
+      <Cleanliness>-4</Cleanliness>
+    </statBases>
+    <ScatterType>Stoney</ScatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthSand</TerrainFilthDef>
+    <Fertility>0.06</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+  </TerrainDef>
+
+    <TerrainDef>
+    <defName>StonySand</defName>
+    <label>rocky sand</label>
+    <texturePath>Terrain/MarsSandStony</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>350</RenderPrecedence>
+    <PathCost>4</PathCost>
+    <statBases>
+      <Beauty>-4</Beauty>
+      <Cleanliness>-4</Cleanliness>
+    </statBases>
+    <ScatterType>Stoney</ScatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthSand</TerrainFilthDef>
+    <Fertility>0.06</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+  </TerrainDef>
+
+    <TerrainDef>
+    <defName>Sand</defName>
+    <label>icy sand</label>
+    <texturePath>Terrain/MarsSandIcy</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>350</RenderPrecedence>
+    <PathCost>4</PathCost>
+    <statBases>
+      <Beauty>-4</Beauty>
+      <Cleanliness>-4</Cleanliness>
+    </statBases>
+    <ScatterType>Stoney</ScatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthSand</TerrainFilthDef>
+    <Fertility>0.06</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+  </TerrainDef>
+
+    <TerrainDef>
+    <defName>Gravel</defName>
+    <label>gravel</label>
+    <texturePath>Terrain/Gravel</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>320</RenderPrecedence>
+    <PathCost>2</PathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <ScatterType>Stoney</ScatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>0</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+  </TerrainDef>
+
+
+  <TerrainDef Name="SoilBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+	   <EdgeType>FadeRough</EdgeType>
+	       <RenderPrecedence>320</RenderPrecedence>
+    <statBases>
+      <WorkToBuild>135</WorkToBuild>
+    </statBases>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+		    <TakeFootprints>True</TakeFootprints>
+  </TerrainDef>
+  
+    <TerrainDef ParentName="SoilBase">
+    <defName>SoilDry</defName>
+    <label>dry soil</label>
+    <texturePath>Terrain/tilledSoilDry</texturePath>
+    <Fertility>0.55</Fertility>
+	<CostList>
+      <SoilBag>30</SoilBag>
+    </CostList>
+    <designationCategory>Production</designationCategory>
+  </TerrainDef>
+  
+   <TerrainDef  ParentName="SoilBase">
+    <defName>SoilDead</defName>
+    <label>dead soil</label>
+    <texturePath>Terrain/tilledSoilDead</texturePath>
+    <Fertility>0.0</Fertility>
+  </TerrainDef >
+   <TerrainDef ParentName="SoilBase">
+    <defName>SoilParched</defName>
+    <label>parched soil</label>
+    <texturePath>Terrain/tilledSoilParched</texturePath>
+    <Fertility>0.5</Fertility>
+  </TerrainDef>
+     <TerrainDef ParentName="SoilBase">
+    <defName>SoilDamp</defName>
+    <label>damp soil</label>
+    <texturePath>Terrain/tilledSoilDamp</texturePath>
+    <Fertility>0.8</Fertility>
+  </TerrainDef>
+     <TerrainDef ParentName="SoilBase">
+    <defName>SoilWatered</defName>
+    <label>watered soil</label>
+    <texturePath>Terrain/tilledSoilWatered</texturePath>
+    <Fertility>0.9</Fertility>
+  </TerrainDef>
+       <TerrainDef ParentName="SoilBase">
+    <defName>SoilWellWatered</defName>
+    <label>well watered soil</label>
+    <texturePath>Terrain/tilledSoilWell</texturePath>
+    <Fertility>1.0</Fertility>
+  </TerrainDef>
+
+
+
+
+</TerrainDefs>

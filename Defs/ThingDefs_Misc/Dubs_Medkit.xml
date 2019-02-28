@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>MedicalKit</defName>
+		<label>medical kit</label>
+		<description>Allows the wearer to treat their own injuries, but not perform surgery. Also increases treating speed</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/medkit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Never</tickerType>
+		<statBases>
+			<WorkToMake>14000</WorkToMake>
+			<MarketValue>1200</MarketValue>  
+			<Mass>4</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MedicalOperationSpeed>0.15</MedicalOperationSpeed>
+			<HealingSpeed>0.15</HealingSpeed>
+			<MoveSpeed>-0.06</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>		
+		<costList>
+			<Cloth>80</Cloth>
+			<Steel>10</Steel>
+			<Medicine>10</Medicine>			
+		</costList>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Accessory</li>
+			</layers>
+			<commonality>1</commonality>
+			<tags>
+				<li>MedicalKit</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+
+</ThingDefs>

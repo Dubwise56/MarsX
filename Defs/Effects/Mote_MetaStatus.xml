@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== Thrown status ==============-->
+	
+	  <ThingDef ParentName="MoteBase">
+    <defName>Mote_Decompression</defName>
+    <graphicData>
+      <texPath>Things/Mote/arnie</texPath>
+    </graphicData>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <mote>
+      <fadeInTime>0.25</fadeInTime>
+      <solidTime>1</solidTime>
+      <fadeOutTime>1.4</fadeOutTime>
+      <attachedDrawOffset>(0.45, 0, 0.45)</attachedDrawOffset>
+    </mote>
+  </ThingDef>
+
+</Defs>

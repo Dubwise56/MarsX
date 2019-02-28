@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef ParentName="RockBase">
+    <defName>MineableSteel</defName>
+    <label>iron ore</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(114,92,83)</color>
+      <colorTwo>(117,76,40)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <description>Rock containing bits of iron.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Iron</mineableThing>
+      <mineableYield>35</mineableYield>
+      <mineableScatterCommonality>1</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>20</min>
+        <max>40</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="RockBase">
+    <defName>MineablePlasteel</defName>
+    <label>bauxite</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(110,118,118)</color>
+      <colorTwo>(134,166,166)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <description>An ore containing aluminium oxide.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Plasteel</mineableThing>
+      <mineableYield>35</mineableYield>
+      <mineableScatterCommonality>0.05</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>10</min>
+        <max>50</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+  <ThingDef ParentName="RockBase">
+    <defName>MineableComponents</defName>
+    <label>compacted machinery</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/CompactedMachinery_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+    </statBases>
+    <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Component</mineableThing>
+      <mineableYield>2</mineableYield>
+      <mineableScatterCommonality>0</mineableScatterCommonality> <!-- as often as steel, with smaller blotches -->
+      <mineableScatterLumpSizeRange>
+        <min>3</min>
+        <max>6</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+
+</ThingDefs>

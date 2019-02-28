@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Vent</defName>
+		<label>vent</label>
+		<description>A simple vent for equalizing the air and temperature between two rooms without allowing people to walk between them.</description>
+		<thingClass>mars.Building_VentAir</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Misc/TempControl/Vent</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<blockLight>true</blockLight>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>PlaceWorker_Vent</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<designationCategory>Temperature</designationCategory>
+		<designationHotKey>Misc5</designationHotKey>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Heater</defName>
+		<label>heater</label>
+		<thingClass>Building_Heater</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Misc/TempControl/Heater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.25,0.4,0.7)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<blockWind>true</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<description>An electrical device that converts electricity into heat. It can automatically turn itself on or off to reach a specific target temperature.</description>
+		<costList>
+			<Steel>65</Steel>
+			<Component>1</Component>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>175</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_TempControl">
+				<energyPerSecond>31</energyPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationCategory>Temperature</designationCategory>
+		<designationHotKey>Misc3</designationHotKey>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+</Defs>

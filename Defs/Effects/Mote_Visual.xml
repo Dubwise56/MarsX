@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== Flashes ================-->
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_ShotFlashLight</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.05</solidTime>
+			<fadeOutTime>0.05</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/ShotFlash</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_DevilPuff</defName>
+    <graphicData>
+      <texPath>Things/Mote/DustPuff1</texPath>
+    </graphicData>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <mote>
+      <fadeInTime>0.04</fadeInTime>
+      <solidTime>0.03</solidTime>
+      <fadeOutTime>1</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+	
+	  <ThingDef ParentName="MoteBase">
+    <defName>Mote_AirPuff</defName>
+    <graphicData>
+      <texPath>Things/Mote/AirPuff</texPath>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.04</fadeInTime>
+      <solidTime>0.03</solidTime>
+      <fadeOutTime>1</fadeOutTime>
+    </mote>
+  </ThingDef>
+  
+    <ThingDef ParentName="MoteBase">
+    <defName>Mote_FireGlowRocket</defName>
+    <graphicData>
+      <texPath>Things/Mote/FireGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.75</fadeInTime>
+      <solidTime>1.08</solidTime>
+      <fadeOutTime>0.8</fadeOutTime>
+    </mote>
+  </ThingDef>
+  
+    <ThingDef ParentName="MoteBase">
+    <defName>Mote_SmokeRocket</defName>
+    <graphicData>
+      <texPath>Things/Mote/Smoke</texPath>
+    </graphicData>
+    <altitudeLayer>Weather</altitudeLayer>
+    <mote>
+      <fadeInTime>0.50</fadeInTime>
+      <solidTime>6</solidTime>
+      <fadeOutTime>3.2</fadeOutTime>
+      <growthRate>0.005</growthRate>
+    </mote>
+  </ThingDef>
+  
+</Defs>

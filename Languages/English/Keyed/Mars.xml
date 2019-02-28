@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Decompression>Decompression!</Decompression>
+	<DecompressionDesc>A door has blown out and decompressed the room</DecompressionDesc>
+
+	<astronautpod>astronaut escape pod</astronautpod>
+
+	<accident>Accident</accident>
+	<accidentdesc> has had an unfortunate accident.</accidentdesc>
+
+	<digicysand>Dig Icy Sand</digicysand>
+	<digicysanddesc>Dig martian sand which has a high enough ice crystal content to extract water.</digicysanddesc>
+	<mustbeicysand>Terrain must be sand containing moisture</mustbeicysand>
+	
+	<digsand>Dig Sand</digsand>
+	<digsanddesc>Dig martian sand to make soil</digsanddesc>
+	<mustbesand>Terrain must be sand</mustbesand>
+
+	<coveredsand>Panels are covered in sand</coveredsand>
+	<missinginverter>Missing solar inverter</missinginverter>
+
+	<reactorcritical>Reactor Critical! Lethal radiation exposure!</reactorcritical>
+	<reactorleaking>Reactor Leaking</reactorleaking>
+	<reactionstable>Reaction Stable</reactionstable>
+
+	<Irrigationprogress> - Irrigation progress </Irrigationprogress>
+
+	<LaunchAscent>Launch the Ascent vehicle</LaunchAscent>
+	<Launch>Launch!</Launch>
+
+	<suito2low>EVA suit o2 critical</suito2low>
+	<suito2lowDesc>An EVA suit is critically low on o2, get to a compressed room now!</suito2lowDesc>
+	
+		<roomO2low>Room O2 Low</roomO2low>
+	<roomO2lowDesc>The O2 level in this room is dangerously low</roomO2lowDesc>
+	
+		<roomCO2high>Room CO2 High</roomCO2high>
+	<roomCO2highDesc>The CO2 level in this room is dangerously high</roomCO2highDesc>
+	
+		<roomPressureLow>Room Pressure Low</roomPressureLow>
+	<roomPressureLowDesc>The pressure level in this room is dangerously low</roomPressureLowDesc>
+
+	<Online>Online</Online>
+		<Offline>Offline</Offline>
+		<Irrigation> - Irrigation progress </Irrigation>
+</LanguageData>

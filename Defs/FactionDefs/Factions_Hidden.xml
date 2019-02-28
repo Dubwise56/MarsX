@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef>
+    <defName>Spacer</defName>
+    <label>NASA</label>
+    <description>People from the distant reaches of space.</description>
+    <pawnsPlural>spacers</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>NASA</fixedName>
+    <techLevel>Spacer</techLevel>
+    <backstoryCategory>Civil</backstoryCategory>
+    <hidden>true</hidden>
+		<rescueesCanJoin>true</rescueesCanJoin>
+    <hairTags>
+      <li>Urban</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </apparelStuffFilter>
+	<expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
+	    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+		    <colorSpectrum>
+      <li>(0.64, 0.42, 0.36)</li>
+      <li>(0.47, 0.5, 0.91)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  
+    <FactionDef>
+		<defName>NASA</defName>
+		<label>NASA</label>
+		    <hidden>true</hidden>
+    <description>NASA.</description>
+    <pawnsPlural>NASA</pawnsPlural>
+    <factionBaseSelectionWeight>1</factionBaseSelectionWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>false</canMakeRandomly>
+    <raidCommonality>100</raidCommonality>
+    <canSiege>false</canSiege>
+    <canStageAttacks>false</canStageAttacks>
+    <leaderTitle>mayor</leaderTitle>
+    <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
+    <colorSpectrum>
+      <li>(0.64, 0.42, 0.36, 0.1)</li>
+      <li>(0.47, 0.5, 0.91, 0.1)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>10</min>
+      <max>40</max>
+    </startingGoodwill>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<factionBaseNameMaker>NamerFactionBaseOutlander</factionBaseNameMaker>
+		<techLevel>Industrial</techLevel>
+		<backstoryCategory>Civil</backstoryCategory>
+		<hairTags>
+			<li>Rural</li>
+		</hairTags>
+    <naturalColonyGoodwill>
+      <min>100</min>
+      <max>0</max>
+    </naturalColonyGoodwill>
+    <caravanTraderKinds>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+    </visitorTraderKinds>
+    <factionBaseTraderKinds>
+    </factionBaseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>0</min>
+      <max>0</max>
+    </allowedArrivalTemperatureRange>
+    <pawnGroupMakers>
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+  </FactionDef>
+</Defs>

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Building_HAB</defName>
+		<label>HAB</label>
+		<description>An inflatable habitat complete with walls, floors, roof, airlocks and atmosphere.</description>
+		<thingClass>mars.Building_HAB</thingClass>
+		<size>(13,13)</size>
+		<blueprintGraphicData>
+			<texPath>Things/Building/HAB</texPath>
+		</blueprintGraphicData>
+		<graphicData>
+			<drawSize>(13,13)</drawSize>
+			<texPath>Things/Building/HAB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/HAB</uiIconPath>
+		<tickerType>Normal</tickerType>
+		<comps>	
+		</comps>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+			<rotatable>false</rotatable>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>OrbitalTradeBeacon</defName>
+		<label>Landing beacon</label>
+		<graphicData>
+			<texPath>Things/Building/Misc/DropBeacon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.4, 0.3)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1300</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>Enhances landing accuracy. Ships will attempt to land close to landing beacons.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<fillPercent>0.15</fillPercent>
+		<costList>
+			<Steel>50</Steel>
+			<Component>1</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>40</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<pathCost>8</pathCost>
+		<designationCategory>Misc</designationCategory>
+		<rotatable>false</rotatable>
+		<placeWorkers>
+			<li>mars.PlaceWorker_ShowLandingZone</li>
+		</placeWorkers>
+		<designationHotKey>Misc2</designationHotKey>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>CommsConsole</defName>
+		<label>comms console</label>
+		<thingClass>Building_CommsConsole</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Misc/CommsConsole</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,4)</drawSize>
+			<damageData>
+				<rect>(0,0,3,1.8)</rect>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>2200</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>Opens a communications link back to earth when no Ares vehicles are landed.</description>
+		<size>(3,2)</size>
+		<costList>
+			<Steel>120</Steel>
+			<Component>4</Component>
+		</costList>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<designationHotkey>Misc3</designationHotkey>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>FirefoamPopper</defName>
+		<label>firefoam popper</label>
+		<description>When touched by fire or triggered by hand, this pops and sprays a fire-extinguishing foam in a circular field around itself.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/FirefoamPopper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.25, 0.5, 0.25)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>9.9</explosiveRadius>
+				<explosiveDamageType>Extinguish</explosiveDamageType>
+				<startWickHitPointsPercent>-1</startWickHitPointsPercent>
+				<startWickOnDamageTaken>Flame</startWickOnDamageTaken>
+				<postExplosionSpawnThingDef>FilthFireFoam</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>1</postExplosionSpawnChance>
+				<postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<explosionEffect>ExtinguisherExplosion</explosionEffect>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>TriggerFirefoamPopper</useJob>
+				<useLabel>Trigger firefoam popper</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_StartWick</compClass>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-8</Beauty>
+		</statBases>
+		<fillPercent>0.15</fillPercent>
+		<costList>
+			<Steel>75</Steel>
+			<Component>1</Component>
+		</costList>
+		<specialDisplayRadius>9.9</specialDisplayRadius>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<pathCost>25</pathCost>
+		<designationCategory>Misc</designationCategory>
+		<rotatable>false</rotatable>
+		<designationHotKey>Misc7</designationHotKey>
+		<researchPrerequisites>
+			<li>Firefoam</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	
+</Buildings>

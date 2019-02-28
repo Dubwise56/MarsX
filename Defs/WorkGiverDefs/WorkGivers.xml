@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+  <WorkGiverDef>
+    <defName>DigSand</defName>
+    <label>dig sand</label>
+    <giverClass>mars.WorkGiver_ConstructDigSand</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>6</priorityInType>
+    <verb>dig sand</verb>
+    <gerund>digging </gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+
+   <WorkGiverDef>
+    <defName>DoBillsTableSoil</defName>
+	<label>make soil</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Growing</workType>
+    <priorityInType>0</priorityInType>
+    <fixedBillGiverDefs>
+	  <li>TableSoil</li>
+	</fixedBillGiverDefs>
+    <verb>create</verb>
+    <gerund>creating</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+	 <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+   
+   <WorkGiverDef>
+    <defName>CleanClearEquipment</defName>
+    <label>clean equipment</label>
+    <giverClass>mars.WorkGiver_CleanEquipment</giverClass>
+    <workType>EquipmentCleaning</workType>
+    <verb>clean equipment</verb>
+    <gerund>cleaning equipment</gerund>
+    <priorityInType>1</priorityInType>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+   <!--
+  <WorkGiverDef>
+    <defName>ChatWithColonist</defName>
+    <label>chat with colonists</label>
+    <giverClass>mars.WorkGiver_ChitChat</giverClass>
+    <workType>Warden</workType>
+    <verb>chat with</verb>
+    <gerund>chatting with</gerund>
+    <priorityInType>60</priorityInType>
+    <requiredCapacities>
+      <li>Talking</li>
+    </requiredCapacities>
+  </WorkGiverDef> -->
+  
+    <!-- ============= PatientBedRest ============= -->
+
+   <WorkGiverDef>
+    <defName>TendSelf</defName>
+    <label>tend self in bed</label>
+    <giverClass>mars.WorkGiver_TendSelf</giverClass>
+    <workType>Doctor</workType>
+    <verb>tend self in</verb>
+    <gerund>tending self in</gerund>
+	    <priorityInType>100</priorityInType>
+  </WorkGiverDef> 
+ 
+  
+      <WorkGiverDef>
+    <defName>LoadSandbags</defName>
+    <label>Load Sandbags</label>
+    <giverClass>mars.WorkGiver_LoadSandbags</giverClass>
+    <workType>Hauling</workType>
+    <verb>load</verb>
+    <gerund>loading</gerund>
+    <priorityInType>100</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+    <WorkGiverDef>
+    <defName>LoadFuelModule</defName>
+    <label>Load Fuel Module</label>
+    <giverClass>mars.WorkGiver_LoadFuelModule</giverClass>
+    <workType>Hauling</workType>
+    <verb>store</verb>
+    <gerund>storing</gerund>
+    <priorityInType>10</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  
+</WorkGivers>

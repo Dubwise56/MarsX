@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+
+	<ThingDef>
+		<defName>ShipLand</defName>
+		<label>drop pod (incoming)</label>
+		<thingClass>mars.Fleet_ShipLander</thingClass>
+		<category>Skyfaller</category>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Building/ships/CrewLanded</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutSkin</shaderType>
+			<drawSize>(7,11)</drawSize>
+		</graphicData>
+		<altitudeLayer>FlyingItem</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<drawOffscreen>true</drawOffscreen>
+		<passability>Impassable</passability>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>ShipLaunch</defName>
+		<label>drop pod (incoming)</label>
+		<thingClass>mars.Fleet_ShipLauncher</thingClass>
+		<category>Skyfaller</category>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Building/ships/CrewLanded</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutSkin</shaderType>
+			<drawSize>(7,11)</drawSize>
+		</graphicData>
+		<altitudeLayer>FlyingItem</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<drawOffscreen>true</drawOffscreen>
+		<passability>Impassable</passability>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Ship</defName>
+		<label>Ares ILAV</label>
+		<description>The Interplanetary Landing and Ascent Vehicle is a reusable launch vehicle designed to land on and take off from the surface of mars.</description>
+		<thingClass>mars.Fleet_ShipBuilding</thingClass>		
+		<category>Building</category>
+		<altitudeLayer>Building</altitudeLayer>
+		<graphicData>
+			<texPath>Things/Building/ships/CrewLanded</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(7,11)</drawSize>
+		</graphicData>
+		<pathCost>35</pathCost>
+		<blockWind>true</blockWind>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<size>(3,7)</size>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+			<WorkToBuild>12000</WorkToBuild>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</killedLeavings>
+		<costList>
+			<Component>50</Component>
+			<Steel>500</Steel>
+			<Plasteel>500</Plasteel>
+		</costList>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Water</mode>
+			</li>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>4000</storedEnergyMax>
+				<efficiency>0.5</efficiency>
+				<startElectricalFires>true</startElectricalFires>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="mars.CompProperties_StorageTank">
+				<compClass>mars.CompStorageTank</compClass>
+				<compounds>
+					<li>O2</li>
+					<li>N2</li>
+				</compounds>	
+				<capacity>					
+					<li>100000</li>
+					<li>100000</li>
+				</capacity>
+				<start>					
+					<li>100000</li>
+					<li>100000</li>
+				</start>
+			</li>
+			<li Class="mars.CompProperties_LiquidTank">
+				<compClass>mars.CompLiquidTank</compClass>
+				<compounds>
+					<li>H2O</li>
+				</compounds>	
+				<capacity>					
+					<li>100000</li>
+				</capacity>
+				<start>					
+					<li>100000</li>
+				</start>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+		<selectable>true</selectable>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<!-- <drawerType>MapMeshOnly</drawerType> -->
+		<repairEffect>ConstructMetal</repairEffect>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ShipChunk</defName>
+		<label>ship chunk</label>
+		<description>A chunk of a spacecraft. Can be deconstructed to yield useful steel and components.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Exotic/ShipChunk</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0.1,0.1,1.8,1.8)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(1.6,0.5,1.25)</volume>
+				<offset>(0,0,-0.13)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>35</pathCost>
+		<blockWind>true</blockWind>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+			<WorkToBuild>12000</WorkToBuild>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</killedLeavings>
+		<costList>
+			<Component>5</Component>
+			<Steel>100</Steel>
+			<Plasteel>100</Plasteel>
+			<Gold>4</Gold>
+		</costList>
+		<building>
+			<claimable>false</claimable>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+		<selectable>true</selectable>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<drawerType>MapMeshOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>crashedShip</defName>
+		<label>crashed ship chunk</label>
+		<description>A part of your crashed ship.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Exotic/CrashedShipPart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>35</pathCost>
+		<blockWind>true</blockWind>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<size>(6,3)</size>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+			<WorkToBuild>12000</WorkToBuild>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</killedLeavings>
+		<costList>
+			<Radioisotope_thermoelectric_generator>1</Radioisotope_thermoelectric_generator>
+			<Component>30</Component>
+			<Steel>300</Steel>
+			<Plasteel>300</Plasteel>
+		</costList>
+		<building>
+			<claimable>false</claimable>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+		<selectable>true</selectable>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<drawerType>MapMeshOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase" Name="SupplyCrateBase">
+		<defName>SupplyCrate</defName>
+		<label>Supply Crate</label>
+		<description>A supply crate from Earth.</description>
+		<thingClass>mars.Building_Cargo</thingClass>
+		<graphicData>
+			<texPath>Things/Building/crate</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2.2,2.2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<blockLight>false</blockLight>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<Steel>30</Steel>
+		</costList>
+		<designationHotkey>Misc6</designationHotkey>
+		<building>
+			<isInert>true</isInert>
+			<preventDeterioration>true</preventDeterioration>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<categories>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="SupplyCrateBase">
+		<defName>StorageCrate</defName>
+		<label>Storage Crate</label>
+		<description>A rugged crate used to store supplies.</description>
+		<building>
+			<isInert>true</isInert>
+			<preventDeterioration>true</preventDeterioration>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Manufactured</li>
+						<li>Items</li>
+						<li>Apparel</li>
+						<li>Chunks</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<categories>
+						<li>Manufactured</li>
+						<li>Items</li>
+						<li>Apparel</li>
+						<li>Chunks</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+
+</GameData>

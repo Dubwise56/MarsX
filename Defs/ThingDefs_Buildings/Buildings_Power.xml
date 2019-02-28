@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>PowerConduit</defName>
+    <label>power conduit</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Linked/PowerConduit_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Transmitter</linkType>
+      <linkFlags>
+        <li>PowerConduit</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>Things/Building/Linked/PowerConduit_MenuIcon</uiIconPath>
+    <building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <isEdifice>false</isEdifice>
+    </building>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>35</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <description>A set of electrical cables for moving power around. Can be placed under walls and other buildings.</description>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>mars.PlaceWorker_Conduit</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc1</designationHotKey>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>SolarGenerator</defName>
+		<label>Steel solar generator 4x4</label>
+		<thingClass>mars.SolarPanel_Dust</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Power/SolarCollector</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0,0.6,4,2.8)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>Produces electricity from sunlight. Does not work in the dark or when covered in dust.</description>
+		<size>(4,4)</size>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<Steel>100</Steel>
+			<Component>3</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlantSolar</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<designationHotkey>Misc5</designationHotkey>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Electricity</li>
+			<li>SolarPanels</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SolarGenerator_Medium_Steel</defName>
+		<label>Steel solar generator 3x3</label>
+		<thingClass>mars.SolarPanel_Dust</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Power/SolarCollector</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0,0.6,4,2.8)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>225</MaxHitPoints>
+			<WorkToBuild>1875</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>Produces electricity from sunlight. Does not work in the dark or when covered in dust.</description>
+		<size>(3,3)</size>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<Steel>75</Steel>
+			<Component>2</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlantSolar</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<designationHotkey>Misc5</designationHotkey>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Electricity</li>
+			<li>SolarPanels</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SolarGenerator_Large_Alu</defName>
+		<label>Aluminium solar generator 4x4</label>
+		<thingClass>mars.SolarPanel_Dust</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Power/SolarCollector</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0,0.6,4,2.8)</rect>
+			</damageData>
+			<color>(220,220,255)</color>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>Produces electricity from sunlight. Does not work in the dark or when covered in dust.</description>
+		<size>(4,4)</size>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<Component>3</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlantSolar</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<designationHotkey>Misc5</designationHotkey>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Electricity</li>
+			<li>SolarPanels</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SolarGenerator_Medium_Alu</defName>
+		<label>Aluminium solar generator 3x3</label>
+		<thingClass>mars.SolarPanel_Dust</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Power/SolarCollector</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0,0.6,4,2.8)</rect>
+			</damageData>
+			<color>(220,220,255)</color>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>225</MaxHitPoints>
+			<WorkToBuild>1875</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>Produces electricity from sunlight. Does not work in the dark or when covered in dust.</description>
+		<size>(3,3)</size>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<Plasteel>75</Plasteel>
+			<Component>2</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlantSolar</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<designationHotkey>Misc5</designationHotkey>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Electricity</li>
+			<li>SolarPanels</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Radioisotope_thermoelectric_generator</defName>
+		<thingClass>mars.Building_RTG</thingClass>
+		<label>R.T.G</label>
+		<description>An electrical generator that uses an array of thermocouples to convert the heat released by the decay of a suitable radioactive material into electricity</description>
+		<graphicData>
+			<texPath>Things/Building/RTG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>8</pathCost>
+		<Size>(2,1)</Size>
+		<costList>
+			<Steel>50</Steel>
+			<Component>6</Component>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<!-- <designationCategory>Power</designationCategory>  -->
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<designationHotKey>Misc11</designationHotKey>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>21</heatPerSecond>
+				<heatPushMaxTemperature>28</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ReactorCore</defName>
+		<label>liquid metal fast reactor</label>
+		<thingClass>mars.reactorCore</thingClass>
+		<graphicData>
+			<texPath>Things/Building/core</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.3,0,5.4,6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>false</blockLight>
+		<staticSunShadowHeight>0.00</staticSunShadowHeight>
+		<statBases>
+			<MaxHitPoints>850</MaxHitPoints>
+			<WorkToBuild>20000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-40</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>A liquid metal cooled nuclear reactor, liquid metal fast reactor or LMFR is an advanced type of nuclear reactor where the primary coolant is a liquid metal. The use of liquid metal as coolant allows for a compact design which makes it suitable for colonization projects.</description>
+		<size>(3,3)</size>
+		<costList>
+			<Steel>950</Steel>
+			<Plasteel>100</Plasteel>
+			<Component>30</Component>
+			<coreVessel>1</coreVessel>
+		</costList>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Steam</mode>
+			</li>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Cooling</mode>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<!-- <ChunkRadioactiveSlag>6</ChunkRadioactiveSlag> -->
+		</killedLeavings>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<preventDeterioration>true</preventDeterioration>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>NuclearFuel</li>
+					</categories>
+					<thingDefs>
+						<li>UraniumNitride</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>NuclearFuel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings> 
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationHotkey>Misc6</designationHotkey>
+		<surfaceType>Item</surfaceType>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Turbine</defName>
+		<label>Thermoelectric Generator</label>
+		<thingClass>mars.Thermocouple</thingClass>
+		<graphicData>
+			<texPath>Things/Building/thermocouple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.2,2.2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>false</blockLight>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-40</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>A solid state device that converts heat directly into electrical energy, 4 TEG's will max the power output from 1 reactor, connect to a reactor core via heat pipes.</description>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>425</Steel>
+			<Component>8</Component>
+		</costList>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>HighVoltage</mode>
+			</li>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Steam</mode>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationHotkey>Misc6</designationHotkey>	
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>CoolingTower</defName>
+		<label>reactor radiator</label>
+		<thingClass>mars.MurcuryRadiator</thingClass>
+		<graphicData>
+			<texPath>Things/Building/rad</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<blockLight>false</blockLight>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>The radiator is required to control the temperature of the reactor core. 8 radiators will provide enough cooling 1 reactor, connect to a core via cooling pipes.</description>
+		<size>(3,2)</size>
+		<costList>
+			<Steel>450</Steel>
+			<Component>5</Component>
+		</costList>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Power</designationCategory>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Cooling</mode>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationHotkey>Misc6</designationHotkey>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Transformer</defName>
+		<label>High Voltage Transformer</label>
+		<thingClass>mars.Transformer</thingClass>
+		<graphicData>
+			<texPath>Things/Building/transformer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<blockLight>false</blockLight>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>Provides the final voltage transformation from the Thermoelectric Generators, stepping down the voltage used in the high voltage lines to the level used by power conduits.</description>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>350</Steel>
+			<Component>5</Component>
+		</costList>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Power</designationCategory>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>HighVoltage</mode>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>0</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<soundAmbient>transformer</soundAmbient>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<designationHotkey>Misc6</designationHotkey>
+	</ThingDef>
+
+	<ThingDef ParentName="PipeBase">
+		<defName>HighVoltage</defName>
+		<label>HighVoltage</label>
+		<description>Cable for transporting high voltage power from Thermoelectric Generators to Transformers. Can be placed under walls and other buildings.</description>
+		<graphicData>
+			<texPath>Things/Building/HighVoltage_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom5</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/HighVoltage_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>UI/HighVoltage</uiIconPath>
+		<comps>	
+			<li Class="mars.CompProperties_Pipe">
+				<mode>HighVoltage</mode>
+			</li>
+		</comps>
+		<designationCategory>Power</designationCategory>
+		<placeWorkers>
+			<li>mars.PlaceWorker_HighVoltage</li>
+		</placeWorkers>
+	</ThingDef>
+
+
+	<ThingDef ParentName="PipeBase">
+		<defName>heatPipe</defName>
+		<label>Heat pipe</label>
+		<description>Pipes for transmitting heat from the reactor to thermoelectric generators. Can be placed under walls and other buildings.</description>
+		<graphicData>
+			<texPath>Things/Building/HeatPipe_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom5</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/HeatPipe_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>UI/HeatPipe</uiIconPath>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<isEdifice>false</isEdifice>
+		</building>
+		<comps>
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Steam</mode>
+			</li>
+		</comps>
+		<designationCategory>Power</designationCategory>
+		<placeWorkers>
+			<li>mars.PlaceWorker_HeatPipe</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="PipeBase">
+		<defName>coolingPipe</defName>
+		<label>Cooling pipe</label>
+		<description>Pipes for transmitting coolant from the reactor to radiators. Can be placed under walls and other buildings.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/CoolingPipe_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom5</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/CoolingPipe_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>UI/CoolingPipe</uiIconPath>
+		<comps>	
+			<li Class="mars.CompProperties_Pipe">
+				<mode>Cooling</mode>
+			</li>
+		</comps>
+		<designationCategory>Power</designationCategory>
+		<placeWorkers>
+			<li>mars.PlaceWorker_CoolingPipe</li>
+		</placeWorkers>
+	</ThingDef>
+
+
+
+
+</Buildings>

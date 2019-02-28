@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DefPackage-SoundDef>
+
+	<SoundDef>
+		<defName>RocketIn</defName>  
+		<context>MapOnly</context>
+		<eventNames />  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>nasa/RocketIn</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>25</min>        
+					<max>25</max>
+				</volumeRange>      
+				<distRange>
+					<min>100</min>        
+					<max>500</max>
+				</distRange>      
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RocketOff</defName> 
+		<context>MapOnly</context>		
+		<eventNames />  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>nasa/RocketOff</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>25</min>        
+					<max>25</max>
+				</volumeRange>      
+				<distRange>
+					<min>100</min>        
+					<max>500</max>
+				</distRange>      
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RocketFade</defName>  
+		<context>MapOnly</context>
+		<eventNames />  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>nasa/RocketFade</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>25</min>        
+					<max>25</max>
+				</volumeRange>      
+				<distRange>
+					<min>100</min>        
+					<max>500</max>
+				</distRange>      
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>rocketEngineLand</defName>  
+		<context>MapOnly</context>
+		<sustain>True</sustain>
+		<eventNames />  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<sustainStartSound>RocketIn</sustainStartSound>  
+		<sustainStopSound>RocketOff</sustainStopSound>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>nasa/RocketLoop</clipPath>
+					</li>
+				</grains>       
+				<volumeRange>
+					<min>25</min>        
+					<max>25</max>
+				</volumeRange>        
+				<distRange>
+					<min>100</min>        
+					<max>500</max>
+				</distRange>
+				<startDelayRange>
+					<min>7.771</min>        
+					<max>7.771</max>
+				</startDelayRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>rocketEngineLaunch</defName>  
+		<context>MapOnly</context>
+		<sustain>True</sustain>  
+		<eventNames />  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<sustainStartSound>RocketIn</sustainStartSound>  
+		<sustainStopSound>RocketFade</sustainStopSound>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>nasa/RocketLoop</clipPath>
+					</li>
+				</grains>       
+				<volumeRange>
+					<min>25</min>        
+					<max>25</max>
+				</volumeRange>        
+				<distRange>
+					<min>100</min>        
+					<max>500</max>
+				</distRange>
+				<startDelayRange>
+					<min>7.771</min>        
+					<max>7.771</max>
+				</startDelayRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+</DefPackage-SoundDef>

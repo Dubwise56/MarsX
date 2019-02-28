@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ScatterableDefs>
+
+	<ScatterableDef Abstract="True" Name="SpaceRoot">
+		<MinSize>0.3</MinSize>
+		<MaxSize>1.4</MaxSize>
+		<SelectionWeight>2000</SelectionWeight>
+		<ScatterType>Stars</ScatterType>
+	</ScatterableDef>
+	
+		<ScatterableDef ParentName="SpaceRoot">
+		<defName>star1</defName>
+		<texturePath>Terrain/Scatter/star1</texturePath>
+	</ScatterableDef>
+		
+		<ScatterableDef ParentName="SpaceRoot">
+		<defName>star2</defName>
+		<texturePath>Terrain/Scatter/star2</texturePath>
+	</ScatterableDef>
+	
+	
+	<ScatterableDef Abstract="True" Name="StoneRoot">
+		<MinSize>0.8</MinSize>
+		<MaxSize>1.4</MaxSize>
+		<SelectionWeight>800</SelectionWeight>
+		<ScatterType>Stoney</ScatterType>
+	</ScatterableDef>
+
+	<ScatterableDef ParentName="StoneRoot">
+		<defName>DebrisStoneA</defName>
+		<texturePath>Terrain/Scatter/DebrisStoneA</texturePath>
+	</ScatterableDef>
+
+	<ScatterableDef ParentName="StoneRoot">
+		<defName>DebrisStoneB</defName>
+		<texturePath>Terrain/Scatter/DebrisStoneB</texturePath>
+	</ScatterableDef>
+
+	<ScatterableDef ParentName="StoneRoot">
+		<defName>DebrisStoneC</defName>
+		<texturePath>Terrain/Scatter/DebrisStoneC</texturePath>
+	</ScatterableDef>
+
+	<ScatterableDef ParentName="StoneRoot">
+		<defName>DebrisStoneD</defName>
+		<texturePath>Terrain/Scatter/DebrisStoneD</texturePath>
+	</ScatterableDef>
+
+	<ScatterableDef ParentName="StoneRoot">
+		<defName>DebrisStoneE</defName>
+		<texturePath>Terrain/Scatter/DebrisStoneE</texturePath>
+	</ScatterableDef>
+
+
+</ScatterableDefs>

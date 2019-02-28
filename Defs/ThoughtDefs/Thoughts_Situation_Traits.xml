@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThoughtDef>
+    <defName>ClaustrophileSad</defName>
+    <workerClass>mars.ThoughtWorker_Claustrophile</workerClass>
+    <requiredTraits>
+      <li>Claustrophile</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>exposed</label>
+       <description>I feel so exposed and cold without my EVA suit</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ClaustrophileAppy</defName>
+    <workerClass>mars.ThoughtWorker_Claustrophile</workerClass>
+	    <invert>true</invert>
+    <requiredTraits>
+      <li>Claustrophile</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>cosy EVA suit</label>
+		  <description>I love how cosy and tight this EVA suit feels.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  
+  
+    <ThoughtDef>
+    <defName>ClaustrophobeAppy</defName>
+    <workerClass>mars.ThoughtWorker_Claustrophile</workerClass>
+    <requiredTraits>
+      <li>Claustrophobe</li>
+    </requiredTraits>
+    <stages>
+	      <li>
+        <label>no EVA suit</label>
+        <description>I'm not stuck in my EVA suit and loving it! I feel so free and unconstrained and in touch with my surroundings!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ClaustrophobeSad</defName>
+    <workerClass>mars.ThoughtWorker_Claustrophile</workerClass>   
+	<invert>true</invert>
+    <requiredTraits>
+      <li>Claustrophobe</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>constraining EVA suit</label>
+        <description>I hate wearing EVA suits. I feel cramped and tight and just want to get out!.</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

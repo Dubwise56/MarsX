@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+        <ThingCategoryDef>
+          <defName>Condiment</defName>
+          <label>condiments</label>
+          <parent>FoodRaw</parent>
+          <iconPath>Ui/Icons/ThingCategories/PlantFoodRaw</iconPath>
+        </ThingCategoryDef>
+		
+	<ThingCategoryDef>
+      <defName>Plastic</defName>
+      <label>polymer</label>
+      <parent>Manufactured</parent>
+      <iconPath>UI/Icons/ThingCategories/Textiles</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+	
+	  <ThingCategoryDef>
+    <defName>Nuclear</defName>
+    <label>nuclear</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>NuclearWaste</defName>
+      <label>nuclear waste</label>
+      <parent>Nuclear</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>NuclearFuel</defName>
+      <label>nuclear fuel</label>
+      <parent>Nuclear</parent>
+    </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>NuclearProduct</defName>
+        <label>nuclear product</label>
+        <parent>Nuclear</parent>
+      </ThingCategoryDef>
+  
+
+</ThingCategoryDefs>

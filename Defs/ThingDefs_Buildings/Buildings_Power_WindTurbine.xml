@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>WindTurbine</defName>
+		<thingClass>mars.Building_windTrap</thingClass>
+		<label>Wind Trap</label>
+		<description>A large funnel designed to collect CO2 from the thin martian atmosphere for storing in tanks.</description>
+		<graphicData>
+			<texPath>Things/Building/windTrap</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,5)</drawSize>
+			<shadowData>
+				<volume>(0.2, 1.0, 0.8)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(2,0.15,1,1.4)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>3300</WorkToBuild>
+			<Flammability>0.4</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3,3)</size>
+		<selectable>true</selectable>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<designationCategory>Ship</designationCategory>
+		<building>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<Steel>100</Steel>
+			<Component>2</Component>
+		</costList>
+		<constructEffect>ConstructMetal</constructEffect>
+		<placeWorkers>
+			<li>mars.PlaceWorker_WindTrap</li>
+		</placeWorkers>
+		<comps>
+					<li Class="mars.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+					<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>335</basePowerConsumption>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationHotkey>Misc7</designationHotkey>
+	</ThingDef>
+
+</Buildings>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Apparel_PowerArmorHelmet</defName>
+    <label>EVA Suit helmet</label>
+    <description>A space suit is a garment worn to keep a human alive in the harsh environment of outer space, vacuum and temperature extremes.</description>
+	<!-- <thingClass>mars.EVAhelmet</thingClass><thingClass>mars.EVAhelmet</thingClass> 
+			<tickerType>Normal</tickerType> -->
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/evaMask/RadiationMask</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>60000</WorkToBuild>
+      <MaxHitPoints>160</MaxHitPoints>
+      <MarketValue>2000</MarketValue>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <ArmorRating_Electric>0</ArmorRating_Electric>
+      <Insulation_Cold>-35</Insulation_Cold>
+	  <Insulation_Heat>35</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Component>7</Component>
+      <Plasteel>60</Plasteel>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <worngraphicPath>Things/evaMask/RadiationMask</worngraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <commonality>2</commonality>
+      <tags>
+         <li>Astronaut</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ArmorMakeableBase">
+    <defName>Apparel_PowerArmor</defName>
+    <label>EVA Suit</label>
+    <description>A space suit is a garment worn to keep a human alive in the harsh environment of outer space, vacuum and temperature extremes.</description>
+		<tickerType>Normal</tickerType>
+    <techLevel>Spacer</techLevel>
+	<thingClass>mars.Apparel_EVAsuit</thingClass>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/evaSuit/Duster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(2.0,2.0)</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>250000</WorkToBuild>
+      <MaxHitPoints>400</MaxHitPoints>
+      <MarketValue>4500</MarketValue>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.30</ArmorRating_Heat>
+      <Insulation_Cold>-35</Insulation_Cold>
+	  <Insulation_Heat>35</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.50</MoveSpeed>
+      <WorkSpeedGlobal>-0.50</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <Component>18</Component>
+      <Plasteel>135</Plasteel>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <worngraphicPath>Things/evaSuit/Duster</worngraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <commonality>2</commonality>
+      <tags>
+         <li>Astronaut</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+
+</ThingDefs>

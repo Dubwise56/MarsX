@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>Vicodin</defName>
+    <label>vicodin</label>
+    <description>The combination of an opioid pain medication with paracetamol. It is used to relieve moderate to severe pain.</description>
+    <graphicData>
+        <texPath>Things/Resource/vicodin</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>26</MarketValue>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <joy>0.40</joy>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>VicodinHigh</hediffDef>
+          <severity>0.35</severity>
+          <toleranceChemical>Hydrocodone</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>1.0</offset>
+          <toleranceChemical>Hydrocodone</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>HydrocodoneTolerance</hediffDef>
+          <severity>0.045</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Hydrocodone</chemical>
+        <addictiveness>0.10</addictiveness>
+        <minToleranceToAddict>0.15</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>210</listOrder>
+        <overdoseSeverityOffset>
+          <min>0.18</min>
+          <max>0.35</max>
+        </overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>VicodinHigh</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+   <label>high on vicodin</label>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+	  <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.5</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <painFactor>0.5</painFactor>
+          <socialFightChanceFactor>0.0</socialFightChanceFactor>
+            <capMods>
+              <li>
+                <capacity>Consciousness</capacity>
+                <offset>-0.10</offset>
+              </li>
+              <li>
+                <capacity>Moving</capacity>
+                <offset>-0.1</offset>
+              </li>
+            </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <!-- WakeUp addiction -->
+  
+  <ChemicalDef>
+    <defName>Hydrocodone</defName>
+    <label>Hydrocodone</label>
+    <addictionHediff>HydrocodoneAddiction</addictionHediff>
+    <toleranceHediff>HydrocodoneTolerance</toleranceHediff>
+  </ChemicalDef>
+  
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_Hydrocodone</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>Hydrocodone</label>
+    <description>Because of an Hydrocodone addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <listPriority>40</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>HydrocodoneTolerance</defName>
+    <label>Hydrocodone tolerance</label>
+    <comps>
+ <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.016</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>Hydrocodone</chemical>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef ParentName="AddictionBase">
+    <defName>HydrocodoneAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>Hydrocodone addiction</label>
+    <causesNeed>Chemical_Hydrocodone</causesNeed>
+    <comps>
+ <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.04</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <restFallFactor>1.3</restFallFactor>
+        <socialFightChanceFactor>2.0</socialFightChanceFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.30</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>WanderPsychotic</mentalState>
+            <mtbDays>10</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>HydrocodoneWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>HydrocodoneAddiction</hediff>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>Hydrocodone withdrawal</label>
+        <description>I feel all fuzzy and unfocused.</description>
+        <baseMoodEffect>-25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>
