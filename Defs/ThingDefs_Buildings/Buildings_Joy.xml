@@ -1,357 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>HorseshoesPin</defName>
-		<label>horseshoes pin</label>
-		<description>A simple ancient game played with a few horseshoes and a large pin in the ground. Players toss horseshoes from a distance and attempt to get them to land close to or around the pin. It's relaxing, and even trains hand-eye coordination.</description>
-		<graphicData>
-			<texPath>Things/Building/Joy/HorseshoesPin</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shadowData>
-				<volume>(0.08,0.3,0.08)</volume>
-				<offset>(0,0,-0.18)</offset>
-			</shadowData>
-			<damageData>
-				<rect>(0.3,0.3,0.4,0.4)</rect>
-			</damageData>
-		</graphicData>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
-		<altitudeLayer>Building</altitudeLayer>
-		<rotatable>false</rotatable>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<statBases>
-			<MaxHitPoints>75</MaxHitPoints>
-			<WorkToBuild>150</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
-		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Plastics</li>
-			<li>Stony</li>
-		</stuffCategories>
-		<building>
-			<isJoySource>true</isJoySource>
-			<watchBuildingStandDistanceRange>
-				<min>5</min>
-				<max>5</max>
-			</watchBuildingStandDistanceRange>
-			<watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
-		</building>
-		<costStuffCount>15</costStuffCount>
-		<pathCost>10</pathCost>
-		<designationCategory>Joy</designationCategory>
-		<designationHotKey>Misc1</designationHotKey>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>ChessTable</defName>
-		<label>chess table</label>
-		<description>The ancient game of kings. Fun for a few hours here and there, even playing alone.</description>
-		<graphicData>
-			<texPath>Things/Building/Joy/ChessTable</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shadowData>
-				<volume>(0.3, 0.6, 0.3)</volume>
-			</shadowData>
-			<damageData>
-				<rect>(0.09375,0.296875,0.796875,0.703125)</rect>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
-		</graphicData>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
-		<altitudeLayer>Building</altitudeLayer>
-		<rotatable>false</rotatable>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<fillPercent>0.40</fillPercent>
-		<building>
-			<isJoySource>true</isJoySource>
-		</building>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToBuild>10000</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<Beauty>10</Beauty>
-			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
-		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Plastics</li>
-			<li>Stony</li>
-		</stuffCategories>
-		<comps>
-			<li>
-				<compClass>CompQuality</compClass>
-			</li>
-		</comps>
-		<costStuffCount>70</costStuffCount>
-		<pathCost>70</pathCost>
-		<passability>PassThroughOnly</passability>
-		<designationCategory>Joy</designationCategory>
-		<designationHotKey>Misc2</designationHotKey>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>BilliardsTable</defName>
-		<label>billiards table</label>
-		<description>A soft-topped bounded table for playing a variety of billiards-type games.</description>
-		<graphicData>
-			<texPath>Things/Building/Joy/BilliardsTable</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(4,5)</drawSize>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
-		</graphicData>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
-		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-		<altitudeLayer>Building</altitudeLayer>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<fillPercent>0.40</fillPercent>
-		<building>
-			<isJoySource>true</isJoySource>
-		</building>
-		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>12000</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<Beauty>10</Beauty>
-			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
-		</statBases>
-		<size>(2,3)</size>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Plastics</li>
-			<li>Stony</li>
-		</stuffCategories>
-		<comps>
-			<li>
-				<compClass>CompQuality</compClass>
-			</li>
-		</comps>
-		<costStuffCount>80</costStuffCount>
-		<costList>
-			<Cloth>80</Cloth>
-			<WoodLog>30</WoodLog>
-		</costList>
-		<pathCost>70</pathCost>
-		<passability>PassThroughOnly</passability>
-		<designationCategory>Joy</designationCategory>
-		<designationHotKey>Misc3</designationHotKey>
-		<placeWorkers>
-			<li>PlaceWorker_NeverAdjacentUnstandable</li>
-		</placeWorkers>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>TubeTelevision</defName>
-		<label>PC</label>
-		<description>A personal computer, can be used for research and entertainment.</description>
-		<graphicData>
-			<texPath>Things/Building/PC</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shadowData>
-				<volume>(0.3, 0.6, 0.3)</volume>
-			</shadowData>
-			<drawSize>(1,1)</drawSize>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		<rotatable>true</rotatable>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<fillPercent>0.40</fillPercent>
-		<statBases>
-			<WorkToBuild>6000</WorkToBuild>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<MarketValue>700</MarketValue>
-			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
-		</statBases>
-		<costList>
-			<Steel>100</Steel>
-			<Component>8</Component>
-		</costList>
-		<pathCost>70</pathCost>
-		<passability>PassThroughOnly</passability>
-		<building>
-			<isJoySource>true</isJoySource>
-			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
-			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
-			<watchBuildingStandDistanceRange>
-				<min>1</min>
-				<max>1</max>
-			</watchBuildingStandDistanceRange>
-			<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
-		</building>
-		<placeWorkers>
-			<li>PlaceWorker_WatchArea</li>
-		</placeWorkers>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
-				<basePowerConsumption>60</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Glower">
-				<glowRadius>2</glowRadius>
-				<glowColor>(150,215,227,0)</glowColor>
-			</li>
-			<li Class="CompProperties_Flickable"/>
-		</comps>
-		<tradeTags>
-			<li>Television</li>
-		</tradeTags>
-		<constructEffect>ConstructMetal</constructEffect>
-		<designationHotKey>Misc4</designationHotKey>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>FlatscreenTelevision</defName>
-		<label>flatscreen television</label>
-		<description>A high-tech flat-screen television with crystal-clear image and rich color. More entertaining than a grainy tube TV.</description>
-		<graphicData>
-			<texPath>Things/Building/Joy/FlatscreenTelevision</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shadowData>
-				<volume>(0.3, 0.6, 0.3)</volume>
-			</shadowData>
-			<drawSize>(2,1)</drawSize>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		<rotatable>true</rotatable>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<fillPercent>0.25</fillPercent>
-		<statBases>
-			<MaxHitPoints>80</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<MarketValue>1200</MarketValue>
-			<EntertainmentStrengthFactor>1.2</EntertainmentStrengthFactor>
-		</statBases>
-		<pathCost>70</pathCost>
-		<passability>PassThroughOnly</passability>
-		<size>(2,1)</size>
-		<building>
-			<isJoySource>true</isJoySource>
-			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
-			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
-			<watchBuildingStandDistanceRange>
-				<min>2</min>
-				<max>6</max>
-			</watchBuildingStandDistanceRange>
-			<watchBuildingStandRectWidth>6</watchBuildingStandRectWidth>
-		</building>
-		<placeWorkers>
-			<li>PlaceWorker_WatchArea</li>
-		</placeWorkers>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
-				<basePowerConsumption>150</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Flickable"/>
-		</comps>
-		<tradeTags>
-			<li>Television</li>
-		</tradeTags>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>MegascreenTelevision</defName>
-		<label>megascreen television</label>
-		<description>A huge, high-tech television. Gigantic, hyper-vibrant images almost leap out of the screen. Very entertaining.</description>
-		<graphicData>
-			<texPath>Things/Building/Joy/MegascreenTelevision</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shadowData>
-				<volume>(0.3, 0.6, 0.3)</volume>
-			</shadowData>
-			<drawSize>(3,1)</drawSize>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		<rotatable>true</rotatable>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<fillPercent>0.25</fillPercent>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<MarketValue>2000</MarketValue>
-			<EntertainmentStrengthFactor>1.35</EntertainmentStrengthFactor>
-		</statBases>
-		<pathCost>70</pathCost>
-		<passability>PassThroughOnly</passability>
-		<size>(3,1)</size>
-		<building>
-			<isJoySource>true</isJoySource>
-			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
-			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
-			<watchBuildingStandDistanceRange>
-				<min>2</min>
-				<max>7</max>
-			</watchBuildingStandDistanceRange>
-			<watchBuildingStandRectWidth>7</watchBuildingStandRectWidth>
-		</building>
-		<placeWorkers>
-			<li>PlaceWorker_WatchArea</li>
-		</placeWorkers>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
-				<basePowerConsumption>220</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Flickable"/>
-		</comps>
-		<tradeTags>
-			<li>Television</li>
-		</tradeTags>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>Telescope</defName>
-		<label>telescope</label>
-		<description>A telescope for doing amateur astronomy. It's a relaxing and fun hobby for a certain kind of person.</description>
-		<graphicData>
-			<texPath>Things/Building/Joy/Telescope</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawRotated>false</drawRotated>
-			<shadowData>
-				<volume>(0.3, 0.6, 0.3)</volume>
-			</shadowData>
-		</graphicData>
-		<fillPercent>0.15</fillPercent>
-		<altitudeLayer>Building</altitudeLayer>
-		<hasInteractionCell>true</hasInteractionCell>
-		<interactionCellOffset>(0,0,1)</interactionCellOffset>
-		<passability>PassThroughOnly</passability>
-		<pathCost>50</pathCost>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<building>
-			<isJoySource>true</isJoySource>
-		</building>
-		<statBases>
-			<MaxHitPoints>75</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<MarketValue>350</MarketValue>
-			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="MinifiedBuildingBase">
 		<defName>Treadmill</defName>
 		<label>treadmill</label>
 		<thingClass>mars.Building_Treadmill</thingClass>
@@ -369,29 +19,23 @@
 		<pathCost>50</pathCost>
 		<size>(1,1)</size>
 		<rotatable>false</rotatable>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
-		<building>
-			<isJoySource>true</isJoySource>
-		</building>
-		<comps>
+    <comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>150</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<costList>
 			<Steel>50</Steel>
 			<Plasteel>25</Plasteel>
-			<Component>4</Component>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<MarketValue>350</MarketValue>
 			<WorkToBuild>550</WorkToBuild>
-			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
 		</statBases>
 		<designationCategory>Joy</designationCategory>
 	</ThingDef>
@@ -424,7 +68,7 @@
 		<costList>
 			<Steel>15</Steel>
 			<Plasteel>25</Plasteel>
-			<Component>1</Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="mars.CompProperties_Pipe">
@@ -467,7 +111,7 @@
 		<costList>
 			<Steel>25</Steel>
 			<Plasteel>55</Plasteel>
-			<Component>1</Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<passability>Standable</passability>
 		<interactionCellOffset>(0,0,1)</interactionCellOffset>
@@ -487,7 +131,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>Terlet</defName>
-		<label>Terlet</label>
+		<label>Toilet</label>
 		<thingClass>mars.Building_terlet</thingClass>
 		<graphicData>
 			<texPath>Things/Building/terlet</texPath>
@@ -511,7 +155,7 @@
 		<costList>
 			<Steel>25</Steel>
 			<Plasteel>25</Plasteel>
-			<Component>1</Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<hasInteractionCell>true</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -528,6 +172,7 @@
 		<rotatable>true</rotatable>
 		<designationHotKey>Misc2</designationHotKey>
 	</ThingDef>
+
 	<ThingDef ParentName="PipeBase">
 		<defName>sewagePipe</defName>
 		<label>Sewage pipe</label>
@@ -543,10 +188,12 @@
 				<rect>(0,0.35,1,0.3)</rect>
 			</damageData>
 		</graphicData>
-		<blueprintGraphicData>
-			<texPath>Things/Building/SewagePipe_Atlas</texPath>
-		</blueprintGraphicData>
-		<uiIconPath>UI/SewagePipe</uiIconPath>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/SewagePipe_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <uiIconPath>UI/SewagePipe</uiIconPath>
 		<comps>	
 			<li Class="mars.CompProperties_Pipe">
 				<mode>Sewage</mode>
@@ -579,13 +226,12 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<selectable>true</selectable>
 		<pathCost>8</pathCost>
-		<Size>(2,2)</Size>
+		<size>(2,2)</size>
 		<costList>
 			<Steel>155</Steel>
-			<Component>4</Component>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 		<designationCategory>Joy</designationCategory>
 		<rotatable>false</rotatable>
 		<statBases>
@@ -605,7 +251,6 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>300</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -616,4 +261,4 @@
 	</ThingDef>
 
 
-</ThingDefs>
+</Defs>

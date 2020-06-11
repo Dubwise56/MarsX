@@ -1,135 +1,180 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>Apparel_PowerArmorHelmet</defName>
-    <label>EVA Suit helmet</label>
-    <description>A space suit is a garment worn to keep a human alive in the harsh environment of outer space, vacuum and temperature extremes.</description>
-	<!-- <thingClass>mars.EVAhelmet</thingClass><thingClass>mars.EVAhelmet</thingClass> 
-			<tickerType>Normal</tickerType> -->
+  <ThingDef Name="ApparelArmorHelmetPowerBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
     <techLevel>Spacer</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
     </recipeMaker>
     <graphicData>
       <texPath>Things/evaMask/RadiationMask</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <generateCommonality>2</generateCommonality>
     <statBases>
-      <WorkToBuild>60000</WorkToBuild>
-      <MaxHitPoints>160</MaxHitPoints>
-      <MarketValue>2000</MarketValue>
-      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-      <ArmorRating_Heat>0.5</ArmorRating_Heat>
-      <ArmorRating_Electric>0</ArmorRating_Electric>
-      <Insulation_Cold>-35</Insulation_Cold>
-	  <Insulation_Heat>35</Insulation_Heat>
+      <WorkToMake>21000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <EquipDelay>4</EquipDelay>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>35</Insulation_Heat>
     </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>-0.04</MoveSpeed>
-    </equippedStatOffsets>
     <costList>
-      <Component>7</Component>
+      <ComponentIndustrial>7</ComponentIndustrial>
       <Plasteel>60</Plasteel>
     </costList>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <worngraphicPath>Things/evaMask/RadiationMask</worngraphicPath>
+      <wornGraphicPath>Things/evaMask/RadiationMask</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>2</commonality>
-      <tags>
-         <li>Astronaut</li>
-      </tags>
       <defaultOutfitTags>
-        <li>Worker</li>
+        <li>Soldier</li>
       </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
-          <only>RGBA(1,1,1,1)</only>
+          <only>(1,1,1,1)</only>
         </li>
       </options>
     </colorGenerator>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_BiocodableApparel"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelArmorHelmetPowerBase">
+    <defName>Apparel_PowerArmorHelmet</defName>
+    <label>EVA Suit helmet</label>
+    <description>A space suit is a garment worn to keep a human alive in the harsh environment of outer space, vacuum and temperature extremes.</description>
+    <apparel>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+    </apparel>
   </ThingDef>
 
 
 
-  <ThingDef ParentName="ArmorMakeableBase">
-    <defName>Apparel_PowerArmor</defName>
-    <label>EVA Suit</label>
-    <description>A space suit is a garment worn to keep a human alive in the harsh environment of outer space, vacuum and temperature extremes.</description>
-		<tickerType>Normal</tickerType>
+
+
+
+
+
+
+
+  <ThingDef Name="ApparelArmorPowerBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <thingClass>mars.Apparel_EVAsuit</thingClass>
     <techLevel>Spacer</techLevel>
-	<thingClass>mars.Apparel_EVAsuit</thingClass>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
     </recipeMaker>
     <graphicData>
       <texPath>Things/evaSuit/Duster</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(2.0,2.0)</drawSize>
+      <drawSize>(2.0,2.0)</drawSize>
     </graphicData>
+    <generateCommonality>2</generateCommonality>
     <statBases>
-      <WorkToBuild>250000</WorkToBuild>
-      <MaxHitPoints>400</MaxHitPoints>
-      <MarketValue>4500</MarketValue>
-      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-      <ArmorRating_Heat>0.30</ArmorRating_Heat>
-      <Insulation_Cold>-35</Insulation_Cold>
-	  <Insulation_Heat>35</Insulation_Heat>
+      <WorkToMake>60000</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>90</Insulation_Cold>
+      <Insulation_Heat>90</Insulation_Heat>
+      <EquipDelay>14</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>-0.50</MoveSpeed>
       <WorkSpeedGlobal>-0.50</WorkSpeedGlobal>
     </equippedStatOffsets>
     <thingCategories>
-      <li>Apparel</li>
+      <li>ApparelArmor</li>
     </thingCategories>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
     <costList>
-      <Component>18</Component>
+      <ComponentIndustrial>18</ComponentIndustrial>
       <Plasteel>135</Plasteel>
     </costList>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
+        <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
         <li>Legs</li>
       </bodyPartGroups>
-      <worngraphicPath>Things/evaSuit/Duster</worngraphicPath>
+      <wornGraphicPath>Things/evaSuit/Duster</wornGraphicPath>
       <layers>
         <li>Middle</li>
         <li>Shell</li>
       </layers>
-      <commonality>2</commonality>
-      <tags>
-         <li>Astronaut</li>
-      </tags>
       <defaultOutfitTags>
-        <li>Worker</li>
+        <li>Soldier</li>
       </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
-          <only>RGBA(1,1,1,1)</only>
+          <only>(1,1,1)</only>
         </li>
       </options>
     </colorGenerator>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_BiocodableApparel"/>
+    </comps>
   </ThingDef>
 
+  <ThingDef ParentName="ApparelArmorPowerBase">
+    <defName>Apparel_PowerArmor</defName>
+    <label>EVA Suit</label>
+    <description>A space suit is a garment worn to keep a human alive in the harsh environment of outer space, vacuum and temperature extremes.</description>
+    <apparel>
+      <tags>
+        <li>SpacerMilitary</li>
+      </tags>
+    </apparel>
+  </ThingDef>
 
-
-
-</ThingDefs>
+</Defs>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>WindTurbine</defName>
@@ -33,12 +33,9 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<rotatable>true</rotatable>
 		<designationCategory>Ship</designationCategory>
-		<building>
-			<ignoreNeedsPower>true</ignoreNeedsPower>
-		</building>
-		<costList>
+    <costList>
 			<Steel>100</Steel>
-			<Component>2</Component>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<constructEffect>ConstructMetal</constructEffect>
 		<placeWorkers>
@@ -51,11 +48,10 @@
 					<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>335</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
-		<designationHotkey>Misc7</designationHotkey>
+		<designationHotKey>Misc7</designationHotKey>
 	</ThingDef>
 
-</Buildings>
+</Defs>

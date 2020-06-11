@@ -1,80 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<PawnKindDefs>
+<Defs>
 
+  <PawnKindDef Abstract="True" Name="BasedAstro">
+    <race>Human</race>
+    <combatPower>30</combatPower>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
 
-  <PawnKindDef ParentName="BasePlayerPawnKind">
-    <defName>Commander</defName>
-    <label>Commander</label>
-    <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategory>Commander</backstoryCategory>
-    <chemicalAddictionChance>0.00</chemicalAddictionChance>
-    <itemQuality>Normal</itemQuality>
-    <maxGenerationAge>60</maxGenerationAge>
-    <apparelTags>
-      <!-- <li>Astronaut</li> -->
-	  <li>Spacer</li>
-    </apparelTags>
-	<apparelRequired>
- <!--     <li>Apparel_PowerArmorHelmet</li>
-	  <li>Apparel_PowerArmor</li>
- 	  	  <li>Apparel_Pants</li>
-		  	  <li>Apparel_BasicShirt</li> -->
-    </apparelRequired>
-    <apparelMoney>
-      <min>9999</min>
-      <max>9999</max>
-    </apparelMoney>
-    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-  </PawnKindDef>
-  
-    <PawnKindDef ParentName="BasePlayerPawnKind">
     <defName>Colonist</defName>
     <label>colonist</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategory>Civil</backstoryCategory>
-    <chemicalAddictionChance>0.00</chemicalAddictionChance>
-    <itemQuality>Normal</itemQuality>
-    <maxGenerationAge>60</maxGenerationAge>
+    <backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
+    <isFighter>true</isFighter>
+    <minGenerationAge>18</minGenerationAge>
+    <maxGenerationAge>80</maxGenerationAge>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
     <apparelTags>
-      <!-- <li>Astronaut</li> -->
-	  <li>Spacer</li>
+      <li>Jumpsuits</li>
     </apparelTags>
-	<apparelRequired>
- <!--     <li>Apparel_PowerArmorHelmet</li>
-	  <li>Apparel_PowerArmor</li>
- 	  	  <li>Apparel_Pants</li>
-		  	  <li>Apparel_BasicShirt</li> -->
-    </apparelRequired>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <apparelMoney>
       <min>9999</min>
       <max>9999</max>
     </apparelMoney>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-  </PawnKindDef>
-  
-    <PawnKindDef ParentName="BasePlayerPawnKind">
-    <defName>Civilian</defName>
-    <label>Civilian</label>
-    <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategory>Civilian</backstoryCategory>
-    <chemicalAddictionChance>0.05</chemicalAddictionChance>
-    <itemQuality>Normal</itemQuality>
-    <maxGenerationAge>60</maxGenerationAge>
-    <apparelTags>
-      <!-- <li>Astronaut</li> -->
-	  <li>Spacer</li>
-    </apparelTags>
-	<apparelRequired>
- <!--     <li>Apparel_PowerArmorHelmet</li>
-	  <li>Apparel_PowerArmor</li>
- 	  	  <li>Apparel_Pants</li>
-		  	  <li>Apparel_BasicShirt</li> -->
-    </apparelRequired>
-    <apparelMoney>
-      <min>9999</min>
-      <max>9999</max>
-    </apparelMoney>
-    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsChance>0</techHediffsChance>
   </PawnKindDef>
 
-</PawnKindDefs> 
+  <PawnKindDef ParentName="BasedAstro">
+    <defName>Commander</defName>
+    <label>Commander</label>
+    <combatPower>40</combatPower>
+    <minGenerationAge>35</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <backstoryCategories>
+      <li>Commander</li>
+    </backstoryCategories>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BasedAstro">
+    <defName>Colonist</defName>
+    <label>colonist</label>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>60</maxGenerationAge>
+    <backstoryCategories>
+      <li>Civil</li>
+      <li>Commander</li>
+    </backstoryCategories>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BasedAstro">
+    <defName>Civilian</defName>
+    <label>Civilian</label>
+    <minGenerationAge>21</minGenerationAge>
+    <maxGenerationAge>75</maxGenerationAge>
+    <backstoryCategories>
+      <li>Civilian</li>
+    </backstoryCategories>
+  </PawnKindDef>
+
+</Defs>

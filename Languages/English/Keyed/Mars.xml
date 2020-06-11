@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<Decompression>Decompression!</Decompression>
+  <MarsXSupport>MarsX Support</MarsXSupport>
+  <discordServer>MarsX Discord</discordServer>
+  <SupportMarsXPatreon>Patreon</SupportMarsXPatreon>
+
+  <Decompression>Decompression!</Decompression>
 	<DecompressionDesc>A door has blown out and decompressed the room</DecompressionDesc>
 
 	<astronautpod>astronaut escape pod</astronautpod>

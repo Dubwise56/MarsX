@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><DefPackage-SoundDef>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
 
 	<SoundDef>
 		<defName>RocketIn</defName>  
@@ -134,4 +135,4 @@
 	</SoundDef>
 
 
-</DefPackage-SoundDef>
+</Defs>

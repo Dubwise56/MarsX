@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<RecipeDefs>
+<Defs>
 
   <RecipeDef>
     <defName>SmeltSteelFromIron</defName>
@@ -7,7 +7,7 @@
     <description>Use heat to smelt steel from iron and carbon.</description>
     <jobString>Smelting steel from iron.</jobString>
     <workAmount>1600</workAmount>
-    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
     <ingredients>
@@ -40,7 +40,7 @@
     <description>Create soil from a mixture of minerals and organic matter.</description>
     <jobString>Making soil.</jobString>
     <workAmount>600</workAmount>
-    <workSpeedStat>PlantWorkSpeed</workSpeedStat>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>ConstructDirt</effectWorking>
     <soundWorking>Recipe_Brewing</soundWorking>
 	<workSkill>Growing</workSkill>
@@ -72,4 +72,4 @@
   </RecipeDef>
 
 
-</RecipeDefs>
+</Defs>

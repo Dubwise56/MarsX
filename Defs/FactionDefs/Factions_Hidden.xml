@@ -1,7 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <FactionDef>
+  <!--<FactionDef ParentName="PlayerFactionBase">
+    <defName>PlayerColony</defName>
+    <label>New Arrivals</label>
+    <description>A colony of recently-arrived off-worlders.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Colonist</basicMemberKind>
+    <pawnSingular>colonist</pawnSingular>
+    <pawnsPlural>colonists</pawnsPlural>
+    <techLevel>Industrial</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <hairTags>
+      <li>Urban</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>-->
+
+  <!--<FactionDef>
     <defName>Spacer</defName>
     <label>NASA</label>
     <description>People from the distant reaches of space.</description>
@@ -9,9 +47,15 @@
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>NASA</fixedName>
     <techLevel>Spacer</techLevel>
-    <backstoryCategory>Civil</backstoryCategory>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Civil</li>
+        </categories>
+      </li>
+    </backstoryFilters>
     <hidden>true</hidden>
-		<rescueesCanJoin>true</rescueesCanJoin>
+    <rescueesCanJoin>true</rescueesCanJoin>
     <hairTags>
       <li>Urban</li>
     </hairTags>
@@ -21,60 +65,43 @@
         <li>Hyperweave</li>
       </thingDefs>
     </apparelStuffFilter>
-	<expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
-	    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
-		    <colorSpectrum>
+    <colorSpectrum>
       <li>(0.64, 0.42, 0.36)</li>
       <li>(0.47, 0.5, 0.91)</li>
     </colorSpectrum>
-  </FactionDef>
-  
-  
-    <FactionDef>
-		<defName>NASA</defName>
-		<label>NASA</label>
-		    <hidden>true</hidden>
-    <description>NASA.</description>
+  </FactionDef>-->
+
+  <FactionDef>
+    <defName>NASA</defName>
+    <label>NASA</label>
+    <pawnSingular>NASA</pawnSingular>
     <pawnsPlural>NASA</pawnsPlural>
-    <factionBaseSelectionWeight>1</factionBaseSelectionWeight>
+    <categoryTag>NASA</categoryTag>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <canMakeRandomly>false</canMakeRandomly>
-    <raidCommonality>100</raidCommonality>
-    <canSiege>false</canSiege>
-    <canStageAttacks>false</canStageAttacks>
-    <leaderTitle>mayor</leaderTitle>
-    <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
-    <colorSpectrum>
-      <li>(0.64, 0.42, 0.36, 0.1)</li>
-      <li>(0.47, 0.5, 0.91, 0.1)</li>
-    </colorSpectrum>
-    <startingGoodwill>
-      <min>10</min>
-      <max>40</max>
-    </startingGoodwill>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<factionBaseNameMaker>NamerFactionBaseOutlander</factionBaseNameMaker>
-		<techLevel>Industrial</techLevel>
-		<backstoryCategory>Civil</backstoryCategory>
-		<hairTags>
-			<li>Rural</li>
-		</hairTags>
-    <naturalColonyGoodwill>
-      <min>100</min>
-      <max>0</max>
-    </naturalColonyGoodwill>
-    <caravanTraderKinds>
-    </caravanTraderKinds>
-    <visitorTraderKinds>
-    </visitorTraderKinds>
-    <factionBaseTraderKinds>
-    </factionBaseTraderKinds>
-    <allowedArrivalTemperatureRange>
-      <min>0</min>
-      <max>0</max>
-    </allowedArrivalTemperatureRange>
-    <pawnGroupMakers>
-    </pawnGroupMakers>
-    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+    <fixedName>NASA</fixedName>
+    <factionIconPath>World/WorldObjects/Expanding/Sites/DownedRefugee</factionIconPath>
+    <techLevel>Spacer</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <hidden>true</hidden>
+    <rescueesCanJoin>true</rescueesCanJoin>
+    <autoFlee>false</autoFlee>
+    <geneticVariance>1</geneticVariance>
+    <hairTags>
+      <li>Urban</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Hyperweave</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </apparelStuffFilter>
   </FactionDef>
+
 </Defs>

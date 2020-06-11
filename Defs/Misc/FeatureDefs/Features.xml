@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--<FeatureDef>
+		<defName>Planum</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>300</order>
+		<rootBiomes>
+			<li>Planum</li>
+		</rootBiomes>
+		<acceptableBiomes>
+		</acceptableBiomes>
+		<nameMaker>NamerDesert</nameMaker>
+    <maxPossiblyAllowedSizeToTake>10</maxPossiblyAllowedSizeToTake>
+	</FeatureDef>
+
+	<FeatureDef>
+		<defName>Chaos</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>310</order>
+		<rootBiomes>
+			<li>Chaos</li>
+		</rootBiomes>
+		<acceptableBiomes>
+		</acceptableBiomes>
+		<nameMaker>NamerDesert</nameMaker>
+    <maxPossiblyAllowedSizeToTake>10</maxPossiblyAllowedSizeToTake>
+	</FeatureDef>
+
+	<FeatureDef>
+		<defName>Terra</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>320</order>
+		<rootBiomes>
+			<li>Terra</li>
+		</rootBiomes>
+		<acceptableBiomes>
+		</acceptableBiomes>
+		<nameMaker>NamerDesert</nameMaker>
+    <maxPossiblyAllowedSizeToTake>10</maxPossiblyAllowedSizeToTake>
+	</FeatureDef>
+
+	<FeatureDef>
+		<defName>Planetia</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>330</order>
+		<rootBiomes>
+			<li>Planetia</li>
+		</rootBiomes>
+		<acceptableBiomes>
+		</acceptableBiomes>
+		<nameMaker>NamerDesert</nameMaker>
+    <maxPossiblyAllowedSizeToTake>10</maxPossiblyAllowedSizeToTake>
+	</FeatureDef>-->
+
+</Defs>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Heater</defName>
+    <label>heater</label>
+    <description>A device that converts electricity into heat. It can automatically turn itself on or off to reach a specific target temperature.</description>
+    <thingClass>Building_Heater</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/TempControl/Heater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.234375,0,0.515625,0.984375)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <blockWind>true</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.4</fillPercent>
+    <thingCategories>
+      <li>BuildingsTemperature</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>175</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>21</energyPerSecond>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255,150,100,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Cooler</defName>
+    <label>cooler</label>
+    <description>An air-cooling machine that fits into a wall. Cool air comes out one side, while hot exhaust comes out the other. Can be used to cool down rooms during summer, or to create a walk-in freezer.</description>
+    <thingClass>Building_Cooler</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/TempControl/Cooler</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <costList>
+      <Steel>90</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Cooler</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>-21</energyPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <designationHotKey>Misc5</designationHotKey>
+    <researchPrerequisites>
+      <li>AirConditioning</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+ 
+  
+</Defs>

@@ -1,26 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Abstract="True" Name="CondimentRawBase" ParentName="OrganicProductBase">
+  <ThingDef ParentName="OrganicProductBase" Abstract="True" Name="CondimentRawBase">
+    <defName>InsectJelly</defName>
+    <label>insect jelly</label>
+    <description>Jelly stored and used as food by oversized insects. It is smooth, rich, and fulfills the recreation need of those who consume it. Because of its unique biological properties, it can nourish almost any creature and never rots.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/InsectJelly</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>8.0</MarketValue>
+      <Mass>0.025</Mass>
+      <Nutrition>0.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+    </statBases>
     <ingestible>
-      <preferability>RawBad</preferability>
-      <tasteThought>AteRawFood</tasteThought>
-      <nutrition>0.05</nutrition>
+      <foodType>AnimalProduct</foodType>
+      <preferability>MealFine</preferability>
+      <joy>0.08</joy>
+      <joyKind>Gluttonous</joyKind>
       <ingestEffect>EatVegetarian</ingestEffect>
-      <ingestSound>RawVegetable_Eat</ingestSound>
+      <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
     <thingCategories>
-      <li>Condiment</li>
+      <li>AnimalProductRaw</li>
     </thingCategories>
-	    <statBases>
-      <MarketValue>2.1</MarketValue>
-	  <Mass>0.01</Mass>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_FoodPoisoningChance" />
-    </comps>
   </ThingDef>
-  
+
+
   <ThingDef ParentName="CondimentRawBase">
     <defName>Ketchup</defName>
     <label>ketchup</label>
@@ -28,90 +37,33 @@
     <graphicData>
       <texPath>Things/Resource/ketchup</texPath>
     </graphicData>
-    <statBases>
-      <MarketValue>2.1</MarketValue>
-	  <Mass>0.4</Mass>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>242</daysToRotStart>
-      </li>
-    </comps>
-    <ingestible>
-	      <preferability>RawTasty</preferability>
-
-      <foodType>VegetableOrFruit</foodType>
-	  
-    </ingestible>
   </ThingDef>
-  
-    <ThingDef ParentName="CondimentRawBase">
+
+  <ThingDef ParentName="CondimentRawBase">
     <defName>BBQ</defName>
     <label>BBQ Sauce</label>
     <description>Packet of BBQ Sauce.</description>
     <graphicData>
       <texPath>Things/Resource/bbq</texPath>
     </graphicData>
-    <statBases>
-      <MarketValue>2.1</MarketValue>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>242</daysToRotStart>
-      </li>
-    </comps>
-    <ingestible>
-	      <preferability>RawTasty</preferability>
-
-      <foodType>VegetableOrFruit</foodType>
-	  
-    </ingestible>
   </ThingDef>
-  
-    <ThingDef ParentName="CondimentRawBase">
+
+  <ThingDef ParentName="CondimentRawBase">
     <defName>Mayo</defName>
     <label>mayonnaise</label>
     <description>Packet of mayonnaise.</description>
     <graphicData>
       <texPath>Things/Resource/mayo</texPath>
     </graphicData>
-    <statBases>
-      <MarketValue>2.1</MarketValue>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>242</daysToRotStart>
-      </li>
-    </comps>
-    <ingestible>
-	      <preferability>RawTasty</preferability>
-
-      <foodType>VegetableOrFruit</foodType>
-	  
-    </ingestible>
   </ThingDef>
 
-  
-  <ThingDef ParentName="PlantFoodRawBase">
+  <ThingDef ParentName="OrganicProductBase">
     <defName>DriedFruit</defName>
     <label>dried fruit</label>
     <description>Assorted dried fruit. Nice to eat raw.</description>
     <graphicData>
       <texPath>Things/Item/Resource/PlantFoodRaw/Berries</texPath>
     </graphicData>
-    <statBases>
-      <MarketValue>2.1</MarketValue>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>142</daysToRotStart>
-      </li>
-    </comps>
-    <ingestible>
-      <preferability>RawTasty</preferability>
-
-      <foodType>VegetableOrFruit</foodType>
-    </ingestible>
   </ThingDef>
 
 </Defs>

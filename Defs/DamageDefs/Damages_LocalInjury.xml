@@ -1,21 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
 
-
-  <DamageDef ParentName="LocalInjuryBase">
-    <defName>Decompressed</defName>
-    <label>blunt</label>
+  <DamageDef>
+    <defName>ExplosiveDecompression</defName>
+    <label>Explosive Decompression</label>
+    <deathMessage>{0} has died from explosive decompression.</deathMessage>
+    <workerClass>DamageWorker_Blunt</workerClass>
     <externalViolence>true</externalViolence>
-    <battleWound>true</battleWound>
-    <deathMessage>{0} has died from decompression.</deathMessage>
-    <hediff>Crush</hediff>
-    <hediffSkin>Bruise</hediffSkin>
-    <hediffSolid>Crack</hediffSolid>
+    <hediff>Shredded</hediff>
+    <hediffSkin>Shredded</hediffSkin>
+    <hediffSolid>Shredded</hediffSolid>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <hasChanceToAdditionallyDamageInnerSolidParts>true</hasChanceToAdditionallyDamageInnerSolidParts>
     <impactSoundType>Blunt</impactSoundType>
     <armorCategory>Blunt</armorCategory>
+    <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>Decompressed</defName>
+    <label>Decompression</label>
+    <deathMessage>{0} has died from decompression.</deathMessage>
+    <workerClass>DamageWorker_Blunt</workerClass>
+    <externalViolence>true</externalViolence>
+    <hediff>Bruise</hediff>
+    <hediffSkin>Bruise</hediffSkin>
+    <hediffSolid>Bruise</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
   </DamageDef>
 
 </Defs>

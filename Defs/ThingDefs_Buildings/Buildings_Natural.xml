@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
   <ThingDef ParentName="RockBase">
     <defName>MineableSteel</defName>
@@ -52,10 +52,11 @@
       </mineableScatterLumpSizeRange>
     </building>
   </ThingDef>
-  
+
   <ThingDef ParentName="RockBase">
-    <defName>MineableComponents</defName>
+    <defName>MineableComponentsIndustrial</defName>
     <label>compacted machinery</label>
+    <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
     <graphicData>
       <texPath>Things/Building/Linked/CompactedMachinery_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -64,18 +65,14 @@
     <statBases>
       <MaxHitPoints>2000</MaxHitPoints>
     </statBases>
-    <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>Component</mineableThing>
+      <mineableThing>ComponentIndustrial</mineableThing>
       <mineableYield>2</mineableYield>
-      <mineableScatterCommonality>0</mineableScatterCommonality> <!-- as often as steel, with smaller blotches -->
-      <mineableScatterLumpSizeRange>
-        <min>3</min>
-        <max>6</max>
-      </mineableScatterLumpSizeRange>
+      <mineableScatterCommonality>0</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>3~6</mineableScatterLumpSizeRange>
     </building>
   </ThingDef>
 
 
-</ThingDefs>
+</Defs>

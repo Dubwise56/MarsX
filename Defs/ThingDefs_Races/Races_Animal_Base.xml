@@ -9,19 +9,22 @@
     <altitudeLayer>Pawn</altitudeLayer>
     <useHitPoints>false</useHitPoints>
     <hasTooltip>true</hasTooltip>
-    <soundImpactDefault>BulletImpactFlesh</soundImpactDefault>
+    <soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
     <statBases>
-      <Mass>70</Mass>
+      <Mass>60</Mass>
+      <Flammability>0.7</Flammability>
     </statBases>
     <inspectorTabs>
       <li>ITab_Pawn_Health</li>
-      <li>mars.ITab_Pawn_Needs</li>
-      <li>mars.ITab_Pawn_Character</li>
+      <li>ITab_Pawn_Needs</li>
+      <li>ITab_Pawn_Character</li>
       <li>ITab_Pawn_Training</li>
-      <li>ITab_Pawn_Gear</li>
+      <li>ITab_Pawn_Social</li>
       <li>ITab_Pawn_Guest</li>
       <li>ITab_Pawn_Prisoner</li>
-      <li>ITab_Pawn_Social</li>
+      <li>ITab_Pawn_FormingCaravan</li>
+      <li>ITab_Pawn_Gear</li>
+      <li>ITab_Pawn_Log</li>
     </inspectorTabs>
     <comps>
       <li>
@@ -31,32 +34,4 @@
     <drawGUIOverlay>true</drawGUIOverlay>
   </ThingDef>
 
-  <ThingDef ParentName="BasePawn" Name="AnimalThingBase" Abstract="True">
-    <statBases>
-      <Flammability>1.0</Flammability>
-      <LeatherAmount>25</LeatherAmount>
-    </statBases>
-    <race>
-      <thinkTreeMain>Animal</thinkTreeMain>
-      <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
-      <hasGenders>true</hasGenders>
-      <nameGenerator>NamerAnimalGenericMale</nameGenerator>
-      <nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
-      <manhunterOnDamageChance>0.0125</manhunterOnDamageChance>
-      <manhunterOnTameFailChance>0.005</manhunterOnTameFailChance>
-      <nameOnNuzzleChance>0.5</nameOnNuzzleChance>
-      <hediffGiverSets>
-        <li>OrganicStandard</li>
-      </hediffGiverSets>
-    </race>
-    <recipes>
-			<li>ExciseCarcinoma</li>
-      <li>RemoveBodyPart</li>
-      <li>Euthanize</li>
-    </recipes>
-  </ThingDef>
-
-  <PawnKindDef Name="AnimalKindBase" Abstract="True">
-  </PawnKindDef>
-  
 </Defs>

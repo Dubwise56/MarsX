@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
   <ThingDef>
     <defName>FilthSandPanel</defName>
@@ -21,7 +21,6 @@
     </graphicData>
     <filth>
       <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
-      <terrainSourced>true</terrainSourced>
       <canFilthAttach>true</canFilthAttach>
     </filth>
   </ThingDef>
@@ -35,7 +34,7 @@
       <Beauty>-10</Beauty>
       <Cleanliness>-15</Cleanliness>
       <MaxHitPoints>150</MaxHitPoints>
-      <Flammability>1.0</Flammability>
+      <Flammability>0</Flammability>
     </statBases>
     <graphicData>
       <texPath>Things/Filth/LiquidFuel</texPath>
@@ -70,4 +69,4 @@
     </filth>
   </ThingDef>
   
-</ThingDefs>
+</Defs>

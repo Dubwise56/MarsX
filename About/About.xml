@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-	<name>MarsX v3 - Musky Edition</name>
+	<name>MarsX</name>
 	<author>Dubwise56</author>
 	<url></url>
-	<targetVersion>0.16.1393</targetVersion>
+	  <supportedVersions>
+      <li>1.1</li>
+  </supportedVersions>
+  <packageId>Dubwise.MarsX</packageId>
 	<description>Guide the next generation of Pioneers to the red planet on a journey of colonization and exploration.</description>
 </ModMetaData>

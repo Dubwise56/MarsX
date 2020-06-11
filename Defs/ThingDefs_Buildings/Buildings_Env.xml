@@ -18,7 +18,6 @@
 		</graphicData>
 		<building>
 			<isInert>true</isInert>
-			<ignoreNeedsPower>true</ignoreNeedsPower>
 			<isEdifice>false</isEdifice>
 		</building>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
@@ -37,7 +36,7 @@
 		<rotatable>false</rotatable>
 		<selectable>true</selectable>
 		<neverMultiSelect>true</neverMultiSelect>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <clearBuildingArea>false</clearBuildingArea>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<constructEffect>ConstructMetal</constructEffect>
 		<designationHotKey>Misc1</designationHotKey>
@@ -61,9 +60,11 @@
 				<rect>(0,0.35,1,0.3)</rect>
 			</damageData>
 		</graphicData>
+    <building>
 		<blueprintGraphicData>
 			<texPath>Things/Building/WaterPipe_Atlas</texPath>
 		</blueprintGraphicData>
+    </building>
 		<uiIconPath>UI/WaterPipe</uiIconPath>
 		<comps>	
 			<li Class="mars.CompProperties_Pipe">
@@ -87,7 +88,6 @@
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
 			<isInert>true</isInert>
-			<ignoreNeedsPower>true</ignoreNeedsPower>
 			<isEdifice>false</isEdifice>
 		</building>
 		<graphicData>
@@ -141,7 +141,6 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>150</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 		</comps>
@@ -156,7 +155,7 @@
 		<fillPercent>0.15</fillPercent>
 		<costList>
 			<Steel>75</Steel>
-			<Component>5</Component>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<specialDisplayRadius>5.9</specialDisplayRadius>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -185,7 +184,6 @@
 			<Steel>5</Steel>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
@@ -227,9 +225,11 @@
 				<rect>(0,0.35,1,0.3)</rect>
 			</damageData>
 		</graphicData>
+    <building>
 		<blueprintGraphicData>
 			<texPath>Things/Building/GasPipe_Atlas</texPath>
 		</blueprintGraphicData>
+      </building>
 		<uiIconPath>UI/GasPipe</uiIconPath>
 		<comps>	
 			<li Class="mars.CompProperties_Pipe">
@@ -300,13 +300,12 @@
 		<selectable>true</selectable>
 		<fillPercent>0.20</fillPercent>
 		<pathCost>8</pathCost>
-		<Size>(1,2)</Size>
+		<size>(1,2)</size>
 		<costList>
 			<Steel>50</Steel>
-			<Component>6</Component>
+			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
@@ -326,7 +325,6 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>215</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -336,7 +334,6 @@
 		</inspectorTabs>
 		<building>
 			<isInert>true</isInert>
-			<preventDeterioration>true</preventDeterioration>
 			<fixedStorageSettings>
 				<filter>
 					<categories>
@@ -353,7 +350,7 @@
 		<designationCategory>Temperature</designationCategory> 
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="MinifiedBuildingBase">
 		<defName>airOutlet</defName>
 		<label>Air Outlet</label>
 		<description>A outlet which allows air to flow into a room from a MOXIE or MOXI connected via gas pipes.</description>
@@ -363,7 +360,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
+	
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>40</pathCost>
@@ -378,7 +375,7 @@
 
 		<costList>
 			<Steel>65</Steel>
-			<Component>1</Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<building>
 			<isTrap>true</isTrap>
@@ -390,7 +387,6 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>55</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -399,7 +395,7 @@
 		<designationHotKey>Misc3</designationHotKey>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="MinifiedBuildingBase">
 		<defName>co2scrubber</defName>
 		<label>CO2 Scrubber</label>
 		<description>The CO2 Scrubber uses a fan to circulate air through a Lithium Hydroxide Cell that reacts with CO2 to produce Lithium Carbonate also known as Limestone.</description>
@@ -417,7 +413,6 @@
 			<drawSize>(1.2,1.2)</drawSize>
 		</graphicData>
 		<size>(1,1)</size>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>40</pathCost>
@@ -433,7 +428,7 @@
 
 		<costList>
 			<Steel>65</Steel>
-			<Component>1</Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<placeWorkers>
@@ -444,7 +439,6 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>40</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -453,7 +447,7 @@
 		<designationHotKey>Misc3</designationHotKey>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="MinifiedBuildingBase">
 		<defName>Moxie</defName>
 		<label>MOXIE</label>
 		<description>Mars Oxygen In-situ Experiment (MOXIE) collects CO2 from the Martian atmosphere, compresses and stores it, then electrochemically splits the CO2 molecules into O2 and CO. The O2 is then analyzed for purity before being vented through available Air outlets while the toxic CO and other exhaust products are vented directly out of exhaust ports.</description>
@@ -465,20 +459,19 @@
 		<uiIconPath>Things/Building/moxie</uiIconPath>
 		<category>Building</category>
 		<tickerType>Normal</tickerType>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
 		<pathCost>8</pathCost>
 		<costList>
 			<Steel>50</Steel>
-			<Component>6</Component>
+			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 		<rotatable>false</rotatable>
 		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
+      <Mass>2.5</Mass>
+      <MaxHitPoints>150</MaxHitPoints>
 			<WorkToBuild>1000</WorkToBuild>
 			<Flammability>0.0</Flammability>
 			<Beauty>-12</Beauty>
@@ -491,7 +484,6 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>150</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
 			</li>
 			<li Class="mars.CompProperties_StorageTank">
 				<compClass>mars.CompStorageTank</compClass>
@@ -541,14 +533,13 @@
 		<selectable>true</selectable>
 		<fillPercent>0.20</fillPercent>
 		<pathCost>8</pathCost>
-		<Size>(4,3)</Size>
+		<size>(4,3)</size>
 		<costList>
 			<Steel>140</Steel>
 			<Plasteel>45</Plasteel>
-			<Component>3</Component>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 		<designationCategory>Temperature</designationCategory>
 		<rotatable>false</rotatable>
 		<statBases>
@@ -565,7 +556,6 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>600</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
 			</li>
 			<li Class="mars.CompProperties_StorageTank">
 				<compClass>mars.CompStorageTank</compClass>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<WeatherDefs>
+<Defs>
 
   <WeatherDef>
     <defName>Clear</defName>
@@ -172,7 +172,7 @@
       <saturation>0.8</saturation>
     </skyColorsNightMid>
   </WeatherDef>
-</WeatherDefs>
+</Defs>
 
 
 

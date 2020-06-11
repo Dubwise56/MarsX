@@ -2,7 +2,7 @@
 <Defs>
 
   <NeedDef>
-    <DefName>Mood</DefName>
+    <defName>Mood</defName>
     <needClass>Need_Mood</needClass>
     <label>mood</label>
     <description>Mood represents how happy or stressed someone is. If mood gets too low, the person may suffer a mental break.</description>
@@ -17,7 +17,7 @@
   </NeedDef>
   
     <NeedDef>
-    <DefName>o2Saturation</DefName>
+    <defName>o2Saturation</defName>
     <needClass>mars.Need_O2</needClass>
     <label>O2 Saturation</label>
     <description>O2 Saturation is the level of oxygen in the blood, if the saturation becomes low they will suffer from hypoxia or even death.</description>
@@ -29,7 +29,7 @@
   </NeedDef>
   
   <NeedDef>
-    <DefName>Food</DefName>
+    <defName>Food</defName>
     <needClass>Need_Food</needClass>
     <label>food</label>
     <description>Food is the amount of nutrition a creature has consumed recently. If it is at zero, a creature will take starvation damage over time.</description>
@@ -38,7 +38,7 @@
   </NeedDef>
   
     <NeedDef>
-    <DefName>Bladder</DefName>
+    <defName>Bladder</defName>
     <needClass>mars.Need_Bladder</needClass>
     <label>bladder</label>
     <description>Defecation is the final act of digestion, by which organisms eliminate solid, semisolid, and/or liquid waste material from the digestive tract via the anus.</description>
@@ -49,7 +49,7 @@
   </NeedDef>
   
   <NeedDef>
-    <DefName>Rest</DefName>
+    <defName>Rest</defName>
     <needClass>Need_Rest</needClass>
     <label>rest</label>
     <description>Rest is how much sleep a creature has gotten recently.</description>
@@ -68,7 +68,7 @@
   </NeedDef>
   
     <NeedDef>
-    <DefName>Fitness</DefName>
+    <defName>Fitness</defName>
     <needClass>mars.Need_Fitness</needClass>
     <label>fitness</label>
     <description>Fitness is a indication of how physically fit a person is, poor fitness level can result in diseases such as Osteoporosis.</description>
@@ -81,7 +81,7 @@
   </NeedDef>
   
   <NeedDef>
-    <DefName>Hygiene</DefName>
+    <defName>Hygiene</defName>
     <needClass>mars.Need_Hygiene</needClass>
     <label>hygiene</label>
     <description>Good personal hygiene is one of the most effective ways to protect ourselves and others from many illnesses, such as gastroenteritis. Wash your hands regularly, especially before preparing or eating food and after going to the toilet.</description>
@@ -92,7 +92,7 @@
   </NeedDef>
   
   <NeedDef>
-    <DefName>Beauty</DefName>
+    <defName>Beauty</defName>
     <needClass>Need_Beauty</needClass>
     <label>beauty</label>
     <description>Beauty reflects how visually pleasing a person has found their surroundings recently.</description>
@@ -106,7 +106,7 @@
   </NeedDef>
 
   <NeedDef>
-    <DefName>Comfort</DefName>
+    <defName>Comfort</defName>
     <needClass>Need_Comfort</needClass>
     <label>comfort</label>
     <description>Comfort is gained by sitting in or sleeping on comfortable furniture.</description>
@@ -117,8 +117,8 @@
     <listPriority>200</listPriority>
   </NeedDef>
 
-  <NeedDef>
-    <DefName>Space</DefName>
+  <!--<NeedDef>
+    <defName>Space</defName>
     <needClass>mars.Need_SpaceMars</needClass>
     <label>space</label>
     <description>Space reflects a sense of being physically free and able to move around. It is harmed by spending extended periods in cramped rooms.</description>
@@ -128,7 +128,7 @@
     <seekerFallPerHour>1.8</seekerFallPerHour>
     <listPriority>100</listPriority>
     <freezeWhileSleeping>true</freezeWhileSleeping>
-  </NeedDef>
+  </NeedDef>-->
 
 
 </Defs>

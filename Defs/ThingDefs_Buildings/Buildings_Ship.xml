@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<GameData>
+<Defs>
 
 	<ThingDef>
 		<defName>ShipLand</defName>
 		<label>drop pod (incoming)</label>
 		<thingClass>mars.Fleet_ShipLander</thingClass>
-		<category>Skyfaller</category>
+		<category>Ethereal</category>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Building/ships/CrewLanded</texPath>
@@ -13,7 +13,7 @@
 			<shaderType>CutoutSkin</shaderType>
 			<drawSize>(7,11)</drawSize>
 		</graphicData>
-		<altitudeLayer>FlyingItem</altitudeLayer>
+		<altitudeLayer>Skyfaller</altitudeLayer>
 		<useHitPoints>false</useHitPoints>
 		<drawOffscreen>true</drawOffscreen>
 		<passability>Impassable</passability>
@@ -23,7 +23,7 @@
 		<defName>ShipLaunch</defName>
 		<label>drop pod (incoming)</label>
 		<thingClass>mars.Fleet_ShipLauncher</thingClass>
-		<category>Skyfaller</category>
+		<category>Ethereal</category>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Building/ships/CrewLanded</texPath>
@@ -31,7 +31,7 @@
 			<shaderType>CutoutSkin</shaderType>
 			<drawSize>(7,11)</drawSize>
 		</graphicData>
-		<altitudeLayer>FlyingItem</altitudeLayer>
+		<altitudeLayer>Skyfaller</altitudeLayer>
 		<useHitPoints>false</useHitPoints>
 		<drawOffscreen>true</drawOffscreen>
 		<passability>Impassable</passability>
@@ -65,7 +65,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</killedLeavings>
 		<costList>
-			<Component>50</Component>
+			<ComponentIndustrial>50</ComponentIndustrial>
 			<Steel>500</Steel>
 			<Plasteel>500</Plasteel>
 		</costList>
@@ -80,7 +80,6 @@
 			<li Class="CompProperties_Battery">
 				<storedEnergyMax>4000</storedEnergyMax>
 				<efficiency>0.5</efficiency>
-				<startElectricalFires>true</startElectricalFires>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="mars.CompProperties_StorageTank">
@@ -114,11 +113,9 @@
 		</comps>
 
 		<building>
-			<ignoreNeedsPower>true</ignoreNeedsPower>
 			<alwaysDeconstructible>true</alwaysDeconstructible>
 		</building>
 		<selectable>true</selectable>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 		<!-- <drawerType>MapMeshOnly</drawerType> -->
 		<repairEffect>ConstructMetal</repairEffect>
 	</ThingDef>
@@ -157,7 +154,7 @@
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</killedLeavings>
 		<costList>
-			<Component>5</Component>
+			<ComponentIndustrial>5</ComponentIndustrial>
 			<Steel>100</Steel>
 			<Plasteel>100</Plasteel>
 			<Gold>4</Gold>
@@ -167,7 +164,6 @@
 			<alwaysDeconstructible>true</alwaysDeconstructible>
 		</building>
 		<selectable>true</selectable>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 		<drawerType>MapMeshOnly</drawerType>
 		<repairEffect>ConstructMetal</repairEffect>
 	</ThingDef>
@@ -201,7 +197,7 @@
 		</killedLeavings>
 		<costList>
 			<Radioisotope_thermoelectric_generator>1</Radioisotope_thermoelectric_generator>
-			<Component>30</Component>
+			<ComponentIndustrial>30</ComponentIndustrial>
 			<Steel>300</Steel>
 			<Plasteel>300</Plasteel>
 		</costList>
@@ -210,7 +206,6 @@
 			<alwaysDeconstructible>true</alwaysDeconstructible>
 		</building>
 		<selectable>true</selectable>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 		<drawerType>MapMeshOnly</drawerType>
 		<repairEffect>ConstructMetal</repairEffect>
 	</ThingDef>
@@ -242,11 +237,9 @@
 			<Plasteel>30</Plasteel>
 			<Steel>30</Steel>
 		</costList>
-		<designationHotkey>Misc6</designationHotkey>
 		<building>
 			<isInert>true</isInert>
-			<preventDeterioration>true</preventDeterioration>
-			<fixedStorageSettings>
+      <fixedStorageSettings>
 				<filter>
 					<categories>
 					</categories>
@@ -267,7 +260,6 @@
 		<description>A rugged crate used to store supplies.</description>
 		<building>
 			<isInert>true</isInert>
-			<preventDeterioration>true</preventDeterioration>
 			<fixedStorageSettings>
 				<filter>
 					<categories>
@@ -292,4 +284,4 @@
 	</ThingDef>
 
 
-</GameData>
+</Defs>

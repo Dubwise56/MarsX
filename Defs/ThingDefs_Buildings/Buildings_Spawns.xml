@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
 
 <!--    <ThingDef ParentName="BuildingBase">
     <defName>Thing_AirCell</defName>
     <label>Thing_AirCell</label>
 	<thingClass>mars.Thing_AirCell</thingClass>
-    <Description>Thing_AirCell</Description>
+    <description>Thing_AirCell</description>
     <graphicData>
       <texPath>Things/God</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -21,7 +21,7 @@
    <ThingDef ParentName="BuildingBase">
     <defName>detachedGlower</defName>
     <label>detachedGlower</label>
-    <Description>detachedGlower</Description>
+    <description>detachedGlower</description>
     <graphicData>
       <texPath>Things/God</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -60,7 +60,6 @@
     <fillPercent>0.20</fillPercent>
     <pathCost>8</pathCost>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <rotatable>true</rotatable>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
@@ -71,9 +70,9 @@
 		    <killedLeavings>
       <ChunkSlagSteel>2</ChunkSlagSteel>
     </killedLeavings>
-	   <Size>(2,2)</Size>
+	   <size>(2,2)</size>
     <costList>
-      <Component>30</Component>
+      <ComponentIndustrial>30</ComponentIndustrial>
       <Steel>30</Steel>
 	  <Plasteel>30</Plasteel>
 	  <Gold>30</Gold>
@@ -107,7 +106,6 @@
     <fillPercent>0.20</fillPercent>
     <pathCost>8</pathCost>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <rotatable>true</rotatable>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
@@ -119,7 +117,7 @@
       <ChunkSlagSteel>2</ChunkSlagSteel>
     </killedLeavings>
     <costList>
-      <Component>10</Component>
+      <ComponentIndustrial>10</ComponentIndustrial>
       <Steel>20</Steel>
 	  <Plasteel>20</Plasteel>
 	  <Gold>20</Gold>
@@ -151,9 +149,8 @@
     <selectable>true</selectable>
     <fillPercent>0.20</fillPercent>
     <pathCost>8</pathCost>
-		   <Size>(1,2)</Size>
+		   <size>(1,2)</size>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <rotatable>true</rotatable>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
@@ -170,4 +167,4 @@
     <designationHotKey>Misc11</designationHotKey>
   </ThingDef>
 
-</Buildings>
+</Defs>

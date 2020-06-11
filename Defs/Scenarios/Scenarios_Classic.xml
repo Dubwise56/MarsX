@@ -2,9 +2,8 @@
 <Defs>
 
 	<ScenarioDef>
-		<defName>Crashlanded</defName>
-
-		<label>Martian Colony</label>
+		<defName>MartianColony</defName>
+    <label>Martian Colony</label>
 		<description>Your mission is to colonize mars. Start with 3 colonists, 2 extra ships, and normal fleet timer speed.</description>
 		<scenario>
 			<summary>Martian Colony (Normal)</summary>
@@ -18,14 +17,14 @@
 					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>3</pawnCount>
 				</li>
-				<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<!--<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>
-				</li>
-				<li Class="ScenPart_GameStartDialog">
+				</li>-->
+				<!--<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
 					<text>"I would like to die on Mars. Just not on impact." Elon Musk\n\nWe survived the impact, now we just have to survive\n\nWe have limited supplies so planning is key.\nFirst we need to construct a basic hab to fit 3 people and supply it with air using the moxie, and power using the batteries on the MAV.\nOnce the hab is pressurized to safe levels we can remove our suits and work faster.\nThe next step will be to create some soil and start growing food\n\n</text>
 					<closeSound>marsy</closeSound>
-				</li>
+				</li>-->
 
 				<li Class="mars.ScenPart_ColonyMission">
 					<def>missionMode</def>
@@ -75,11 +74,7 @@
 					<def>DisableIncident</def>
 					<incident>PsychicEmanatorShipPartCrash</incident>
 				</li>
-				<li Class="ScenPart_DisableIncident">
-					<def>DisableIncident</def>
-					<incident>PoisonShipPartCrash</incident>
-				</li>
-				<li Class="ScenPart_DisableIncident">
+        <li Class="ScenPart_DisableIncident">
 					<def>DisableIncident</def>
 					<incident>AnimalInsanityMass</incident>
 				</li>
@@ -131,10 +126,7 @@
 					<def>DisableIncident</def>
 					<incident>FarmAnimalsWanderIn</incident>
 				</li>
-				<li Class="ScenPart_DisableIncident">
-					<def>DisableIncident</def>
-					<incident>RefugeeChased</incident>
-				</li>
+
 				<li Class="ScenPart_DisableIncident">
 					<def>DisableIncident</def>
 					<incident>ThrumboPasses</incident>
@@ -155,13 +147,9 @@
 					<def>DisableIncident</def>
 					<incident>ToxicFallout</incident>
 				</li>
-				<li Class="ScenPart_DisableIncident">
-					<def>DisableIncident</def>
-					<incident>JourneyOffer</incident>
-				</li>
 
 
-				<li Class="ScenPart_DisableIncident">
+        <li Class="ScenPart_DisableIncident">
 					<def>DisableIncident</def>
 					<incident>Ambush</incident>
 				</li>

@@ -25,7 +25,7 @@
 		<tickerType>Normal</tickerType>
 		<costList>
 			<Steel>65</Steel>
-			<Component>1</Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<comps>
@@ -75,7 +75,7 @@
 		<tickerType>Normal</tickerType>
 		<costList>
 			<Steel>65</Steel>
-			<Component>1</Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<comps>
@@ -119,7 +119,7 @@
 		<tickerType>Normal</tickerType>
 		<costList>
 			<Steel>65</Steel>
-			<Component>1</Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<comps>
@@ -138,7 +138,7 @@
 		<designationHotKey>Misc3</designationHotKey>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="MinifiedBuildingBase">
 		<defName>o2Tank</defName>
 		<label>O2 Tank</label>
 		<description>A tank for containing compressed O2.</description>
@@ -147,7 +147,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.1,1.1)</drawSize>
 		</graphicData>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>40</pathCost>
@@ -163,7 +162,7 @@
 		<tickerType>Normal</tickerType>
 		<costList>
 			<Steel>65</Steel>
-			<Component>1</Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<comps>
@@ -193,14 +192,13 @@
 		<selectable>true</selectable>
 		<fillPercent>0.20</fillPercent>
 		<pathCost>8</pathCost>
-		<Size>(4,3)</Size>
+		<size>(4,3)</size>
 		<costList>
 			<Steel>75</Steel>
 			<Plasteel>45</Plasteel>
-			<Component>3</Component>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 		<designationCategory>Ship</designationCategory>
 		<rotatable>false</rotatable>
 		<statBases>
@@ -229,7 +227,6 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>415</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
 			</li>
 						<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -258,14 +255,13 @@
 		<selectable>true</selectable>
 		<fillPercent>0.20</fillPercent>
 		<pathCost>8</pathCost>
-		<Size>(3,2)</Size>
+		<size>(3,2)</size>
 		<costList>
 			<Steel>75</Steel>
 			<Plasteel>45</Plasteel>
-			<Component>3</Component>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 		<designationCategory>Ship</designationCategory>
 		<rotatable>true</rotatable>
 		<statBases>
@@ -282,8 +278,7 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>350</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
-			</li>
+      </li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
@@ -314,14 +309,13 @@
 		<selectable>true</selectable>
 		<fillPercent>0.20</fillPercent>
 		<pathCost>8</pathCost>
-		<Size>(3,2)</Size>
+		<size>(3,2)</size>
 		<costList>
 			<Steel>150</Steel>
 			<Plasteel>45</Plasteel>
-			<Component>6</Component>
+			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
 		<designationCategory>Ship</designationCategory>
 		<rotatable>false</rotatable>
 		<statBases>
@@ -341,7 +335,6 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>750</basePowerConsumption>
-				<startElectricalFires>true</startElectricalFires>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>

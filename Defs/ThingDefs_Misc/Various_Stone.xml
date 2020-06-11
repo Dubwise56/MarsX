@@ -31,7 +31,6 @@
 		<randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
 		<saveCompressible>false</saveCompressible>
 		<stackLimit>1</stackLimit>
-		<tradeability>Never</tradeability>
 		<tickerType>Normal</tickerType>
 		<thingCategories>
 			<li>NuclearProduct</li>
@@ -68,7 +67,6 @@
 		<randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
 		<saveCompressible>false</saveCompressible>
 		<stackLimit>1</stackLimit>
-		<tradeability>Never</tradeability>
 		<tickerType>Normal</tickerType>
 		<thingCategories>
 			<li>NuclearProduct</li>

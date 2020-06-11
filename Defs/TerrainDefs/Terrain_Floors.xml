@@ -1,58 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TerrainDefs>
+<Defs>
 
   <TerrainDef ParentName="FloorBase">
-    <DefName>MetalTile</DefName>
+    <defName>MetalTile</defName>
     <label>metal tile</label>
-    <RenderPrecedence>240</RenderPrecedence>
-    <Description>Metal tiles, for that spaceship look. Pretty.</Description>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Metal tiles, for that spaceship look. Pretty.</description>
     <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
     <color>(0.369, 0.369, 0.369)</color>
     <statBases>
       <Beauty>2</Beauty>
       <WorkToBuild>500</WorkToBuild>
     </statBases>
-    <CostList>
+    <costList>
       <Steel>3</Steel>
-    </CostList>
+    </costList>
     <constructEffect>ConstructMetal</constructEffect>
-    <designationHotkey>Misc1</designationHotkey>
+    <designationHotKey>Misc1</designationHotKey>
   </TerrainDef>
 
   <TerrainDef ParentName="FloorBase">
-    <DefName>AluminiumTile</DefName>
+    <defName>AluminiumTile</defName>
     <label>Aluminium tile</label>
-    <RenderPrecedence>240</RenderPrecedence>
-    <Description>Aluminium tiles, for that spaceship look.</Description>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Aluminium tiles, for that spaceship look.</description>
     <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
     <color>(0.45, 0.45, 0.45)</color>
     <statBases>
       <Beauty>2</Beauty>
       <WorkToBuild>500</WorkToBuild>
     </statBases>
-    <CostList>
+    <costList>
       <Plasteel>3</Plasteel>
-    </CostList>
+    </costList>
     <constructEffect>ConstructMetal</constructEffect>
-    <designationHotkey>Misc1</designationHotkey>
+    <designationHotKey>Misc1</designationHotKey>
   </TerrainDef>
   
     <TerrainDef ParentName="FloorBase">
-    <DefName>PolymerTile</DefName>
+    <defName>PolymerTile</defName>
     <label>Polymer tile</label>
-    <RenderPrecedence>240</RenderPrecedence>
-    <Description>Polymer tiles, for that spaceship look.</Description>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Polymer tiles, for that spaceship look.</description>
     <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
     <color>(0.352, 0.431, 0.498)</color>
     <statBases>
       <Beauty>2</Beauty>
       <WorkToBuild>500</WorkToBuild>
     </statBases>
-    <CostList>
+    <costList>
       <Polymer>3</Polymer>
-    </CostList>
+    </costList>
     <constructEffect>ConstructMetal</constructEffect>
-    <designationHotkey>Misc1</designationHotkey>
+    <designationHotKey>Misc1</designationHotKey>
   </TerrainDef>
   
   
@@ -60,22 +60,22 @@
     <!-- <defName>Space</defName> -->
     <!-- <label>Space</label> -->
     <!-- <texturePath>Terrain/space</texturePath> -->
-    <!-- <EdgeType>FadeRough</EdgeType> -->
-    <!-- <RenderPrecedence>350</RenderPrecedence> -->
-    <!-- <PathCost>4</PathCost> -->
+    <!-- <edgeType>FadeRough</edgeType> -->
+    <!-- <renderPrecedence>350</renderPrecedence> -->
+    <!-- <pathCost>4</pathCost> -->
     <!-- <statBases> -->
       <!-- <Beauty>-1</Beauty> -->
       <!-- <Cleanliness>-1</Cleanliness> -->
     <!-- </statBases> -->
-    <!-- <ScatterType>Stars</ScatterType> -->
+    <!-- <scatterType>Stars</scatterType> -->
     <!-- <affordances> -->
       <!-- <li>Light</li> -->
       <!-- <li>Heavy</li> -->
       <!-- <li>Diggable</li> -->
     <!-- </affordances> -->
-    <!-- <Fertility>0.0</Fertility> -->
-    <!-- <TakeFootprints>False</TakeFootprints> -->
+    <!-- <fertility>0.0</fertility> -->
+    <!-- <takeFootprints>False</takeFootprints> -->
 	  <!-- <designationCategory>Production</designationCategory> -->
   <!-- </TerrainDef> -->
   
-</TerrainDefs>
+</Defs>

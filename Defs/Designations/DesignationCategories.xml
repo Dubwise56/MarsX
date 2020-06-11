@@ -23,7 +23,6 @@
       <li>Designator_Uninstall</li>
       <li>Designator_Claim</li>
       <li>Designator_Strip</li>
-      <li>Designator_RearmTrap</li>
       <li>Designator_Open</li>
       <li>Designator_PlanAdd</li>
       <li>Designator_PlanRemove</li> 
@@ -32,7 +31,7 @@
 
   
     <DesignationCategoryDef>
-    <DefName>Security</DefName>
+    <defName>Security</defName>
     <label>research</label>
     <description>Facilities for performing research in various fields of science.</description>
     <order>300</order>
@@ -43,7 +42,7 @@
   </DesignationCategoryDef>
   
   <DesignationCategoryDef>
-    <DefName>Temperature</DefName>
+    <defName>Temperature</defName>
     <label>Env.Control</label>
     <description>Things for controlling temperature and atmosphere in the hab.</description>
     <order>25</order>
@@ -54,7 +53,7 @@
   </DesignationCategoryDef>
   
     <DesignationCategoryDef>
-    <DefName>Ship</DefName>
+    <defName>Ship</defName>
     <label>Chem</label>
     <description>Chemical compound production.</description>
     <order>50</order>

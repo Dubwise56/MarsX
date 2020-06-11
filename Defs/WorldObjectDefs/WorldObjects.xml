@@ -68,7 +68,6 @@
     <worldObjectClass>mars.WorldObject_DustStorm</worldObjectClass>
     <texture>UI/dust</texture>
 	<canHaveFaction>false</canHaveFaction>
-	<impassable>true</impassable>
 	<selectable>true</selectable>
     <useDynamicDrawer>true</useDynamicDrawer>
     <expandingIcon>true</expandingIcon>

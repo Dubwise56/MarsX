@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase" Name="PowerConduit">
+    <defName>PowerConduit</defName>
+    <label>power conduit</label>
+    <description>A bundle of electrical cables for moving power around. Can be placed under walls and other buildings.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Linked/PowerConduit_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Transmitter</linkType>
+      <linkFlags>
+        <li>PowerConduit</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/PowerConduit_MenuIcon</uiIconPath>
+    <uiIconScale>0.7</uiIconScale>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <altitudeLayer>Conduits</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>35</WorkToBuild>
+      <Flammability>0.7</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_Conduit</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <designationHotKey>Misc1</designationHotKey>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>PowerSwitch</defName>
+    <label>power switch</label>
+    <description>Switches power on/off.</description>
+    <thingClass>Building_PowerSwitch</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Power/PowerSwitch</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <allowWireConnection>false</allowWireConnection>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <placingDraggableDimensions>0</placingDraggableDimensions>
+    <costList>
+      <Steel>15</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <tickerType>Normal</tickerType>
+    <designationCategory>Power</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Battery</defName>
+    <label>battery</label>
+    <description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire.</description>
+    <thingClass>Building_Battery</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/Battery</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.40</fillPercent>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>-15</Beauty>
+    </statBases>
+    <size>(1,2)</size>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>600</storedEnergyMax>
+        <efficiency>0.5</efficiency>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc4</designationHotKey>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>Batteries</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  
+</Defs>

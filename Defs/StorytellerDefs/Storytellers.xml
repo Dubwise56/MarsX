@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<StorytellerDefs>
+<Defs>
 
-  <StorytellerDef>
+  <!--<StorytellerDef>
 		<defName>Cassandra</defName>
     <label>Classic</label>
     <description>A steadily-increasing curve of challenge and tension.</description>
@@ -118,23 +118,7 @@
       </li>
       <li Class="StorytellerCompProperties_JourneyOffer"/>
     </comps>
-  </StorytellerDef>
+  </StorytellerDef>-->
 
-  <StorytellerDef>
-    <defName>Tutor</defName>
-    <label>Tutor Hidden</label>
-    <desiredPopulationMin>4</desiredPopulationMin>
-    <desiredPopulationMax>13</desiredPopulationMax>
-    <desiredPopulationCritical>50</desiredPopulationCritical>
-    <listVisible>false</listVisible>
-    <listOrder>1000</listOrder>
-    <tutorialMode>true</tutorialMode>
-    <disableAdaptiveTraining>true</disableAdaptiveTraining>
-    <disableAlerts>true</disableAlerts>
-    <disablePermadeath>true</disablePermadeath>
-    <forcedDifficulty>VeryEasy</forcedDifficulty>
-    <comps>
-    </comps>
-  </StorytellerDef>
 
-</StorytellerDefs>
+</Defs>

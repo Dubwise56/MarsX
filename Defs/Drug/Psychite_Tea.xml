@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Coffee</defName>
+    <label>Coffee</label>
+    <description>A fragrant tea infused with leaves of the coffee plant. Drinking it induces a subtle Caffeine euphoria. This tea is easy to produce at cooking facilities, but can produce Caffeine addiction if consumed too often.\n\nMany tribes use psychoid tea, both as a daily energizer and as part of social and religious rituals.</description>
+    <descriptionHyperlinks>
+      <HediffDef>CaffeineTeaHigh</HediffDef>
+      <HediffDef>CaffeineTolerance</HediffDef>
+      <HediffDef>CaffeineAddiction</HediffDef>
+      <HediffDef>ChemicalDamageSevere</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Tea</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.88</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>400</WorkToMake>
+      <MarketValue>10</MarketValue>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.40</joy>
+      <baseIngestTicks>210</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>CaffeineTeaHigh</hediffDef>
+          <severity>0.75</severity>
+          <toleranceChemical>Caffeine</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>0.1</offset>
+          <toleranceChemical>Caffeine</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>CaffeineTolerance</hediffDef>
+          <severity>0.03</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>PsychoidBrewing</researchPrerequisite>
+      <recipeUsers>
+        <li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+      </recipeUsers>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <skillRequirements>
+        <Cooking>2</Cooking>
+      </skillRequirements>
+      <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    </recipeMaker>
+    <costList>
+      <PsychoidLeaves>4</PsychoidLeaves>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Caffeine</chemical>
+        <addictiveness>0.02</addictiveness>
+        <minToleranceToAddict>0.10</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>110</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>CaffeineTeaHigh</defName>
+    <label>high on coffee</label>
+    <labelNoun>a coffee high</labelNoun>
+    <description>Active caffeine in the bloodstream. Generates a mild euphoric effect.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <painFactor>0.9</painFactor>
+          <restFallFactor>0.8</restFallFactor>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>CaffeineTeaHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CaffeineTeaHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Caffeine</label>
+        <description>Drinking that tea made me feel great. I love having this energy!</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <!-- Caffeine addiction -->
+
+  <ChemicalDef>
+    <defName>Caffeine</defName>
+    <label>Caffeine</label>
+    <addictionHediff>CaffeineAddiction</addictionHediff>
+    <toleranceHediff>CaffeineTolerance</toleranceHediff>
+    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+    <onGeneratedAddictedEvents>
+      <li>
+        <hediff>ChemicalDamageSevere</hediff>
+        <chance>0.15</chance>
+        <partsToAffect>
+          <li>Kidney</li>
+        </partsToAffect>
+      </li>
+    </onGeneratedAddictedEvents>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_Caffeine</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>Caffeine</label>
+    <description>Because of a Caffeine addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <listPriority>50</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>CaffeineTolerance</defName>
+    <label>Caffeine tolerance</label>
+    <description>A built-up tolerance to Caffeine. The more severe this tolerance is, the more Caffeine-based drugs like yayo or flake it takes to get the same effect.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>Caffeine</chemical>
+      </li>
+    </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_RandomDrugEffect">
+        <hediff>ChemicalDamageSevere</hediff>
+        <minSeverity>0.50</minSeverity>
+        <baseMtbDays>120</baseMtbDays>
+        <partsToAffect>
+          <li>Kidney</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+  </HediffDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>CaffeineAddiction</defName>
+    <label>Caffeine addiction</label>
+    <description>A chemical addiction to Caffeine. Long-term presence of Caffeine has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+      \nWithout regular doses of Caffeine from drugs like flake or yayo, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>Chemical_Caffeine</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.0333</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <restFallFactorOffset>0.3</restFallFactorOffset>
+        <socialFightChanceFactor>3.0</socialFightChanceFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_DrugExtreme</mentalState>
+            <mtbDays>40</mtbDays>
+          </li>
+          <li>
+            <mentalState>Wander_Psychotic</mentalState>
+            <mtbDays>10</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>CaffeineWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CaffeineAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>Caffeine withdrawal</label>
+        <description>God I'm tired. Everything's so slow and boring. Especially me.</description>
+        <baseMoodEffect>-35</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

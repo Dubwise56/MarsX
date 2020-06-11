@@ -27,15 +27,19 @@
     <color>(51,51,127)</color>
   </TimeAssignmentDef>
   
-    <TimeAssignmentDef>
+  <TimeAssignmentDef>
     <defName>Fitness</defName>
     <label>fitness</label>
-    <color>(51,51,127)</color>
+    <color>(63,144,56)</color>
+    <allowRest>false</allowRest>
+    <allowJoy>false</allowJoy>
   </TimeAssignmentDef>
   
-      <TimeAssignmentDef>
+  <TimeAssignmentDef>
     <defName>EVA</defName>
     <label>EVA</label>
-    <color>(51,51,127)</color>
+    <color>(197,53,53)</color>
+    <allowRest>false</allowRest>
+    <allowJoy>false</allowJoy>
   </TimeAssignmentDef>
 </Defs>

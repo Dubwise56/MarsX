@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<ThingDefs>
+<Defs>
+
   <ThingDef Name="BaseTool" Abstract="True">
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
@@ -16,17 +17,15 @@
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-			<Beauty>-6</Beauty>
-			<Mass>2</Mass>
-		</statBases>
+      <Beauty>-6</Beauty>
+      <Mass>2</Mass>
+    </statBases>
     <altitudeLayer>Item</altitudeLayer>
     <alwaysHaulable>True</alwaysHaulable>
     <tickerType>Never</tickerType>
     <techLevel>Industrial</techLevel>
-		<smeltable>true</smeltable>
-		<weaponTags>
-      <li>Melee</li>
-    </weaponTags>
+    <tradeability>Sellable</tradeability>
+    <smeltable>true</smeltable>
     <thingCategories>
       <li>WeaponsMelee</li>
     </thingCategories>
@@ -35,33 +34,11 @@
       <li>
         <compClass>CompEquippable</compClass>
       </li>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>ArtName_WeaponMelee</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
-      </li>
     </comps>
-    <recipeMaker>
-      <workSpeedStat>SmithingSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Smith</soundWorking>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-      </recipeUsers>
-      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-    </recipeMaker>
-    <inspectorTabs>
-      <li>ITab_Art</li>
-    </inspectorTabs>
   </ThingDef>
   
 
-	<ThingDef ParentName="BaseTool">
+	<!--<ThingDef ParentName="BaseTool">
 		<defName>Bag</defName>
 		<label>bag</label>
 		<description>Helps you carrying stuff, but makes it hard to fight.</description>
@@ -91,173 +68,254 @@
 				<meleeDamageDef>Blunt</meleeDamageDef>
 			</li>
 		</verbs>
-	</ThingDef>
+	</ThingDef>-->
 
 
 
-	<ThingDef ParentName="BaseTool">
-		<defName>Hammer</defName>
-		<label>hammer</label>
-		<description>Helps you construct stuff faster.</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/hammer</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>InteractPistol</soundInteract>
-		<costStuffCount>50</costStuffCount>
-		<statBases>
-			<WorkToBuild>20000</WorkToBuild>
-			<MeleeWeapon_DamageAmount>15</MeleeWeapon_DamageAmount>
-			<MeleeWeapon_Cooldown>2</MeleeWeapon_Cooldown>
-			<Mass>1</Mass>
-		</statBases>
-		<equippedStatOffsets>
-			<ConstructionSpeed>0.075</ConstructionSpeed>
-		</equippedStatOffsets>
-		<equippedAngleOffset>-65</equippedAngleOffset>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<verbs>
-			<li>
-				<verbClass>Verb_MeleeAttack</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<meleeDamageDef>Blunt</meleeDamageDef>
-			</li>
-		</verbs>
-	</ThingDef>
-
-
-	<ThingDef ParentName="BaseTool">
-		<defName>Power_Drill</defName>
-		<label>power drill</label>
-		<description>Helps you construct stuff even faster.</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/powerdrill</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>InteractPistol</soundInteract>
-		<costStuffCount>50</costStuffCount>
-		<statBases>
-			<WorkToBuild>20000</WorkToBuild>
-			<MeleeWeapon_DamageAmount>5</MeleeWeapon_DamageAmount>
-			<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
-			<Mass>1.5</Mass>
-		</statBases>
-		<equippedStatOffsets>
-			<ConstructionSpeed>0.15</ConstructionSpeed>
-		</equippedStatOffsets>
-		<equippedAngleOffset>25</equippedAngleOffset>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<verbs>
-			<li>
-				<verbClass>Verb_MeleeAttack</verbClass>
-				<soundCast>BuildingComplete</soundCast>
-				<hasStandardCommand>true</hasStandardCommand>
-				<meleeDamageDef>Stab</meleeDamageDef>
-			</li>
-		</verbs>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseTool">
-		<defName>Trowel</defName>
-		<label>trowel</label>
-		<description>Helps planting and harvesting plants faster.</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/trowel</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>InteractPistol</soundInteract>
-		<costStuffCount>50</costStuffCount>
-		<statBases>
-			<WorkToBuild>20000</WorkToBuild>
-			<MeleeWeapon_DamageAmount>9</MeleeWeapon_DamageAmount>
-			<MeleeWeapon_Cooldown>1.65</MeleeWeapon_Cooldown>
-			<Mass>0.3</Mass>
-		</statBases>
-		<equippedStatOffsets>
-			<PlantWorkSpeed>0.15</PlantWorkSpeed>
-		</equippedStatOffsets>
-		<equippedAngleOffset>-65</equippedAngleOffset>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<verbs>
-			<li>
-				<verbClass>Verb_MeleeAttack</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<meleeDamageDef>Cut</meleeDamageDef>
-			</li>
-		</verbs>
-	</ThingDef>
-
-
-
-	<ThingDef ParentName="BaseTool">
-		<defName>Pickaxe</defName>
-		<label>pickaxe</label>
-		<description>A tool to help you mining, increases the speed of mining significantly.</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/pickaxe</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>InteractPistol</soundInteract>
-		<costStuffCount>50</costStuffCount>
-		<statBases>
-			<WorkToBuild>20000</WorkToBuild>
-			<MeleeWeapon_DamageAmount>12</MeleeWeapon_DamageAmount>
-			<MeleeWeapon_Cooldown>1.95</MeleeWeapon_Cooldown>
-			<Mass>3</Mass>
-		</statBases>
-		<equippedStatOffsets>
-			<MiningSpeed>0.15</MiningSpeed>
-		</equippedStatOffsets>
-		<equippedAngleOffset>-65</equippedAngleOffset>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<verbs>
-			<li>
-				<verbClass>Verb_MeleeAttack</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<meleeDamageDef>Stab</meleeDamageDef>
-			</li>
-		</verbs>
-	</ThingDef> 
-
-
-	<!--
   <ThingDef ParentName="BaseTool">
-    <defName>Broom</defName>
-    <label>Broom</label>
-    <description>Helps you clean much faster.</description>
+    <defName>Hammer</defName>
+    <label>hammer</label>
+    <description>Helps you construct stuff faster.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/hammer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
+    <techLevel>Neolithic</techLevel>
     <costStuffCount>50</costStuffCount>
     <statBases>
-      <WorkToBuild>20000</WorkToBuild>
-      <MeleeWeapon_DamageAmount>15</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>2</MeleeWeapon_Cooldown>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>1</Mass>
     </statBases>
-	<equippedStatOffsets>
-      <CleaningSpeed>0.75</CleaningSpeed>
+    <equippedStatOffsets>
+      <ConstructionSpeed>0.06</ConstructionSpeed>
+      <ConstructSuccessChance>0.06</ConstructSuccessChance>
+      <FixBrokenDownBuildingSuccessChance>0.06</FixBrokenDownBuildingSuccessChance>
     </equippedStatOffsets>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
-    <verbs>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <thingDefs>
+          <li>Steel</li>
+        </thingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <meleeDamageDef>Blunt</meleeDamageDef>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.15</cooldownTime>
       </li>
-    </verbs>
-  </ThingDef> -->
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14.2</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
 
-</ThingDefs>
+
+  <ThingDef ParentName="BaseTool">
+    <defName>Power_Drill</defName>
+    <label>power drill</label>
+    <description>Helps you construct stuff even faster.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/powerdrill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ConstructionSpeed>0.12</ConstructionSpeed>
+      <ConstructSuccessChance>0.12</ConstructSuccessChance>
+      <FixBrokenDownBuildingSuccessChance>0.12</FixBrokenDownBuildingSuccessChance>
+    </equippedStatOffsets>
+    <equippedAngleOffset>25</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <thingDefs>
+          <li>Steel</li>
+        </thingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10.7</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseTool">
+    <defName>Trowel</defName>
+    <label>trowel</label>
+    <description>Helps planting and harvesting plants faster.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/trowel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>0.3</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.6</PlantWorkSpeed>
+      <PlantHarvestYield>0.6</PlantHarvestYield>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <thingDefs>
+          <li>Steel</li>
+        </thingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>9.7</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="BaseTool">
+    <defName>Pickaxe</defName>
+    <label>pickaxe</label>
+    <description>A tool to help you mining, increases the speed of mining significantly.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/pickaxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>90</costStuffCount>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>3.5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MiningSpeed>0.12</MiningSpeed>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <thingDefs>
+          <li>Steel</li>
+        </thingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14.3</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+</Defs>
