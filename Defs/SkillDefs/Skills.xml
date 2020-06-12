@@ -7,12 +7,14 @@
     <description>Taming, training, managing, and controlling animals.</description>
     <skillLabel>Biology</skillLabel>
     <usuallyDefinedInBackstories>false</usuallyDefinedInBackstories>
+    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
   </SkillDef>
 
   <SkillDef>
-    <defName>Growing</defName>
+    <defName>Plants</defName>
     <description>Sowing, caring for, and harvesting crops. Study of plant growth, reproduction, biochemistry, chemical products, development, diseases.</description>
     <skillLabel>Botany</skillLabel>
+    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
   </SkillDef>
 
   <SkillDef>
@@ -25,6 +27,7 @@
     <defName>Construction</defName>
     <description>Better constructors build structures and furniture faster and of higher quality.</description>
     <skillLabel>Engineering</skillLabel>
+    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
   </SkillDef>
 
 
@@ -32,6 +35,7 @@
     <defName>Mining</defName>
     <description>Digging tunnels and extracting mineral or buried resources.</description>
     <skillLabel>Geology</skillLabel>
+    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
   </SkillDef>
 
   <SkillDef>
@@ -44,12 +48,14 @@
     <defName>Medicine</defName>
     <description>Treating wounds and diseases and doing surgery, biomedical subjects such as anatomy, physiology, pharmacology and neuroscience</description>
     <skillLabel>Medical Science</skillLabel>
+    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
   </SkillDef>
 
   <SkillDef>
     <defName>Cooking</defName>
     <description>Creating meals from raw ingredients, development of new food products as well as microbiological and chemical testing</description>
     <skillLabel>Food Science</skillLabel>
+    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
   </SkillDef>
 
   <SkillDef>
@@ -78,9 +84,10 @@
   </SkillDef>
 
   <SkillDef>
-    <defName>Research</defName>
+    <defName>Intellectual</defName>
     <description>Investigating evidence, doing experiments, and learning.</description>
     <skillLabel>Research</skillLabel>
+    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
   </SkillDef>
 
 </Defs>
