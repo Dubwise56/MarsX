@@ -32,6 +32,9 @@
         <li>Iron</li>
       </thingDefs>
     </fixedIngredientFilter>
+        <recipeUsers>
+      <li>ElectricSmelter</li>
+    </recipeUsers>
   </RecipeDef>
   
   <RecipeDef>
