@@ -17,24 +17,24 @@
   </WorkGiverDef>
 
 
-   <WorkGiverDef>
+  <WorkGiverDef>
     <defName>DoBillsTableSoil</defName>
-	<label>make soil</label>
+    <label>make soil</label>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Growing</workType>
     <priorityInType>0</priorityInType>
     <fixedBillGiverDefs>
-	  <li>TableSoil</li>
-	</fixedBillGiverDefs>
+      <li>TableSoil</li>
+    </fixedBillGiverDefs>
     <verb>create</verb>
     <gerund>creating</gerund>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
-	 <prioritizeSustains>true</prioritizeSustains>
+    <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
-   
-   <WorkGiverDef>
+
+  <WorkGiverDef>
     <defName>CleanClearEquipment</defName>
     <label>clean equipment</label>
     <giverClass>mars.WorkGiver_CleanEquipment</giverClass>
@@ -48,8 +48,8 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </WorkGiverDef>
-  
-   <!--
+
+  <!--
   <WorkGiverDef>
     <defName>ChatWithColonist</defName>
     <label>chat with colonists</label>
@@ -62,21 +62,21 @@
       <li>Talking</li>
     </requiredCapacities>
   </WorkGiverDef> -->
-  
-    <!-- ============= PatientBedRest ============= -->
 
-   <WorkGiverDef>
+  <!-- ============= PatientBedRest ============= -->
+
+  <WorkGiverDef>
     <defName>TendSelf</defName>
     <label>tend self in bed</label>
     <giverClass>mars.WorkGiver_TendSelf</giverClass>
     <workType>Doctor</workType>
     <verb>tend self in</verb>
     <gerund>tending self in</gerund>
-	    <priorityInType>100</priorityInType>
-  </WorkGiverDef> 
- 
-  
-      <WorkGiverDef>
+    <priorityInType>100</priorityInType>
+  </WorkGiverDef>
+
+
+  <WorkGiverDef>
     <defName>LoadSandbags</defName>
     <label>Load Sandbags</label>
     <giverClass>mars.WorkGiver_LoadSandbags</giverClass>
@@ -88,8 +88,8 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </WorkGiverDef>
-  
-    <WorkGiverDef>
+
+  <WorkGiverDef>
     <defName>LoadFuelModule</defName>
     <label>Load Fuel Module</label>
     <giverClass>mars.WorkGiver_LoadFuelModule</giverClass>
@@ -101,6 +101,6 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </WorkGiverDef>
-  
-  
+
+
 </Defs>

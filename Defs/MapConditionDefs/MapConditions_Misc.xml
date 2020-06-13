@@ -7,6 +7,7 @@
     <label>martian atmosphere</label>
     <description>The atmosphere of Mars is less than 1% of Earth's, so it does not protect the planet from the Sun's radiation nor does it do much to retain heat at the surface. It consists of 95% carbon dioxide, 3% nitrogen, 1.6% argon, and the remainder is trace amounts of oxygen, water vapor, and other gases.</description>
     <endMessage>error</endMessage>
+     <letterDef>NegativeEvent</letterDef>
     <canBePermanent>true</canBePermanent>
   </GameConditionDef>
 
@@ -15,7 +16,9 @@
     <conditionClass>mars.MapCondition_BigDustStorm</conditionClass>
     <label>Massive Dust Storm</label>
     <description>A dust storm can develop in a matter of hours and envelope the entire planet within a few days. After developing, it can take weeks for a dust storm on Mars to completely expend itself.</description>
+    <letterText>A dust storm can develop in a matter of hours and envelope the entire planet within a few days. After developing, it can take weeks for a dust storm on Mars to completely expend itself.</letterText>
     <endMessage>The dust storm has passed.</endMessage>
+    <letterDef>NegativeEvent</letterDef>
     <canBePermanent>false</canBePermanent>
   </GameConditionDef>
 
@@ -24,7 +27,9 @@
     <conditionClass>mars.MapCondition_DustStorm</conditionClass>
     <label>Dust Storm</label>
     <description>Local dust storms pop up frequently.</description>
+    <letterText>Local dust storms pop up frequently.</letterText>
     <endMessage>The dust storm has passed.</endMessage>
+    <letterDef>NegativeEvent</letterDef>
     <canBePermanent>false</canBePermanent>
   </GameConditionDef>
 
@@ -33,8 +38,10 @@
     <conditionClass>mars.MapCondition_Plume</conditionClass>
     <label>plume</label>
     <description>A plume is seen reaching high above the surface of the planet and blocks the sun.</description>
+    <letterText>A plume is seen reaching high above the surface of the planet and blocks the sun.</letterText>
     <endMessage>The plume is vanishing.</endMessage>
-    <canBePermanent>false</canBePermanent>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
   </GameConditionDef>
  
 

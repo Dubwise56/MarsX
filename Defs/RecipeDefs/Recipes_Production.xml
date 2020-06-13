@@ -32,7 +32,7 @@
         <li>Iron</li>
       </thingDefs>
     </fixedIngredientFilter>
-        <recipeUsers>
+    <recipeUsers>
       <li>ElectricSmelter</li>
     </recipeUsers>
   </RecipeDef>
@@ -46,7 +46,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>ConstructDirt</effectWorking>
     <soundWorking>Recipe_Brewing</soundWorking>
-	<workSkill>Growing</workSkill>
+	<workSkill>Plants</workSkill>
     <workSkillLearnFactor>0.25</workSkillLearnFactor>
     <ingredients>
       <li>
@@ -72,6 +72,9 @@
 			   <li>IceSandBag</li>
           </thingDefs>
     </fixedIngredientFilter>
+    <recipeUsers>
+      <li>TableSoil</li>
+    </recipeUsers>
   </RecipeDef>
 
 

@@ -86,12 +86,11 @@
     <workerClass>IncidentWorker_MakeGameCondition</workerClass>
     <gameCondition>HighAltitudePlume</gameCondition>
     <letterLabel>Plume</letterLabel>
-    <letterText>A plume is seen reaching high above the surface of the planet and blocks the sun.</letterText>
     <letterDef>NegativeEvent</letterDef>
     <baseChance>1</baseChance>
     <durationDays>
-      <min>0.75</min>
-      <max>1.25</max>
+      <min>1</min>
+      <max>3.25</max>
     </durationDays>
     <targetTags>
       <li>World</li>
@@ -220,7 +219,7 @@
     <label>decompression</label>
     <workerClass>mars.IncidentWorker_Blowout</workerClass>
     <letterLabel>Rapid Decompression</letterLabel>
-    <letterText>An outside door has had a catasrophic failure resulting in rapid decompression and the room is exposed to the martian atmosphere.</letterText>
+    <letterText>An outside door has had a catastrophic failure resulting in rapid decompression and the room is exposed to the martian atmosphere.</letterText>
     <letterDef>ThreatBig</letterDef>
     <baseChance>1.5</baseChance>
     <category>ThreatBig</category>

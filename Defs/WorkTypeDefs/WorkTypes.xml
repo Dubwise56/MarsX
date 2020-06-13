@@ -55,7 +55,7 @@
     </relevantSkills>
   </WorkTypeDef>
   
-  <WorkTypeDef>
+  <!--<WorkTypeDef>
     <defName>Fitness</defName>
 	<visible>false</visible>
 	<alwaysStartActive>false</alwaysStartActive>
@@ -65,7 +65,7 @@
     <description>Fitness training keeps your pawns healthy</description>
     <verb>Train</verb>
     <naturalPriority>950</naturalPriority>
-  </WorkTypeDef>
+  </WorkTypeDef>-->
   
   <WorkTypeDef>
     <defName>EquipmentCleaning</defName>

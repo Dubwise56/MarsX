@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <MarsX.PlanetDef>
+    <defName>Moon</defName>
+    <label>Moon</label>
+    <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
+    <texture>World/MOON</texture>
+    <Diameter>2158.8</Diameter>
+    <Playable>true</Playable>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <selectable>true</selectable>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/hsbMark</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+    <Divisions>5</Divisions>
+  </MarsX.PlanetDef>
+
+  <MarsX.PlanetDef>
+    <defName>Earth</defName>
+    <label>Earth</label>
+    <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
+    <texture>World/Earth</texture>
+    <Diameter>7917.5</Diameter>
+    <Parent>Moon</Parent>
+    <Periapsis>238900</Periapsis>
+    <Apoapsis>238900</Apoapsis>
+    <OrbitPeriod>27</OrbitPeriod>
+    <RotationPeriod>1</RotationPeriod>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <selectable>true</selectable>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/hsbMark</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+  </MarsX.PlanetDef>
+
+
+
+  <MarsX.PlanetDef>
+    <defName>Mars</defName>
+    <label>Mars</label>
+    <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
+    <texture>World/MARS</texture>
+    <Diameter>4212.3</Diameter>
+    <Playable>true</Playable>
+    <OrbitPeriod>687</OrbitPeriod>
+    <RotationPeriod>1</RotationPeriod>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <selectable>true</selectable>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/hsbMark</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+    <Divisions>5</Divisions>
+</MarsX.PlanetDef>
+
+  <!--<MarsX.PlanetDef>
+    <defName>Phobos</defName>
+    <label>Phobos</label>
+    <description>Phobos is the innermost and larger of the two natural satellites of Mars, the other being Deimos. Both moons were discovered in 1877 by American astronomer Asaph Hall.</description>
+    <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
+    <texture>World/phobos</texture>
+    <Diameter>14</Diameter>
+    <OrbitPeriod>0.308</OrbitPeriod>
+    <RotationPeriod>1</RotationPeriod>
+    <Inclination>1.093</Inclination>
+    <Parent>Mars</Parent>
+    <Periapsis>7090</Periapsis>
+    <Apoapsis>7090</Apoapsis>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <selectable>true</selectable>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/Clear</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+    <Divisions>2</Divisions>
+  </MarsX.PlanetDef>
+
+  <MarsX.SpaceObjectDef>
+    <defName>MAVEN</defName>
+    <label>MAVEN</label>
+    <description>Mars Atmosphere and Volatile EvolutioN Mission (MAVEN) is a space probe developed by NASA designed to study the Martian atmosphere while orbiting Mars. Mission goals include determining how the planet's atmosphere and water, presumed to have once been substantial, were lost over time.</description>
+    <worldObjectClass>MarsX.WorldObject_Sat</worldObjectClass>
+    <texture>UI/MAVEN</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <selectable>true</selectable>
+    <Parent>Mars</Parent>
+    <Periapsis>4362.3</Periapsis>
+    <Apoapsis>8112</Apoapsis>
+    <OrbitPeriod>0.1875</OrbitPeriod>
+    <Inclination>75</Inclination>
+    <RotationPeriod>1</RotationPeriod>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/MAVEN</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+  </MarsX.SpaceObjectDef>
+
+  <MarsX.SpaceObjectDef>
+    <defName>MOM</defName>
+    <label>MOM</label>
+    <description>The Mars Orbiter Mission (MOM), also called Mangalyaan, is a space probe orbiting Mars since 24 September 2014. It was launched on 5 November 2013 by the Indian Space Research Organisation (ISRO). It is India's first interplanetary mission.</description>
+    <worldObjectClass>MarsX.WorldObject_Sat</worldObjectClass>
+    <texture>UI/MOM</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <selectable>true</selectable>
+    <Parent>Mars</Parent>
+    <Periapsis>5090</Periapsis>
+    <Apoapsis>47000</Apoapsis>
+    <OrbitPeriod>0.6</OrbitPeriod>
+    <RotationPeriod>1</RotationPeriod>
+    <Inclination>150</Inclination>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/MOM</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+  
+</MarsX.SpaceObjectDef>
+
+  <MarsX.SpaceObjectDef>
+    <defName>TeslaRoadster</defName>
+    <label>Tesla Roadster</label>
+    <description>Elon Musk's Tesla Roadster</description>
+    <worldObjectClass>MarsX.WorldObject_Sat</worldObjectClass>
+    <texture>UI/Roadster</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <selectable>true</selectable>
+    <Parent>Mars</Parent>
+    <Periapsis>10090</Periapsis>
+    <Apoapsis>90090</Apoapsis>
+    <OrbitPeriod>6</OrbitPeriod>
+    <RotationPeriod>6</RotationPeriod>
+    <Inclination>45</Inclination>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/Roadster</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+  </MarsX.SpaceObjectDef>-->
+
+
+  <MarsX.PlanetDef>
+    <defName>Europa</defName>
+    <label>Europa</label>
+    <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
+    <texture>World/EUROPA</texture>
+    <Diameter>7917.5</Diameter>
+    <Playable>true</Playable>
+    <OrbitPeriod>4.54166</OrbitPeriod>
+    <RotationPeriod>1</RotationPeriod>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/hsbMark</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+    <Divisions>5</Divisions>
+  </MarsX.PlanetDef>
+
+  <MarsX.PlanetDef>
+    <defName>Jupiter</defName>
+    <label>Jupiter</label>
+    <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
+    <texture>World/JUPITER</texture>
+    <Diameter>43441</Diameter>
+    <Parent>Europa</Parent>
+    <Periapsis>670900</Periapsis>
+    <Apoapsis>670900</Apoapsis>
+    <OrbitPeriod>4380</OrbitPeriod>
+    <RotationPeriod>1</RotationPeriod>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/hsbMark</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+</MarsX.PlanetDef>
+
+
+
+
+
+
+
+
+
+
+  <!--<MarsX.SpaceObjectDef>
+    <defName>OrbitalShip</defName>
+    <label>Ares ILAV</label>
+    <description>The Interplanetary Landing and Ascent Vehicle is a reusable launch vehicle designed to land on and take off from the surface of mars.</description>
+    <worldObjectClass>MarsX.WorldObject_Ship</worldObjectClass>
+    <texture>UI/ship</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/ship</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+  </MarsX.SpaceObjectDef>
+
+
+  <MarsX.SpaceObjectDef>
+    <defName>DustStorm</defName>
+    <label>Dust Storm</label>
+    <description>Dust Storm.</description>
+    <worldObjectClass>MarsX.WorldObject_DustStorm</worldObjectClass>
+    <texture>UI/dustStormIco</texture>
+    <canHaveFaction>false</canHaveFaction>
+    <selectable>true</selectable>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/dustStormIco</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+  </MarsX.SpaceObjectDef>-->
+</Defs>
