@@ -79,6 +79,7 @@
     <tabWindowClass>MainTabWindow_Research</tabWindowClass>
     <order>60</order>
     <defaultHotKey>F5</defaultHotKey>
+    <buttonVisible>false</buttonVisible>
   </MainButtonDef>
 
   <MainButtonDef>
