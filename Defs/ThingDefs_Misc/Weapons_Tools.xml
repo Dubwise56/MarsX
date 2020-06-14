@@ -89,7 +89,7 @@
     </statBases>
     <equippedStatOffsets>
       <ConstructionSpeed>0.06</ConstructionSpeed>
-      <ConstructSuccessChance>0.06</ConstructSuccessChance>
+      <ConstructSuccessChance>1</ConstructSuccessChance>
       <FixBrokenDownBuildingSuccessChance>0.06</FixBrokenDownBuildingSuccessChance>
     </equippedStatOffsets>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -150,7 +150,7 @@
     </statBases>
     <equippedStatOffsets>
       <ConstructionSpeed>0.12</ConstructionSpeed>
-      <ConstructSuccessChance>0.12</ConstructSuccessChance>
+      <ConstructSuccessChance>1</ConstructSuccessChance>
       <FixBrokenDownBuildingSuccessChance>0.12</FixBrokenDownBuildingSuccessChance>
     </equippedStatOffsets>
     <equippedAngleOffset>25</equippedAngleOffset>

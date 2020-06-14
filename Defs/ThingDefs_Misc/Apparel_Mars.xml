@@ -1,6 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_JumpSuit</defName>
+    <label>Jumpsuit</label>
+    <description>A one-piece garment with sleeves and legs.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <costStuffCount>70</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>160</MaxHitPoints>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>1.7</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>Jumpsuits</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0,0.31,0.776,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
   <ThingDef Name="ApparelArmorHelmetPowerBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
     <techLevel>Spacer</techLevel>
     <recipeMaker>
