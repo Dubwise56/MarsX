@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SongDef>
+    <defName>EntrySong</defName>
+    <playOnMap>false</playOnMap>
+    <clipPath>Songs/10-Event_Horizon</clipPath>
+    <volume>0.76</volume>
+  </SongDef>
+
+</Defs>

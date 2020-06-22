@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <MarsX.BackstoryDef>
+    <defName>Commercialpilot</defName>
+    <title>Commercial pilot</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} started as an actor portraying pilots in commercials, before heeding the call and getting a license. How did HE get up here, you ask?</baseDesc>
+    <AllowedRoles>
+      <li>Civilian</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+
+  <MarsX.BackstoryDef>
+    <defName>Teambuilder</defName>
+    <title>Team builder</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} still thinks this is a real occupation. Always the butt of the joke. Somehow, though, everyone eventually listens to HIS advice and bonds together. Does he have psychic powers? {PAWN_pronoun} does not say.</baseDesc>
+    <skillGains>
+      <Social>3</Social>
+      <Crafting>2</Crafting>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Onepercenter</defName>
+    <title>One percenter</title>
+    <slot>Adulthood</slot>
+    <baseDesc>Started HIS business with a small loan of a million dollars from HIS dad. Made a fortune building high-quality fences and walls. Owns stock in a space agency. Could never buy HIS father’s love.</baseDesc>
+    <skillGains>
+      <Animals>-5</Animals>
+      <Plants>-5</Plants>
+      <Chemistry>-5</Chemistry>
+      <Construction>-5</Construction>
+      <Mining>-5</Mining>
+      <Shooting>-5</Shooting>
+      <Medicine>-5</Medicine>
+      <Cooking>-5</Cooking>
+      <Crafting>-5</Crafting>
+      <Artistic>3</Artistic>
+      <Melee>-5</Melee>
+      <Social>-5</Social>
+      <Intellectual>-5</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Politician</defName>
+    <title>Politician</title>
+    <slot>Adulthood</slot>
+    <baseDesc>Had to be there. Had to be visible. {PAWN_pronoun} knew that this mission would give HIM the exposure HE needed for the coming elections. Will run for Mayor of Mars. Noboby likes him, which goes without saying.</baseDesc>
+    <skillGains>
+      <Animals>-5</Animals>
+      <Plants>-5</Plants>
+      <Chemistry>-5</Chemistry>
+      <Construction>-5</Construction>
+      <Mining>-5</Mining>
+      <Shooting>-5</Shooting>
+      <Medicine>-5</Medicine>
+      <Cooking>-5</Cooking>
+      <Crafting>-5</Crafting>
+      <Artistic>3</Artistic>
+      <Melee>-5</Melee>
+      <Social>1</Social>
+      <Intellectual>-5</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Lotterywinner</defName>
+    <title>Lottery winner</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} thought it was strange that a space agency was holding a lottery, of all things. Never read the fine print, especially the sections about bodily harm and starvation. Well, at least mom has a life’s supply of Martian dust.</baseDesc>
+    <skillGains>
+      <Animals>-5</Animals>
+      <Plants>-5</Plants>
+      <Chemistry>-5</Chemistry>
+      <Construction>-5</Construction>
+      <Mining>-5</Mining>
+      <Shooting>-5</Shooting>
+      <Medicine>-5</Medicine>
+      <Cooking>-5</Cooking>
+      <Crafting>-5</Crafting>
+      <Melee>-5</Melee>
+      <Social>1</Social>
+      <Intellectual>-5</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Fitnessspecialist</defName>
+    <title>Fitness specialist</title>
+    <slot>Adulthood</slot>
+    <baseDesc>Lost HIS fitness studio after a home console exploded in popularity. Vowed revenge on the animated fitness instructor over a bottle of vodka, before falling madly in love with her. REALLY needs a psychiatrist.</baseDesc>
+    <skillGains>
+      <Melee>5</Melee>
+      <Social>3</Social>
+      <Animals>1</Animals>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Nutritionalexpert</defName>
+    <title>Nutritional expert</title>
+    <slot>Adulthood</slot>
+    <baseDesc>Had enough common dignity to not call HIMSELF a ‘gastro scientist’. Makes sure everyone is eating Martian gruel with at least some nutrition in it. Knowing what the others are eating weighs on HIS conscience.</baseDesc>
+    <skillGains>
+      <Cooking>5</Cooking>
+      <Intellectual>1</Intellectual>
+      <Animals>2</Animals>
+      <Plants>3</Plants>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+
+  <MarsX.BackstoryDef>
+    <defName>Billionaire</defName>
+    <title>Billionaire</title>
+    <slot>Adulthood</slot>
+    <baseDesc>Oil, diamonds, metal. Mother Earth provides all of these, especially to those who do not live in extreme poverty on the verge of starvation. You could say ending up on Mars was karma.</baseDesc>
+    <skillGains>
+      <Animals>-4</Animals>
+      <Plants>-4</Plants>
+      <Chemistry>-4</Chemistry>
+      <Construction>-4</Construction>
+      <Mining>-4</Mining>
+      <Shooting>-4</Shooting>
+      <Medicine>-4</Medicine>
+      <Crafting>-4</Crafting>
+      <Cooking>-4</Cooking>
+      <Melee>-4</Melee>
+      <Social>1</Social>
+      <Intellectual>-4</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Schoolteacher</defName>
+    <title>School teacher</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} has always been fleeing from bad luck. Lightning bolts, bats in HIS hair, spontaneous combustion of neighbours… the list goes on. Surely, whatever demon is following HIM cannot reach Mars</baseDesc>
+    <skillGains>
+      <Social>3</Social>
+      <Intellectual>3</Intellectual>
+      <Chemistry>1</Chemistry>
+      <Mining>1</Mining>
+      <Animals>1</Animals>
+      <Shooting>1</Shooting>
+      <Construction>1</Construction>
+      <Medicine>1</Medicine>
+      <Plants>1</Plants>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Stripper</defName>
+    <title>Stripper</title>
+    <slot>Adulthood</slot>
+    <baseDesc>A fancy role for someone with a dirty occupation. In the depths of space, no one back home can hear HIM swing around on a pole.</baseDesc>
+    <skillGains>
+      <Animals>-2</Animals>
+      <Plants>-2</Plants>
+      <Chemistry>-2</Chemistry>
+      <Construction>-2</Construction>
+      <Mining>-2</Mining>
+      <Shooting>-2</Shooting>
+      <Medicine>-2</Medicine>
+      <Cooking>-2</Cooking>
+      <Crafting>-2</Crafting>
+      <Artistic>3</Artistic>
+      <Melee>-2</Melee>
+      <Social>5</Social>
+      <Intellectual>-10</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Progamer</defName>
+    <title>Pro gamer</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} loved living his life on the edge. Whether it was making use of an Artosis pylon to power HIS army, or pulling workers for one last attack. This whole Mars business was just another step on the way.</baseDesc>
+    <skillGains>
+      <Social>3</Social>
+      <Melee>3</Melee>
+      <Crafting>3</Crafting>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+</Defs>

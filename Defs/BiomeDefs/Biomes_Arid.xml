@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--  mars base biome  -->
-  <BiomeDef Name="BiomeBase" Abstract="True">
+  <BiomeDef Name="BiomeBase">
     <defName>MarsSurface</defName>
     <label>Mars Surface</label>
     <description>The surface of mars</description>
@@ -68,7 +68,8 @@
       </li>
     </terrainPatchMakers>-->
     <baseWeatherCommonalities>
-      <Clear>1</Clear>
+      <Clear>18</Clear>
+      <Windy>4</Windy>
     </baseWeatherCommonalities>
     <wildPlants>
     </wildPlants>
@@ -78,76 +79,5 @@
     </allowedPackAnimals>
   </BiomeDef>
 
-  <!--<BiomeDef Name="BiomeBase" Abstract="True">
-		<description>The average temperature on Mars is minus 80 degrees Fahrenheit - way below freezing! Its surface is rocky, with canyons, volcanoes, dry lake beds and craters all over it. Red dust covers most of its surface. Mars has clouds and wind just like Earth.</description>
-		<animalDensity>0</animalDensity>
-		<plantDensity>0</plantDensity>
-		<diseaseMtbDays>90</diseaseMtbDays>
-		<settlementSelectionWeight>0.95</settlementSelectionWeight>
-		 <texture>Terrain/mars1</texture>
-    <movementDifficulty>1</movementDifficulty>
-		<diseases>
-			<li>
-				<diseaseInc>Disease_Flu</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_GutWorms</diseaseInc>
-				<commonality>40</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_MuscleParasites</diseaseInc>
-				<commonality>40</commonality>
-			</li>
-		</diseases>
-		<soundsAmbient>
-			<li>AmbientWind_Desolate</li>
-		</soundsAmbient>
-		<terrainsByFertility>
-      <li>
-        <terrain>Sand</terrain>
-        <min>-999</min>
-        <max>0.80</max>
-      </li>
-      <li>
-        <terrain>StonySand</terrain>
-        <min>0.80</min>
-        <max>999</max>
-      </li>
-		</terrainsByFertility>
-		<baseWeatherCommonalities>
-			<Clear>18</Clear>
-      <Windy>4</Windy>
-		</baseWeatherCommonalities>
-		<wildPlants>
-		</wildPlants>
-		<wildAnimals>
-		</wildAnimals>
-		<allowedPackAnimals>
-		</allowedPackAnimals>
-  </BiomeDef>-->
-
-
-	<BiomeDef  ParentName="BiomeBase">
-		<defName>AridShrubland</defName>
-		<label>mars barren</label>
-		<workerClass>BiomeWorker_AridShrubland</workerClass>
-				 <texture>Terrain/mars1</texture>
-	</BiomeDef>
-
-
-	<BiomeDef  ParentName="BiomeBase">
-		<defName>Desert</defName>
-		<label>mars equatorial</label>
-		<workerClass>BiomeWorker_Desert</workerClass>
-				 <texture>Terrain/mars6</texture>
-	</BiomeDef>
-
-	<BiomeDef  ParentName="BiomeBase">
-		<defName>ExtremeDesert</defName>
-		<label>mars equatorial high</label>
-		<workerClass>BiomeWorker_ExtremeDesert</workerClass>
-				 <texture>Terrain/mars1</texture>
-	</BiomeDef>
 
 </Defs>

@@ -4,7 +4,7 @@
   <ThingDef ParentName="MinifiedBuildingBase">
 		<defName>Treadmill</defName>
 		<label>treadmill</label>
-		<thingClass>mars.Building_Treadmill</thingClass>
+		<thingClass>MarsX.Building_Treadmill</thingClass>
 		<description>A treadmill is a device generally for walking or running while staying in the same place.</description>
 		<graphicData>
 			<texPath>Things/Building/treadmill/treadmill_0</texPath>
@@ -44,7 +44,7 @@
 		<defName>Basin</defName>
 		<label>Basin</label>
 		<description>Clean and simple bathroom basin. Instructions sold separately.</description>
-		<thingClass>mars.Building_basin</thingClass>
+		<thingClass>MarsX.Building_basin</thingClass>
 		<graphicData>
 			<drawSize>(3,3)</drawSize>
 			<texPath>Things/Building/basin</texPath>
@@ -71,7 +71,7 @@
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Sewage</mode>
 			</li>
 			<li Class="CompProperties_Flickable"/>
@@ -88,7 +88,7 @@
 		<defName>Shower</defName>
 		<label>Shower</label>
 		<description>Features a large 110mm 4 spray powered showerhead to counter low gravity including massage mode to relax those atrophied muscles!</description>
-		<thingClass>mars.Building_Shower</thingClass>
+		<thingClass>MarsX.Building_Shower</thingClass>
 		<graphicData>
 			<drawSize>(2,1)</drawSize>
 			<texPath>Things/Building/shower</texPath>
@@ -116,7 +116,7 @@
 		<passability>Standable</passability>
 		<interactionCellOffset>(0,0,1)</interactionCellOffset>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Sewage</mode>
 			</li>
 			<li Class="CompProperties_Flickable"/>
@@ -132,7 +132,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>Terlet</defName>
 		<label>Toilet</label>
-		<thingClass>mars.Building_terlet</thingClass>
+		<thingClass>MarsX.Building_terlet</thingClass>
 		<graphicData>
 			<texPath>Things/Building/terlet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -160,7 +160,7 @@
 		<hasInteractionCell>true</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Sewage</mode>
 			</li>
 			<li Class="CompProperties_Flickable"/>
@@ -195,13 +195,13 @@
     </building>
     <uiIconPath>UI/SewagePipe</uiIconPath>
 		<comps>	
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Sewage</mode>
 			</li>
 		</comps>
 		<designationCategory>Joy</designationCategory>
 		<placeWorkers>
-			<li>mars.PlaceWorker_SewagePipe</li>
+			<li>MarsX.PlaceWorker_SewagePipe</li>
 		</placeWorkers>
 	</ThingDef>
 
@@ -209,7 +209,7 @@
 		<defName>SewageProcessing</defName>
 		<label>MIST</label>
 		<description>Mars In-Situ Sewage Treatment (MIST) Uses a multi-filtration process of wet oxidation and carbon filters to create a closed loop sewage system.</description>
-		<thingClass>mars.Building_SewageProcessing</thingClass>
+		<thingClass>MarsX.Building_SewageProcessing</thingClass>
 		<graphicData>
 			<texPath>Things/Building/sewageProc</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -242,10 +242,10 @@
 		</statBases>
 		<designationHotKey>Misc11</designationHotKey>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Sewage</mode>
 			</li>
 			<li Class="CompProperties_Power">

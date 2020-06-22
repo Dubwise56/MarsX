@@ -1,11 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <MapGeneratorDef Name="MapCommonBase" Abstract="True">
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Caves</li>
+      <li>Terrain</li>
+      <li>RockChunks</li>
+      <li>FindPlayerStartSpot</li>
+      <li>ScenParts</li>
+      <li>Fog</li>
+    </genSteps>
+  </MapGeneratorDef>
+
   <MapGeneratorDef ParentName="MapCommonBase">
     <defName>Base_Player</defName>
     <genSteps>
       <li>RocksFromGrid</li>
     </genSteps>
   </MapGeneratorDef>
+
   
 </Defs>

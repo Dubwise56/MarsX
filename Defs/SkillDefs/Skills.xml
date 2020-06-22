@@ -1,93 +1,121 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!--science-->
 
-  <SkillDef>
+  <SkillDef Class="MarsX.SkillDef">
     <defName>Animals</defName>
-    <description>Taming, training, managing, and controlling animals.</description>
+    <description>Biology is the natural science that studies life and living organisms.</description>
     <skillLabel>Biology</skillLabel>
-    <usuallyDefinedInBackstories>false</usuallyDefinedInBackstories>
     <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+    <listOrder>150</listOrder>
   </SkillDef>
 
-  <SkillDef>
+  <SkillDef Class="MarsX.SkillDef">
     <defName>Plants</defName>
     <description>Sowing, caring for, and harvesting crops. Study of plant growth, reproduction, biochemistry, chemical products, development, diseases.</description>
     <skillLabel>Botany</skillLabel>
     <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+    <listOrder>140</listOrder>
   </SkillDef>
 
-  <SkillDef>
+  <SkillDef Class="MarsX.SkillDef">
     <defName>Chemistry</defName>
-    <description>Physical fitness contributing to health.</description>
+    <description>Chemistry is the study of matter, its properties, how and why substances combine or separate to form other substances, and how substances interact with energy.</description>
     <skillLabel>Chemistry</skillLabel>
-  </SkillDef>
-
-  <SkillDef>
-    <defName>Construction</defName>
-    <description>Better constructors build structures and furniture faster and of higher quality.</description>
-    <skillLabel>Engineering</skillLabel>
     <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+    <listOrder>130</listOrder>
   </SkillDef>
 
-
-  <SkillDef>
+  <SkillDef Class="MarsX.SkillDef">
     <defName>Mining</defName>
     <description>Digging tunnels and extracting mineral or buried resources.</description>
     <skillLabel>Geology</skillLabel>
     <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+    <listOrder>120</listOrder>
   </SkillDef>
 
-  <SkillDef>
-    <defName>Shooting</defName>
-    <description>Physical fitness contributing to health.</description>
+  <SkillDef Class="MarsX.SkillDef">
+    <defName>Physics</defName>
+    <description>Physics is the natural science that studies matter and its motion and behavior through space and time and that studies the related entities of energy and force.</description>
     <skillLabel>Physics</skillLabel>
+    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+    <listOrder>110</listOrder>
   </SkillDef>
 
-  <SkillDef>
+  <SkillDef Class="MarsX.SkillDef">
+    <defName>Construction</defName>
+    <description>Better constructors build structures and furniture faster and of higher quality.</description>
+    <skillLabel>Engineering</skillLabel>
+    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+    <listOrder>100</listOrder>
+  </SkillDef>
+
+  <SkillDef Class="MarsX.SkillDef">
     <defName>Medicine</defName>
     <description>Treating wounds and diseases and doing surgery, biomedical subjects such as anatomy, physiology, pharmacology and neuroscience</description>
-    <skillLabel>Medical Science</skillLabel>
+    <skillLabel>Medicine</skillLabel>
     <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+    <listOrder>90</listOrder>
   </SkillDef>
 
-  <SkillDef>
+
+
+  <!--general-->
+
+  <SkillDef Class="MarsX.SkillDef">
+    <defName>Intellectual</defName>
+    <description>The quality of being clever, original, and inventive.</description>
+    <skillLabel>Ingenuity</skillLabel>
+    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+    <listOrder>80</listOrder>
+  </SkillDef>
+
+  <SkillDef Class="MarsX.SkillDef">
     <defName>Cooking</defName>
-    <description>Creating meals from raw ingredients, development of new food products as well as microbiological and chemical testing</description>
-    <skillLabel>Food Science</skillLabel>
+    <description>Creating meals from raw ingredients quickly and without accidental food poisoning</description>
+    <skillLabel>Cooking</skillLabel>
     <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+    <listOrder>70</listOrder>
   </SkillDef>
 
-  <SkillDef>
+  <SkillDef Class="MarsX.SkillDef">
     <defName>Crafting</defName>
-    <description>Crafting general items like tools.</description>
-    <skillLabel>Skilled Work</skillLabel>
+    <description>The activity or hobby of making decorative articles by hand.</description>
+    <skillLabel>crafting</skillLabel>
+    <listOrder>50</listOrder>
   </SkillDef>
 
-  <SkillDef>
+  <SkillDef Class="MarsX.SkillDef">
     <defName>Artistic</defName>
-    <description>Crafting art.</description>
+    <description>Creating works of art.</description>
     <skillLabel>Artistic</skillLabel>
+    <listOrder>40</listOrder>
   </SkillDef>
 
-  <SkillDef>
+  <SkillDef Class="MarsX.SkillDef">
+    <defName>Social</defName>
+    <description>Negotiating, convincing, manipulating, leading, and cheering up others.</description>
+    <skillLabel>Social</skillLabel>
+    <listOrder>30</listOrder>
+  </SkillDef>
+
+
+  <!--weapons-->
+
+  <SkillDef Class="MarsX.SkillDef">
     <defName>Melee</defName>
     <description>Training in hand to hand combat.</description>
     <skillLabel>Hand to Hand</skillLabel>
     <disablingWorkTags>Violent</disablingWorkTags>
+    <listOrder>20</listOrder>
   </SkillDef>
 
-  <SkillDef>
-    <defName>Social</defName>
-    <description>Negotiating, convincing, manipulating, leading, and cheering up others.</description>
-    <skillLabel>Social</skillLabel>
-  </SkillDef>
-
-  <SkillDef>
-    <defName>Intellectual</defName>
-    <description>Investigating evidence, doing experiments, and learning.</description>
-    <skillLabel>Research</skillLabel>
-    <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+  <SkillDef Class="MarsX.SkillDef">
+    <defName>Shooting</defName>
+    <description>Ranged combat, with both high-tech and low-tech weapons.</description>
+    <skillLabel>shooting</skillLabel>
+    <listOrder>10</listOrder>
   </SkillDef>
 
 </Defs>

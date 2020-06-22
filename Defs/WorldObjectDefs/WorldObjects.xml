@@ -1,77 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  
-  <WorldObjectDef>
-    <defName>Fleet</defName>
-    <label>Fleet Comms</label>
-    <description>Fleet.</description>
-    <worldObjectClass>mars.WorldObject_Fleet</worldObjectClass>
-    <texture>UI/satellite</texture>
-    <useDynamicDrawer>true</useDynamicDrawer>
-    <expandingIcon>true</expandingIcon>
-    <expandingIconTexture>UI/satellite</expandingIconTexture>
-    <expandingIconPriority>7</expandingIconPriority>
-  </WorldObjectDef>
-  
+
   <WorldObjectDef>
     <defName>Ship</defName>
     <label>Ares ILAV</label>
     <description>The Interplanetary Landing and Ascent Vehicle is a reusable launch vehicle designed to land on and take off from the surface of mars.</description>
-    <worldObjectClass>mars.WorldObject_Ship</worldObjectClass>
+    <worldObjectClass>MarsX.WorldObject_Ship</worldObjectClass>
     <texture>UI/ship</texture>
     <useDynamicDrawer>true</useDynamicDrawer>
     <expandingIcon>true</expandingIcon>
     <expandingIconTexture>UI/ship</expandingIconTexture>
     <expandingIconPriority>6</expandingIconPriority>
   </WorldObjectDef>
-  
-  <WorldObjectDef>
-    <defName>Phobos</defName>
-    <label>Phobos</label>
-    <description>Phobos is the innermost and larger of the two natural satellites of Mars, the other being Deimos. Both moons were discovered in 1877 by American astronomer Asaph Hall.</description>
-    <worldObjectClass>mars.WorldObject_Sat</worldObjectClass>
-    <texture>UI/phobos</texture>
+
+
+  <MarsX.SpaceObjectDef>
+    <defName>OrbitalShip</defName>
+    <label>Ares ILAV</label>
+    <description>The Interplanetary Landing and Ascent Vehicle is a reusable launch vehicle designed to land on and take off from the surface of mars.</description>
+    <worldObjectClass>MarsX.WorldObject_Ship</worldObjectClass>
+    <texture>UI/ship</texture>
     <useDynamicDrawer>true</useDynamicDrawer>
-    <expandingIcon>true</expandingIcon>
-    <expandingIconTexture>UI/phobos</expandingIconTexture>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/ship</expandingIconTexture>
     <expandingIconPriority>6</expandingIconPriority>
-  </WorldObjectDef>
-  
-    <WorldObjectDef>
-    <defName>MAVEN</defName>
-    <label>Mars Atmosphere and Volatile EvolutioN Mission (MAVEN)</label>
-    <description>Mars Atmosphere and Volatile EvolutioN Mission (MAVEN) is a space probe developed by NASA designed to study the Martian atmosphere while orbiting Mars. Mission goals include determining how the planet's atmosphere and water, presumed to have once been substantial, were lost over time.</description>
-    <worldObjectClass>mars.WorldObject_Sat</worldObjectClass>
-    <texture>UI/MAVEN</texture>
-    <useDynamicDrawer>true</useDynamicDrawer>
-    <expandingIcon>true</expandingIcon>
-    <expandingIconTexture>UI/MAVEN</expandingIconTexture>
-    <expandingIconPriority>6</expandingIconPriority>
-  </WorldObjectDef>
-  
-      <WorldObjectDef>
-    <defName>MOM</defName>
-    <label>Mars Orbiter Mission (MOM)</label>
-    <description>The Mars Orbiter Mission (MOM), also called Mangalyaan, is a space probe orbiting Mars since 24 September 2014. It was launched on 5 November 2013 by the Indian Space Research Organisation (ISRO). It is India's first interplanetary mission.</description>
-    <worldObjectClass>mars.WorldObject_Sat</worldObjectClass>
-    <texture>UI/MOM</texture>
-    <useDynamicDrawer>true</useDynamicDrawer>
-    <expandingIcon>true</expandingIcon>
-    <expandingIconTexture>UI/MOM</expandingIconTexture>
-    <expandingIconPriority>6</expandingIconPriority>
-  </WorldObjectDef>
-  
-    <WorldObjectDef>
+  </MarsX.SpaceObjectDef>
+
+
+  <MarsX.SpaceObjectDef>
     <defName>DustStorm</defName>
     <label>Dust Storm</label>
     <description>Dust Storm.</description>
-    <worldObjectClass>mars.WorldObject_DustStorm</worldObjectClass>
-    <texture>UI/dust</texture>
-	<canHaveFaction>false</canHaveFaction>
-	<selectable>true</selectable>
+    <worldObjectClass>MarsX.WorldObject_DustStorm</worldObjectClass>
+    <texture>UI/dustStormIco</texture>
+    <canHaveFaction>false</canHaveFaction>
+    <selectable>true</selectable>
     <useDynamicDrawer>true</useDynamicDrawer>
-    <expandingIcon>true</expandingIcon>
-    <expandingIconTexture>UI/dust</expandingIconTexture>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/dustStormIco</expandingIconTexture>
     <expandingIconPriority>6</expandingIconPriority>
-  </WorldObjectDef>
+  </MarsX.SpaceObjectDef>
+
 </Defs>

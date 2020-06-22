@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SongDef>
+    <clipPath>Songs/Tension/alien_drone_003</clipPath>
+    <volume>1.0</volume>
+    <tense>true</tense>
+  </SongDef>
+
+  <SongDef>
+    <clipPath>Songs/Tension/Drone_Evolving_Version_04</clipPath>
+    <volume>1.0</volume>
+    <tense>true</tense>
+  </SongDef>
+
+  <SongDef>
+    <clipPath>Songs/Tension/hollow_drone_001</clipPath>
+    <volume>1.0</volume>
+    <tense>true</tense>
+  </SongDef>
+
+  <SongDef>
+    <clipPath>Songs/Tension/low_drone_001</clipPath>
+    <volume>1.0</volume>
+    <tense>true</tense>
+  </SongDef>
+
+  <SongDef>
+    <clipPath>Songs/Tension/Chaos_Bringer</clipPath>
+    <volume>1.0</volume>
+    <tense>true</tense>
+  </SongDef>
+
+</Defs>

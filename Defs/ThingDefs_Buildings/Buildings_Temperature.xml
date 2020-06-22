@@ -5,7 +5,7 @@
 		<defName>Vent</defName>
 		<label>vent</label>
 		<description>A simple vent for equalizing the air and temperature between two rooms without allowing people to walk between them.</description>
-		<thingClass>mars.Building_VentAir</thingClass>
+		<thingClass>MarsX.Building_VentAir</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Misc/TempControl/Vent</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>

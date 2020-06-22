@@ -5,7 +5,7 @@
     <defName>SolarGenerator</defName>
     <label>solar generator</label>
     <description>Produces electricity from sunlight. Does not work in the dark or under artificial light.</description>
-    <thingClass>mars.SolarPanel_Dust</thingClass>
+    <thingClass>MarsX.SolarPanel_Dust</thingClass>
     <graphicData>
       <texPath>Things/Building/Power/SolarCollector</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -60,7 +60,7 @@
 
   <ThingDef ParentName="MinifiedBuildingBase">
     <defName>Radioisotope_thermoelectric_generator</defName>
-    <thingClass>mars.Building_RTG</thingClass>
+    <thingClass>MarsX.Building_RTG</thingClass>
     <label>R.T.G</label>
     <description>An electrical generator that uses an array of thermocouples to convert the heat released by the decay of a suitable radioactive material into electricity</description>
     <graphicData>
@@ -109,7 +109,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>ReactorCore</defName>
     <label>liquid metal fast reactor</label>
-    <thingClass>mars.reactorCore</thingClass>
+    <thingClass>MarsX.reactorCore</thingClass>
     <graphicData>
       <texPath>Things/Building/core</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -143,10 +143,10 @@
       <coreVessel>1</coreVessel>
     </costList>
     <comps>
-      <li Class="mars.CompProperties_Pipe">
+      <li Class="MarsX.CompProperties_Pipe">
         <mode>Steam</mode>
       </li>
-      <li Class="mars.CompProperties_Pipe">
+      <li Class="MarsX.CompProperties_Pipe">
         <mode>Cooling</mode>
       </li>
       <li Class="CompProperties_Breakdownable"/>
@@ -187,7 +187,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Turbine</defName>
     <label>Thermoelectric Generator</label>
-    <thingClass>mars.Thermocouple</thingClass>
+    <thingClass>MarsX.Thermocouple</thingClass>
     <graphicData>
       <texPath>Things/Building/thermocouple</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -215,10 +215,10 @@
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
     <comps>
-      <li Class="mars.CompProperties_Pipe">
+      <li Class="MarsX.CompProperties_Pipe">
         <mode>HighVoltage</mode>
       </li>
-      <li Class="mars.CompProperties_Pipe">
+      <li Class="MarsX.CompProperties_Pipe">
         <mode>Steam</mode>
       </li>
       <li Class="CompProperties_Breakdownable"/>
@@ -235,7 +235,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>CoolingTower</defName>
     <label>reactor radiator</label>
-    <thingClass>mars.MurcuryRadiator</thingClass>
+    <thingClass>MarsX.MurcuryRadiator</thingClass>
     <graphicData>
       <texPath>Things/Building/rad</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -267,7 +267,7 @@
     <tickerType>Normal</tickerType>
     <designationCategory>Power</designationCategory>
     <comps>
-      <li Class="mars.CompProperties_Pipe">
+      <li Class="MarsX.CompProperties_Pipe">
         <mode>Cooling</mode>
       </li>
       <li Class="CompProperties_Breakdownable"/>
@@ -278,7 +278,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Transformer</defName>
     <label>High Voltage Transformer</label>
-    <thingClass>mars.Transformer</thingClass>
+    <thingClass>MarsX.Transformer</thingClass>
     <graphicData>
       <texPath>Things/Building/transformer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -310,7 +310,7 @@
     <tickerType>Normal</tickerType>
     <designationCategory>Power</designationCategory>
     <comps>
-      <li Class="mars.CompProperties_Pipe">
+      <li Class="MarsX.CompProperties_Pipe">
         <mode>HighVoltage</mode>
       </li>
       <li Class="CompProperties_Power">
@@ -348,13 +348,13 @@
     </building>
     <uiIconPath>UI/HighVoltage</uiIconPath>
     <comps>
-      <li Class="mars.CompProperties_Pipe">
+      <li Class="MarsX.CompProperties_Pipe">
         <mode>HighVoltage</mode>
       </li>
     </comps>
     <designationCategory>Power</designationCategory>
     <placeWorkers>
-      <li>mars.PlaceWorker_HighVoltage</li>
+      <li>MarsX.PlaceWorker_HighVoltage</li>
     </placeWorkers>
   </ThingDef>
 
@@ -383,13 +383,13 @@
       </blueprintGraphicData>
     </building>
     <comps>
-      <li Class="mars.CompProperties_Pipe">
+      <li Class="MarsX.CompProperties_Pipe">
         <mode>Steam</mode>
       </li>
     </comps>
     <designationCategory>Power</designationCategory>
     <placeWorkers>
-      <li>mars.PlaceWorker_HeatPipe</li>
+      <li>MarsX.PlaceWorker_HeatPipe</li>
     </placeWorkers>
   </ThingDef>
 
@@ -416,13 +416,13 @@
     </building>
     <uiIconPath>UI/CoolingPipe</uiIconPath>
     <comps>
-      <li Class="mars.CompProperties_Pipe">
+      <li Class="MarsX.CompProperties_Pipe">
         <mode>Cooling</mode>
       </li>
     </comps>
     <designationCategory>Power</designationCategory>
     <placeWorkers>
-      <li>mars.PlaceWorker_CoolingPipe</li>
+      <li>MarsX.PlaceWorker_CoolingPipe</li>
     </placeWorkers>
   </ThingDef>
 

@@ -1,10 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <ScenPartDef>
+    <defName>ScenPart_Planet</defName>
+    <label>planet</label>
+    <category>Misc</category>
+    <scenPartClass>MarsX.ScenPart_Planet</scenPartClass>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
 
   <MarsX.PlanetDef>
     <defName>Moon</defName>
     <label>Moon</label>
+    <description>Earth's Moon is the first stepping stone into the solar system, a very short travel time for resupply and rescue missions makes the moon a safe starting point</description>
     <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
     <texture>World/MOON</texture>
     <Diameter>2158.8</Diameter>
@@ -40,6 +48,7 @@
   <MarsX.PlanetDef>
     <defName>Mars</defName>
     <label>Mars</label>
+    <description>Establishing a colony on Mars is the primary goal, Mars is more challenging because of its distance from the earth and dynamic surface conditions</description>
     <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
     <texture>World/MARS</texture>
     <Diameter>4212.3</Diameter>
@@ -54,19 +63,40 @@
     <Divisions>5</Divisions>
 </MarsX.PlanetDef>
 
-  <!--<MarsX.PlanetDef>
+  <MarsX.PlanetDef>
+    <defName>Deimos</defName>
+    <label>Deimos</label>
+    <description>Deimos is the smaller and outermost of the two natural satellites of the planet Mars, the other being Phobos. Deimos is 23,460 km (14,580 mi) from Mars, much further than Mars's other moon, Phobos. It is named for Deimos, who in Greek mythology is the twin brother of Phobos, and personifies terror.</description>
+    <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
+    <texture>World/phobos</texture>
+    <Diameter>6.2</Diameter>
+    <OrbitPeriod>0.308</OrbitPeriod>
+    <RotationPeriod>1</RotationPeriod>
+    <Inclination>0.93</Inclination>
+    <Parent>Mars</Parent>
+    <Periapsis>23455</Periapsis>
+    <Apoapsis>23470</Apoapsis>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <selectable>true</selectable>
+    <expandingIcon>false</expandingIcon>
+    <expandingIconTexture>UI/Clear</expandingIconTexture>
+    <expandingIconPriority>6</expandingIconPriority>
+    <Divisions>2</Divisions>
+  </MarsX.PlanetDef>
+
+  <MarsX.PlanetDef>
     <defName>Phobos</defName>
     <label>Phobos</label>
     <description>Phobos is the innermost and larger of the two natural satellites of Mars, the other being Deimos. Both moons were discovered in 1877 by American astronomer Asaph Hall.</description>
     <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
     <texture>World/phobos</texture>
-    <Diameter>14</Diameter>
-    <OrbitPeriod>0.308</OrbitPeriod>
+    <Diameter>11</Diameter>
+    <OrbitPeriod>0.318</OrbitPeriod>
     <RotationPeriod>1</RotationPeriod>
     <Inclination>1.093</Inclination>
     <Parent>Mars</Parent>
-    <Periapsis>7090</Periapsis>
-    <Apoapsis>7090</Apoapsis>
+    <Periapsis>9234</Periapsis>
+    <Apoapsis>9517</Apoapsis>
     <useDynamicDrawer>true</useDynamicDrawer>
     <selectable>true</selectable>
     <expandingIcon>false</expandingIcon>
@@ -131,16 +161,17 @@
     <expandingIcon>false</expandingIcon>
     <expandingIconTexture>UI/Roadster</expandingIconTexture>
     <expandingIconPriority>6</expandingIconPriority>
-  </MarsX.SpaceObjectDef>-->
+  </MarsX.SpaceObjectDef>
 
 
   <MarsX.PlanetDef>
     <defName>Europa</defName>
     <label>Europa</label>
+    <description>Europa is the smallest of the four Galilean moons orbiting Jupiter, the extreme distance from earth means resupply and rescue are not available, you are truly alone in the depth of space.</description>
     <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
     <texture>World/EUROPA</texture>
     <Diameter>7917.5</Diameter>
-    <Playable>true</Playable>
+    <Playable>false</Playable>
     <OrbitPeriod>4.54166</OrbitPeriod>
     <RotationPeriod>1</RotationPeriod>
     <useDynamicDrawer>true</useDynamicDrawer>
@@ -176,30 +207,4 @@
 
 
 
-  <!--<MarsX.SpaceObjectDef>
-    <defName>OrbitalShip</defName>
-    <label>Ares ILAV</label>
-    <description>The Interplanetary Landing and Ascent Vehicle is a reusable launch vehicle designed to land on and take off from the surface of mars.</description>
-    <worldObjectClass>MarsX.WorldObject_Ship</worldObjectClass>
-    <texture>UI/ship</texture>
-    <useDynamicDrawer>true</useDynamicDrawer>
-    <expandingIcon>false</expandingIcon>
-    <expandingIconTexture>UI/ship</expandingIconTexture>
-    <expandingIconPriority>6</expandingIconPriority>
-  </MarsX.SpaceObjectDef>
-
-
-  <MarsX.SpaceObjectDef>
-    <defName>DustStorm</defName>
-    <label>Dust Storm</label>
-    <description>Dust Storm.</description>
-    <worldObjectClass>MarsX.WorldObject_DustStorm</worldObjectClass>
-    <texture>UI/dustStormIco</texture>
-    <canHaveFaction>false</canHaveFaction>
-    <selectable>true</selectable>
-    <useDynamicDrawer>true</useDynamicDrawer>
-    <expandingIcon>false</expandingIcon>
-    <expandingIconTexture>UI/dustStormIco</expandingIconTexture>
-    <expandingIconPriority>6</expandingIconPriority>
-  </MarsX.SpaceObjectDef>-->
 </Defs>

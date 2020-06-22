@@ -4,7 +4,7 @@
   <WorkGiverDef>
     <defName>DigSand</defName>
     <label>dig sand</label>
-    <giverClass>mars.WorkGiver_ConstructDigSand</giverClass>
+    <giverClass>MarsX.WorkGiver_ConstructDigSand</giverClass>
     <workType>Construction</workType>
     <priorityInType>6</priorityInType>
     <verb>dig sand</verb>
@@ -37,7 +37,7 @@
   <WorkGiverDef>
     <defName>CleanClearEquipment</defName>
     <label>clean equipment</label>
-    <giverClass>mars.WorkGiver_CleanEquipment</giverClass>
+    <giverClass>MarsX.WorkGiver_CleanEquipment</giverClass>
     <workType>EquipmentCleaning</workType>
     <verb>clean equipment</verb>
     <gerund>cleaning equipment</gerund>
@@ -53,7 +53,7 @@
   <WorkGiverDef>
     <defName>ChatWithColonist</defName>
     <label>chat with colonists</label>
-    <giverClass>mars.WorkGiver_ChitChat</giverClass>
+    <giverClass>MarsX.WorkGiver_ChitChat</giverClass>
     <workType>Warden</workType>
     <verb>chat with</verb>
     <gerund>chatting with</gerund>
@@ -68,7 +68,7 @@
   <WorkGiverDef>
     <defName>TendSelf</defName>
     <label>tend self in bed</label>
-    <giverClass>mars.WorkGiver_TendSelf</giverClass>
+    <giverClass>MarsX.WorkGiver_TendSelf</giverClass>
     <workType>Doctor</workType>
     <verb>tend self in</verb>
     <gerund>tending self in</gerund>
@@ -79,7 +79,7 @@
   <WorkGiverDef>
     <defName>LoadSandbags</defName>
     <label>Load Sandbags</label>
-    <giverClass>mars.WorkGiver_LoadSandbags</giverClass>
+    <giverClass>MarsX.WorkGiver_LoadSandbags</giverClass>
     <workType>Hauling</workType>
     <verb>load</verb>
     <gerund>loading</gerund>
@@ -92,7 +92,7 @@
   <WorkGiverDef>
     <defName>LoadFuelModule</defName>
     <label>Load Fuel Module</label>
-    <giverClass>mars.WorkGiver_LoadFuelModule</giverClass>
+    <giverClass>MarsX.WorkGiver_LoadFuelModule</giverClass>
     <workType>Hauling</workType>
     <verb>store</verb>
     <gerund>storing</gerund>

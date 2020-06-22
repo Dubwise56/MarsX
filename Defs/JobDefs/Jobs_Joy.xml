@@ -4,7 +4,7 @@
 
 	<JobDef>
 		<defName>workout</defName>
-		<driverClass>mars.JobDriver_Workout</driverClass>
+		<driverClass>MarsX.JobDriver_Workout</driverClass>
 		<reportString>working out at TargetA.</reportString>
 		<joyMaxParticipants>8</joyMaxParticipants>
 		<joyGainRate>1.2</joyGainRate>

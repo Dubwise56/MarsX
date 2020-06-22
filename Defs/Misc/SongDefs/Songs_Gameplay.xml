@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SongDef Abstract="True" Name="BaseMarsSong">
+    <volume>0.65</volume>
+    <allowedTimeOfDay>Day</allowedTimeOfDay>
+  </SongDef>
+
+  <!-- Day -->
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/01-M87</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/05-Sagittarius_A</clipPath>
+    <allowedTimeOfDay>Night</allowedTimeOfDay>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/09-Halo</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/10-Event_Horizon</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/PM_CSII_Guitar_Grains</clipPath>
+    <allowedTimeOfDay>Night</allowedTimeOfDay>
+    <volume>0.65</volume>
+  </SongDef>
+
+
+
+
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/LightYears/Red_Giant</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/LightYears/Airglow</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/LightYears/Eternity</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/LightYears/Light_Years</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/LightYears/In_Time</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/LightYears/Cepheid</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/LightYears/Comet_Halley</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/LightYears/Ultra_Deep_Field</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/LightYears/Eternity_Reprise</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/LightYears/Messier45</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+
+
+
+
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/AMomentOfStillness/Stellardrone-01-AMomentOfStillness</clipPath>
+    <allowedTimeOfDay>Night</allowedTimeOfDay>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/AMomentOfStillness/Stellardrone-02-BillionsAndBillions</clipPath>
+    <allowedTimeOfDay>Night</allowedTimeOfDay>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/AMomentOfStillness/Stellardrone-03-LightsInTheSky</clipPath>
+    <allowedTimeOfDay>Night</allowedTimeOfDay>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/AMomentOfStillness/Stellardrone-04-SolarEclipse</clipPath>
+    <allowedTimeOfDay>Night</allowedTimeOfDay>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/AMomentOfStillness/Stellardrone-05-Twilight</clipPath>
+    <allowedTimeOfDay>Night</allowedTimeOfDay>
+    <volume>0.65</volume>
+  </SongDef>
+
+
+
+
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/stasis/01_Endeavour</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+  
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/stasis/02_Satellite</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/stasis/03_Galaxies</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/stasis/04_Aurora</clipPath>
+    <allowedTimeOfDay>Night</allowedTimeOfDay>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/stasis/05_Nightscape</clipPath>
+    <volume>0.65</volume>
+    <allowedTimeOfDay>Night</allowedTimeOfDay>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/stasis/06_Gravitation</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/stasis/07_Penumbra</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/stasis/08_Stardome</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/stasis/09_Tranquility</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+
+  <SongDef ParentName="BaseMarsSong">
+    <clipPath>Songs/stasis/10_Mars_bonus</clipPath>
+    <volume>0.65</volume>
+  </SongDef>
+  
+
+
+
+
+
+
+
+
+
+
+</Defs>

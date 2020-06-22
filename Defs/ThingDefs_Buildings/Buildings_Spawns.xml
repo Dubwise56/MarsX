@@ -4,7 +4,7 @@
 <!--    <ThingDef ParentName="BuildingBase">
     <defName>Thing_AirCell</defName>
     <label>Thing_AirCell</label>
-	<thingClass>mars.Thing_AirCell</thingClass>
+	<thingClass>MarsX.Thing_AirCell</thingClass>
     <description>Thing_AirCell</description>
     <graphicData>
       <texPath>Things/God</texPath>
@@ -131,7 +131,7 @@
   
     <ThingDef ParentName="BuildingBase">
 		<defName>Monolith</defName>
-		<thingClass>mars.Monolith</thingClass>
+		<thingClass>MarsX.Monolith</thingClass>
 		<label>Monolith</label>
 		<description>Unknown</description>
 		<graphicData>

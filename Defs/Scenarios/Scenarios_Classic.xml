@@ -2,9 +2,9 @@
 <Defs>
 
 	<ScenarioDef>
-		<defName>MartianColony</defName>
-    <label>Martian Colony</label>
-		<description>Your mission is to colonize mars. Start with 3 colonists, 2 extra ships, and normal fleet timer speed.</description>
+		<defName>Colony</defName>
+    <label>Colony</label>
+		<description>Start with 3 colonists, 2 extra ships, and normal fleet timer speed.</description>
 		<scenario>
 			<summary>Martian Colony (Normal)</summary>
 			<playerFaction>
@@ -23,15 +23,13 @@
           <planet>Mars</planet>
         </li>
 
-				<li Class="mars.ScenPart_ColonyMission">
+				<li Class="MarsX.ScenPart_ColonyMission">
 					<def>missionMode</def>
 					<MissionMode>Colony</MissionMode>
 					<shipCount>3</shipCount>
 					<fastMode>false</fastMode>
 				</li>
-
-
-			</parts>
+      </parts>
 		</scenario>
 	</ScenarioDef>
 </Defs>

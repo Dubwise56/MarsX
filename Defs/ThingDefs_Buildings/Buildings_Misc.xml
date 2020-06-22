@@ -5,7 +5,7 @@
 		<defName>Building_HAB</defName>
 		<label>HAB</label>
 		<description>An inflatable habitat complete with walls, floors, roof, airlocks and atmosphere.</description>
-		<thingClass>mars.Building_HAB</thingClass>
+		<thingClass>MarsX.Building_HAB</thingClass>
 		<size>(13,13)</size>
     <building>
       <blueprintGraphicData>
@@ -23,5 +23,52 @@
 		</comps>
     <rotatable>false</rotatable>
 	</ThingDef>
+
+  <ThingDef ParentName="MinifiedBuildingBase">
+    <defName>OrbitalTradeBeacon</defName>
+    <label>Landing beacon</label>
+    <thingClass>Building_OrbitalTradeBeacon</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.4, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToMake>1300</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Enhances landing accuracy. Ships will attempt to land close to landing beacons.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <fillPercent>0.15</fillPercent>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>40</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>8</pathCost>
+    <designationCategory>Misc</designationCategory>
+    <rotatable>false</rotatable>
+    <placeWorkers>
+      <li>PlaceWorker_ShowTradeBeaconRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
 	
 </Defs>

@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="BuildingBase" Name="PipeBase" Abstract="True">
 		<label>pipe</label>
-		<thingClass>mars.Building_Pipe</thingClass>
+		<thingClass>MarsX.Building_Pipe</thingClass>
 		<category>Building</category>
 		<graphicData>
 			<texPath>Things/Building/WaterPipe_Atlas</texPath>
@@ -41,7 +41,7 @@
 		<constructEffect>ConstructMetal</constructEffect>
 		<designationHotKey>Misc1</designationHotKey>
 		<placeWorkers>
-			<li>mars.PlaceWorker_CoolingPipe</li>
+			<li>MarsX.PlaceWorker_CoolingPipe</li>
 		</placeWorkers>
 	</ThingDef>
 
@@ -67,20 +67,20 @@
     </building>
 		<uiIconPath>UI/WaterPipe</uiIconPath>
 		<comps>	
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>
 		</comps>
 		<designationCategory>Temperature</designationCategory>
 		<placeWorkers>
-			<li>mars.PlaceWorker_WaterPipe</li>
+			<li>MarsX.PlaceWorker_WaterPipe</li>
 		</placeWorkers>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>waterValve</defName>
 		<label>Water valve</label>
-		<thingClass>mars.Building_ValveWater</thingClass>
+		<thingClass>MarsX.Building_ValveWater</thingClass>
 		<description>Opens or closes connections between water pipes.</description>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Standable</passability>
@@ -95,7 +95,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<comps>	
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>
 			<li Class="CompProperties_Flickable"/>
@@ -114,14 +114,14 @@
 		<designationCategory>Temperature</designationCategory>
 		<constructEffect>ConstructMetal</constructEffect>
 		<placeWorkers>
-			<li>mars.PlaceWorker_WaterPipe</li>
+			<li>MarsX.PlaceWorker_WaterPipe</li>
 		</placeWorkers>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>MoisturePump</defName>
 		<label>Irrigation pump</label>
-		<thingClass>mars.Building_fertilizerPump</thingClass>
+		<thingClass>MarsX.Building_fertilizerPump</thingClass>
 		<description>Pumps fresh water into growing soil from water tanks connected via pipes.</description>
 		<graphicData>
 			<texPath>Things/Building/Misc/MoisturePump</texPath>
@@ -135,7 +135,7 @@
 			</damageData>
 		</graphicData>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>			
 			<li Class="CompProperties_Power">
@@ -168,7 +168,7 @@
 		<defName>SkyLight</defName>
 		<label>SkyLight</label>
 		<description>Lets daylight in through a window in the roof.</description>
-		<thingClass>mars.Building_skyLight</thingClass>
+		<thingClass>MarsX.Building_skyLight</thingClass>
 		<graphicData>
 			<texPath>Things/Building/skylight</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -199,7 +199,7 @@
 			</li>
 		</comps>
 		<placeWorkers>
-			<li>mars.PlaceWorker_Skylight</li>
+			<li>MarsX.PlaceWorker_Skylight</li>
 		</placeWorkers>
 		<building>
 			<isEdifice>false</isEdifice>
@@ -232,21 +232,21 @@
       </building>
 		<uiIconPath>UI/GasPipe</uiIconPath>
 		<comps>	
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 				<col>yellow</col>
 			</li>
 		</comps>
 		<designationCategory>Temperature</designationCategory>
 		<placeWorkers>
-			<li>mars.PlaceWorker_GasPipe</li>
+			<li>MarsX.PlaceWorker_GasPipe</li>
 		</placeWorkers>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>gasValve</defName>
 		<label>Gas valve</label>
-		<thingClass>mars.Building_ValveGas</thingClass>
+		<thingClass>MarsX.Building_ValveGas</thingClass>
 		<description>Opens or closes connections between gas pipes.</description>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Standable</passability>
@@ -256,7 +256,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<comps>	
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 			</li>
 			<li Class="CompProperties_Flickable"/>
@@ -275,7 +275,7 @@
 		<designationCategory>Temperature</designationCategory>
 		<constructEffect>ConstructMetal</constructEffect>
 		<placeWorkers>
-			<li>mars.PlaceWorker_GasPipe</li>
+			<li>MarsX.PlaceWorker_GasPipe</li>
 		</placeWorkers>
 	</ThingDef>
 
@@ -284,7 +284,7 @@
 		<defName>SuitStation</defName>
 		<label>EVA Suit Station</label>
 		<description>Stores a single EVA suit, recharges the air tanks, and provides options for auto switching allowed areas.</description>
-		<thingClass>mars.Building_suitStation</thingClass>
+		<thingClass>MarsX.Building_suitStation</thingClass>
 		<graphicData>
 			<texPath>Things/Building/suitCharge_Full</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -315,7 +315,7 @@
 		</statBases>
 		<designationHotKey>Misc11</designationHotKey>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>				
 			</li>
 			<li Class="CompProperties_Glower">
@@ -354,7 +354,7 @@
 		<defName>airOutlet</defName>
 		<label>Air Outlet</label>
 		<description>A outlet which allows air to flow into a room from a MOXIE or MOXI connected via gas pipes.</description>
-		<thingClass>mars.Building_AirOutlet</thingClass>
+		<thingClass>MarsX.Building_AirOutlet</thingClass>
 		<graphicData>
 			<texPath>Things/Building/AirGen</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -381,7 +381,7 @@
 			<isTrap>true</isTrap>
 		</building>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 			</li>
 			<li Class="CompProperties_Power">
@@ -399,7 +399,7 @@
 		<defName>co2scrubber</defName>
 		<label>CO2 Scrubber</label>
 		<description>The CO2 Scrubber uses a fan to circulate air through a Lithium Hydroxide Cell that reacts with CO2 to produce Lithium Carbonate also known as Limestone.</description>
-		<thingClass>mars.Building_co2scrubber</thingClass>
+		<thingClass>MarsX.Building_co2scrubber</thingClass>
 		<graphicData>
 			<texPath>Things/Building/co2Scrubber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -451,7 +451,7 @@
 		<defName>Moxie</defName>
 		<label>MOXIE</label>
 		<description>Mars Oxygen In-situ Experiment (MOXIE) collects CO2 from the Martian atmosphere, compresses and stores it, then electrochemically splits the CO2 molecules into O2 and CO. The O2 is then analyzed for purity before being vented through available Air outlets while the toxic CO and other exhaust products are vented directly out of exhaust ports.</description>
-		<thingClass>mars.Building_MOXI</thingClass>
+		<thingClass>MarsX.Building_MOXI</thingClass>
 		<graphicData>
 			<texPath>Things/Building/moxie</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -478,15 +478,15 @@
 		</statBases>
 		<designationHotKey>Misc11</designationHotKey>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>150</basePowerConsumption>
 			</li>
-			<li Class="mars.CompProperties_StorageTank">
-				<compClass>mars.CompStorageTank</compClass>
+			<li Class="MarsX.CompProperties_StorageTank">
+				<compClass>MarsX.CompStorageTank</compClass>
 				<compounds>
 					<li>O2</li>
 					<li>N2</li>
@@ -515,7 +515,7 @@
 		<defName>AGS</defName>
 		<label>AGS</label>
 		<description>The Atmosphere Generating System is a unit designed to electrochemically split CO2 molecules into O2 and CO as well as filtering out nitrogen and argon from the martian atmosphere to create breathable air.</description>
-		<thingClass>mars.Building_MOXI</thingClass>
+		<thingClass>MarsX.Building_MOXI</thingClass>
 		<graphicData>
 			<texPath>Things/Building/moxi</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -550,15 +550,15 @@
 		</statBases>
 		<designationHotKey>Misc11</designationHotKey>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>600</basePowerConsumption>
 			</li>
-			<li Class="mars.CompProperties_StorageTank">
-				<compClass>mars.CompStorageTank</compClass>
+			<li Class="MarsX.CompProperties_StorageTank">
+				<compClass>MarsX.CompStorageTank</compClass>
 				<compounds>
 					<li>O2</li>
 					<li>N2</li>

@@ -4,7 +4,7 @@
 	<ThingDef>
 		<defName>ShipLand</defName>
 		<label>drop pod (incoming)</label>
-		<thingClass>mars.Fleet_ShipLander</thingClass>
+		<thingClass>MarsX.Fleet_ShipLander</thingClass>
 		<category>Ethereal</category>
 		<tickerType>Normal</tickerType>
 		<graphicData>
@@ -22,7 +22,7 @@
 	<ThingDef>
 		<defName>ShipLaunch</defName>
 		<label>drop pod (incoming)</label>
-		<thingClass>mars.Fleet_ShipLauncher</thingClass>
+		<thingClass>MarsX.Fleet_ShipLauncher</thingClass>
 		<category>Ethereal</category>
 		<tickerType>Normal</tickerType>
 		<graphicData>
@@ -41,7 +41,7 @@
 		<defName>Ship</defName>
 		<label>Ares ILAV</label>
 		<description>The Interplanetary Landing and Ascent Vehicle is a reusable launch vehicle designed to land on and take off from the surface of mars.</description>
-		<thingClass>mars.Fleet_ShipBuilding</thingClass>		
+		<thingClass>MarsX.Fleet_ShipBuilding</thingClass>		
 		<category>Building</category>
 		<altitudeLayer>Building</altitudeLayer>
 		<graphicData>
@@ -71,10 +71,10 @@
 		</costList>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 			</li>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>
 			<li Class="CompProperties_Battery">
@@ -82,8 +82,8 @@
 				<efficiency>0.5</efficiency>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="mars.CompProperties_StorageTank">
-				<compClass>mars.CompStorageTank</compClass>
+			<li Class="MarsX.CompProperties_StorageTank">
+				<compClass>MarsX.CompStorageTank</compClass>
 				<compounds>
 					<li>O2</li>
 					<li>N2</li>
@@ -97,8 +97,8 @@
 					<li>100000</li>
 				</start>
 			</li>
-			<li Class="mars.CompProperties_LiquidTank">
-				<compClass>mars.CompLiquidTank</compClass>
+			<li Class="MarsX.CompProperties_LiquidTank">
+				<compClass>MarsX.CompLiquidTank</compClass>
 				<compounds>
 					<li>H2O</li>
 				</compounds>	
@@ -113,7 +113,8 @@
 		</comps>
 
 		<building>
-			<alwaysDeconstructible>true</alwaysDeconstructible>
+      <!--<expandHomeArea>false</expandHomeArea>-->
+      <alwaysDeconstructible>true</alwaysDeconstructible>
 		</building>
 		<selectable>true</selectable>
 		<!-- <drawerType>MapMeshOnly</drawerType> -->
@@ -215,7 +216,7 @@
 		<defName>SupplyCrate</defName>
 		<label>Supply Crate</label>
 		<description>A supply crate from Earth.</description>
-		<thingClass>mars.Building_Cargo</thingClass>
+		<thingClass>MarsX.Building_Cargo</thingClass>
 		<graphicData>
 			<texPath>Things/Building/crate</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

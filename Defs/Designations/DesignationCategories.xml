@@ -8,8 +8,8 @@
     <description>Designate specific interactions with specific things.</description>
     <order>900</order>
     <specialDesignatorClasses>
-	<li>mars.Designator_DigIcySand</li>
-	<li>mars.Designator_DigSand</li>
+	<li>MarsX.Designator_DigIcySand</li>
+	<li>MarsX.Designator_DigSand</li>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
       <li>Designator_Mine</li>

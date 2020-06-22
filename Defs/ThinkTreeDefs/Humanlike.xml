@@ -234,7 +234,7 @@
             <!-- Seek allowed area -->
             <li Class="JobGiver_SeekAllowedArea" />
 
-            <li Class="mars.JobGiver_RefuelSuit" />
+            <li Class="MarsX.JobGiver_RefuelSuit" />
 
             <!-- Seek safe temperatures -->
             <li Class="JobGiver_SeekSafeTemperature" />

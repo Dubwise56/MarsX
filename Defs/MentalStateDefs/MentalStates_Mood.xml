@@ -12,7 +12,7 @@
 
   <MentalStateDef Name="WanderPsychotic" ParentName="BaseMentalState">
     <defName>Wander_Psychotic</defName>
-    <stateClass>mars.MentalState_WanderPsychotic</stateClass>
+    <stateClass>MarsX.MentalState_WanderPsychotic</stateClass>
     <label>wandering in psychosis</label>
     <category>Misc</category>
     <moodRecoveryThought>Catharsis</moodRecoveryThought>

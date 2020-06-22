@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>WindTurbine</defName>
-		<thingClass>mars.Building_windTrap</thingClass>
+		<thingClass>MarsX.Building_windTrap</thingClass>
 		<label>Wind Trap</label>
 		<description>A large funnel designed to collect CO2 from the thin martian atmosphere for storing in tanks.</description>
 		<graphicData>
@@ -39,10 +39,10 @@
 		</costList>
 		<constructEffect>ConstructMetal</constructEffect>
 		<placeWorkers>
-			<li>mars.PlaceWorker_WindTrap</li>
+			<li>MarsX.PlaceWorker_WindTrap</li>
 		</placeWorkers>
 		<comps>
-					<li Class="mars.CompProperties_Pipe">
+					<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 			</li>
 					<li Class="CompProperties_Power">

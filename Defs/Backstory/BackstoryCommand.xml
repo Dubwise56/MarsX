@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--COMMANDERS-->
+
+  <MarsX.BackstoryDef>
+    <defName>AirforceOfficer</defName>
+    <title>airforce officer</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} went to college but found it uninteresting and instead joined the airforce. {PAWN_pronoun} then realised his life was boring and found a way to do something better. Starving in space.</baseDesc>
+    <skillGains>
+      <Social>4</Social>
+      <Melee>5</Melee>
+	  <Shooting>7</Shooting>
+      <Crafting>6</Crafting>
+	  <Intellectual>7</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+
+  <MarsX.BackstoryDef>
+    <defName>Airforcepilot</defName>
+    <title>Airforce pilot</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} almost lost his legs during an intense aerial dogfight. Thought he could use something more relaxing, like settling on a hostile alien planet. The space agency showed him the fine print, but he was okay with it.</baseDesc>
+    <skillGains>
+      <Social>4</Social>
+      <Melee>5</Melee>
+	  <Shooting>9</Shooting>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Fieldteamleadergeologist</defName>
+    <title>geology team leader</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} studied Geology and led several teams in the field for research, mostly doing research on extraterrestrial minerals. {PAWN_pronoun} later realised that extraterrestrial minerals are not as cool as they sound.</baseDesc>
+    <skillGains>
+      <Social>6</Social>
+      <Mining>14</Mining>
+	  <Physics>9</Physics>
+	  <Intellectual>12</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Biologyteamleader</defName>
+    <title>Biology team leader</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} learned about the birds and the bees. {PAWN_pronoun} has lead several research projects across the world and knows one thing. Birds and bees do not breed with each other.</baseDesc>
+    <skillGains>
+      <Social>6</Social>
+      <Intellectual>12</Intellectual>
+      <Animals>14</Animals>
+      <Medicine>8</Medicine>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Armychiefengineer</defName>
+    <title>Army chief engineer</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} is a great Engineer but still chose a military career despite being overqualified for the position. Mostly so that he can make his colleagues feel inferior. He has a bit of an ego like that.</baseDesc>
+    <skillGains>
+      <Construction>13</Construction>
+      <Crafting>11</Crafting>
+      <Shooting>5</Shooting>
+	  <Melee>4</Melee>
+	  <Intellectual>10</Intellectual>
+	  <Social>6</Social>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+
+  <MarsX.BackstoryDef>
+    <defName>Rocketengineer</defName>
+    <title>Rocket engineer</title>
+    <slot>Adulthood</slot>
+    <baseDesc>Other engineers think they’re cool. But all of them gase at HIM with envy. Where others fix engines and carburetors, he creates art filled with rocket fuel. Best kind of art, really.</baseDesc>
+    <skillGains>
+      <Construction>15</Construction>
+      <Physics>6</Physics>
+      <Chemistry>12</Chemistry>
+      <Intellectual>10</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Genebiologist</defName>
+    <title>Gene biologist</title>
+    <slot>Adulthood</slot>
+    <baseDesc>Sometimes, you just want to learn about the birds and the bees. {PAWN_pronoun} dream was creating bird-bees. Sadly, the university pulled the grant, but HE hoped this mission would get him private funding.</baseDesc>
+    <skillGains>
+      <Animals>12</Animals>
+	  <Plants>8</Plants>
+	  <Chemistry>6</Chemistry>
+      <Intellectual>9</Intellectual>
+	  <Social>4</Social>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Technicalengineer</defName>
+    <title>Technical engineer</title>
+    <slot>Adulthood</slot>
+    <baseDesc>So much better than HIS previous gig as a tech support expert. Oh, sure, the dust gets absolutely everywhere up here, but at least HE doesn’t get angry calls from India anymore.</baseDesc>
+    <skillGains>
+      <Construction>10</Construction>
+      <Crafting>7</Crafting>
+      <Physics>5</Physics>
+	  <Intellectual>9</Intellectual>
+	  <Social>3</Social>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Mechanicalengineer</defName>
+    <title>Mechanical engineer</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} originally thought HIS chosen occupation would lead to the creation of mechs, but he later learned they were impractical as a weapons platform. At least HE still has those old tabletop games.</baseDesc>
+    <skillGains>
+      <Construction>10</Construction>
+	  <Crafting>8</Crafting>
+      <Physics>3</Physics>
+	  <Intellectual>9</Intellectual>
+	  <Social>3</Social>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+
+  <MarsX.BackstoryDef>
+    <defName>Navycaptain</defName>
+    <title>Navy captain</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} always loved playing with toy battleships in his bathtub. Then HE played with battleships on the open seas. Up here, there is no bathtub or a sea, or even intact battleships. Bummer.</baseDesc>
+    <skillGains>
+      <Social>6</Social>
+      <Melee>5</Melee>
+      <Shooting>7</Shooting>
+	  <Intellectual>4</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+
+  <MarsX.BackstoryDef>
+    <defName>Navypilot</defName>
+    <title>Navy pilot</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} is still technically part of the airforce, but tell that to the bloody media. You bomb a few thrird world countries and you are immediately labeled as a navy pilot. Discrimination, is what that is.</baseDesc>
+    <skillGains>
+      <Social>4</Social>
+      <Melee>4</Melee>
+	  <Shooting>5</Shooting>
+	  <Intellectual>4</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+
+  <MarsX.BackstoryDef>
+    <defName>Armycolonel</defName>
+    <title>Army colonel</title>
+    <slot>Adulthood</slot>
+    <baseDesc>Could never beat the responsibility of being a general. {PAWN_pronoun} was offered the promotion several times, but the increased number of lives at his disposal would have terrified HIM.</baseDesc>
+    <skillGains>
+      <Social>5</Social>
+      <Melee>5</Melee>
+	  <Shooting>6</Shooting>
+	  <Intellectual>4</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Navyrearadmiral</defName>
+    <title>Navy rear admiral</title>
+    <slot>Adulthood</slot>
+    <baseDesc>Hates being the youngest admiral, as HE feels it somehow undermines his status. The other admirals constantly consider HIM a liability. One day, the seas will be HIS.</baseDesc>
+    <skillGains>
+      <Social>6</Social>
+      <Melee>5</Melee>
+	  <Shooting>5</Shooting>
+	  <Intellectual>7</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+
+  <MarsX.BackstoryDef>
+    <defName>Deepminingexpert</defName>
+    <title>Deep mining expert</title>
+    <slot>Adulthood</slot>
+    <baseDesc>{PAWN_pronoun} loves it deep. Shallow experiences cannot satisfy HIM anymore. Down there, in the most unreachable depths, is where HE finally finds release. Has found enough diamonds for a full suit of armour.</baseDesc>
+    <skillGains>
+      <Mining>12</Mining>
+      <Construction>5</Construction>
+	  <Chemistry>8</Chemistry>
+	  <Intellectual>10</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Formerspy</defName>
+    <title>Former spy</title>
+    <slot>Adulthood</slot>
+    <baseDesc>That’s what HE claims, anyway. Or, well, that’s what the dossiers on HIM claim. {PAWN_pronoun} never says much. Or does HE? Is HE even a HE? Nobody knows. But HE seems to know a lot about everyone.</baseDesc>
+    <skillGains>
+      <Animals>1</Animals>
+      <Plants>1</Plants>
+      <Chemistry>5</Chemistry>
+      <Construction>2</Construction>
+      <Shooting>5</Shooting>
+      <Medicine>2</Medicine>
+      <Cooking>1</Cooking>
+      <Crafting>3</Crafting>
+      <Artistic>3</Artistic>
+      <Melee>5</Melee>
+      <Social>6</Social>
+      <Intellectual>8</Intellectual>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+  <MarsX.BackstoryDef>
+    <defName>Specialforces</defName>
+    <title>Special forces</title>
+    <slot>Adulthood</slot>
+    <baseDesc>Was told he was a unique, beautiful Snowflake. That he was Special. The higher-ups in the army agreed and set HIM up for some pilot training.</baseDesc>
+    <skillGains>
+      <Social>4</Social>
+      <Melee>10</Melee>
+	  <Shooting>12</Shooting>
+      <Crafting>6</Crafting>
+      <Intellectual>7</Intellectual>
+      <Mining>4</Mining>
+    </skillGains>
+    <AllowedRoles>
+      <li>Civilian</li>
+      <li>Commander</li>
+      <li>Civil</li>
+    </AllowedRoles>
+  </MarsX.BackstoryDef>
+
+
+</Defs>

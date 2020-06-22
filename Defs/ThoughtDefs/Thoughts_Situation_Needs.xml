@@ -4,7 +4,7 @@
 
   <ThoughtDef>
     <defName>FitnessLevel</defName>
-    <workerClass>mars.ThoughtWorker_Fitness</workerClass>
+    <workerClass>MarsX.ThoughtWorker_Fitness</workerClass>
     <stages>
       <li>
         <label>muscle atrophy</label>
@@ -31,7 +31,7 @@
 
   <ThoughtDef>
     <defName>HygieneLevel</defName>
-    <workerClass>mars.ThoughtWorker_Hygiene</workerClass>
+    <workerClass>MarsX.ThoughtWorker_Hygiene</workerClass>
     <stages>
       <li>
         <label>Filthy</label>
@@ -58,7 +58,7 @@
   
     <ThoughtDef>
     <defName>BowelLevel</defName>
-    <workerClass>mars.ThoughtWorker_Bowel</workerClass>
+    <workerClass>MarsX.ThoughtWorker_Bowel</workerClass>
     <stages>
       <li>
         <label>Busting</label>

@@ -6,7 +6,7 @@
   <IncidentDef>
     <defName>Accident</defName>
     <label>Accident</label>
-    <workerClass>mars.IncidentWorker_Accidents</workerClass>
+    <workerClass>MarsX.IncidentWorker_Accidents</workerClass>
     <baseChance>5</baseChance>
     <minRefireDays>2</minRefireDays>
     <targetTags>
@@ -67,7 +67,7 @@
   <IncidentDef>
     <defName>DustStorm</defName>
     <label>dust storm</label>
-    <workerClass>mars.IncidentWorker_DustStorm</workerClass>
+    <workerClass>MarsX.IncidentWorker_DustStorm</workerClass>
     <letterLabel>Dust storm</letterLabel>
     <letterText>A dust storm has developed nearby and is heading our way.</letterText>
     <letterDef>NegativeEvent</letterDef>
@@ -102,7 +102,7 @@
   <IncidentDef>
     <defName>DustDevils</defName>
     <label>Dust Devils</label>
-    <workerClass>mars.IncidentWorker_DustDevils</workerClass>
+    <workerClass>MarsX.IncidentWorker_DustDevils</workerClass>
     <letterLabel>Dust Devils</letterLabel>
     <letterText>A group of dust devils are moving through this region.</letterText>
     <letterDef>NegativeEvent</letterDef>
@@ -118,7 +118,7 @@
   <IncidentDef>
     <defName>suitBreach</defName>
     <label>suit breach</label>
-    <workerClass>mars.IncidentWorker_SuitBreach</workerClass>
+    <workerClass>MarsX.IncidentWorker_SuitBreach</workerClass>
     <letterLabel>Suit breach</letterLabel>
     <letterText>A suit was breached but the breach has been secured.</letterText>
     <letterDef>NegativeEvent</letterDef>
@@ -134,7 +134,7 @@
   <IncidentDef>
     <defName>ToxicVenting</defName>
     <label>Toxic venting</label>
-    <workerClass>mars.IncidentWorker_ToxicVenting</workerClass>
+    <workerClass>MarsX.IncidentWorker_ToxicVenting</workerClass>
     <letterLabel>Suit breach</letterLabel>
     <letterText>An air outlet has broken down and is venting toxic gas.</letterText>
     <letterDef>NegativeEvent</letterDef>
@@ -148,7 +148,7 @@
   <IncidentDef>
     <defName>CO2Venting</defName>
     <label>CO2 venting</label>
-    <workerClass>mars.IncidentWorker_co2Venting</workerClass>
+    <workerClass>MarsX.IncidentWorker_co2Venting</workerClass>
     <letterLabel>Suit breach</letterLabel>
     <letterText>An air outlet has broken down and is venting too much CO2.</letterText>
     <letterDef>NegativeEvent</letterDef>
@@ -186,7 +186,7 @@
   <IncidentDef>
     <defName>MajorDustStorm</defName>
     <label>major dust storm</label>
-    <workerClass>mars.IncidentWorker_MajorDustStorm</workerClass>
+    <workerClass>MarsX.IncidentWorker_MajorDustStorm</workerClass>
     <letterLabel>Major dust storm</letterLabel>
     <letterText>dust storm.</letterText>
     <letterDef>ThreatBig</letterDef>
@@ -202,7 +202,7 @@
   <IncidentDef>
     <defName>DustDevilBig</defName>
     <label>Huge Dust Devil</label>
-    <workerClass>mars.IncidentWorker_DustDevilBig</workerClass>
+    <workerClass>MarsX.IncidentWorker_DustDevilBig</workerClass>
     <letterLabel>Huge Dust Devil</letterLabel>
     <letterText>A huge dust devil is moving through this area.</letterText>
     <letterDef>ThreatBig</letterDef>
@@ -217,7 +217,7 @@
   <IncidentDef>
     <defName>Decompression</defName>
     <label>decompression</label>
-    <workerClass>mars.IncidentWorker_Blowout</workerClass>
+    <workerClass>MarsX.IncidentWorker_Blowout</workerClass>
     <letterLabel>Rapid Decompression</letterLabel>
     <letterText>An outside door has had a catastrophic failure resulting in rapid decompression and the room is exposed to the martian atmosphere.</letterText>
     <letterDef>ThreatBig</letterDef>

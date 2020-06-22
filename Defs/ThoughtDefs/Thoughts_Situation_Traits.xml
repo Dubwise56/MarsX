@@ -5,7 +5,7 @@
 
   <ThoughtDef>
     <defName>ClaustrophileSad</defName>
-    <workerClass>mars.ThoughtWorker_Claustrophile</workerClass>
+    <workerClass>MarsX.ThoughtWorker_Claustrophile</workerClass>
     <requiredTraits>
       <li>Claustrophile</li>
     </requiredTraits>
@@ -20,7 +20,7 @@
 
   <ThoughtDef>
     <defName>ClaustrophileAppy</defName>
-    <workerClass>mars.ThoughtWorker_Claustrophile</workerClass>
+    <workerClass>MarsX.ThoughtWorker_Claustrophile</workerClass>
 	    <invert>true</invert>
     <requiredTraits>
       <li>Claustrophile</li>
@@ -38,7 +38,7 @@
   
     <ThoughtDef>
     <defName>ClaustrophobeAppy</defName>
-    <workerClass>mars.ThoughtWorker_Claustrophile</workerClass>
+    <workerClass>MarsX.ThoughtWorker_Claustrophile</workerClass>
     <requiredTraits>
       <li>Claustrophobe</li>
     </requiredTraits>
@@ -53,7 +53,7 @@
 
   <ThoughtDef>
     <defName>ClaustrophobeSad</defName>
-    <workerClass>mars.ThoughtWorker_Claustrophile</workerClass>   
+    <workerClass>MarsX.ThoughtWorker_Claustrophile</workerClass>   
 	<invert>true</invert>
     <requiredTraits>
       <li>Claustrophobe</li>

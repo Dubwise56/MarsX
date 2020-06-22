@@ -4,7 +4,7 @@
   <ScenPartDef>
     <defName>missionMode</defName>
     <label>Mars Mission</label>
-    <scenPartClass>mars.ScenPart_ColonyMission</scenPartClass>
+    <scenPartClass>MarsX.ScenPart_ColonyMission</scenPartClass>
     <category>Misc</category>
     <selectionWeight>1.0</selectionWeight>
     <summaryPriority>100</summaryPriority>

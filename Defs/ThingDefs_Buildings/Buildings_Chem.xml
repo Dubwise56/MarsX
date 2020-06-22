@@ -29,11 +29,11 @@
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>
-			<li Class="mars.CompProperties_LiquidTank">
-				<compClass>mars.CompLiquidTank</compClass>
+			<li Class="MarsX.CompProperties_LiquidTank">
+				<compClass>MarsX.CompLiquidTank</compClass>
 				<compounds>
 					<li>H2O</li>
 				</compounds>	
@@ -79,11 +79,11 @@
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 			</li>
-			<li Class="mars.CompProperties_StorageTank">
-				<compClass>mars.CompStorageTank</compClass>
+			<li Class="MarsX.CompProperties_StorageTank">
+				<compClass>MarsX.CompStorageTank</compClass>
 				<assignable>true</assignable>
 				<defaultCapacity>200000</defaultCapacity>
 			</li>
@@ -98,7 +98,7 @@
 		<defName>CylinderTank</defName>
 		<label>Gas Storage Tank</label>
 		<description>A tank for containing compressed gas.</description>
-		<!-- <thingClass>mars.Building_gasTank</thingClass> -->
+		<!-- <thingClass>MarsX.Building_gasTank</thingClass> -->
 		<graphicData>
 			<texPath>Things/Building/o2StorageTank</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -123,11 +123,11 @@
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 			</li>
-			<li Class="mars.CompProperties_StorageTank">
-				<compClass>mars.CompStorageTank</compClass>
+			<li Class="MarsX.CompProperties_StorageTank">
+				<compClass>MarsX.CompStorageTank</compClass>
 				<assignable>true</assignable>
 				<defaultCapacity>250000</defaultCapacity>
 			</li>
@@ -174,7 +174,7 @@
 		<defName>WaterProduction</defName>
 		<label>MIWEX</label>
 		<description>Mars In-Situ Water Extractor (MIWEX) uses microwaves to heat martian soil and evaporate water molecules into a collector and removing toxic compounds such as perchlorates.</description>
-		<thingClass>mars.Building_IceCrystalExtractor</thingClass>
+		<thingClass>MarsX.Building_IceCrystalExtractor</thingClass>
 		<graphicData>
 			<texPath>Things/Building/miwex/miwex_1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -209,11 +209,11 @@
 		</statBases>
 		<designationHotKey>Misc11</designationHotKey>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>
-						<li Class="mars.CompProperties_LiquidTank">
-				<compClass>mars.CompLiquidTank</compClass>
+						<li Class="MarsX.CompProperties_LiquidTank">
+				<compClass>MarsX.CompLiquidTank</compClass>
 				<compounds>
 					<li>H2O</li>
 				</compounds>	
@@ -237,7 +237,7 @@
 		<defName>atmosphericWaterGenerator</defName>
 		<label>AWG</label>
 		<description>The atmospheric water generator (AWG) is a device that extracts water from humid ambient air.</description>
-		<thingClass>mars.Building_AWG</thingClass>
+		<thingClass>MarsX.Building_AWG</thingClass>
 		<graphicData>
 			<texPath>Things/Building/AWG</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -272,7 +272,7 @@
 		</statBases>
 		<designationHotKey>Misc11</designationHotKey>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>
 			<li Class="CompProperties_Power">
@@ -291,7 +291,7 @@
 		<defName>FuelProduction</defName>
 		<label>MISPP</label>
 		<description>The Mars In-Situ Propellant Plant (MISPP) manufactures methane propellant from H2O and CO2 via the Sabatier process.</description>
-		<thingClass>mars.Building_FuelProduction</thingClass>
+		<thingClass>MarsX.Building_FuelProduction</thingClass>
 		<graphicData>
 			<texPath>Things/Building/mispp/mispp0</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -326,10 +326,10 @@
 		</statBases>
 		<designationHotKey>Misc11</designationHotKey>
 		<comps>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 			</li>
-			<li Class="mars.CompProperties_Pipe">
+			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Water</mode>
 			</li>
 			<li Class="CompProperties_Power">

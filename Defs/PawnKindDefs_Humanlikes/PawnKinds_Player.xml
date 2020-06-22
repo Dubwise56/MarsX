@@ -6,13 +6,7 @@
     <combatPower>30</combatPower>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
-
-    <defName>Colonist</defName>
-    <label>colonist</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategories>
-      <li>Civil</li>
-    </backstoryCategories>
     <isFighter>true</isFighter>
     <minGenerationAge>18</minGenerationAge>
     <maxGenerationAge>80</maxGenerationAge>
@@ -35,9 +29,13 @@
     <combatPower>40</combatPower>
     <minGenerationAge>35</minGenerationAge>
     <maxGenerationAge>55</maxGenerationAge>
-    <backstoryCategories>
-      <li>Commander</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Commander</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BasedAstro">
@@ -45,10 +43,14 @@
     <label>colonist</label>
     <minGenerationAge>25</minGenerationAge>
     <maxGenerationAge>60</maxGenerationAge>
-    <backstoryCategories>
-      <li>Civil</li>
-      <li>Commander</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Civil</li>
+          <li>Commander</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BasedAstro">
@@ -56,9 +58,13 @@
     <label>Civilian</label>
     <minGenerationAge>21</minGenerationAge>
     <maxGenerationAge>75</maxGenerationAge>
-    <backstoryCategories>
-      <li>Civilian</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Civilian</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
   </PawnKindDef>
 
 </Defs>

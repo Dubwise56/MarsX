@@ -144,7 +144,7 @@
 
 
   <ThingDef Name="ApparelArmorPowerBase" ParentName="ArmorMachineableBase" Abstract="True">
-    <thingClass>mars.Apparel_EVAsuit</thingClass>
+    <thingClass>MarsX.Apparel_EVAsuit</thingClass>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>

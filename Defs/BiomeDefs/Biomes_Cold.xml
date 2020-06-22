@@ -1,33 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<BiomeDef  ParentName="BiomeBase">
-		<defName>BorealForest</defName>
-		<label>mars transitional</label>
-		<workerClass>BiomeWorker_BorealForest</workerClass>
-		<texture>Terrain/mars2</texture>
-	</BiomeDef>
-
-	<BiomeDef  ParentName="BiomeBase">
-		<defName>Tundra</defName>
-		<label>mars transitional</label>
-		<workerClass>BiomeWorker_Tundra</workerClass>
-		<texture>Terrain/mars5</texture>
-		<implemented>true</implemented>
-	</BiomeDef>
-
-	<BiomeDef  ParentName="BiomeBase">
-		<defName>IceSheet</defName>
-		<label>mars ice</label>
-		<workerClass>BiomeWorker_IceSheet</workerClass>
-		<texture>Terrain/mars7</texture>
-	</BiomeDef>
-
-	<BiomeDef  ParentName="BiomeBase">
-		<defName>SeaIce</defName>
-		<label>mars desert</label>
-		<workerClass>BiomeWorker_SeaIce</workerClass>
-		<texture>Terrain/mars1</texture>
-	</BiomeDef>
+	
 
 </Defs>
