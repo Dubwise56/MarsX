@@ -17,8 +17,8 @@
 	<digicysanddesc>Dig martian sand which has a high enough ice crystal content to extract water.</digicysanddesc>
 	<mustbeicysand>Terrain must be sand containing moisture</mustbeicysand>
 	
-	<digsand>Dig Sand</digsand>
-	<digsanddesc>Dig martian sand to make soil</digsanddesc>
+	<DigSand>Dig Sand</DigSand>
+	<DigSanddesc>Dig martian sand to make soil</DigSanddesc>
 	<mustbesand>Terrain must be sand</mustbesand>
 
 	<coveredsand>Panels are covered in sand</coveredsand>
