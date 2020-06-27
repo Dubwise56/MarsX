@@ -2,6 +2,40 @@
 <Defs>
 
   <WeatherDef>
+    <defName>ClearMoon</defName>
+    <label>clear</label>
+    <description>A clear day. No penalties or modifiers.</description>
+    <repeatable>true</repeatable>
+    <favorability>Good</favorability>
+    <ambientSounds></ambientSounds>
+    <!-- Colors are Clear -->
+    <skyColorsDay>
+      <sky>(1,1,1)</sky>
+      <shadow>(0.5,0.5,0.5)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsDay>
+    <skyColorsDusk>
+      <sky>(0.3,0.3,0.3)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsDusk>
+    <skyColorsNightEdge>
+      <sky>(0.3,0.3,0.3)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsNightEdge>
+    <skyColorsNightMid>
+      <sky>(0.2,0.2,0.2)</sky>
+      <shadow>(1,1,1)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>0.6</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>
+
+  <WeatherDef>
     <defName>Clear</defName>
     <label>clear</label>
     <description>A clear day. No penalties or modifiers.</description>

@@ -1,7 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef>
+
+  <ThingDef ParentName="ChunkBase" Name="ChunkRockBase" Abstract="True">
+    <description>A chunk of rock. Can be cut into usable stone blocks.</description>
+    <graphicData>
+      <texPath>Things/Rocks</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <flipExtraRotation>80</flipExtraRotation>
+    </graphicData>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+  </ThingDef>
+
+
+
+  <ThingDef>
 		<defName>UraniumNitride</defName>
 		<label>Nuclear Fuel Module</label>
 		<graphicData>
@@ -84,7 +99,7 @@
     <label>basalt</label>
     <description>An igneous rock formed from the rapid cooling of basaltic lava.</description>
     <graphicData>
-      <color>(62,62,62)</color>
+      <color>(74,67,59)</color>
     </graphicData>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
@@ -100,7 +115,7 @@
     <defName>ChunkBasalt</defName>
     <label>basalt chunk</label>
     <graphicData>
-      <color>(82,82,82)</color>
+      <color>(74,67,59)</color>
     </graphicData>
     <statBases>
       <Mass>18</Mass>
@@ -123,7 +138,7 @@
       <Mass>0.9</Mass>
     </statBases>
     <stuffProps>
-      <color>(62,62,62)</color>
+      <color>(74,67,59)</color>
       <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>

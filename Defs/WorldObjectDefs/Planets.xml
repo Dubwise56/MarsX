@@ -23,6 +23,9 @@
     <expandingIconTexture>UI/hsbMark</expandingIconTexture>
     <expandingIconPriority>6</expandingIconPriority>
     <Divisions>5</Divisions>
+    <RockTypes>
+      <li>Basalt</li>
+    </RockTypes>
   </MarsX.PlanetDef>
 
   <MarsX.PlanetDef>
@@ -61,6 +64,10 @@
     <expandingIconTexture>UI/hsbMark</expandingIconTexture>
     <expandingIconPriority>6</expandingIconPriority>
     <Divisions>5</Divisions>
+    <RockTypes>
+      <li>Basalt</li>
+      <li>Sandstone</li>
+    </RockTypes>
 </MarsX.PlanetDef>
 
   <MarsX.PlanetDef>

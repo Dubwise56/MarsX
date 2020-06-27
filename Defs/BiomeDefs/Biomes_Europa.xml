@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BiomeDef Name="BaseEuropaBiome">
+    <defName>EuropaSurface</defName>
+    <label>Europa Surface</label>
+    <description>The surface of Europa</description>
+    <workerClass>MarsX.BiomeWorker_Europa</workerClass>
+    <texture>Things/God</texture>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0</plantDensity>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <settlementSelectionWeight>0.9</settlementSelectionWeight>
+    <movementDifficulty>1</movementDifficulty>
+    <forageability>0</forageability>
+    <diseaseMtbDays>90</diseaseMtbDays>
+    <diseases>
+      <li>
+        <diseaseInc>Disease_Flu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+    </diseases>
+    <terrainsByFertility>
+      <li>
+        <terrain>EuropaIce</terrain>
+        <min>-999</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <terrainPatchMakers>
+      <li>
+        <perlinFrequency>0.028</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>Ice</terrain>
+            <min>0.4</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+      <li>
+        <perlinFrequency>0.027</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>EuropaIce</terrain>
+            <min>0.22</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+    </terrainPatchMakers>
+    <baseWeatherCommonalities>
+      <Clear>1</Clear>
+    </baseWeatherCommonalities>
+    <wildPlants>
+    </wildPlants>
+    <wildAnimals>
+    </wildAnimals>
+    <allowedPackAnimals>
+    </allowedPackAnimals>
+  </BiomeDef>
+
+  <!--<BiomeDef ParentName="BaseMoonBiome">
+    <defName>Highlands</defName>
+    <label>Highlands</label>
+    <description>A plateau or high plain.</description>
+    <workerClass>MarsX.BiomeWorker_MoonHighlands</workerClass>
+    <texture>Terrain/MoonRock</texture>
+  </BiomeDef>
+
+  <BiomeDef ParentName="BaseMoonBiome">
+    <defName>Maria</defName>
+    <label>Maria</label>
+    <description>Chaos.</description>
+    <workerClass>MarsX.BiomeWorker_MoonMaria</workerClass>
+    <texture>Terrain/MoonDust</texture>
+  </BiomeDef>
+
+  <BiomeDef ParentName="BaseMoonBiome">
+    <defName>Rilles</defName>
+    <label>Rilles</label>
+    <description>Terra.</description>
+    <workerClass>MarsX.BiomeWorker_MoonRilles</workerClass>
+    <texture>Terrain/MoonRock</texture>
+  </BiomeDef>-->
+
+</Defs>

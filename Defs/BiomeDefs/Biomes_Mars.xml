@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--  mars base biome  -->
+  <BiomeDef Name="BiomeBase">
+    <defName>MarsSurface</defName>
+    <label>Mars Surface</label>
+    <description>The surface of mars</description>
+    <workerClass>MarsX.BiomeWorker_Mars</workerClass>
+    <texture>Things/God</texture>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0</plantDensity>
+    <hasVirtualPlants>false</hasVirtualPlants>
+    <settlementSelectionWeight>0.9</settlementSelectionWeight>
+    <movementDifficulty>1</movementDifficulty>
+    <forageability>0</forageability>
+    <soundsAmbient>
+      <li>AmbientWind_Desolate</li>
+    </soundsAmbient>
+    <diseaseMtbDays>90</diseaseMtbDays>
+    <diseases>
+      <li>
+        <diseaseInc>Disease_Flu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+    </diseases>
+    <terrainsByFertility>
+      <li>
+        <terrain>Regolith</terrain>
+        <min>-999</min>
+        <max>0.80</max>
+      </li>
+      <li>
+        <terrain>RockyRegolith</terrain>
+        <min>0.80</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <terrainPatchMakers>
+      <li>
+        <perlinFrequency>0.028</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>Gravel</terrain>
+            <min>0.4</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+      <li>
+        <perlinFrequency>0.027</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>RockyRegolith</terrain>
+            <min>0.22</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+      <li>
+        <perlinFrequency>0.015</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>AncientMud</terrain>
+            <min>0.44</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+    </terrainPatchMakers>
+    <baseWeatherCommonalities>
+      <Clear>18</Clear>
+      <Windy>4</Windy>
+    </baseWeatherCommonalities>
+    <wildPlants>
+    </wildPlants>
+    <wildAnimals>
+    </wildAnimals>
+    <allowedPackAnimals>
+    </allowedPackAnimals>
+  </BiomeDef>
+
+
+</Defs>

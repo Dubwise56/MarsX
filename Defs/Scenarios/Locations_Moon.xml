@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <MarsX.LocationDef>
+    <defName>HadleyApennine</defName>
+    <label>Hadley–Apennine</label>
+    <description>Hadley–Apennine is a region on the near side of Earth's Moon that served as the landing site for the American Apollo 15 mission, the fourth manned landing on the Moon and the first of the "J-missions", in July 1971. The site is located on the eastern edge of Mare Imbrium on a lava plain known as Palus Putredinis. Hadley–Apennine is bordered by the Montes Apenninus (often referred to as "Apennine Front"), a mountain range, and Hadley Rille, a meandering channel, on the east and west, respectively</description>
+    <Planet>Moon</Planet>
+    <MapSize>300</MapSize>
+    <Tile>16445</Tile>
+    <StartingLander>true</StartingLander>
+    <AutoGenMap>true</AutoGenMap>
+    <Biome>MoonSurface</Biome>
+    <Hills>LargeHills</Hills>
+    <Ice>0</Ice>
+    <Minerals>3</Minerals>
+    <Regolith>4</Regolith>
+    <Landing>3</Landing>
+    <Preview>Scenarios/Hadley</Preview>
+    <Feature></Feature>
+  </MarsX.LocationDef>
+</Defs>

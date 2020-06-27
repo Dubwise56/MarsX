@@ -2,22 +2,114 @@
 <Defs>
 
   <TerrainDef ParentName="NaturalTerrainBase">
-    <defName>DrySand</defName>
-    <label>Sand</label>
+    <defName>EuropaIce</defName>
+    <label>Ice</label>
+    <texturePath>Terrain/europa1</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>12</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <scatterType>SoftGray</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>0.00</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>MoonDust</defName>
+    <label>Lunar Regolith</label>
+    <texturePath>Terrain/moon</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Sand</generatedFilth>
+    <fertility>0.0</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>MoonRock</defName>
+    <label>Rocky Lunar Regolith</label>
+    <texturePath>Terrain/moonGravel</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Sand</generatedFilth>
+    <fertility>0.0</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+
+
+
+
+
+
+
+
+
+
+
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Soil</defName>
+    <label>soil</label>
+    <texturePath>Terrain/tilledSoilDry</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Sand</generatedFilth>
+    <fertility>1.0</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>Regolith</defName>
+    <label>Regolith</label>
     <texturePath>Terrain/MarsSand</texturePath>
     <edgeType>FadeRough</edgeType>
-    <renderPrecedence>350</renderPrecedence>
+    <renderPrecedence>335</renderPrecedence>
     <pathCost>4</pathCost>
     <statBases>
-      <Beauty>-4</Beauty>
-      <Cleanliness>-4</Cleanliness>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
     </statBases>
-    <scatterType>Stoney</scatterType>
     <affordances>
       <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-      <li>GrowSoil</li>
       <li>Diggable</li>
     </affordances>
     <generatedFilth>Filth_Sand</generatedFilth>
@@ -26,22 +118,18 @@
   </TerrainDef>
 
   <TerrainDef ParentName="NaturalTerrainBase">
-    <defName>StonySand</defName>
-    <label>rocky sand</label>
-    <texturePath>Terrain/MarsSandStony</texturePath>
+    <defName>AncientMud</defName>
+    <label>Ancient Mud</label>
+    <texturePath>Terrain/MarsMud</texturePath>
     <edgeType>FadeRough</edgeType>
-    <renderPrecedence>350</renderPrecedence>
+    <renderPrecedence>330</renderPrecedence>
     <pathCost>4</pathCost>
     <statBases>
-      <Beauty>-4</Beauty>
-      <Cleanliness>-4</Cleanliness>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
     </statBases>
-    <scatterType>Stoney</scatterType>
     <affordances>
       <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-      <li>GrowSoil</li>
       <li>Diggable</li>
     </affordances>
     <generatedFilth>Filth_Sand</generatedFilth>
@@ -50,22 +138,18 @@
   </TerrainDef>
 
   <TerrainDef ParentName="NaturalTerrainBase">
-    <defName>Sand</defName>
-    <label>icy sand</label>
-    <texturePath>Terrain/MarsSandIcy</texturePath>
+    <defName>RockyRegolith</defName>
+    <label>Rocky Regolith</label>
+    <texturePath>Terrain/MarsSandStony3</texturePath>
     <edgeType>FadeRough</edgeType>
-    <renderPrecedence>350</renderPrecedence>
-    <pathCost>4</pathCost>
+    <renderPrecedence>325</renderPrecedence>
+    <pathCost>2</pathCost>
     <statBases>
-      <Beauty>-4</Beauty>
-      <Cleanliness>-4</Cleanliness>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
     </statBases>
-    <scatterType>Stoney</scatterType>
     <affordances>
       <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-      <li>GrowSoil</li>
       <li>Diggable</li>
     </affordances>
     <generatedFilth>Filth_Sand</generatedFilth>
@@ -75,8 +159,8 @@
 
   <TerrainDef ParentName="NaturalTerrainBase">
     <defName>Gravel</defName>
-    <label>gravel</label>
-    <texturePath>Terrain/Gravel</texturePath>
+    <label>Course Regolith</label>
+    <texturePath>Terrain/MarsSandStony2</texturePath>
     <edgeType>FadeRough</edgeType>
     <renderPrecedence>320</renderPrecedence>
     <pathCost>2</pathCost>
@@ -84,18 +168,29 @@
       <Beauty>-1</Beauty>
       <Cleanliness>-1</Cleanliness>
     </statBases>
-    <scatterType>Stoney</scatterType>
     <affordances>
       <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-      <li>GrowSoil</li>
       <li>Diggable</li>
     </affordances>
     <generatedFilth>Filth_Sand</generatedFilth>
-    <fertility>0</fertility>
+    <fertility>0.06</fertility>
     <takeFootprints>True</takeFootprints>
   </TerrainDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <TerrainDef Name="SoilBase"  ParentName="NaturalTerrainBase" Abstract="True">
