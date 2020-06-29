@@ -37,6 +37,9 @@
     </statBases>
     <affordances>
       <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Light</li>
       <li>Diggable</li>
     </affordances>
     <generatedFilth>Filth_Sand</generatedFilth>
@@ -56,6 +59,9 @@
       <Cleanliness>-1</Cleanliness>
     </statBases>
     <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
       <li>Light</li>
       <li>Diggable</li>
     </affordances>
@@ -88,7 +94,9 @@
     </statBases>
     <affordances>
       <li>Light</li>
-      <li>GrowSoil</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Light</li>
       <li>Diggable</li>
     </affordances>
     <generatedFilth>Filth_Sand</generatedFilth>
@@ -110,6 +118,9 @@
     </statBases>
     <affordances>
       <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Light</li>
       <li>Diggable</li>
     </affordances>
     <generatedFilth>Filth_Sand</generatedFilth>
@@ -129,6 +140,9 @@
       <Cleanliness>-1</Cleanliness>
     </statBases>
     <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
       <li>Light</li>
       <li>Diggable</li>
     </affordances>
@@ -150,6 +164,9 @@
     </statBases>
     <affordances>
       <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Light</li>
       <li>Diggable</li>
     </affordances>
     <generatedFilth>Filth_Sand</generatedFilth>
@@ -169,6 +186,9 @@
       <Cleanliness>-1</Cleanliness>
     </statBases>
     <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
       <li>Light</li>
       <li>Diggable</li>
     </affordances>
