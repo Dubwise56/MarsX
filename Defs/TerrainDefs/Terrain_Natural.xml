@@ -152,6 +152,29 @@
   </TerrainDef>
 
   <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>IcyRegolith</defName>
+    <label>Icy Regolith</label>
+    <texturePath>Terrain/MarsSandIcy</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>325</renderPrecedence>
+    <pathCost>4</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Light</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Sand</generatedFilth>
+    <fertility>0.06</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
     <defName>RockyRegolith</defName>
     <label>Rocky Regolith</label>
     <texturePath>Terrain/MarsSandStony3</texturePath>

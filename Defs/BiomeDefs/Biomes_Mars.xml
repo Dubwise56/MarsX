@@ -24,8 +24,8 @@
       </li>
     </diseases>
     <terrainsByFertility>
-      <li>
-        <terrain>Regolith</terrain>
+      <li> 
+        <terrain>IcyRegolith</terrain>
         <min>-999</min>
         <max>0.80</max>
       </li>
