@@ -40,20 +40,20 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>Ship</defName>
 		<label>Ares ILAV</label>
-		<description>The Interplanetary Landing and Ascent Vehicle is a reusable launch vehicle designed to land on and take off from the surface of mars.</description>
+		<description>The Interplanetary Landing and Ascent Vehicle is a reusable launch vehicle designed to land on and take off from the surface of planets.</description>
 		<thingClass>MarsX.Fleet_ShipBuilding</thingClass>		
 		<category>Building</category>
 		<altitudeLayer>Building</altitudeLayer>
 		<graphicData>
-			<texPath>Things/Building/ships/CrewLanded</texPath>
+      <texPath>Things/Building/ships/A/Ship</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(7,11)</drawSize>
+			<drawSize>(10,10)</drawSize>
 		</graphicData>
 		<pathCost>35</pathCost>
 		<blockWind>true</blockWind>
 		<passability>Impassable</passability>
 		<fillPercent>0.8</fillPercent>
-		<size>(3,7)</size>
+		<size>(7,7)</size>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<Flammability>0</Flammability>
@@ -62,8 +62,12 @@
 		</statBases>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<killedLeavings>
-			<ChunkSlagSteel>2</ChunkSlagSteel>
+			<ChunkSlagSteel>10</ChunkSlagSteel>
 		</killedLeavings>
+    <inspectorTabs>
+      <li>MarsX.ITab_ShipInventory</li>
+      <li>MarsX.ITab_ShipCrew</li>
+    </inspectorTabs>
 		<costList>
 			<ComponentIndustrial>50</ComponentIndustrial>
 			<Steel>500</Steel>
@@ -79,7 +83,7 @@
 			</li>
 			<li Class="CompProperties_Battery">
 				<storedEnergyMax>4000</storedEnergyMax>
-				<efficiency>0.5</efficiency>
+				<efficiency>0.99</efficiency>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="MarsX.CompProperties_StorageTank">
@@ -118,96 +122,6 @@
 		</building>
 		<selectable>true</selectable>
 		<!-- <drawerType>MapMeshOnly</drawerType> -->
-		<repairEffect>ConstructMetal</repairEffect>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>ShipChunk</defName>
-		<label>ship chunk</label>
-		<description>A chunk of a spacecraft. Can be deconstructed to yield useful steel and components.</description>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/Building/Exotic/ShipChunk</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<damageData>
-				<rect>(0.1,0.1,1.8,1.8)</rect>
-			</damageData>
-			<shadowData>
-				<volume>(1.6,0.5,1.25)</volume>
-				<offset>(0,0,-0.13)</offset>
-			</shadowData>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<pathCost>35</pathCost>
-		<blockWind>true</blockWind>
-		<passability>Impassable</passability>
-		<fillPercent>0.8</fillPercent>
-		<size>(2,2)</size>
-		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
-			<Flammability>0</Flammability>
-			<Beauty>-20</Beauty>
-			<WorkToBuild>12000</WorkToBuild>
-		</statBases>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<killedLeavings>
-			<ChunkSlagSteel>2</ChunkSlagSteel>
-		</killedLeavings>
-		<costList>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<Steel>100</Steel>
-			<Plasteel>100</Plasteel>
-			<Gold>4</Gold>
-		</costList>
-		<building>
-			<claimable>false</claimable>
-			<alwaysDeconstructible>true</alwaysDeconstructible>
-		</building>
-		<selectable>true</selectable>
-		<drawerType>MapMeshOnly</drawerType>
-		<repairEffect>ConstructMetal</repairEffect>
-	</ThingDef>
-
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>crashedShip</defName>
-		<label>crashed ship chunk</label>
-		<description>A part of your crashed ship.</description>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/Building/Exotic/CrashedShipPart</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(6,3)</drawSize>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<pathCost>35</pathCost>
-		<blockWind>true</blockWind>
-		<passability>Impassable</passability>
-		<fillPercent>0.8</fillPercent>
-		<size>(6,3)</size>
-		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
-			<Flammability>0</Flammability>
-			<Beauty>-20</Beauty>
-			<WorkToBuild>12000</WorkToBuild>
-		</statBases>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<killedLeavings>
-			<ChunkSlagSteel>2</ChunkSlagSteel>
-		</killedLeavings>
-		<costList>
-			<Radioisotope_thermoelectric_generator>1</Radioisotope_thermoelectric_generator>
-			<ComponentIndustrial>30</ComponentIndustrial>
-			<Steel>300</Steel>
-			<Plasteel>300</Plasteel>
-		</costList>
-		<building>
-			<claimable>false</claimable>
-			<alwaysDeconstructible>true</alwaysDeconstructible>
-		</building>
-		<selectable>true</selectable>
-		<drawerType>MapMeshOnly</drawerType>
 		<repairEffect>ConstructMetal</repairEffect>
 	</ThingDef>
 

@@ -15,6 +15,21 @@
   </ThingDef>
 
 
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>ChunkSandstone</defName>
+    <label>sandstone chunk</label>
+    <graphicData>
+      <color>(126,104,94)</color>
+    </graphicData>
+    <statBases>
+      <Mass>20</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <BlocksSandstone>20</BlocksSandstone>
+    </butcherProducts>
+  </ThingDef>
+
 
   <ThingDef>
 		<defName>UraniumNitride</defName>

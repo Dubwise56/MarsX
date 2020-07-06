@@ -7,4 +7,10 @@
     <targetType>Cell</targetType>
   </DesignationDef>
 
+  <DesignationDef>
+    <defName>RemoveFromStorage</defName>
+    <texturePath>Designations/Haul</texturePath>
+    <targetType>Thing</targetType>
+  </DesignationDef>
+
 </Defs>

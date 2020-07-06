@@ -62,11 +62,11 @@
     <graphicData>
       <texPath>Things/Mote/Smoke</texPath>
     </graphicData>
-    <altitudeLayer>Weather</altitudeLayer>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
     <mote>
       <fadeInTime>0.50</fadeInTime>
-      <solidTime>6</solidTime>
-      <fadeOutTime>3.2</fadeOutTime>
+      <solidTime>2</solidTime>
+      <fadeOutTime>1.2</fadeOutTime>
       <growthRate>0.005</growthRate>
     </mote>
   </ThingDef>

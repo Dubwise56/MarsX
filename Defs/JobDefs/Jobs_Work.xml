@@ -107,6 +107,12 @@
 	</JobDef>
 
 
+  <JobDef>
+    <defName>TakeFromContainer</defName>
+    <driverClass>MarsX.JobDriver_TakeFromContainer</driverClass>
+    <reportString>taking item from TargetA.</reportString>
+  </JobDef>
+
 	<!--   <JobDef>
     <defName>Clean</defName>
     <driverClass>MarsX.JobDriver_newCleanFilth</driverClass>

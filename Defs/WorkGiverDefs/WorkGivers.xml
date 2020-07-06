@@ -49,6 +49,19 @@
     </requiredCapacities>
   </WorkGiverDef>
 
+  <WorkGiverDef>
+    <defName>TakeFromContainer</defName>
+    <label>Unload</label>
+    <giverClass>MarsX.WorkGiver_TakeFromContainer</giverClass>
+    <workType>Hauling</workType>
+    <verb>unload</verb>
+    <gerund>unloading</gerund>
+    <priorityInType>10</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
   <!--
   <WorkGiverDef>
     <defName>ChatWithColonist</defName>
