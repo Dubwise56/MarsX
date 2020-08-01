@@ -1,51 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-
+  <Crew>Crew</Crew>
+  <Disembark>Disembark</Disembark>
   <MarsXSupport>MarsX Support</MarsXSupport>
   <discordServer>MarsX Discord</discordServer>
   <SupportMarsXPatreon>Patreon</SupportMarsXPatreon>
 
   <Decompression>Decompression!</Decompression>
-	<DecompressionDesc>A door has blown out and decompressed the room</DecompressionDesc>
+  <DecompressionDesc>A door has blown out and decompressed the room</DecompressionDesc>
 
-	<astronautpod>astronaut escape pod</astronautpod>
+  <astronautpod>astronaut escape pod</astronautpod>
 
-	<accident>Accident</accident>
-	<accidentdesc> has had an unfortunate accident.</accidentdesc>
+  <accident>Accident</accident>
+  <accidentdesc> has had an unfortunate accident.</accidentdesc>
 
-	<digicysand>Dig Icy Sand</digicysand>
-	<digicysanddesc>Dig martian sand which has a high enough ice crystal content to extract water.</digicysanddesc>
-	<mustbeicysand>Terrain must be sand containing moisture</mustbeicysand>
-	
-	<DigSand>Dig Sand</DigSand>
-	<DigSanddesc>Dig martian sand to make soil</DigSanddesc>
-	<mustbesand>Terrain must be sand</mustbesand>
+  <digicysand>Dig Icy Sand</digicysand>
+  <digicysanddesc>Dig martian sand which has a high enough ice crystal content to extract water.</digicysanddesc>
+  <mustbeicysand>Terrain must be sand containing moisture</mustbeicysand>
 
-	<coveredsand>Panels are covered in sand</coveredsand>
-	<missinginverter>Missing solar inverter</missinginverter>
+  <digsand>Dig Sand</digsand>
+  <digsanddesc>Dig martian sand to make soil</digsanddesc>
+  <mustbesand>Terrain must be sand</mustbesand>
 
-	<reactorcritical>Reactor Critical! Lethal radiation exposure!</reactorcritical>
-	<reactorleaking>Reactor Leaking</reactorleaking>
-	<reactionstable>Reaction Stable</reactionstable>
+  <coveredsand>Panels are covered in martian dust</coveredsand>
+  <missinginverter>Missing solar inverter</missinginverter>
 
-	<Irrigationprogress> - Irrigation progress </Irrigationprogress>
+  <reactorcritical>Reactor Critical! Lethal radiation exposure!</reactorcritical>
+  <reactorleaking>Reactor Leaking</reactorleaking>
+  <reactionstable>Reaction Stable</reactionstable>
 
-	<LaunchAscent>Launch the Ascent vehicle</LaunchAscent>
-	<Launch>Launch!</Launch>
+  <Irrigationprogress> - Irrigation progress </Irrigationprogress>
 
-	<suito2low>EVA suit o2 critical</suito2low>
-	<suito2lowDesc>An EVA suit is critically low on o2, get to a compressed room now!</suito2lowDesc>
-	
-		<roomO2low>Room O2 Low</roomO2low>
-	<roomO2lowDesc>The O2 level in this room is dangerously low</roomO2lowDesc>
-	
-		<roomCO2high>Room CO2 High</roomCO2high>
-	<roomCO2highDesc>The CO2 level in this room is dangerously high</roomCO2highDesc>
-	
-		<roomPressureLow>Room Pressure Low</roomPressureLow>
-	<roomPressureLowDesc>The pressure level in this room is dangerously low</roomPressureLowDesc>
+  <LaunchAscent>Launch the Ascent vehicle</LaunchAscent>
+  <Launch>Launch!</Launch>
 
-	<Online>Online</Online>
-		<Offline>Offline</Offline>
-		<Irrigation> - Irrigation progress </Irrigation>
+  <suito2low>EVA suit o2 critical</suito2low>
+  <suito2lowDesc>An EVA suit is critically low on o2, get to a compressed room now!</suito2lowDesc>
+
+  <roomO2low>Room O2 Low</roomO2low>
+  <roomO2lowDesc>The O2 level in this room is dangerously low</roomO2lowDesc>
+
+  <roomCO2high>Room CO2 High</roomCO2high>
+  <roomCO2highDesc>The CO2 level in this room is dangerously high</roomCO2highDesc>
+
+  <roomPressureLow>Room Pressure Low</roomPressureLow>
+  <roomPressureLowDesc>The pressure level in this room is dangerously low</roomPressureLowDesc>
+
+  <Online>Online</Online>
+  <Offline>Offline</Offline>
+  <Irrigation> - Irrigation progress </Irrigation>
+
+  <RemoveItem>Remove</RemoveItem>
+  <StoreItem>Store</StoreItem>
+
+  <CompoundStorage>Storage {0} {1}</CompoundStorage>
+
+  <Alert_WantsSleepEVA>Pawn needs sleep</Alert_WantsSleepEVA>
+  <Alert_WantsSleepEVADesc>This person needs rest but is wearing an EVA suit, either end their EVA or have them enter a lander to sleep.</Alert_WantsSleepEVADesc>
+
+  <Alert_Integrity>HAB Integrity</Alert_Integrity>
+  <Alert_IntegrityDesc>A compartment in your hab has low integrity, reinforce the structure to prevent catastrophic failure</Alert_IntegrityDesc>
+
+  <Alert_Umbilical>Ship Umbilical</Alert_Umbilical>
+  <Alert_UmbilicalDesc>A lander is not connected to an umbilical, place a lander umbilical box near it to connect the power and refueling systems to your base</Alert_UmbilicalDesc>
 </LanguageData>

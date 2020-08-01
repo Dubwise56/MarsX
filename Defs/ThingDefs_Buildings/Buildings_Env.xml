@@ -164,51 +164,6 @@
 		<rotatable>false</rotatable>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>SkyLight</defName>
-		<label>SkyLight</label>
-		<description>Lets daylight in through a window in the roof.</description>
-		<thingClass>MarsX.Building_skyLight</thingClass>
-		<graphicData>
-			<texPath>Things/Building/skylight</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>Transparent</shaderType>
-			<drawSize>(1.0,1.0)</drawSize>
-		</graphicData>
-		<category>Building</category>
-		<tickerType>Normal</tickerType>
-		<altitudeLayer>Weather</altitudeLayer>
-		<passability>Standable</passability>
-		<selectable>true</selectable>
-		<costList>
-			<Steel>5</Steel>
-		</costList>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<rotatable>false</rotatable>
-		<statBases>
-			<MaxHitPoints>80</MaxHitPoints>
-			<WorkToBuild>35</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<Beauty>2</Beauty>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Glower">
-				<overlightRadius>0</overlightRadius>
-				<glowRadius>0</glowRadius>
-				<glowColor>(0,0,0,0)</glowColor>
-			</li>
-		</comps>
-		<placeWorkers>
-			<li>MarsX.PlaceWorker_Skylight</li>
-		</placeWorkers>
-		<building>
-			<isEdifice>false</isEdifice>
-		</building>
-		<designationCategory>Furniture</designationCategory> 
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationHotKey>Misc11</designationHotKey>
-	</ThingDef>
-
 
 	<ThingDef ParentName="PipeBase">
 		<defName>gasPipe</defName>
@@ -280,19 +235,20 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="MinifiedBuildingBase">
 		<defName>SuitStation</defName>
 		<label>EVA Suit Station</label>
 		<description>Stores a single EVA suit, recharges the air tanks, and provides options for auto switching allowed areas.</description>
 		<thingClass>MarsX.Building_suitStation</thingClass>
 		<graphicData>
-			<texPath>Things/Building/suitCharge_Full</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2.2,2.2)</drawSize>
-			<damageData>
-				<rect>(0.05,0.05,0.95,0.95)</rect>
-			</damageData>
-		</graphicData>
+			<texPath>Things/Building/SuitStation/SuitStation_Full</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
 		<category>Building</category>
 		<tickerType>Normal</tickerType>
 		<altitudeLayer>Building</altitudeLayer>
@@ -300,29 +256,27 @@
 		<selectable>true</selectable>
 		<fillPercent>0.20</fillPercent>
 		<pathCost>8</pathCost>
-		<size>(1,2)</size>
+		<size>(1,1)</size>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
 		<costList>
 			<Steel>50</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<rotatable>false</rotatable>
+		<rotatable>true</rotatable>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
 			<WorkToBuild>1000</WorkToBuild>
 			<Flammability>0.0</Flammability>
 			<Beauty>-12</Beauty>
+      <Mass>75</Mass>
 		</statBases>
-		<designationHotKey>Misc11</designationHotKey>
 		<comps>
 			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>				
 			</li>
-			<li Class="CompProperties_Glower">
-				<glowRadius>3</glowRadius>
-				<glowColor>(150,215,227,0)</glowColor>
-			</li>
-			<li Class="CompProperties_Power">
+      <li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>215</basePowerConsumption>
 			</li>
@@ -353,7 +307,7 @@
 	<ThingDef ParentName="MinifiedBuildingBase">
 		<defName>airOutlet</defName>
 		<label>Air Outlet</label>
-		<description>A outlet which allows air to flow into a room from a MOXIE or MOXI connected via gas pipes.</description>
+		<description>A outlet which allows air to flow into a room from a Moxie or MOXI connected via gas pipes.</description>
 		<thingClass>MarsX.Building_AirOutlet</thingClass>
 		<graphicData>
 			<texPath>Things/Building/AirGen</texPath>
@@ -370,6 +324,7 @@
 			<WorkToBuild>1000</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
+      <Mass>3</Mass>
 		</statBases>
 		<tickerType>Normal</tickerType>
 
@@ -392,7 +347,6 @@
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<designationCategory>Temperature</designationCategory>
-		<designationHotKey>Misc3</designationHotKey>
 	</ThingDef>
 
 	<ThingDef ParentName="MinifiedBuildingBase">
@@ -449,8 +403,8 @@
 
 	<ThingDef ParentName="MinifiedBuildingBase">
 		<defName>Moxie</defName>
-		<label>MOXIE</label>
-		<description>Mars Oxygen In-situ Experiment (MOXIE) collects CO2 from the Martian atmosphere, compresses and stores it, then electrochemically splits the CO2 molecules into O2 and CO. The O2 is then analyzed for purity before being vented through available Air outlets while the toxic CO and other exhaust products are vented directly out of exhaust ports.</description>
+		<label>Moxie</label>
+		<description>Mars Oxygen In-situ Experiment (Moxie) collects CO2 from the Martian atmosphere, compresses and stores it, then electrochemically splits the CO2 molecules into O2 and CO. The O2 is then analyzed for purity before being vented through available Air outlets while the toxic CO and other exhaust products are vented directly out of exhaust ports.</description>
 		<thingClass>MarsX.Building_MOXI</thingClass>
 		<graphicData>
 			<texPath>Things/Building/moxie</texPath>
@@ -470,7 +424,7 @@
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>false</rotatable>
 		<statBases>
-      <Mass>2.5</Mass>
+      <Mass>25</Mass>
       <MaxHitPoints>150</MaxHitPoints>
 			<WorkToBuild>1000</WorkToBuild>
 			<Flammability>0.0</Flammability>
@@ -507,7 +461,7 @@
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<building>
-			<soundAmbient>MOXIE_Ambience</soundAmbient>
+			<soundAmbient>Moxie_Ambience</soundAmbient>
 		</building>
 	</ThingDef>	
 
@@ -579,7 +533,7 @@
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<building>
-			<soundAmbient>MOXIE_Ambience</soundAmbient>
+			<soundAmbient>Moxie_Ambience</soundAmbient>
 		</building>
 	</ThingDef>
 

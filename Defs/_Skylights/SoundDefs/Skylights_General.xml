@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>SmashedSkylight</defName>
+    <eventNames />
+    <maxSimultaneous>3</maxSimultaneous>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Misc/glass</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20</min>
+          <max>20</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.962353</min>
+          <max>1.183529</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

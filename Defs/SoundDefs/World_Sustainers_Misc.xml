@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <SoundDef>
+    <defName>DustDevil</defName>
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>20</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weather/dustdevil</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>60</max>
+        </volumeRange>
+        <sustainAttack>2.5</sustainAttack>
+        <sustainRelease>2.5</sustainRelease>
+        <distRange>
+          <min>30</min>
+          <max>70</max>
+        </distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

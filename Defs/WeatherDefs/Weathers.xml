@@ -2,9 +2,9 @@
 <Defs>
 
   <WeatherDef>
-    <defName>ClearMoon</defName>
+    <defName>Clear</defName>
     <label>clear</label>
-    <description>A clear day. No penalties or modifiers.</description>
+    <description>No atmosphere to worry about.</description>
     <repeatable>true</repeatable>
     <favorability>Good</favorability>
     <ambientSounds></ambientSounds>
@@ -16,7 +16,7 @@
       <saturation>1.25</saturation>
     </skyColorsDay>
     <skyColorsDusk>
-      <sky>(0.3,0.3,0.3)</sky>
+      <sky>(0.5,0.5,0.5)</sky>
       <shadow>(0.92,0.92,0.92)</shadow>
       <overlay>(1,1,1)</overlay>
       <saturation>0.9</saturation>
@@ -36,7 +36,7 @@
   </WeatherDef>
 
   <WeatherDef>
-    <defName>Clear</defName>
+    <defName>ClearMars</defName>
     <label>clear</label>
     <description>A clear day. No penalties or modifiers.</description>
     <repeatable>true</repeatable>
@@ -46,28 +46,28 @@
     </ambientSounds>   
     <!-- Colors are Clear -->
     <skyColorsDay>
-      <sky>(1,0.92,0.75)</sky>
+      <sky>(1, 0.94, 0.91)</sky>
       <shadow>(0.92,0.92,0.92)</shadow>
       <overlay>(1,1,1)</overlay>
-      <saturation>1.25</saturation>
+      <saturation>1.1</saturation>
     </skyColorsDay>
     <skyColorsDusk>
-      <sky>(0.858,0.650,0.423)</sky>
-     <shadow>(0.92,0.92,0.92)</shadow>
+      <sky>(0.5,0.3,0.4)</sky>
+      <shadow>(0.98,0.98,0.98)</shadow>
       <overlay>(0.8,0.8,0.8)</overlay>
-      <saturation>1.25</saturation>
+      <saturation>1.15</saturation>
     </skyColorsDusk>
     <skyColorsNightEdge>
-      <sky>(0.682,0.503,0.582)</sky>
-     <shadow>(0.92,0.92,0.92)</shadow>
+      <sky>(0.3,0.3,0.3)</sky>
+      <shadow>(0.98,0.98,0.98)</shadow>
       <overlay>(0.6,0.6,0.6)</overlay>
-      <saturation>1.25</saturation>
+      <saturation>1</saturation>
     </skyColorsNightEdge>
     <skyColorsNightMid>
-      <sky>(0.582,0.403,0.482)</sky>
-     <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.6,0.6,0.6)</overlay>
-      <saturation>1.25</saturation>
+      <sky>(0.283,0.283,0.283)</sky>
+     <shadow>(1,1,1)</shadow>
+      <overlay>(0.1,0.1,0.1)</overlay>
+      <saturation>1</saturation>
     </skyColorsNightMid>
   </WeatherDef>
 
@@ -79,31 +79,31 @@
     <favorability>Good</favorability>
     <ambientSounds>
       <li>AmbientWind_Desolate</li>
-    </ambientSounds>   
-    <skyColorsDay>
-      <sky>(1,0.72,0.55)</sky>
-    <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(1,1,1)</overlay>
-      <saturation>1.25</saturation>
-    </skyColorsDay>
-    <skyColorsDusk>
-      <sky>(0.858,0.650,0.423)</sky>
-   <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.8,0.8,0.8)</overlay>
-      <saturation>1.25</saturation>
-    </skyColorsDusk>
-    <skyColorsNightEdge>
-      <sky>(0.682,0.503,0.582)</sky>
-    <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.6,0.6,0.6)</overlay>
-      <saturation>1.25</saturation>
-    </skyColorsNightEdge>
-    <skyColorsNightMid>
-      <sky>(0.582,0.403,0.482)</sky>
-     <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.6,0.6,0.6)</overlay>
-      <saturation>1.25</saturation>
-    </skyColorsNightMid>
+    </ambientSounds>
+        <skyColorsDay>
+          <sky>(1, 0.94, 0.91)</sky>
+          <shadow>(0.92,0.92,0.92)</shadow>
+          <overlay>(1,1,1)</overlay>
+          <saturation>1.1</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+          <sky>(0.5,0.3,0.4)</sky>
+          <shadow>(0.98,0.98,0.98)</shadow>
+          <overlay>(0.8,0.8,0.8)</overlay>
+          <saturation>1.15</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+          <sky>(0.3,0.3,0.3)</sky>
+          <shadow>(0.98,0.98,0.98)</shadow>
+          <overlay>(0.6,0.6,0.6)</overlay>
+          <saturation>1</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+          <sky>(0.283,0.283,0.283)</sky>
+          <shadow>(1,1,1)</shadow>
+          <overlay>(0.1,0.1,0.1)</overlay>
+          <saturation>1</saturation>
+        </skyColorsNightMid>
   </WeatherDef>
   
     <WeatherDef>
@@ -112,7 +112,7 @@
     <description>Local dust storms pop up frequently.</description>
     <windSpeedFactor>0.5</windSpeedFactor>
     <accuracyMultiplier>0.5</accuracyMultiplier>
-    <favorability>Neutral</favorability>
+    <favorability>Bad</favorability>
     <ambientSounds>
       <li>AmbientWind_Fog</li>
     </ambientSounds>
@@ -127,28 +127,28 @@
     </commonalityRainfallFactor>    
     <!-- Colors are Overcast -->
     <skyColorsDay>
-      <sky>(1,0.72,0.55)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(8,6,6)</overlay>
-      <saturation>1.25</saturation>
+      <sky>(0.5,0.5,0.5)</sky>
+      <shadow>(1,1,1)</shadow>
+      <overlay>(0.5,0.3,0.4)</overlay>
+      <saturation>1</saturation>
     </skyColorsDay>
     <skyColorsDusk>
-      <sky>(0.858,0.650,0.423)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.6,0.6,0.6)</overlay>
-      <saturation>1.25</saturation>
+      <sky>(0.4,0.4,0.4)</sky>
+      <shadow>(1,1,1)</shadow>
+      <overlay>(0.3,0.3,0.3)</overlay>
+      <saturation>1</saturation>
     </skyColorsDusk>
     <skyColorsNightEdge>
-      <sky>(0.682,0.503,0.582)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.3,0.3,0.3)</overlay>
-      <saturation>1.25</saturation>
+      <sky>(0.3,0.3,0.3)</sky>
+      <shadow>(1,1,1)</shadow>
+      <overlay>(0.2,0.2,0.2)</overlay>
+      <saturation>1</saturation>
     </skyColorsNightEdge>
     <skyColorsNightMid>
-      <sky>(0.582,0.403,0.482)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.3,0.3,0.3)</overlay>
-      <saturation>1.25</saturation>
+      <sky>(0.283,0.283,0.283)</sky>
+      <shadow>(1,1,1)</shadow>
+      <overlay>(0.1,0.1,0.1)</overlay>
+      <saturation>1</saturation>
     </skyColorsNightMid>
   </WeatherDef>
   
@@ -182,28 +182,28 @@
     </eventMakers>
     <!-- Colors are Overcast -->
     <skyColorsDay>
-      <sky>(0.5,0.3,0.3)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.0,0.0,0.0)</overlay>
-       <saturation>0.9</saturation>
+      <sky>(0.5,0.5,0.5)</sky>
+      <shadow>(1,1,1)</shadow>
+      <overlay>(0.5,0.3,0.4)</overlay>
+      <saturation>1</saturation>
     </skyColorsDay>
     <skyColorsDusk>
-     <sky>(0.5,0.3,0.3)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.0,0.0,0.0)</overlay>
-       <saturation>0.8</saturation>
+      <sky>(0.4,0.4,0.4)</sky>
+      <shadow>(1,1,1)</shadow>
+      <overlay>(0.3,0.3,0.3)</overlay>
+      <saturation>1</saturation>
     </skyColorsDusk>
     <skyColorsNightEdge>
-      <sky>(0.65,0.40,0.45)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.0,0.0,0.0)</overlay>
-       <saturation>0.8</saturation>
+      <sky>(0.3,0.3,0.3)</sky>
+      <shadow>(1,1,1)</shadow>
+      <overlay>(0.5,0.5,0.5)</overlay>
+      <saturation>1</saturation>
     </skyColorsNightEdge>
     <skyColorsNightMid>
-      <sky>(0.65,0.40,0.45)</sky>
-      <shadow>(0.92, 0.92, 0.92)</shadow>
-     <overlay>(0.0,0.0,0.0)</overlay>
-      <saturation>0.8</saturation>
+      <sky>(0.283,0.283,0.283)</sky>
+      <shadow>(1,1,1)</shadow>
+      <overlay>(0.1,0.1,0.1)</overlay>
+      <saturation>1</saturation>
     </skyColorsNightMid>
   </WeatherDef>
 </Defs>

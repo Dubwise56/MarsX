@@ -1,45 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef>
-		<defName>ShipLand</defName>
-		<label>drop pod (incoming)</label>
-		<thingClass>MarsX.Fleet_ShipLander</thingClass>
-		<category>Ethereal</category>
-		<tickerType>Normal</tickerType>
-		<graphicData>
-			<texPath>Things/Building/ships/CrewLanded</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutSkin</shaderType>
-			<drawSize>(7,11)</drawSize>
-		</graphicData>
-		<altitudeLayer>Skyfaller</altitudeLayer>
-		<useHitPoints>false</useHitPoints>
-		<drawOffscreen>true</drawOffscreen>
-		<passability>Impassable</passability>
-	</ThingDef>
+  <ThingDef Name="BaseShipLander" Abstract="True">
+    <category>Ethereal</category>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Building/ships/A/Ship</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutSkin</shaderType>
+      <drawSize>(10,10)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>Decelerate</movementType>
+      <reversed>true</reversed>
+      <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+      <shadowSize>(6, 6)</shadowSize>
+    </skyfaller>
+    <altitudeLayer>Skyfaller</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+  </ThingDef>
 
-	<ThingDef>
-		<defName>ShipLaunch</defName>
-		<label>drop pod (incoming)</label>
-		<thingClass>MarsX.Fleet_ShipLauncher</thingClass>
-		<category>Ethereal</category>
-		<tickerType>Normal</tickerType>
-		<graphicData>
-			<texPath>Things/Building/ships/CrewLanded</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutSkin</shaderType>
-			<drawSize>(7,11)</drawSize>
-		</graphicData>
-		<altitudeLayer>Skyfaller</altitudeLayer>
-		<useHitPoints>false</useHitPoints>
-		<drawOffscreen>true</drawOffscreen>
-		<passability>Impassable</passability>
-	</ThingDef>
+  <ThingDef ParentName="BaseShipLander">
+    <defName>ShipLand</defName>
+    <label>drop pod (incoming)</label>
+    <thingClass>MarsX.Fleet_ShipLander</thingClass>
+  </ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>Ship</defName>
-		<label>Ares ILAV</label>
+  <ThingDef ParentName="BaseShipLander">
+    <defName>ShipLaunch</defName>
+    <label>drop pod (incoming)</label>
+    <thingClass>MarsX.Fleet_ShipLauncher</thingClass>
+  </ThingDef>
+
+	<ThingDef Name="BaseShip" ParentName="BuildingBase">
+		<defName>ShipA</defName>
+		<label>ILAV</label>
+    <drawerType>RealtimeOnly</drawerType>
 		<description>The Interplanetary Landing and Ascent Vehicle is a reusable launch vehicle designed to land on and take off from the surface of planets.</description>
 		<thingClass>MarsX.Fleet_ShipBuilding</thingClass>		
 		<category>Building</category>
@@ -125,78 +125,60 @@
 		<repairEffect>ConstructMetal</repairEffect>
 	</ThingDef>
 
+  <ThingDef ParentName="BaseShip">
+    <defName>LEM</defName>
+    <label>LM</label>
+    <description>Lunar Module.</description>
+    <graphicData>
+      <texPath>Things/Building/ships/L/Ship</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(10,10)</drawSize>
+    </graphicData>
+  </ThingDef>
 
-	<ThingDef ParentName="BuildingBase" Name="SupplyCrateBase">
-		<defName>SupplyCrate</defName>
-		<label>Supply Crate</label>
-		<description>A supply crate from Earth.</description>
-		<thingClass>MarsX.Building_Cargo</thingClass>
-		<graphicData>
-			<texPath>Things/Building/crate</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>(2.2,2.2)</drawSize>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<blockWind>true</blockWind>
-		<castEdgeShadows>false</castEdgeShadows>
-		<blockLight>false</blockLight>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<WorkToBuild>800</WorkToBuild>
-			<Flammability>0.0</Flammability>
-		</statBases>
-		<size>(2,2)</size>
-		<rotatable>false</rotatable>
-		<costList>
-			<Plasteel>30</Plasteel>
-			<Steel>30</Steel>
-		</costList>
-		<building>
-			<isInert>true</isInert>
+  <ThingDef ParentName="BuildingBase" Name="ResourcePodBase">
+    <defName>ResourcePod</defName>
+    <label>Resource Pod</label>
+    <drawOffscreen>true</drawOffscreen>
+    <description>A Resource Pod from Earth.</description>
+    <thingClass>MarsX.CargoContainer</thingClass>
+    <graphicData>
+      <texPath>Things/Building/ResourcePod</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(6,6)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <blockLight>false</blockLight>
+    <inspectorTabs>
+      <li>MarsX.ITab_ShipInventory</li>
+    </inspectorTabs>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <costList>
+      <Steel>30</Steel>
+    </costList>
+    <building>
+      <isInert>true</isInert>
       <fixedStorageSettings>
-				<filter>
-					<categories>
-					</categories>
-				</filter>
-			</fixedStorageSettings>
-			<defaultStorageSettings>
-				<filter>
-					<categories>
-					</categories>
-				</filter>
-			</defaultStorageSettings>
-		</building>
-	</ThingDef>
-
-	<ThingDef ParentName="SupplyCrateBase">
-		<defName>StorageCrate</defName>
-		<label>Storage Crate</label>
-		<description>A rugged crate used to store supplies.</description>
-		<building>
-			<isInert>true</isInert>
-			<fixedStorageSettings>
-				<filter>
-					<categories>
-						<li>Manufactured</li>
-						<li>Items</li>
-						<li>Apparel</li>
-						<li>Chunks</li>
-					</categories>
-				</filter>
-			</fixedStorageSettings>
-			<defaultStorageSettings>
-				<filter>
-					<categories>
-						<li>Manufactured</li>
-						<li>Items</li>
-						<li>Apparel</li>
-						<li>Chunks</li>
-					</categories>
-				</filter>
-			</defaultStorageSettings>
-		</building>
-	</ThingDef>
-
+        <filter>
+          <categories>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+          <categories>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>
 
 </Defs>

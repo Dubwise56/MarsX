@@ -19,6 +19,9 @@
     <Landing>5</Landing>
     <Preview>Scenarios/Jezero</Preview>
     <Feature>Jezero</Feature>
+    <ThingsToSpawn>
+      <li>Perseverance</li>
+    </ThingsToSpawn>
   </MarsX.LocationDef>
 
   <MarsX.LocationDef>
@@ -41,6 +44,9 @@ ISRU resources for H2O, Fe, Al, and Si have been identified and quantified. A hu
     <Landing>5</Landing>
     <Preview>Scenarios/Gale</Preview>
     <Feature>Gale</Feature>
+    <ThingsToSpawn>
+      <li>Curiosity</li>
+    </ThingsToSpawn>
   </MarsX.LocationDef>
 
   <MarsX.LocationDef>

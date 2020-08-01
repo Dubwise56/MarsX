@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>GlassPane</defName>
+    <label>Glass Pane</label>
+    <description>A pane of framed glass used for making skylights.</description>
+    <graphicData>
+      <texPath>Things/GlassPane</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Mass>3</Mass>
+      <Flammability>0</Flammability>
+			<DeteriorationRate>0.2</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

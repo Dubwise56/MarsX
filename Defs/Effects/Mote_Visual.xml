@@ -1,20 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--=============== Flashes ================-->
 
-	<ThingDef ParentName="MoteBase">
-		<defName>Mote_ShotFlashLight</defName>
-		<altitudeLayer>MoteOverhead</altitudeLayer>
-		<mote>
-			<solidTime>0.05</solidTime>
-			<fadeOutTime>0.05</fadeOutTime>
-		</mote>
-		<graphicData>
-			<texPath>Things/Mote/ShotFlash</texPath>
-			<shaderType>MoteGlow</shaderType>
-		</graphicData>
-	</ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_Footprint</defName>
+    <graphicData>
+      <texPath>Things/Mote/Footprint</texPath>
+    </graphicData>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.08</fadeInTime>
+      <solidTime>99999</solidTime>
+      <fadeOutTime>2.6</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_PermaFootprint</defName>
+    <graphicData>
+      <texPath>Things/Mote/Footprint</texPath>
+    </graphicData>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.08</fadeInTime>
+      <solidTime>2.2</solidTime>
+      <fadeOutTime>2.6</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+  <!--=============== Flashes ================-->
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_ShotFlashLight</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <solidTime>0.05</solidTime>
+      <fadeOutTime>0.05</fadeOutTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/ShotFlash</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+  </ThingDef>
 
   <ThingDef ParentName="MoteBase">
     <defName>Mote_DevilPuff</defName>
@@ -29,46 +56,123 @@
     </mote>
   </ThingDef>
 
-	
-	  <ThingDef ParentName="MoteBase">
+
+  <ThingDef ParentName="MoteBase">
     <defName>Mote_AirPuff</defName>
     <graphicData>
       <texPath>Things/Mote/AirPuff</texPath>
     </graphicData>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <altitudeLayer>MoteLow</altitudeLayer>
     <mote>
       <fadeInTime>0.04</fadeInTime>
       <solidTime>0.03</solidTime>
       <fadeOutTime>1</fadeOutTime>
     </mote>
   </ThingDef>
-  
-    <ThingDef ParentName="MoteBase">
+
+  <ThingDef ParentName="MoteBase">
+    <thingClass>MarsX.Mote_Delayed</thingClass>
     <defName>Mote_FireGlowRocket</defName>
     <graphicData>
       <texPath>Things/Mote/FireGlow</texPath>
       <shaderType>MoteGlow</shaderType>
     </graphicData>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <altitudeLayer>MoteLow</altitudeLayer>
     <mote>
       <fadeInTime>0.75</fadeInTime>
       <solidTime>1.08</solidTime>
       <fadeOutTime>0.8</fadeOutTime>
     </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
   </ThingDef>
-  
-    <ThingDef ParentName="MoteBase">
+
+  <ThingDef ParentName="MoteBase">
     <defName>Mote_SmokeRocket</defName>
     <graphicData>
       <texPath>Things/Mote/Smoke</texPath>
     </graphicData>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <altitudeLayer>MoteLow</altitudeLayer>
     <mote>
       <fadeInTime>0.50</fadeInTime>
-      <solidTime>2</solidTime>
+      <solidTime>0.1</solidTime>
       <fadeOutTime>1.2</fadeOutTime>
       <growthRate>0.005</growthRate>
     </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
   </ThingDef>
-  
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_JetWash</defName>
+    <graphicData>
+      <texPath>FX/DustSpray</texPath>
+    </graphicData>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <solidTime>0.2</solidTime>
+      <fadeOutTime>0.7</fadeOutTime>
+      <growthRate>1</growthRate>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+  </ThingDef>
+
+
+
+
+
+
+  <ThingDef ParentName="MoteBase">
+    <thingClass>MarsX.Mote_Delayed</thingClass>
+    <defName>Mote_FireGlowExplosion</defName>
+    <graphicData>
+      <texPath>Things/Mote/FireGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>Weather</altitudeLayer>
+    <mote>
+      <growthRate>2</growthRate>
+      <fadeInTime>0.1</fadeInTime>
+      <solidTime>6</solidTime>
+      <fadeOutTime>6</fadeOutTime>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+  </ThingDef>
+
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_NukeFlash</defName>
+    <graphicData>
+      <texPath>FX/flash</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>Weather</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <solidTime>0</solidTime>
+      <fadeOutTime>0.6</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_NukeCloud</defName>
+    <thingClass>MarsX.Mote_Delayed</thingClass>
+    <graphicData>
+      <texPath>FX/nukecloud</texPath>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <altitudeLayer>Weather</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <growthRate>2</growthRate>
+      <fadeInTime>0.1</fadeInTime>
+      <solidTime>1</solidTime>
+      <fadeOutTime>20</fadeOutTime>
+    </mote>
+  </ThingDef>
+
 </Defs>

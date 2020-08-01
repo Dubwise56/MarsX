@@ -11,7 +11,7 @@
     <canBePermanent>true</canBePermanent>
   </GameConditionDef>
 
-  <GameConditionDef>
+  <!--<GameConditionDef>
     <defName>MajorDustStorm</defName>
     <conditionClass>MarsX.MapCondition_BigDustStorm</conditionClass>
     <label>Massive Dust Storm</label>
@@ -31,7 +31,7 @@
     <endMessage>The dust storm has passed.</endMessage>
     <letterDef>NegativeEvent</letterDef>
     <canBePermanent>false</canBePermanent>
-  </GameConditionDef>
+  </GameConditionDef>-->
 
   <GameConditionDef>
     <defName>HighAltitudePlume</defName>

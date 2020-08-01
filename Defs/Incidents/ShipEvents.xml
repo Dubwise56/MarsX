@@ -11,8 +11,8 @@
   <MarsX.ShipEventDef>
     <defName>Landed</defName>
     <label>Landed</label>
-    <phase>EjectCrew</phase>
-    <letterText>{0} has landed safely on the surface of Mars.</letterText>
+    <phase>Landed</phase>
+    <letterText>{0} has landed safely on the surface of {1}.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
@@ -35,53 +35,60 @@
     <defName>EntryFailure1</defName>
     <label>Entry Failure</label>
     <phase>EntryPhase</phase>
-    <letterText>The fuel tank cracked and the ship exploded.</letterText>
+    <letterText>The fuel tank cracked and the lander exploded.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>EntryFailure2</defName>
     <label>Entry Failure</label>
     <phase>EntryPhase</phase>
-    <letterText>The aerodynamic controls failed and the ship split in half and exploded.</letterText>
+    <letterText>The aerodynamic controls failed and the lander split in half and exploded.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>EntryFailure3</defName>
     <label>Entry Failure</label>
     <phase>EntryPhase</phase>
-    <letterText>The engines failed and the ship crashed into the ground.</letterText>
+    <letterText>The engines failed and the lander crashed into the ground.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>EntryFailure4</defName>
     <label>Entry Failure</label>
     <phase>EntryPhase</phase>
-    <letterText>There was a catastrophic failure during the landing, the ship and crew were lost.</letterText>
+    <letterText>There was a catastrophic failure during the landing, the lander and crew were lost.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>EntryFailure5</defName>
     <label>Entry Failure</label>
     <phase>EntryPhase</phase>
-    <letterText>The ship depressurised during entry and the crew were killed.</letterText>
+    <letterText>The lander depressurised during entry and the crew were killed.</letterText>
   </MarsX.ShipEventDef>
 
   
   
   <!--LAUNCH-->
-  
+
+  <MarsX.ShipEventDef>
+    <defName>LaunchSuccess</defName>
+    <label>Launch Success</label>
+    <phase>Launching</phase>
+    <letterText>Launch phase complete. {0} is en route to {1}.</letterText>
+  </MarsX.ShipEventDef>
+
   <MarsX.ShipEventDef>
     <defName>LaunchFailure1</defName>
     <label>Launch Failure</label>
     <phase>Launching</phase>
-    <letterText>There was a catastrophic failure during the launch, the ship and crew were lost.</letterText>
+    <letterText>There was a catastrophic failure during the launch, the lander and crew were lost.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>LaunchFailure2</defName>
     <label>Launch Failure</label>
     <phase>Launching</phase>
-    <letterText>There was a catastrophic failure of the main engine during the launch, the ship and crew were lost.</letterText>
+    <letterText>There was a catastrophic failure of the main engine during the launch, the lander and crew were lost.</letterText>
   </MarsX.ShipEventDef>
   
   <!--REENTRY-->
@@ -90,56 +97,56 @@
     <defName>ReentryFailure1</defName>
     <label>Reentry failure</label>
     <phase>ReEntryPhase</phase>
-    <letterText>The ship missed the entry corridor and skimmed off of the atmosphere.</letterText>
+    <letterText>The lander missed the entry corridor and skimmed off of the atmosphere.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>ReentryFailure2</defName>
     <label>Reentry failure</label>
     <phase>ReEntryPhase</phase>
-    <letterText>The ship missed the entry corridor and burned up.</letterText>
+    <letterText>The lander missed the entry corridor and burned up.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>ReentryFailure3</defName>
     <label>Reentry failure</label>
     <phase>ReEntryPhase</phase>
-    <letterText>The heat-shield failed and the ship burned up on entry.</letterText>
+    <letterText>The heat-shield failed and the lander burned up on entry.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>ReentryFailure4</defName>
     <label>Reentry failure</label>
     <phase>ReEntryPhase</phase>
-    <letterText>The engines failed and the ship crashed into the sea.</letterText>
+    <letterText>The engines failed and the lander crashed into the sea.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>ReentryFailure5</defName>
     <label>Reentry failure</label>
     <phase>ReEntryPhase</phase>
-    <letterText>The aerodynamic controls failed and the ship split in half and exploded.</letterText>
+    <letterText>The aerodynamic controls failed and the lander split in half and exploded.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>ReentryFailure6</defName>
     <label>Reentry failure</label>
     <phase>ReEntryPhase</phase>
-    <letterText>The fuel tank cracked and the ship exploded.</letterText>
+    <letterText>The fuel tank cracked and the lander exploded.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>ReentryFailure7</defName>
     <label>Reentry failure</label>
     <phase>ReEntryPhase</phase>
-    <letterText>One of the landing legs failed and the ship fell over and exploded.</letterText>
+    <letterText>One of the landing legs failed and the lander fell over and exploded.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
     <defName>ReentryFailure8</defName>
     <label>Reentry failure</label>
     <phase>ReEntryPhase</phase>
-    <letterText>The landing legs failed to open and the ship crashed into the landing pad.</letterText>
+    <letterText>The landing legs failed to open and the lander crashed into the landing pad.</letterText>
   </MarsX.ShipEventDef>
 
   <MarsX.ShipEventDef>
@@ -153,7 +160,7 @@
     <defName>ReentryFailure10</defName>
     <label>Reentry failure</label>
     <phase>ReEntryPhase</phase>
-    <letterText>The ship depressurised during reentry and the crew were killed.</letterText>
+    <letterText>The lander depressurised during reentry and the crew were killed.</letterText>
   </MarsX.ShipEventDef>
 
 </Defs>

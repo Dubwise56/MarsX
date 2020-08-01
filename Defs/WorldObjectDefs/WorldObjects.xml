@@ -6,10 +6,10 @@
     <label>Ares ILAV</label>
     <description>The Interplanetary Landing and Ascent Vehicle is a reusable launch vehicle designed to land on and take off from the surface of mars.</description>
     <worldObjectClass>MarsX.WorldObject_Ship</worldObjectClass>
-    <texture>UI/ship</texture>
+    <texture>UI/lander</texture>
     <useDynamicDrawer>true</useDynamicDrawer>
     <expandingIcon>true</expandingIcon>
-    <expandingIconTexture>UI/ship</expandingIconTexture>
+    <expandingIconTexture>UI/lander</expandingIconTexture>
     <expandingIconPriority>6</expandingIconPriority>
   </WorldObjectDef>
 
@@ -19,10 +19,10 @@
     <label>Ares ILAV</label>
     <description>The Interplanetary Landing and Ascent Vehicle is a reusable launch vehicle designed to land on and take off from the surface of mars.</description>
     <worldObjectClass>MarsX.WorldObject_Ship</worldObjectClass>
-    <texture>UI/ship</texture>
+    <texture>UI/lander</texture>
     <useDynamicDrawer>true</useDynamicDrawer>
     <expandingIcon>false</expandingIcon>
-    <expandingIconTexture>UI/ship</expandingIconTexture>
+    <expandingIconTexture>UI/lander</expandingIconTexture>
     <expandingIconPriority>6</expandingIconPriority>
   </MarsX.SpaceObjectDef>
 

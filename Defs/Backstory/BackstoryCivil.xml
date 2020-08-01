@@ -283,7 +283,7 @@
     <defName>Deepseaexplorer</defName>
     <title>Deep sea explorer</title>
     <slot>Adulthood</slot>
-    <baseDesc>Taught HIS buddy, an antarctic explorer, the joys of discovery and overcoming one’s boundaries. Creator and leader of a strangely specific stargod worshipping cult. Likes the phrase f’thagn.</baseDesc>
+    <baseDesc>Taught HIS buddy, an antarctic explorer, the joys of discovery and overcoming one’s boundaries. Creator and leader of a strangely specific stargod worlanderping cult. Likes the phrase f’thagn.</baseDesc>
     <skillGains>
       <Intellectual>7</Intellectual>
 	  <Animals>9</Animals>
@@ -318,7 +318,7 @@
     <defName>Navyengineer</defName>
     <title>Navy engineer</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} loved model boats when he was a kid. The expensive ones, too. And what’s more expensive than a battleship weighing several thousands of tons? Nothing, that’s what.</baseDesc>
+    <baseDesc>{PAWN_pronoun} loved model boats when he was a kid. The expensive ones, too. And what’s more expensive than a battlelander weighing several thousands of tons? Nothing, that’s what.</baseDesc>
     <skillGains>
       <Melee>5</Melee>
       <Crafting>9</Crafting>

@@ -136,8 +136,8 @@
 
   <ThingDef ParentName="BaseTool">
     <defName>Power_Drill</defName>
-    <label>power drill</label>
-    <description>Helps you construct stuff even faster.</description>
+    <label>pistol grip tool</label>
+    <description>powered multi-tool. Helps you construct stuff even faster.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/powerdrill</texPath>
       <graphicClass>Graphic_Single</graphicClass>

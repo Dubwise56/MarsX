@@ -109,7 +109,7 @@
 
 
 	<SoundDef>
-		<defName>MOXIE_Ambience_Start</defName> 
+		<defName>Moxie_Ambience_Start</defName> 
 		<context>MapOnly</context>
 		<eventNames />  
 		<subSounds>
@@ -133,7 +133,7 @@
 	</SoundDef>
 
 	<SoundDef>
-		<defName>MOXIE_Ambience_Stop</defName>  
+		<defName>Moxie_Ambience_Stop</defName>  
 		<context>MapOnly</context>
 		<eventNames />  
 		<subSounds>
@@ -265,13 +265,13 @@
 	</SoundDef>
 
 	<SoundDef>
-		<defName>MOXIE_Ambience</defName>  
+		<defName>Moxie_Ambience</defName>  
 		<sustain>True</sustain>  
 		<context>MapOnly</context>
 		<eventNames />  
 		<priorityMode>PrioritizeNearest</priorityMode>  
-		<sustainStartSound>MOXIE_Ambience_Start</sustainStartSound>  
-		<sustainStopSound>MOXIE_Ambience_Stop</sustainStopSound>  
+		<sustainStartSound>Moxie_Ambience_Start</sustainStartSound>  
+		<sustainStopSound>Moxie_Ambience_Stop</sustainStopSound>  
 		<subSounds>
 			<li>
 				<muteWhenPaused>True</muteWhenPaused>      

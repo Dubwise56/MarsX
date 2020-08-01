@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RoomRoleDef>
+    <defName>IndoorGarden</defName>
+    <label>Indoor Garden</label>
+    <workerClass>Dubs_Skylight.RoomRoleWorker_IndoorGarden</workerClass>
+    <relatedStats>
+      <li>Beauty</li>
+      <li>Cleanliness</li>
+      <li>Wealth</li>
+      <li>Space</li>
+      <li>Impressiveness</li>
+    </relatedStats>
+  </RoomRoleDef>
+
+
+  <JobDef>
+    <defName>SkygazeIndoors</defName>
+    <driverClass>Dubs_Skylight.JobDriver_SkygazeIndoors</driverClass>
+    <reportString>skygazing.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyKind>Meditative</joyKind>
+  </JobDef>
+
+
+  <JobDef>
+    <defName>GoForWalkIndoors</defName>
+    <driverClass>Dubs_Skylight.JobDriver_GoForWalkIndoors</driverClass>
+    <reportString>going for a walk.</reportString>
+    <joyDuration>8000</joyDuration>
+    <joyKind>Meditative</joyKind>
+  </JobDef>
+
+</Defs>

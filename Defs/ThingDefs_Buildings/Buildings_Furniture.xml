@@ -148,4 +148,42 @@
     </comps>
   </ThingDef>
 
+  <ThingDef ParentName="LampBase">
+    <defName>FloodLight</defName>
+    <label>Flood Light</label>
+    <description>Broad-beamed, high-intensity artificial lights used to illuminate outdoor areas during low-light conditions. Automatically turns itself off during the day.</description>
+    <graphicData>
+      <texPath>Things/Building/FloodLight</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <rotatable>true</rotatable>
+    <blockWind>true</blockWind>
+    <tickerType>Rare</tickerType>
+    <statBases>
+      <WorkToBuild>330</WorkToBuild>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>3.0</overlightRadius>
+        <glowRadius>17</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.7</startTime>
+        <endTime>0.3</endTime>
+        <offMessage>Off during day</offMessage>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+    </comps>
+  </ThingDef>
+
+
 </Defs>

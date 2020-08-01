@@ -27,7 +27,7 @@
         <max>999</max>
       </li>
     </terrainsByFertility>
-    <terrainPatchMakers>
+    <!--<terrainPatchMakers>
       <li>
         <perlinFrequency>0.028</perlinFrequency>
         <thresholds>
@@ -48,9 +48,9 @@
           </li>
         </thresholds>
       </li>
-    </terrainPatchMakers>
+    </terrainPatchMakers>-->
     <baseWeatherCommonalities>
-      <ClearMoon>1</ClearMoon>
+      <Clear>1</Clear>
     </baseWeatherCommonalities>
     <wildPlants>
     </wildPlants>

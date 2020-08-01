@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  
+  <!-- In-game camera -->
+  
+  <KeyBindingDef Name="GameMapKeyBinding" Abstract="true">
+    <category>GameMapCamera</category>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="GameMapKeyBinding">
+    <defName>MapDolly_Up</defName>
+    <label>dolly up</label>
+    <defaultKeyCodeA>W</defaultKeyCodeA>
+    <defaultKeyCodeB></defaultKeyCodeB>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="GameMapKeyBinding">
+    <defName>MapDolly_Down</defName>
+    <label>dolly down</label>
+    <defaultKeyCodeA>S</defaultKeyCodeA>
+    <defaultKeyCodeB></defaultKeyCodeB>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="GameMapKeyBinding">
+    <defName>MapDolly_Left</defName>
+    <label>dolly left</label>
+    <defaultKeyCodeA>A</defaultKeyCodeA>
+    <defaultKeyCodeB></defaultKeyCodeB>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="GameMapKeyBinding">
+    <defName>MapDolly_Right</defName>
+    <label>dolly right</label>
+    <defaultKeyCodeA>D</defaultKeyCodeA>
+    <defaultKeyCodeB></defaultKeyCodeB>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="GameMapKeyBinding">
+    <defName>MapZoom_In</defName>
+    <label>zoom in</label>
+    <defaultKeyCodeA></defaultKeyCodeA>
+  </KeyBindingDef>
+  
+  <KeyBindingDef ParentName="GameMapKeyBinding">
+    <defName>MapZoom_Out</defName>
+    <label>zoom out</label>
+    <defaultKeyCodeA></defaultKeyCodeA>
+  </KeyBindingDef>
+
+
+
+
+  <KeyBindingCategoryDef>
+    <defName>FlightControls</defName>
+    <label>Flight controls</label>
+    <description>Controls for ships.</description>
+    <isGameUniversal>true</isGameUniversal>
+    <checkForConflicts>
+      <li>Development</li>
+      <li>Game</li>
+      <li>SelectionMisc</li>
+      <li>MainTabs</li>
+    </checkForConflicts>
+  </KeyBindingCategoryDef>
+
+  <KeyBindingDef Name="FlightControlsBinding" Abstract="true">
+    <category>FlightControls</category>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="FlightControlsBinding">
+    <defName>FlightControl_Up</defName>
+    <label>FlightControl_Up</label>
+    <defaultKeyCodeA>UpArrow</defaultKeyCodeA>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="FlightControlsBinding">
+    <defName>FlightControl_Down</defName>
+    <label>FlightControl_Down</label>
+    <defaultKeyCodeA>DownArrow</defaultKeyCodeA>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="FlightControlsBinding">
+    <defName>FlightControl_Left</defName>
+    <label>FlightControl_Left</label>
+    <defaultKeyCodeA>LeftArrow</defaultKeyCodeA>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="FlightControlsBinding">
+    <defName>FlightControl_Right</defName>
+    <label>FlightControl_Right</label>
+    <defaultKeyCodeA>RightArrow</defaultKeyCodeA>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="FlightControlsBinding">
+    <defName>Throttle_Up</defName>
+    <label>Throttle_Up</label>
+    <defaultKeyCodeA>PageDown</defaultKeyCodeA>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="FlightControlsBinding">
+    <defName>Throttle_Down</defName>
+    <label>Throttle_Down</label>
+    <defaultKeyCodeA>PageUp</defaultKeyCodeA>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="FlightControlsBinding">
+    <defName>EngineCutOff</defName>
+    <label>EngineCutOff</label>
+    <defaultKeyCodeA>End</defaultKeyCodeA>
+  </KeyBindingDef>
+
+</Defs>

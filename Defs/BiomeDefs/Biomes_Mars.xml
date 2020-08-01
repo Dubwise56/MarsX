@@ -36,7 +36,7 @@
       </li>
     </terrainsByFertility>
     <terrainPatchMakers>
-      <li>
+      <!--<li>
         <perlinFrequency>0.028</perlinFrequency>
         <thresholds>
           <li>
@@ -45,7 +45,7 @@
             <max>999</max>
           </li>
         </thresholds>
-      </li>
+      </li>-->
       <li>
         <perlinFrequency>0.027</perlinFrequency>
         <thresholds>
@@ -60,15 +60,15 @@
         <perlinFrequency>0.015</perlinFrequency>
         <thresholds>
           <li>
-            <terrain>AncientMud</terrain>
-            <min>0.44</min>
+            <terrain>Clay</terrain>
+            <min>0.66</min>
             <max>999</max>
           </li>
         </thresholds>
       </li>
     </terrainPatchMakers>
     <baseWeatherCommonalities>
-      <Clear>18</Clear>
+      <ClearMars>18</ClearMars>
       <Windy>4</Windy>
     </baseWeatherCommonalities>
     <wildPlants>

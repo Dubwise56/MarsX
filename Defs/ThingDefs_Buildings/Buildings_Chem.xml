@@ -102,7 +102,7 @@
 		<graphicData>
 			<texPath>Things/Building/o2StorageTank</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4.2,2.2)</drawSize>
+			<drawSize>(5,3)</drawSize>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -111,8 +111,8 @@
 		<rotatable>true</rotatable>
 		<fillPercent>0.4</fillPercent>
 		<statBases>
-			<WorkToBuild>1000</WorkToBuild>
-			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>11000</WorkToBuild>
+			<MaxHitPoints>225</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<size>(4,2)</size>
@@ -283,7 +283,7 @@
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<building>
-			<soundAmbient>MOXIE_Ambience</soundAmbient>
+			<soundAmbient>Moxie_Ambience</soundAmbient>
 		</building>
 	</ThingDef>
 

@@ -37,7 +37,6 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
       <layers>
-        <li>Shell</li>
         <li>OnSkin</li>
       </layers>
       <tags>
@@ -70,7 +69,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/evaMask/RadiationMask</texPath>
+      <texPath>Things/evaMask/EVA</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
@@ -98,7 +97,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/evaMask/RadiationMask</wornGraphicPath>
+      <wornGraphicPath>Things/evaMask/EVA</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -124,7 +123,7 @@
   </ThingDef>
 
   <ThingDef ParentName="ApparelArmorHelmetPowerBase">
-    <defName>Apparel_PowerArmorHelmet</defName>
+    <defName>Apparel_EVAsuitHelmet</defName>
     <label>EVA Suit helmet</label>
     <description>A space suit is a garment worn to keep a human alive in the harsh environment of outer space, vacuum and temperature extremes.</description>
     <apparel>
@@ -157,11 +156,17 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/evaSuit/Duster</texPath>
+      <texPath>Things/evaSuit/EVA</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2.0,2.0)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <generateCommonality>2</generateCommonality>
+    <comps>
+      <li Class="MarsX.CompProperties_BatteryPack">
+        <compClass>MarsX.CompBatteryPack</compClass>
+        <Capacity>15</Capacity>
+      </li>
+    </comps>
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>340</MaxHitPoints>
@@ -175,8 +180,8 @@
       <EquipDelay>14</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.50</MoveSpeed>
-      <WorkSpeedGlobal>-0.50</WorkSpeedGlobal>
+      <MoveSpeed>-0.4</MoveSpeed>
+      <WorkSpeedGlobal>-0.4</WorkSpeedGlobal>
     </equippedStatOffsets>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -191,12 +196,13 @@
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
+        <li>FullHead</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
         <li>Legs</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/evaSuit/Duster</wornGraphicPath>
+      <wornGraphicPath>Things/evaSuit/EVA</wornGraphicPath>
       <layers>
         <li>Middle</li>
         <li>Shell</li>
@@ -217,13 +223,10 @@
     <thingSetMakerTags>
       <li>RewardStandardHighFreq</li>
     </thingSetMakerTags>
-    <comps>
-      <li Class="CompProperties_BiocodableApparel"/>
-    </comps>
   </ThingDef>
 
   <ThingDef ParentName="ApparelArmorPowerBase">
-    <defName>Apparel_PowerArmor</defName>
+    <defName>Apparel_EVAsuit</defName>
     <label>EVA Suit</label>
     <description>A space suit is a garment worn to keep a human alive in the harsh environment of outer space, vacuum and temperature extremes.</description>
     <apparel>

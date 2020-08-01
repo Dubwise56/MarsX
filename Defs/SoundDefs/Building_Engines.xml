@@ -1,6 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <SoundDef>
+    <defName>LargeExplosion</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>5</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>false</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>misc/LargeExplosion</clipPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>1</min>
+          <max>1.055</max>
+        </pitchRange>
+        <volumeRange>
+          <min>300</min>
+          <max>600</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+
 	<SoundDef>
 		<defName>RocketIn</defName>  
 		<context>MapOnly</context>
