@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BuildingBase">
-		<defName>WindTurbine</defName>
+		<defName>WindTrap</defName>
 		<thingClass>MarsX.Building_windTrap</thingClass>
 		<label>Wind Trap</label>
 		<description>A large funnel designed to collect CO2 from the thin martian atmosphere for storing in tanks.</description>

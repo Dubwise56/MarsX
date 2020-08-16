@@ -71,11 +71,21 @@
 		<costList>
 			<ComponentIndustrial>50</ComponentIndustrial>
 			<Steel>500</Steel>
-			<Plasteel>500</Plasteel>
+			<Aluminium>500</Aluminium>
 		</costList>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="MarsX.CompProperties_Pipe">
+      <li Class="CompProperties_Transporter">
+        <restEffectiveness>0.8</restEffectiveness>
+        <massCapacity>1000</massCapacity>
+        <max1PerGroup>true</max1PerGroup>
+        <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+        <showOverallStats>false</showOverallStats>
+      </li>
+      <!--<li Class="CompProperties_Launchable">
+        <skyfallerLeaving>DropPodLeaving</skyfallerLeaving>
+      </li>-->
+      <li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 			</li>
 			<li Class="MarsX.CompProperties_Pipe">
@@ -114,7 +124,7 @@
 				</start>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
-		</comps>
+    </comps>
 
 		<building>
       <!--<expandHomeArea>false</expandHomeArea>-->
@@ -141,7 +151,7 @@
     <label>Resource Pod</label>
     <drawOffscreen>true</drawOffscreen>
     <description>A Resource Pod from Earth.</description>
-    <thingClass>MarsX.CargoContainer</thingClass>
+    <thingClass>MarsX.ResourceDrop</thingClass>
     <graphicData>
       <texPath>Things/Building/ResourcePod</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -154,6 +164,14 @@
     <inspectorTabs>
       <li>MarsX.ITab_ShipInventory</li>
     </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Transporter">
+        <restEffectiveness>0.8</restEffectiveness>
+        <massCapacity>750</massCapacity>
+        <max1PerGroup>true</max1PerGroup>
+        <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+      </li>
+    </comps>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
       <WorkToBuild>800</WorkToBuild>

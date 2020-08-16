@@ -14,7 +14,7 @@
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <designationCategory>Furniture</designationCategory>
-    <rotatable>false</rotatable>
+    <rotatable>true</rotatable>
     <uiIconOffset>(0, 0.03)</uiIconOffset>
     <thingCategories>
       <li>BuildingsFurniture</li>

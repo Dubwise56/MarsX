@@ -95,13 +95,13 @@
   <KeyBindingDef ParentName="FlightControlsBinding">
     <defName>Throttle_Up</defName>
     <label>Throttle_Up</label>
-    <defaultKeyCodeA>PageDown</defaultKeyCodeA>
+    <defaultKeyCodeA>PageUp</defaultKeyCodeA>
   </KeyBindingDef>
 
   <KeyBindingDef ParentName="FlightControlsBinding">
     <defName>Throttle_Down</defName>
     <label>Throttle_Down</label>
-    <defaultKeyCodeA>PageUp</defaultKeyCodeA>
+    <defaultKeyCodeA>PageDown</defaultKeyCodeA>
   </KeyBindingDef>
 
   <KeyBindingDef ParentName="FlightControlsBinding">

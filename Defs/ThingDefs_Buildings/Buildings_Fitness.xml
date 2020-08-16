@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MinifiedBuildingBase">
+		<defName>Treadmill</defName>
+		<label>treadmill</label>
+		<thingClass>MarsX.Building_Treadmill</thingClass>
+		<description>A treadmill is a device generally for walking or running while staying in the same place.</description>
+		<graphicData>
+			<texPath>Things/Building/Fitness/Treadmill</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,3)</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<pathCost>10</pathCost>
+		<size>(1,2)</size>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>350</MarketValue>
+			<WorkToBuild>550</WorkToBuild>
+      <Mass>50</Mass>
+		</statBases>
+		<designationCategory>Joy</designationCategory>
+	</ThingDef>
+
+</Defs>

@@ -11,7 +11,7 @@
     <defName>StorageBox</defName>
     <label>Storage Box</label>
     <description>A supply crate from Earth.</description>
-    <thingClass>MarsX.CargoContainer</thingClass>
+    <thingClass>MarsX.StorageBox</thingClass>
     <graphicData>
       <texPath>Things/Building/StorageBox</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -27,6 +27,14 @@
       <li>MarsX.ITab_ShipInventory</li>
     </inspectorTabs>
     <comps>
+      <li Class="CompProperties_Transporter">
+        <compClass>MarsX.CompCargo</compClass>
+        <restEffectiveness>0</restEffectiveness>
+        <massCapacity>150</massCapacity>
+        <max1PerGroup>true</max1PerGroup>
+        <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+        <showOverallStats>false</showOverallStats>
+      </li>
       <li>
         <compClass>CompColorable</compClass>
       </li>
@@ -120,16 +128,36 @@
     <Color>(0, 178, 111)</Color>
     <Things>
       <li>
-        <thing>RawPotatoes</thing>
-        <count>75</count>
+        <thing>RationPack</thing>
+        <count>20</count>
       </li>
       <li>
         <thing>RationPack</thing>
-        <count>180</count>
+        <count>20</count>
+      </li>
+      <li>
+        <thing>RationPack</thing>
+        <count>20</count>
+      </li>
+      <li>
+        <thing>RationPack</thing>
+        <count>20</count>
       </li>
       <li>
         <thing>MealSurvivalPack</thing>
-        <count>75</count>
+        <count>20</count>
+      </li>
+      <li>
+        <thing>MealSurvivalPack</thing>
+        <count>20</count>
+      </li>
+      <li>
+        <thing>MealSurvivalPack</thing>
+        <count>20</count>
+      </li>
+      <li>
+        <thing>MealSurvivalPack</thing>
+        <count>20</count>
       </li>
       <li>
         <thing>WetWipe</thing>
@@ -173,15 +201,15 @@
         <count>75</count>
       </li>
       <li>
-        <thing>Plasteel</thing>
+        <thing>Aluminium</thing>
         <count>75</count>
       </li>
       <li>
-        <thing>Plasteel</thing>
+        <thing>Aluminium</thing>
         <count>75</count>
       </li>
       <li>
-        <thing>Plasteel</thing>
+        <thing>Aluminium</thing>
         <count>75</count>
       </li>
       <li>

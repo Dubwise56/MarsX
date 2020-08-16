@@ -24,7 +24,7 @@
     <rotatable>false</rotatable>
 	</ThingDef>
 
-  <ThingDef ParentName="MinifiedBuildingBase">
+  <!--<ThingDef ParentName="MinifiedBuildingBase">
     <defName>OrbitalTradeBeacon</defName>
     <label>Landing beacon</label>
     <thingClass>Building_OrbitalTradeBeacon</thingClass>
@@ -69,6 +69,6 @@
       <li>PlaceWorker_ShowTradeBeaconRadius</li>
     </placeWorkers>
     <designationHotKey>Misc2</designationHotKey>
-  </ThingDef>
+  </ThingDef>-->
 	
 </Defs>

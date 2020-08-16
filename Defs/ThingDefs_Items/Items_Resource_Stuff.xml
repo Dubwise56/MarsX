@@ -88,7 +88,7 @@
 	</ThingDef>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>Plasteel</defName>
+    <defName>Aluminium</defName>
     <label>aluminium</label>
     <description>Aluminium and its alloys are vital to the aerospace industry and important in transportation and structures.</description>
     <graphicData>

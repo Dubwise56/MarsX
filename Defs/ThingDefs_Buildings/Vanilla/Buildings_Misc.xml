@@ -3,65 +3,6 @@
 
 
   <ThingDef ParentName="BuildingBase">
-    <defName>CommsConsole</defName>
-    <label>comms console</label>
-    <description>Allows radio contact with other factions and orbital traders.</description>
-    <thingClass>Building_CommsConsole</thingClass>
-    <graphicData>
-      <texPath>Things/Building/Misc/CommsConsole</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(5,4)</drawSize>
-      <damageData>
-        <rect>(0,0,3,1.8)</rect>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-      <shadowData>
-        <volume>(3,0.5,2)</volume>
-      </shadowData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
-    <canOverlapZones>false</canOverlapZones>
-    <statBases>
-      <MaxHitPoints>250</MaxHitPoints>
-      <WorkToBuild>2200</WorkToBuild>
-      <Flammability>0.6</Flammability>
-    </statBases>
-    <size>(3,2)</size>
-    <costList>
-      <Steel>120</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>
-    <defaultPlacingRot>South</defaultPlacingRot>
-    <interactionCellOffset>(0,0,2)</interactionCellOffset>
-    <hasInteractionCell>true</hasInteractionCell>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Misc</designationCategory>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <shortCircuitInRain>true</shortCircuitInRain>
-        <basePowerConsumption>200</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <designationHotKey>Misc3</designationHotKey>
-    <placeWorkers>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-    </placeWorkers>
-    <researchPrerequisites>
-      <li>MicroelectronicsBasics</li>
-    </researchPrerequisites>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-  </ThingDef>
-
-  <ThingDef ParentName="BuildingBase">
     <defName>FirefoamPopper</defName>
     <label>firefoam popper</label>
     <description>When it detects fire, this safety device pops and sprays a fire-retardant foam in a circular field around itself. Can also be triggered manually.</description>
@@ -130,72 +71,6 @@
       <li>Firefoam</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-  </ThingDef>
-
-
-  <ThingDef ParentName="BuildingBase">
-    <defName>GroundPenetratingScanner</defName>
-    <label>ground-penetrating scanner</label>
-    <description>A sensor unit used by researchers to search for buried resources. The chance to find a resource depends on the operator's research ability. It consumes a lot of electricity. If you find a buried resource, you'll need to use deep drills to extract it. It doesn't work under a roof.</description>
-    <graphicData>
-      <texPath>Things/Building/Misc/GroundPenetratingScanner</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>2.65</drawSize>
-      <drawRotated>false</drawRotated>
-      <drawOffset>(0,0,-0.05)</drawOffset>
-      <shadowData>
-        <volume>(1.6875, 0.375, 2.125)</volume>
-        <offset>(0,0,-0.12)</offset>
-      </shadowData>
-    </graphicData>
-    <costList>
-      <Steel>150</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>700</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_ScannerMineralsDeep">
-        <scanSpeedStat>ResearchSpeed</scanSpeedStat>
-        <scanFindMtbDays>3</scanFindMtbDays>
-        <scanFindGuaranteedDays>6</scanFindGuaranteedDays>
-      </li>
-    </comps>
-    <altitudeLayer>Building</altitudeLayer>
-    <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToBuild>12000</WorkToBuild>
-      <Flammability>0.5</Flammability>
-      <Beauty>-8</Beauty>
-    </statBases>
-    <hasInteractionCell>true</hasInteractionCell>
-    <interactionCellOffset>(0,0,2)</interactionCellOffset>
-    <interactionCellIcon>DiningChair</interactionCellIcon>
-    <interactionCellIconReverse>true</interactionCellIconReverse>
-    <fillPercent>0.40</fillPercent>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <pathCost>25</pathCost>
-    <designationCategory>Misc</designationCategory>
-    <rotatable>true</rotatable>
-    <canOverlapZones>false</canOverlapZones>
-    <size>(3,3)</size>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <placeWorkers>
-      <li>PlaceWorker_NotUnderRoof</li>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-    </placeWorkers>
-    <defaultPlacingRot>South</defaultPlacingRot>  <!-- to match long range mineral scanner -->
-    <researchPrerequisites>
-      <li>GroundPenetratingScanner</li>
-    </researchPrerequisites>
-    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>
 
   <!--========================== Facilities ============================-->

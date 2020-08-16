@@ -91,7 +91,7 @@
     </statBases>
     <costList>
       <ComponentIndustrial>7</ComponentIndustrial>
-      <Plasteel>60</Plasteel>
+      <Aluminium>60</Aluminium>
     </costList>
     <apparel>
       <bodyPartGroups>
@@ -191,7 +191,7 @@
     </tradeTags>
     <costList>
       <ComponentIndustrial>18</ComponentIndustrial>
-      <Plasteel>135</Plasteel>
+      <Aluminium>135</Aluminium>
     </costList>
     <apparel>
       <bodyPartGroups>

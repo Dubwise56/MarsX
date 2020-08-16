@@ -137,7 +137,7 @@
     <size>(3,3)</size>
     <costList>
       <Steel>950</Steel>
-      <Plasteel>100</Plasteel>
+      <Aluminium>100</Aluminium>
       <ComponentIndustrial>30</ComponentIndustrial>
       <coreVessel>1</coreVessel>
     </costList>
@@ -363,7 +363,7 @@
     <label>Heat pipe</label>
     <description>Pipes for transmitting heat from the reactor to thermoelectric generators. Can be placed under walls and other buildings.</description>
     <graphicData>
-      <texPath>Things/Building/HeatPipe_Atlas</texPath>
+      <texPath>Things/Building/steamPipe_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
       <linkFlags>
@@ -378,7 +378,7 @@
       <isInert>true</isInert>
       <isEdifice>false</isEdifice>
       <blueprintGraphicData>
-        <texPath>Things/Building/HeatPipe_Atlas</texPath>
+        <texPath>Things/Building/steamPipe_AtlasBP</texPath>
       </blueprintGraphicData>
     </building>
     <comps>
@@ -398,7 +398,7 @@
     <description>Pipes for transmitting coolant from the reactor to radiators. Can be placed under walls and other buildings.</description>
     <category>Building</category>
     <graphicData>
-      <texPath>Things/Building/CoolingPipe_Atlas</texPath>
+      <texPath>Things/Building/coolingPipe_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
       <linkFlags>
@@ -410,7 +410,7 @@
     </graphicData>
     <building>
       <blueprintGraphicData>
-        <texPath>Things/Building/CoolingPipe_Atlas</texPath>
+        <texPath>Things/Building/coolingPipe_AtlasBP</texPath>
       </blueprintGraphicData>
     </building>
     <uiIconPath>UI/CoolingPipe</uiIconPath>

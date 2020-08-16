@@ -31,7 +31,7 @@
       <WorkToBuild>500</WorkToBuild>
     </statBases>
     <costList>
-      <Plasteel>3</Plasteel>
+      <Aluminium>3</Aluminium>
     </costList>
     <constructEffect>ConstructMetal</constructEffect>
     <designationHotKey>Misc1</designationHotKey>

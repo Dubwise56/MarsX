@@ -1,7 +1,241 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase" Name="PipeBase" Abstract="True">
+    <label>pipe</label>
+    <thingClass>MarsX.Building_Pipe</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/PipeMedium_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom5</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>35</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc1</designationHotKey>
+    <placeWorkers>
+      <li>MarsX.PlaceWorker_CoolingPipe</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="PipeBase">
+    <defName>waterPipe</defName>
+    <label>Water pipe</label>
+    <description>Water pipe for connecting water storage tanks to facilities that generate or require water.</description>
+    <graphicData>
+      <texPath>Things/Building/PipeMedium_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom5</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/PipeMedium_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <uiIconPath>UI/WaterPipe</uiIconPath>
+    <comps>
+      <li Class="MarsX.CompProperties_Pipe">
+        <mode>Water</mode>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <placeWorkers>
+      <li>MarsX.PlaceWorker_WaterPipe</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>waterValve</defName>
+    <label>Water valve</label>
+    <thingClass>MarsX.Building_ValveWater</thingClass>
+    <description>Opens or closes connections between water pipes.</description>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <graphicData>
+      <texPath>Things/Building/Valve</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="MarsX.CompProperties_Pipe">
+        <mode>Water</mode>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>350</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList>
+      <Steel>15</Steel>
+    </costList>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <designationCategory>Temperature</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <placeWorkers>
+      <li>MarsX.PlaceWorker_WaterPipe</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MoisturePump</defName>
+    <label>Irrigation pump</label>
+    <thingClass>MarsX.Building_fertilizerPump</thingClass>
+    <description>Pumps fresh water into growing soil from water tanks connected via pipes.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/MoisturePump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.25, 0.5, 0.25)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="MarsX.CompProperties_Pipe">
+        <mode>Water</mode>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-8</Beauty>
+    </statBases>
+    <fillPercent>0.15</fillPercent>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <specialDisplayRadius>5.9</specialDisplayRadius>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>25</pathCost>
+    <designationCategory>Temperature</designationCategory>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+
+  <ThingDef ParentName="PipeBase">
+    <defName>gasPipe</defName>
+    <label>Gas pipe</label>
+    <description>Gas pipe for connecting gas storage tanks to facilities that generate or require gas.</description>
+    <graphicData>
+      <texPath>Things/Building/PipeThin_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom5</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/PipeThin_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <uiIconPath>UI/GasPipe</uiIconPath>
+    <comps>
+      <li Class="MarsX.CompProperties_Pipe">
+        <mode>Gas</mode>
+        <col>yellow</col>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <placeWorkers>
+      <li>MarsX.PlaceWorker_GasPipe</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>gasValve</defName>
+    <label>Gas valve</label>
+    <thingClass>MarsX.Building_ValveGas</thingClass>
+    <description>Opens or closes connections between gas pipes.</description>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <graphicData>
+      <texPath>Things/Building/Valve</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="MarsX.CompProperties_Pipe">
+        <mode>Gas</mode>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>350</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList>
+      <Steel>15</Steel>
+    </costList>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <designationCategory>Temperature</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <placeWorkers>
+      <li>MarsX.PlaceWorker_GasPipe</li>
+    </placeWorkers>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
 		<defName>h2oStorageTank</defName>
 		<label>H2O Storage Tank</label>
 		<description>A tank for storing Water (H2O).</description>
@@ -195,7 +429,7 @@
 		<size>(4,3)</size>
 		<costList>
 			<Steel>75</Steel>
-			<Plasteel>45</Plasteel>
+			<Aluminium>45</Aluminium>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -258,7 +492,7 @@
 		<size>(3,2)</size>
 		<costList>
 			<Steel>75</Steel>
-			<Plasteel>45</Plasteel>
+			<Aluminium>45</Aluminium>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -312,7 +546,7 @@
 		<size>(3,2)</size>
 		<costList>
 			<Steel>150</Steel>
-			<Plasteel>45</Plasteel>
+			<Aluminium>45</Aluminium>
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>

@@ -2,45 +2,6 @@
 <Defs>
 
   <ThingDef ParentName="MinifiedBuildingBase">
-		<defName>Treadmill</defName>
-		<label>treadmill</label>
-		<thingClass>MarsX.Building_Treadmill</thingClass>
-		<description>A treadmill is a device generally for walking or running while staying in the same place.</description>
-		<graphicData>
-			<texPath>Things/Building/treadmill/treadmill_0</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawRotated>false</drawRotated>
-			<drawSize>(3,3)</drawSize>
-		</graphicData>
-		<uiIconPath>UI/treadmill</uiIconPath>
-		<tickerType>Normal</tickerType>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Standable</passability>
-		<pathCost>50</pathCost>
-		<size>(1,1)</size>
-		<rotatable>false</rotatable>
-    <comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>150</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Breakdownable"/>
-		</comps>
-		<costList>
-			<Steel>50</Steel>
-			<Plasteel>25</Plasteel>
-			<ComponentIndustrial>4</ComponentIndustrial>
-		</costList>
-		<statBases>
-			<MaxHitPoints>75</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<MarketValue>350</MarketValue>
-			<WorkToBuild>550</WorkToBuild>
-		</statBases>
-		<designationCategory>Joy</designationCategory>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
 		<defName>Basin</defName>
 		<label>Basin</label>
 		<description>Clean and simple bathroom basin. Instructions sold separately.</description>
@@ -67,7 +28,7 @@
 		<fillPercent>0.15</fillPercent>
 		<costList>
 			<Steel>15</Steel>
-			<Plasteel>25</Plasteel>
+			<Aluminium>25</Aluminium>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<comps>
@@ -84,7 +45,7 @@
 		<designationHotKey>Misc2</designationHotKey>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="MinifiedBuildingBase">
 		<defName>Shower</defName>
 		<label>Shower</label>
 		<description>Features a large 110mm 4 spray powered showerhead to counter low gravity including massage mode to relax those atrophied muscles!</description>
@@ -110,7 +71,7 @@
 		<fillPercent>0.15</fillPercent>
 		<costList>
 			<Steel>25</Steel>
-			<Plasteel>55</Plasteel>
+			<Aluminium>55</Aluminium>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<passability>Standable</passability>
@@ -129,32 +90,35 @@
 		<designationHotKey>Misc2</designationHotKey>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="MinifiedBuildingBase">
 		<defName>Terlet</defName>
 		<label>Toilet</label>
+    <description>Sanitation fixture used for the disposal of human urine and feces.</description>
 		<thingClass>MarsX.Building_terlet</thingClass>
-		<graphicData>
-			<texPath>Things/Building/terlet</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<damageData>
-				<rect>(0.2,0.2,0.6,0.6)</rect>
-			</damageData>
-			<drawSize>(3,3)</drawSize>
-		</graphicData>
+    <graphicData>
+      <texPath>Things/Building/Latrine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
 		<altitudeLayer>Building</altitudeLayer>
-		<passability>Standable</passability>
+		<passability>PassThroughOnly</passability>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToBuild>950</WorkToBuild>
 			<Flammability>1.0</Flammability>
+      <Beauty>-5</Beauty>
+      <Cleanliness>-5</Cleanliness>
+      <Mass>5</Mass>
 		</statBases>
-		<description>Sanitation fixture used for the disposal of human urine and feces.</description>
-		<drawerType>MapMeshAndRealTime</drawerType>
+    <drawerType>MapMeshAndRealTime</drawerType>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<fillPercent>0.15</fillPercent>
 		<costList>
 			<Steel>25</Steel>
-			<Plasteel>25</Plasteel>
+			<Aluminium>25</Aluminium>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<hasInteractionCell>true</hasInteractionCell>
@@ -163,9 +127,7 @@
 			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Sewage</mode>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
-		</comps>
+    </comps>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<pathCost>8</pathCost>
 		<designationCategory>Joy</designationCategory>
@@ -178,7 +140,7 @@
 		<label>Sewage pipe</label>
 		<description>Sewage pipe for connecting a MIST to washing and toilet facilities.</description>
 		<graphicData>
-			<texPath>Things/Building/SewagePipe_Atlas</texPath>
+			<texPath>Things/Building/PipeMedium_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
@@ -190,7 +152,7 @@
 		</graphicData>
     <building>
       <blueprintGraphicData>
-        <texPath>Things/Building/SewagePipe_Atlas</texPath>
+        <texPath>Things/Building/PipeMedium_Atlas_Blueprint</texPath>
       </blueprintGraphicData>
     </building>
     <uiIconPath>UI/SewagePipe</uiIconPath>
@@ -205,7 +167,7 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="MinifiedBuildingBase">
 		<defName>SewageProcessing</defName>
 		<label>MIST</label>
 		<description>Mars In-Situ Sewage Treatment (MIST) Uses a multi-filtration process of wet oxidation and carbon filters to create a closed loop sewage system.</description>

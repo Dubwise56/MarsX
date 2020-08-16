@@ -43,7 +43,7 @@
     <description>An ore containing aluminium oxide.</description>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>Plasteel</mineableThing>
+      <mineableThing>Aluminium</mineableThing>
       <mineableYield>35</mineableYield>
       <mineableScatterCommonality>0.05</mineableScatterCommonality>
       <mineableScatterLumpSizeRange>

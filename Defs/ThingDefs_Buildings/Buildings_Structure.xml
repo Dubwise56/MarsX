@@ -5,35 +5,42 @@
     <defName>Airlock</defName>
     <label>Airlock</label>
     <description>An airlock is a device which permits the passage of people and objects between a pressure vessel and its surroundings. Must be manually opened and closed, which slows people down.</description>
-
+    <thingClass>MarsX.Building_Airlock</thingClass>
     <statBases>
-      <WorkToBuild>800</WorkToBuild>
+      <WorkToBuild>2500</WorkToBuild>
     </statBases>
     <graphicData>
-      <texPath>Things/Building/Door/Autodoor_Mover</texPath>
+      <texPath>Things/Building/Airlock_Mover</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <damageData>
+        <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
         <enabled>false</enabled>
       </damageData>
     </graphicData>
     <uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
     <costList>
       <Steel>40</Steel>
+      <Aluminium>55</Aluminium>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
-    <costStuffCount>25</costStuffCount>
+    <stuffCategories Inherit="False"></stuffCategories>
+    <costStuffCount Inherit="False"></costStuffCount>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
     <comps>
+      <li> 
+        <compClass>CompColorable</compClass>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>50</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
       </li>
+      <!--<li Class="MarsX.CompProperties_Vent">
+        <flowRate>25</flowRate>
+      </li>-->
       <li Class="CompProperties_Breakdownable"/>
     </comps>
-    <designationHotKey>Misc2</designationHotKey>
-    <researchPrerequisites>
-      <li>Autodoors</li>
-    </researchPrerequisites>
-    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
   </ThingDef>
 
 </Defs>

@@ -71,7 +71,7 @@
     <costList>
       <ComponentIndustrial>30</ComponentIndustrial>
       <Steel>30</Steel>
-      <Plasteel>30</Plasteel>
+      <Aluminium>30</Aluminium>
       <Gold>30</Gold>
       <Radioisotope_thermoelectric_generator>1</Radioisotope_thermoelectric_generator>
     </costList>

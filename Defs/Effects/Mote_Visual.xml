@@ -10,8 +10,8 @@
     <altitudeLayer>MoteLow</altitudeLayer>
     <mote>
       <fadeInTime>0.08</fadeInTime>
-      <solidTime>99999</solidTime>
-      <fadeOutTime>2.6</fadeOutTime>
+      <solidTime>1</solidTime>
+      <fadeOutTime>5000</fadeOutTime>
     </mote>
   </ThingDef>
 

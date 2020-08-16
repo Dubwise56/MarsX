@@ -75,9 +75,20 @@
     <minIntelligence>Humanlike</minIntelligence>
     <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
     <baseLevel>0.4</baseLevel>
-	<seekerRisePerHour>0.05</seekerRisePerHour>
-    <seekerFallPerHour>0.15</seekerFallPerHour>
-    <listPriority>400</listPriority>
+      <listPriority>400</listPriority>
+  </NeedDef>
+
+  <NeedDef>
+    <defName>Bodymass</defName>
+    <needClass>MarsX.Need_BodyMass</needClass>
+    <label>body mass</label>
+    <description>Body mass is a measure of fat and muscle, health will be affected if body mass is outside of the normal range.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+    <baseLevel>0.5</baseLevel>
+    <seekerRisePerHour>0.005</seekerRisePerHour>
+    <seekerFallPerHour>0.005</seekerFallPerHour>
+    <listPriority>315</listPriority>
   </NeedDef>
   
   <NeedDef>
