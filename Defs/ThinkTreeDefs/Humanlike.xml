@@ -276,6 +276,16 @@
             <li Class="ThinkNode_Tagger">
               <tagToGive>ChangingApparel</tagToGive>
               <subNodes>
+                <li Class="MarsX.JobGiver_ChangeEvaSuit">
+                  <leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
+                </li>
+              </subNodes>
+            </li>
+
+            <!-- Optimize apparel -->
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>ChangingApparel</tagToGive>
+              <subNodes>
                 <li Class="JobGiver_OptimizeApparel">
                   <leaveJoinableLordIfIssuesJob>true</leaveJoinableLordIfIssuesJob>
                 </li>
