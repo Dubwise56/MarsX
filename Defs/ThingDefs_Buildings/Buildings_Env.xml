@@ -193,7 +193,6 @@
       <drawSize>(3,3)</drawSize>
     </graphicData>
     <size>(2,2)</size>
-    <uiIconPath>Things/Building/moxie</uiIconPath>
     <category>Building</category>
     <tickerType>Normal</tickerType>
     <altitudeLayer>Building</altitudeLayer>
