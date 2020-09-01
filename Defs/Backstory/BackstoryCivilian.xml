@@ -7,7 +7,7 @@
     <defName>Commercialpilot</defName>
     <title>Commercial pilot</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} started as an actor portraying pilots in commercials, before heeding the call and getting a license. How did HE get up here, you ask?</baseDesc>
+    <baseDesc>{PAWN} started as an actor portraying pilots in commercials, before heeding the call and getting a license. How did {PAWN_pronoun} get up here, you ask?</baseDesc>
     <AllowedRoles>
       <li>Civilian</li>
     </AllowedRoles>
@@ -18,7 +18,7 @@
     <defName>Teambuilder</defName>
     <title>Team builder</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} still thinks this is a real occupation. Always the butt of the joke. Somehow, though, everyone eventually listens to HIS advice and bonds together. Does he have psychic powers? {PAWN_pronoun} does not say.</baseDesc>
+    <baseDesc>{PAWN} still thinks this is a real occupation. Always the butt of the joke. Somehow, though, everyone eventually listens to {PAWN_possessive} advice and bonds together. Does {PAWN_pronoun} have psychic powers? {PAWN_pronoun} does not say.</baseDesc>
     <skillGains>
       <Social>3</Social>
       <Crafting>2</Crafting>
@@ -32,7 +32,7 @@
     <defName>Onepercenter</defName>
     <title>One percenter</title>
     <slot>Adulthood</slot>
-    <baseDesc>Started HIS business with a small loan of a million dollars from HIS dad. Made a fortune building high-quality fences and walls. Owns stock in a space agency. Could never buy HIS father’s love.</baseDesc>
+    <baseDesc>Started {PAWN_possessive} business with a small loan of a million dollars from {PAWN_possessive} dad. Made a fortune building high-quality fences and walls. Owns stock in a space agency. Could never buy {PAWN_possessive} father’s love.</baseDesc>
     <skillGains>
       <Animals>-5</Animals>
       <Plants>-5</Plants>
@@ -57,7 +57,7 @@
     <defName>Politician</defName>
     <title>Politician</title>
     <slot>Adulthood</slot>
-    <baseDesc>Had to be there. Had to be visible. {PAWN_pronoun} knew that this mission would give HIM the exposure HE needed for the coming elections. Will run for Mayor of Mars. Noboby likes him, which goes without saying.</baseDesc>
+    <baseDesc>Had to be there. Had to be visible. {PAWN_pronoun} knew that this mission would give {PAWN_possessive} the exposure {PAWN_pronoun} needed for the coming elections. Will run for Mayor of Mars. Noboby likes him, which goes without saying.</baseDesc>
     <skillGains>
       <Animals>-5</Animals>
       <Plants>-5</Plants>
@@ -106,7 +106,7 @@
     <defName>Fitnessspecialist</defName>
     <title>Fitness specialist</title>
     <slot>Adulthood</slot>
-    <baseDesc>Lost HIS fitness studio after a home console exploded in popularity. Vowed revenge on the animated fitness instructor over a bottle of vodka, before falling madly in love with her. REALLY needs a psychiatrist.</baseDesc>
+    <baseDesc>Lost {PAWN_possessive} fitness studio after a home console exploded in popularity. Vowed revenge on the animated fitness instructor over a bottle of vodka, before falling madly in love with her. REALLY needs a psychiatrist.</baseDesc>
     <skillGains>
       <Melee>5</Melee>
       <Social>3</Social>
@@ -121,7 +121,7 @@
     <defName>Nutritionalexpert</defName>
     <title>Nutritional expert</title>
     <slot>Adulthood</slot>
-    <baseDesc>Had enough common dignity to not call HIMSELF a ‘gastro scientist’. Makes sure everyone is eating Martian gruel with at least some nutrition in it. Knowing what the others are eating weighs on HIS conscience.</baseDesc>
+    <baseDesc>Had enough common dignity to not call {PAWN_objective}self a ‘gastro scientist’. Makes sure everyone is eating Martian gruel with at least some nutrition in it. Knowing what the others are eating weighs on {PAWN_possessive} conscience.</baseDesc>
     <skillGains>
       <Cooking>5</Cooking>
       <Intellectual>1</Intellectual>
@@ -162,7 +162,7 @@
     <defName>Schoolteacher</defName>
     <title>School teacher</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} has always been fleeing from bad luck. Lightning bolts, bats in HIS hair, spontaneous combustion of neighbours… the list goes on. Surely, whatever demon is following HIM cannot reach Mars</baseDesc>
+    <baseDesc>{PAWN} has always been fleeing from bad luck. Lightning bolts, bats in {PAWN_possessive} hair, spontaneous combustion of neighbours… the list goes on. Surely, whatever demon is following {PAWN_objective} cannot reach Mars</baseDesc>
     <skillGains>
       <Social>3</Social>
       <Intellectual>3</Intellectual>
@@ -183,7 +183,7 @@
     <defName>Stripper</defName>
     <title>Stripper</title>
     <slot>Adulthood</slot>
-    <baseDesc>A fancy role for someone with a dirty occupation. In the depths of space, no one back home can hear HIM swing around on a pole.</baseDesc>
+    <baseDesc>A fancy role for someone with a dirty occupation. In the depths of space, no one back home can hear {PAWN_objective} swing around on a pole.</baseDesc>
     <skillGains>
       <Animals>-2</Animals>
       <Plants>-2</Plants>
@@ -208,7 +208,7 @@
     <defName>Progamer</defName>
     <title>Pro gamer</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} loved living his life on the edge. Whether it was making use of an Artosis pylon to power HIS army, or pulling workers for one last attack. This whole Mars business was just another step on the way.</baseDesc>
+    <baseDesc>{PAWN} loved living {PAWN_possessive} life on the edge. Whether it was making use of an Artosis pylon to power {PAWN_possessive} army, or pulling workers for one last attack. This whole Mars business was just another step on the way.</baseDesc>
     <skillGains>
       <Social>3</Social>
       <Melee>3</Melee>

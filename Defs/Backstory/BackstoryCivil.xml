@@ -30,7 +30,7 @@
     <title>Radio Astronomer</title>
     <slot>Adulthood</slot>
     <baseDesc>
-      As a child, {PAWN} displayed a strong aptitude for science and mathematics. After graduating from University, {PAWN} receives a doctorate and became a well known radio astronomer. {PAWN_pronoun} eventually became the director of a radiotelescope array dedicated to the search for extraterrestrial intelligence.</baseDesc>
+      As a child, {PAWN} displayed a strong aptitude for science and mathematics. After graduating from University, {PAWN_pronoun} received a doctorate and became a well known radio astronomer. {PAWN_pronoun} eventually became the director of a radiotelescope array dedicated to the search for extraterrestrial intelligence.</baseDesc>
     <skillGains>
       <Chemistry>8</Chemistry>
       <Physics>9</Physics>
@@ -46,7 +46,7 @@
     <defName>Armymedicalofficer</defName>
     <title>Army medical officer</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} got a crash-course in human physiology from watching grindhouse slasher films. Fascinated, he went from medical education to the only place that could provide similar. The army.</baseDesc>
+    <baseDesc>{PAWN} got a crash-course in human physiology from watching grindhouse slasher films. Fascinated, {PAWN_pronoun} went from medical education to the only place that could provide similar. The army.</baseDesc>
     <skillGains>
       <Social>4</Social>
       <Melee>3</Melee>
@@ -65,7 +65,7 @@
     <defName>Stuntpilot</defName>
     <title>Stunt pilot</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} knows what it is to stare death in the eyes. Literally. {PAWN_pronoun} has performed the craziest manoeuvres over the years just to get her attention. So far, it seems like she’s interested.</baseDesc>
+    <baseDesc>{PAWN} knows what it is to stare death in the eyes. Literally. {PAWN_pronoun} has performed the craziest manoeuvres over the years just to get her attention. So far, it seems like she’s interested.</baseDesc>
     <AllowedRoles>
       <li>Civilian</li>
       <li>Civil</li>
@@ -77,7 +77,7 @@
     <defName>Renownedbiologist</defName>
     <title>Renowned biologist</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} has always been fascinated by the red planet and the multitudes of theories that life in some form might exist up here. HE never expected to get a hands-on experience, either.</baseDesc>
+    <baseDesc>{PAWN} has always been fascinated by the red planet and the multitudes of theories that life in some form might exist up here. {PAWN_pronoun} never expected to get a hands-on experience, though.</baseDesc>
     <skillGains>
       <Plants>6</Plants>
       <Intellectual>9</Intellectual>
@@ -95,7 +95,7 @@
     <defName>Geologist</defName>
     <title>Geologist</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} likes rocks. {PAWN_pronoun} likes rocks so much that HE dedicated HIS career to them. Some called it a mistake, but now look at HIM… stranded and starving up here. Huh. Maybe mom was right.</baseDesc>
+    <baseDesc>{PAWN} likes rocks. {PAWN_pronoun} likes rocks so much that {PAWN_pronoun} dedicated {PAWN_possessive} career to them. Some called it a mistake, but now look at {PAWN_objective}… stranded and starving up here. Huh. Maybe mom was right.</baseDesc>
     <skillGains>
       <Intellectual>10</Intellectual>
       <Mining>14</Mining>
@@ -112,7 +112,7 @@
     <defName>Nuclearphysicist</defName>
     <title>Nuclear physicist</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} always loved all those post-apocalyptic games which showcased the awesome power of thermonuclear weaponry. Almost blew up campus at university trying to replicate the tech. Good times.</baseDesc>
+    <baseDesc>{PAWN} always loved all those post-apocalyptic games which showcased the awesome power of thermonuclear weaponry. Almost blew up campus at university trying to replicate the tech. Good times.</baseDesc>
     <skillGains>
       <Intellectual>10</Intellectual>
       <Physics>12</Physics>
@@ -129,7 +129,7 @@
     <defName>Psychiatrist</defName>
     <title>Psychiatrist</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} knows everyone is more complex than they seem at first. Through HIS expertise, these degenerates, weirdos and plain old loonies may actually survive up here. Unless HE goes insane first.</baseDesc>
+    <baseDesc>{PAWN} knows everyone is more complex than they seem at first. Through {PAWN_possessive} expertise, these degenerates, weirdos and plain old loonies may actually survive up here. Unless {PAWN_pronoun} goes insane first.</baseDesc>
     <skillGains>
       <Social>12</Social>
 	  <Intellectual>7</Intellectual>
@@ -145,7 +145,7 @@
     <defName>Socialengineer</defName>
     <title>Social engineer</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} may not fix broken people, but HE does help them break promises and divulge secrets. All for the good of the country, of course.</baseDesc>
+    <baseDesc>{PAWN} may not fix broken people, but {PAWN_pronoun} does help them break promises and divulge secrets. All for the good of the country, of course.</baseDesc>
     <skillGains>
       <Social>10</Social>
 	  <Intellectual>6</Intellectual>
@@ -161,7 +161,7 @@
     <defName>Theoreticalmathematician</defName>
     <title>Theoretical mathematician</title>
     <slot>Adulthood</slot>
-    <baseDesc>Because applied mathematics were too real for HIM. All those years being made fun of in certain social cliques were totally worth slowly dying up here. Wants to find an expert in applied mathematics.</baseDesc>
+    <baseDesc>Because applied mathematics were too real for {PAWN_objective}. All those years being made fun of in certain social cliques were totally worth slowly dying up here. Wants to find an expert in applied mathematics.</baseDesc>
     <skillGains>
       <Chemistry>8</Chemistry>
       <Physics>9</Physics>
@@ -178,7 +178,7 @@
     <defName>Appliedmathematician</defName>
     <title>Applied mathematician</title>
     <slot>Adulthood</slot>
-    <baseDesc>Because theoretical mathematics weren’t practical enough for HIM. All those years being made fun of in certain social cliques were totally worth slowly dying up here. Wishes to meet a theoretical mathematician.</baseDesc>
+    <baseDesc>Because theoretical mathematics weren’t practical enough for {PAWN_objective}. All those years being made fun of in certain social cliques were totally worth slowly dying up here. Wishes to meet a theoretical mathematician.</baseDesc>
     <skillGains>
       <Chemistry>6</Chemistry>
       <Physics>7</Physics>
@@ -195,7 +195,7 @@
     <defName>Quantumphysicist</defName>
     <title>Quantum physicist</title>
     <slot>Adulthood</slot>
-    <baseDesc>Time is relative. Space is relative. HIS chances of survival in this hostile environment are relatively low. Not everyone can be a winner.</baseDesc>
+    <baseDesc>Time is relative. Space is relative. {PAWN_possessive} chances of survival in this hostile environment are relatively low. Not everyone can be a winner.</baseDesc>
     <skillGains>
       <Physics>12</Physics>
       <Intellectual>10</Intellectual>
@@ -211,7 +211,7 @@
     <defName>Nutritionalstudiesleader</defName>
     <title>Nutritional studies leader</title>
     <slot>Adulthood</slot>
-    <baseDesc>The only thing HE has lead could only very loosely be considered a group of people, but that didn’t stop HIM from asserting HIMSELF at the try-outs. Always keeps the best ‘food’ for HIMSELF.</baseDesc>
+    <baseDesc>The only thing {PAWN_pronoun} has lead could only very loosely be considered a group of people, but that didn’t stop {PAWN_objective} from asserting {PAWN_objective}self at the try-outs. Always keeps the best ‘food’ for {PAWN_objective}self.</baseDesc>
     <skillGains>
       <Cooking>7</Cooking>
       <Intellectual>10</Intellectual>
@@ -230,7 +230,7 @@
     <defName>Bacteriologicalbiologist</defName>
     <title>Bacteriological biologist</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} only chose this field of study because of his crippling fear of bacteria. {PAWN_pronoun} needed to know HIS enemies so that HE could eradicate them the most efficiently. A real downer at parties.</baseDesc>
+    <baseDesc>{PAWN} only chose this field of study because of {PAWN_possessive} crippling fear of bacteria. {PAWN_pronoun} needed to know {PAWN_possessive} enemies so that {PAWN_pronoun} could eradicate them the most efficiently. A real downer at parties.</baseDesc>
     <skillGains>
       <Animals>12</Animals>
       <Intellectual>10</Intellectual>
@@ -247,7 +247,7 @@
     <defName>Gastroscientist</defName>
     <title>Gastro scientist</title>
     <slot>Adulthood</slot>
-    <baseDesc>Was smart enough to not call HIMSELF something boring like ‘nutritional expert’. HISCAP credentials are only technically real, but he knows enough about food to not feed dirt to the crew. Usually.</baseDesc>
+    <baseDesc>Was smart enough to not call {PAWN_objective}self something boring like ‘nutritional expert’. HISCAP credentials are only technically real, but {PAWN_pronoun} knows enough about food to not feed dirt to the crew. Usually.</baseDesc>
     <skillGains>
       <Cooking>9</Cooking>
       <Intellectual>11</Intellectual>
@@ -265,7 +265,7 @@
     <defName>Antarcticexplorer</defName>
     <title>Antarctic explorer</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} best friend, a deep sea explorer, helped ignite HIS wanderlust. Has scaled the tallest mountains, lead expeditions around the globe and has even flown a plane into a solitary fortress.</baseDesc>
+    <baseDesc>{PAWN} best friend, a deep sea explorer, helped ignite {PAWN_possessive} wanderlust. Has scaled the tallest mountains, lead expeditions around the globe and has even flown a plane into a solitary fortress.</baseDesc>
     <skillGains>
       <Intellectual>7</Intellectual>
 	  <Animals>9</Animals>
@@ -283,7 +283,7 @@
     <defName>Deepseaexplorer</defName>
     <title>Deep sea explorer</title>
     <slot>Adulthood</slot>
-    <baseDesc>Taught HIS buddy, an antarctic explorer, the joys of discovery and overcoming one’s boundaries. Creator and leader of a strangely specific stargod worlanderping cult. Likes the phrase f’thagn.</baseDesc>
+    <baseDesc>Taught {PAWN_possessive} buddy, an antarctic explorer, the joys of discovery and overcoming one’s boundaries. Creator and leader of a strangely specific stargod worlanderping cult. Likes the phrase f’thagn.</baseDesc>
     <skillGains>
       <Intellectual>7</Intellectual>
 	  <Animals>9</Animals>
@@ -301,7 +301,7 @@
     <defName>Signalspecialist</defName>
     <title>Signal specialist</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} knows when the enemy is moving. {PAWN_pronoun} knows when they are asleep. {PAWN_pronoun} knows how to turn the satellite just right to catch some TV from ye olde Earth. Really, he’s a pretty swood guy.</baseDesc>
+    <baseDesc>{PAWN} knows when the enemy is moving. {PAWN_pronoun} knows when they are asleep. {PAWN_pronoun} knows how to turn the satellite just right to catch some TV from ye olde Earth. Really, he’s a pretty swood guy.</baseDesc>
     <skillGains>
       <Intellectual>9</Intellectual>
       <Shooting>5</Shooting>
@@ -318,7 +318,7 @@
     <defName>Navyengineer</defName>
     <title>Navy engineer</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} loved model boats when he was a kid. The expensive ones, too. And what’s more expensive than a battlelander weighing several thousands of tons? Nothing, that’s what.</baseDesc>
+    <baseDesc>{PAWN} loved model boats when {PAWN_pronoun} was a kid. The expensive ones, too. And what’s more expensive than a battlelander weighing several thousands of tons? Nothing, that’s what.</baseDesc>
     <skillGains>
       <Melee>5</Melee>
       <Crafting>9</Crafting>
@@ -337,7 +337,7 @@
     <defName>Airforcemechanic</defName>
     <title>Airforce mechanic</title>
     <slot>Adulthood</slot>
-    <baseDesc>Because someone needs to take care of the planes when they come back from bombing a third world country. Might as well be HIM. Hates navy aircraft mechanics.</baseDesc>
+    <baseDesc>Because someone needs to take care of the planes when they come back from bombing a third world country. Might as well be {PAWN_objective}. Hates navy aircraft mechanics.</baseDesc>
     <skillGains>
       <Social>5</Social>
       <Construction>9</Construction>
@@ -355,7 +355,7 @@
     <defName>Navyaircraftmechanic</defName>
     <title>Navy aircraft mechanic</title>
     <slot>Adulthood</slot>
-    <baseDesc>Because someone needs to rearm aircraft offshore after they are done bombing a third world country. Might as well be HIM. Hates airforce mechanics.</baseDesc>
+    <baseDesc>Because someone needs to rearm aircraft offshore after they are done bombing a third world country. Might as well be {PAWN_objective}. Hates airforce mechanics.</baseDesc>
     <skillGains>
       <Social>5</Social>
       <Construction>9</Construction>
@@ -373,7 +373,7 @@
     <defName>Deepjungleexplorer</defName>
     <title>Deep jungle explorer</title>
     <slot>Adulthood</slot>
-    <baseDesc>Made a name for HIMSELF by running away from giant boulders and taking out unfriendly cults. NASA tried to recruit HIM for the ARK project, but he had to finish HIS teaching obligations at the time.</baseDesc>
+    <baseDesc>Made a name for {PAWN_objective}self by running away from giant boulders and taking out unfriendly cults. NASA tried to recruit {PAWN_objective} for the ARK project, but {PAWN_pronoun} had to finish {PAWN_possessive} teaching obligations at the time.</baseDesc>
     <skillGains>
       <Intellectual>9</Intellectual>
       <Plants>12</Plants>
@@ -390,7 +390,7 @@
     <defName>Deepseaminer</defName>
     <title>Deep sea miner</title>
     <slot>Adulthood</slot>
-    <baseDesc>People kept saying HIS occupation was far too niche. What they didn’t understand is that extremely specific jobs get paid the most because barely anyone specialises to such a degree.</baseDesc>
+    <baseDesc>People kept saying {PAWN_possessive} occupation was far too niche. What they didn’t understand is that extremely specific jobs get paid the most because barely anyone specialises to such a degree.</baseDesc>
     <skillGains>
       <Mining>11</Mining>
       <Construction>5</Construction>
@@ -408,7 +408,7 @@
     <defName>Dataanalyst</defName>
     <title>Data analyst</title>
     <slot>Adulthood</slot>
-    <baseDesc>Data makes the world go round these days. {PAWN_pronoun} knows this, which is why HE also probably knows your social security number. HE can be real anal about all his data, though.</baseDesc>
+    <baseDesc>Data makes the world go round these days. {PAWN} knows this, which is why {PAWN_pronoun} also probably knows your social security number. {PAWN_pronoun} can be real anal about all {PAWN_possessive} data, though.</baseDesc>
     <skillGains>
       <Intellectual>12</Intellectual>
       <Shooting>3</Shooting>
@@ -424,7 +424,7 @@
     <defName>Subnauticalengineer</defName>
     <title>Sub nautical engineer</title>
     <slot>Adulthood</slot>
-    <baseDesc>Grew up on extremely specific niche survival open world video games set under the sea. HE was disappointed to find earth’s marine life did not spit magma or teleporting webs of psychic energy.</baseDesc>
+    <baseDesc>Grew up on extremely specific niche survival open world video games set under the sea. {PAWN} was disappointed to find earth’s marine life did not spit magma or teleporting webs of psychic energy.</baseDesc>
     <skillGains>
       <Melee>1</Melee>
       <Crafting>10</Crafting>
@@ -442,7 +442,7 @@
     <defName>Oilrigforeman</defName>
     <title>Oil rig foreman</title>
     <slot>Adulthood</slot>
-    <baseDesc>Well... HE was on the list to nuke any potential Earth Shattering Asteroids but instead got chosen to help out on Mars. Hopefully, the asteroid won't be heading towards Earth any time soon.</baseDesc>
+    <baseDesc>Well... {PAWN_pronoun} was on the list to nuke any potential Earth Shattering Asteroids but instead got chosen to help out on Mars. Hopefully, the asteroid won't be heading towards Earth any time soon.</baseDesc>
     <skillGains>
       <Mining>12</Mining>
       <Construction>6</Construction>
@@ -460,7 +460,7 @@
     <defName>Armycommunicationsofficer</defName>
     <title>Army communications officer</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun}’s not here to help you sissies talk together, HE is here to help all the bigshots talk together. A small, but key difference.</baseDesc>
+    <baseDesc>{PAWN} is not here to help you sissies talk together, {PAWN_pronoun} is here to help all the bigshots talk together. A small, but key difference.</baseDesc>
     <skillGains>
       <Social>7</Social>
       <Intellectual>8</Intellectual>
@@ -476,7 +476,7 @@
     <defName>Botanist</defName>
     <title>Botanist</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} has always loved foliage. Picking up herbs in video games is extra fun when one can point out all the discrepancies between their real life equivalent and the fictional garbage. {PAWN_pronoun} was a rose in a past life.</baseDesc>
+    <baseDesc>{PAWN} has always loved foliage. Picking up herbs in video games is extra fun when one can point out all the discrepancies between their real life equivalent and the fictional garbage. {PAWN_pronoun} was a rose in a past life.</baseDesc>
     <skillGains>
 	  <Plants>12</Plants>
 	  <Animals>6</Animals>
@@ -494,7 +494,7 @@
     <defName>Armyveteransergeant</defName>
     <title>Army veteran sergeant</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} knows a thing or two about maggots. For example, most cadets start as maggots, before eventually becoming pansies, only then men and women. Shows his approval by shouting a lot.</baseDesc>
+    <baseDesc>{PAWN} knows a thing or two about maggots. For example, most cadets start as maggots, before eventually becoming pansies, only then men and women. Shows {PAWN_possessive} approval by shouting a lot.</baseDesc>
     <skillGains>
       <Social>5</Social>
       <Animals>12</Animals>
@@ -511,7 +511,7 @@
     <defName>Engineer</defName>
     <title>Engineer</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} does all the actual work. Always has, always will. HE never got to the fancy schools like all the bloody physicists and whatnot. But when any of their fancy tech breaks, who do they call? Oh, that’s right. HIM.</baseDesc>
+    <baseDesc>{PAWN} does all the actual work. Always has, always will. {PAWN_pronoun} never got to the fancy schools like all the bloody physicists and whatnot. But when any of their fancy tech breaks, who do they call? Oh, that’s right. {PAWN_objective}.</baseDesc>
     <skillGains>
       <Construction>12</Construction>
       <Crafting>9</Crafting>
