@@ -7,7 +7,7 @@
     <defName>AirforceOfficer</defName>
     <title>airforce officer</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} went to college but found it uninteresting and instead joined the airforce. {PAWN_pronoun} then realised his life was boring and found a way to do something better. Starving in space.</baseDesc>
+    <baseDesc>{PAWN} went to college but found it uninteresting and instead joined the airforce. {PAWN_pronoun} then realised {PAWN_possessive} life was boring and found a way to do something better. Starving in space.</baseDesc>
     <skillGains>
       <Social>4</Social>
       <Melee>5</Melee>
@@ -27,7 +27,7 @@
     <defName>Airforcepilot</defName>
     <title>Airforce pilot</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} almost lost his legs during an intense aerial dogfight. Thought he could use something more relaxing, like settling on a hostile alien planet. The space agency showed him the fine print, but he was okay with it.</baseDesc>
+    <baseDesc>{PAWN} almost lost {PAWN_possessive} legs during an intense aerial dogfight. Thought {PAWN_pronoun} could use something more relaxing, like settling on a hostile alien planet. The space agency showed {PAWN_objective} the fine print, but {PAWN_pronoun} was okay with it.</baseDesc>
     <skillGains>
       <Social>4</Social>
       <Melee>5</Melee>
@@ -44,7 +44,7 @@
     <defName>Fieldteamleadergeologist</defName>
     <title>geology team leader</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} studied Geology and led several teams in the field for research, mostly doing research on extraterrestrial minerals. {PAWN_pronoun} later realised that extraterrestrial minerals are not as cool as they sound.</baseDesc>
+    <baseDesc>{PAWN} studied Geology and led several teams in the field for research, mostly doing research on extraterrestrial minerals. {PAWN_pronoun} later realised that extraterrestrial minerals are not as cool as they sound.</baseDesc>
     <skillGains>
       <Social>6</Social>
       <Mining>14</Mining>
@@ -62,7 +62,7 @@
     <defName>Biologyteamleader</defName>
     <title>Biology team leader</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} learned about the birds and the bees. {PAWN_pronoun} has lead several research projects across the world and knows one thing. Birds and bees do not breed with each other.</baseDesc>
+    <baseDesc>{PAWN} learned about the birds and the bees. {PAWN_pronoun} has lead several research projects across the world and knows one thing. Birds and bees do not breed with each other.</baseDesc>
     <skillGains>
       <Social>6</Social>
       <Intellectual>12</Intellectual>
@@ -80,7 +80,7 @@
     <defName>Armychiefengineer</defName>
     <title>Army chief engineer</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} is a great Engineer but still chose a military career despite being overqualified for the position. Mostly so that he can make his colleagues feel inferior. He has a bit of an ego like that.</baseDesc>
+    <baseDesc>{PAWN} is a great Engineer but still chose a military career despite being overqualified for the position. Mostly so that (PAWN_pronoun) can make {PAWN_possessive} colleagues feel inferior. {PAWN_pronoun} has a bit of an ego like that.</baseDesc>
     <skillGains>
       <Construction>13</Construction>
       <Crafting>11</Crafting>
@@ -101,7 +101,7 @@
     <defName>Rocketengineer</defName>
     <title>Rocket engineer</title>
     <slot>Adulthood</slot>
-    <baseDesc>Other engineers think they’re cool. But all of them gase at HIM with envy. Where others fix engines and carburetors, he creates art filled with rocket fuel. Best kind of art, really.</baseDesc>
+    <baseDesc>Other engineers think they’re cool. But all of them gaze at {PAWN_objective} with envy. Where others fix engines and carburetors, {PAWN_pronoun} creates art filled with rocket fuel. Best kind of art, really.</baseDesc>
     <skillGains>
       <Construction>15</Construction>
       <Physics>6</Physics>
@@ -119,7 +119,7 @@
     <defName>Genebiologist</defName>
     <title>Gene biologist</title>
     <slot>Adulthood</slot>
-    <baseDesc>Sometimes, you just want to learn about the birds and the bees. {PAWN_pronoun} dream was creating bird-bees. Sadly, the university pulled the grant, but HE hoped this mission would get him private funding.</baseDesc>
+    <baseDesc>Sometimes, you just want to learn about the birds and the bees. {PAWN_pronoun} dream was creating bird-bees. Sadly, the university pulled the grant, but {PAWN_pronoun} hoped this mission would get {PAWN_objective} private funding.</baseDesc>
     <skillGains>
       <Animals>12</Animals>
 	  <Plants>8</Plants>
@@ -138,7 +138,7 @@
     <defName>Technicalengineer</defName>
     <title>Technical engineer</title>
     <slot>Adulthood</slot>
-    <baseDesc>So much better than HIS previous gig as a tech support expert. Oh, sure, the dust gets absolutely everywhere up here, but at least HE doesn’t get angry calls from India anymore.</baseDesc>
+    <baseDesc>So much better than {PAWN_possessive} previous gig as a tech support expert. Oh, sure, the dust gets absolutely everywhere up here, but at least {PAWN_pronoun} doesn’t get angry calls from India anymore.</baseDesc>
     <skillGains>
       <Construction>10</Construction>
       <Crafting>7</Crafting>
@@ -157,7 +157,7 @@
     <defName>Mechanicalengineer</defName>
     <title>Mechanical engineer</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} originally thought HIS chosen occupation would lead to the creation of mechs, but he later learned they were impractical as a weapons platform. At least HE still has those old tabletop games.</baseDesc>
+    <baseDesc>{PAWN} originally thought {PAWN_possessive} chosen occupation would lead to the creation of mechs, but {PAWN_pronoun} later learned they were impractical as a weapons platform. At least {PAWN_pronoun} still has those old tabletop games.</baseDesc>
     <skillGains>
       <Construction>10</Construction>
 	  <Crafting>8</Crafting>
@@ -177,7 +177,7 @@
     <defName>Navycaptain</defName>
     <title>Navy captain</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} always loved playing with toy battleships in his bathtub. Then HE played with battleships on the open seas. Up here, there is no bathtub or a sea, or even intact battleships. Bummer.</baseDesc>
+    <baseDesc>{PAWN} always loved playing with toy battleships in {PAWN_possessive} bathtub. Then {PAWN_pronoun} played with battleships on the open seas. Up here, there is no bathtub or a sea, or even intact battleships. Bummer.</baseDesc>
     <skillGains>
       <Social>6</Social>
       <Melee>5</Melee>
@@ -196,7 +196,7 @@
     <defName>Navypilot</defName>
     <title>Navy pilot</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} is still technically part of the airforce, but tell that to the bloody media. You bomb a few thrird world countries and you are immediately labeled as a navy pilot. Discrimination, is what that is.</baseDesc>
+    <baseDesc>{PAWN} is still technically part of the airforce, but tell that to the bloody media. You bomb a few thrird world countries and you are immediately labeled as a navy pilot. Discrimination, is what that is.</baseDesc>
     <skillGains>
       <Social>4</Social>
       <Melee>4</Melee>
@@ -215,7 +215,7 @@
     <defName>Armycolonel</defName>
     <title>Army colonel</title>
     <slot>Adulthood</slot>
-    <baseDesc>Could never beat the responsibility of being a general. {PAWN_pronoun} was offered the promotion several times, but the increased number of lives at his disposal would have terrified HIM.</baseDesc>
+    <baseDesc>Could never beat the responsibility of being a general. {PAWN_pronoun} was offered the promotion several times, but the increased number of lives at {PAWN_possessive} disposal would have terrified {PAWN_objective}.</baseDesc>
     <skillGains>
       <Social>5</Social>
       <Melee>5</Melee>
@@ -233,7 +233,7 @@
     <defName>Navyrearadmiral</defName>
     <title>Navy rear admiral</title>
     <slot>Adulthood</slot>
-    <baseDesc>Hates being the youngest admiral, as HE feels it somehow undermines his status. The other admirals constantly consider HIM a liability. One day, the seas will be HIS.</baseDesc>
+    <baseDesc>Hates being the youngest admiral, as {PAWN_pronoun} feels it somehow undermines {PAWN_possessive} status. The other admirals constantly consider {PAWN_objective} a liability. One day, the seas will be {PAWN_possessive}.</baseDesc>
     <skillGains>
       <Social>6</Social>
       <Melee>5</Melee>
@@ -252,7 +252,7 @@
     <defName>Deepminingexpert</defName>
     <title>Deep mining expert</title>
     <slot>Adulthood</slot>
-    <baseDesc>{PAWN_pronoun} loves it deep. Shallow experiences cannot satisfy HIM anymore. Down there, in the most unreachable depths, is where HE finally finds release. Has found enough diamonds for a full suit of armour.</baseDesc>
+    <baseDesc>{PAWN} loves it deep. Shallow experiences cannot satisfy {PAWN_objective} anymore. Down there, in the most unreachable depths, is where {PAWN_pronoun} finally finds release. Has found enough diamonds for a full suit of armour.</baseDesc>
     <skillGains>
       <Mining>12</Mining>
       <Construction>5</Construction>
@@ -270,7 +270,7 @@
     <defName>Formerspy</defName>
     <title>Former spy</title>
     <slot>Adulthood</slot>
-    <baseDesc>That’s what HE claims, anyway. Or, well, that’s what the dossiers on HIM claim. {PAWN_pronoun} never says much. Or does HE? Is HE even a HE? Nobody knows. But HE seems to know a lot about everyone.</baseDesc>
+    <baseDesc>That’s what {PAWN_pronoun} claims, anyway. Or, well, that’s what the dossiers on {PAWN_objective} claim. {PAWN_pronoun} never says much. Or does {PAWN_pronoun}? Is {PAWN_pronoun} even a {PAWN_pronoun}? Nobody knows. But {PAWN_pronoun} seems to know a lot about everyone.</baseDesc>
     <skillGains>
       <Animals>1</Animals>
       <Plants>1</Plants>
@@ -296,7 +296,7 @@
     <defName>Specialforces</defName>
     <title>Special forces</title>
     <slot>Adulthood</slot>
-    <baseDesc>Was told he was a unique, beautiful Snowflake. That he was Special. The higher-ups in the army agreed and set HIM up for some pilot training.</baseDesc>
+    <baseDesc>Was told {PAWN_pronoun} was a unique, beautiful Snowflake. That {PAWN_pronoun} was Special. The higher-ups in the army agreed and set {PAWN_objective} up for some pilot training.</baseDesc>
     <skillGains>
       <Social>4</Social>
       <Melee>10</Melee>
