@@ -220,14 +220,6 @@
         <thing>Polymer</thing>
         <count>75</count>
       </li>
-      <li>
-        <thing>Polymer</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Inflatable</thing>
-        <count>25</count>
-      </li>
     </Things>
   </MarsX.CargoContentsDef>
 

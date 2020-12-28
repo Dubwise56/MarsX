@@ -29,6 +29,16 @@
     </specialDesignatorClasses>
   </DesignationCategoryDef>
 
+  <DesignationCategoryDef>
+    <defName>Blueprints</defName>
+    <label>Blueprints</label>
+    <description>Blueprints for prebuilt structures like habitats</description>
+    <order>800</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
   
     <DesignationCategoryDef>
     <defName>Security</defName>

@@ -1,29 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="MinifiedBuildingBase">
-		<defName>Building_HAB</defName>
-		<label>HAB</label>
-		<description>An inflatable habitat complete with walls, floors, roof, airlocks and atmosphere.</description>
-		<thingClass>MarsX.Building_HAB</thingClass>
-		<size>(13,13)</size>
-    <building>
-      <blueprintGraphicData>
-        <texPath>Things/Building/HAB</texPath>
-      </blueprintGraphicData>
-    </building>
-		<graphicData>
-			<drawSize>(13,13)</drawSize>
-			<texPath>Things/Building/HAB</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<uiIconPath>Things/Building/HAB</uiIconPath>
-		<tickerType>Normal</tickerType>
-		<comps>	
-		</comps>
-    <rotatable>false</rotatable>
-	</ThingDef>
-
   <!--<ThingDef ParentName="MinifiedBuildingBase">
     <defName>OrbitalTradeBeacon</defName>
     <label>Landing beacon</label>

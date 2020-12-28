@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <ApparelLayerDef>
+    <defName>PressureSuit</defName>
+    <label>Pressure Suit</label>
+    <drawOrder>500</drawOrder>
+  </ApparelLayerDef>
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_JumpSuit</defName>
@@ -144,6 +149,7 @@
 
   <ThingDef Name="ApparelArmorPowerBase" ParentName="ArmorMachineableBase" Abstract="True">
     <thingClass>MarsX.Apparel_EVAsuit</thingClass>
+    <tickerType>Normal</tickerType>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -206,6 +212,7 @@
       <layers>
         <li>Middle</li>
         <li>Shell</li>
+        <li>PressureSuit</li>
       </layers>
       <defaultOutfitTags>
         <li>Soldier</li>

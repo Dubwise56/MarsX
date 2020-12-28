@@ -108,24 +108,6 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
-    <inspectorTabs>
-      <li>ITab_Storage</li>
-    </inspectorTabs>
-    <building>
-      <isInert>true</isInert>
-      <fixedStorageSettings>
-        <filter>
-          <categories>
-          </categories>
-        </filter>
-      </fixedStorageSettings>
-      <defaultStorageSettings>
-        <filter>
-          <categories>
-          </categories>
-        </filter>
-      </defaultStorageSettings>
-    </building>
     <designationCategory>Temperature</designationCategory>
   </ThingDef>
 

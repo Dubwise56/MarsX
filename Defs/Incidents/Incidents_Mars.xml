@@ -138,7 +138,7 @@
     <letterLabel>Suit breach</letterLabel>
     <letterText>An air outlet has broken down and is venting toxic gas.</letterText>
     <letterDef>NegativeEvent</letterDef>
-    <baseChance>1</baseChance>
+    <baseChance>0.2</baseChance>
     <category>Misc</category>
     <targetTags>
       <li>Map_PlayerHome</li>
@@ -152,7 +152,7 @@
     <letterLabel>Suit breach</letterLabel>
     <letterText>An air outlet has broken down and is venting too much CO2.</letterText>
     <letterDef>NegativeEvent</letterDef>
-    <baseChance>1</baseChance>
+    <baseChance>0.2</baseChance>
     <category>Misc</category>
     <targetTags>
       <li>Map_PlayerHome</li>
@@ -221,7 +221,7 @@
     <letterLabel>Rapid Decompression</letterLabel>
     <letterText>An outside door has had a catastrophic failure resulting in rapid decompression and the room is exposed to the martian atmosphere.</letterText>
     <letterDef>ThreatBig</letterDef>
-    <baseChance>1.5</baseChance>
+    <baseChance>0.1</baseChance>
     <category>ThreatBig</category>
     <earliestDay>15</earliestDay>
     <targetTags>
