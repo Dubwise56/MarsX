@@ -82,6 +82,12 @@
 		<reportString>hauling fuel module to TargetA.</reportString>
 	</JobDef>
 
+  <JobDef>
+    <defName>LoadPasteToSuit</defName>
+    <driverClass>MarsX.JobDriver_LoadPasteToSuit</driverClass>
+    <reportString>restocking nutrient block in TargetB.</reportString>
+  </JobDef>
+
 		<JobDef>
 		<defName>RemoveFuelModule</defName>
 		<driverClass>MarsX.JobDriver_RemoveFuelModule</driverClass>

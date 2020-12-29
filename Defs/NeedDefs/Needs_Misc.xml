@@ -78,7 +78,7 @@
       <listPriority>400</listPriority>
   </NeedDef>
 
-  <NeedDef>
+  <!--<NeedDef>
     <defName>Bodymass</defName>
     <needClass>MarsX.Need_BodyMass</needClass>
     <label>body mass</label>
@@ -89,7 +89,7 @@
     <seekerRisePerHour>0.005</seekerRisePerHour>
     <seekerFallPerHour>0.005</seekerFallPerHour>
     <listPriority>315</listPriority>
-  </NeedDef>
+  </NeedDef>-->
   
   <NeedDef>
     <defName>Hygiene</defName>

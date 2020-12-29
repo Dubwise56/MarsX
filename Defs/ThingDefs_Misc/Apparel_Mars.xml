@@ -170,7 +170,8 @@
     <comps>
       <li Class="MarsX.CompProperties_BatteryPack">
         <compClass>MarsX.CompBatteryPack</compClass>
-        <Capacity>15</Capacity>
+        <storedEnergyMax>15</storedEnergyMax>
+        <efficiency>0.99</efficiency>
       </li>
     </comps>
     <statBases>

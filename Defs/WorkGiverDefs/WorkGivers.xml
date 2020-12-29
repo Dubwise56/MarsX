@@ -115,5 +115,17 @@
     </requiredCapacities>
   </WorkGiverDef>
 
+  <WorkGiverDef>
+    <defName>LoadPasteToSuit</defName>
+    <label>Restock nutrients</label>
+    <giverClass>MarsX.WorkGiver_LoadPasteToSuit</giverClass>
+    <workType>Hauling</workType>
+    <verb>restock</verb>
+    <gerund>restocking</gerund>
+    <priorityInType>10</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
 
 </Defs>
