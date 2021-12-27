@@ -19,7 +19,7 @@
     </graphicData>
     <statBases>
       <MarketValue>15</MarketValue>
-      <Mass>0.1</Mass>
+      <Mass>0.01</Mass>
       <DeteriorationRate>4</DeteriorationRate>
       <Nutrition>0.2</Nutrition>
     </statBases>

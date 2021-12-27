@@ -116,6 +116,7 @@
     <description>Ranged combat, with both high-tech and low-tech weapons.</description>
     <skillLabel>shooting</skillLabel>
     <listOrder>10</listOrder>
+      <visible>false</visible>
   </SkillDef>
 
 </Defs>

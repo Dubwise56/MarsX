@@ -2,12 +2,12 @@
 <Defs>
 
 
-  <SongDef>
+  <!--<SongDef>
     <defName>EndCreditsSong</defName>
     <playOnMap>false</playOnMap>
     <clipPath>Songs/Misc/End_Credits_Song</clipPath>
     <volume>1.05</volume>
-  </SongDef>
+  </SongDef>-->
 
 
 

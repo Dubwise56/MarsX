@@ -65,4 +65,121 @@
 		</placeWorkers>
 	</ThingDef>
 
+	<ThingDef ParentName="BuildingBase">
+		<defName>HydroponicsBasin</defName>
+		<label>hydroponics basin</label>
+		<description>An artificial nutrient bath for growing plants. The nutrients pumps must work continuously; the plants will die if they are not watered, lit, and ventilated.</description>
+		<thingClass>MarsX.Building_HydroBasin</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/HydroponicsBasin</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<constructEffect>ConstructMetal</constructEffect>
+		<fillPercent>0.30</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<statBases>
+			<WorkToBuild>2800</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Cleanliness>-3</Cleanliness>
+		</statBases>
+		<size>(1,4)</size>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<fertility>2.8</fertility>
+		<building>
+			<defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+			<sowTag>Hydroponic</sowTag>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>70</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>Hydroponics</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+	</ThingDef>
+
+	<!--<ThingDef ParentName="BuildingBase">
+		<defName>HydroponicsBasinModular</defName>
+		<label>hydroponics basin modular</label>
+		<description>An artificial nutrient bath for growing plants. The nutrients pumps must work continuously; the plants will die if they are not watered, lit, and ventilated.</description>
+		<thingClass>MarsX.Building_HydroBasin</thingClass>
+		<graphicData>
+			<texPath>Things/Building/HydroBasin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Custom4</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>UI/HydroBasin</uiIconPath>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<constructEffect>ConstructMetal</constructEffect>
+		<fillPercent>0.30</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Cleanliness>-3</Cleanliness>
+		</statBases>
+		<size>(1,1)</size>
+		<costList>
+			<Polymer>5</Polymer>
+			<Steel>1</Steel>
+		</costList>
+		<fertility>1.2</fertility>
+		<rotatable>false</rotatable>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/HydroBasin</texPath>
+			</blueprintGraphicData>
+			<defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+			<sowTag>Hydroponic</sowTag>
+		</building>
+		<tickerType>Rare</tickerType>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+	</ThingDef>-->
+
 </Defs>

@@ -16,7 +16,7 @@
     <worldObjectClass>MarsX.WorldObject_Planet</worldObjectClass>
     <texture>World/MOON</texture>
     <Diameter>2158.8</Diameter>
-    <Playable>true</Playable>
+    <Playable>false</Playable>
     <useDynamicDrawer>true</useDynamicDrawer>
     <selectable>true</selectable>
     <expandingIcon>false</expandingIcon>

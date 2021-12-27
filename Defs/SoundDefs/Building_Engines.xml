@@ -12,7 +12,7 @@
         <onCamera>false</onCamera>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>misc/LargeExplosion</clipPath>
+            <clipPath>Misc/LargeExplosion</clipPath>
           </li>
         </grains>
         <pitchRange>
@@ -135,7 +135,7 @@
 		<sustain>True</sustain>  
 		<eventNames />  
 		<priorityMode>PrioritizeNearest</priorityMode>  
-		<sustainStartSound>RocketIn</sustainStartSound>  
+		<sustainStartSound></sustainStartSound>  
 		<sustainStopSound>RocketFade</sustainStopSound>
 		<subSounds>
 			<li>
@@ -153,10 +153,6 @@
 					<min>100</min>        
 					<max>500</max>
 				</distRange>
-				<startDelayRange>
-					<min>7.771</min>        
-					<max>7.771</max>
-				</startDelayRange>
 			</li>
 		</subSounds>
 	</SoundDef>

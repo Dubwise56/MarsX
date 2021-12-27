@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-  <ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase">
     <defName>FirefoamPopper</defName>
     <label>firefoam popper</label>
     <description>When it detects fire, this safety device pops and sprays a fire-retardant foam in a circular field around itself. Can also be triggered manually.</description>
@@ -63,7 +62,8 @@
     </costList>
     <specialDisplayRadius>9.9</specialDisplayRadius>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <pathCost>25</pathCost>
+    <pathCost>30</pathCost>
+    <passability>PassThroughOnly</passability>
     <designationCategory>Misc</designationCategory>
     <rotatable>false</rotatable>
     <designationHotKey>Misc7</designationHotKey>
@@ -72,6 +72,8 @@
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
+
+
 
   <!--========================== Facilities ============================-->
 
@@ -110,6 +112,9 @@
       <Steel>50</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
     <designationCategory>Misc</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
@@ -143,7 +148,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>ToolCabinet</defName>
     <label>tool cabinet</label>
-    <description>Increases work speed when placed near a workbench. One workbench use to up to two tool cabinets.</description>
+    <description>Increases work speed when placed near a workbench. One workbench can use up to two tool cabinets.</description>
     <graphicData>
       <texPath>Things/Building/Misc/ToolCabinet</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -162,7 +167,7 @@
     <staticSunShadowHeight>0.35</staticSunShadowHeight>
     <fillPercent>0.5</fillPercent>
     <canOverlapZones>false</canOverlapZones>
-    <pathCost>60</pathCost>
+    <pathCost>42</pathCost>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToBuild>1800</WorkToBuild>
@@ -173,6 +178,9 @@
     <costList>
       <Steel>200</Steel>
     </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
     <researchPrerequisites>
       <li>ComplexFurniture</li>
     </researchPrerequisites>
@@ -247,6 +255,9 @@
           </categories>
         </filter>
       </defaultStorageSettings>
+      <buildingTags>
+        <li>RitualFocus</li>
+      </buildingTags>
     </building>
     <inspectorTabs>
       <li>ITab_Storage</li>
@@ -271,13 +282,200 @@
           <li Class="FocusStrengthOffset_GraveCorpseRelationship">
             <offset>0.10</offset>
           </li>
+          <li Class="FocusStrengthOffset_NearbyGraves">
+            <defs>
+              <li>Grave</li>
+              <li>Sarcophagus</li>
+            </defs>
+            <offsetPerBuilding>0.01</offsetPerBuilding>
+            <radius>9.9</radius>
+            <maxBuildings>4</maxBuildings>
+            <focusPerFullGrave>0.01</focusPerFullGrave>
+            <explanationKey>MeditationFocusPerGrave</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
+          </li>
         </offsets>
       </li>
     </comps>
+    <placeWorkers>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <ritualFocus>
+      <spectateDistance>1</spectateDistance>
+      <allowedSpectateSides>Vertical</allowedSpectateSides>
+    </ritualFocus>
   </ThingDef>
   
+  <ThingDef ParentName="BuildingBase">
+    <defName>Sarcophagus</defName>
+    <label>sarcophagus</label>
+    <description>An ornamented burial receptacle for the honored dead.</description>
+    <thingClass>Building_Sarcophagus</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/Sarcophagus</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <size>(1,2)</size>
+    <pathCost>42</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <tickerType>Rare</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <preventDeteriorationInside>true</preventDeteriorationInside>
+      <haulToContainerDuration>500</haulToContainerDuration>
+      <fullGraveGraphicData>
+        <texPath>Things/Building/Misc/SarcophagusFull</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(3,4)</drawSize>
+      </fullGraveGraphicData>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+          <specialFiltersToDisallow>
+            <li>AllowCorpsesStranger</li>
+          </specialFiltersToDisallow>
+        </filter>
+      </defaultStorageSettings>
+      <buildingTags>
+        <li>RitualFocus</li>
+      </buildingTags>
+    </building>
+    <statBases>
+      <WorkToBuild>2400</WorkToBuild>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <MeditationFocusStrength>0.10</MeditationFocusStrength>
+      <Beauty>0</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+      <li>ITab_Art</li>
+      <li>ITab_ContentsCasket</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtSarcophagusPlate</nameMaker>
+        <descriptionMaker>ArtDescription_SarcophagusPlate</descriptionMaker>
+        <mustBeFullGrave>true</mustBeFullGrave>
+      </li>
+      <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_Grave</compClass>
+      </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Morbid</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_GraveFull">
+            <offset>0.10</offset>
+          </li>
+          <li Class="FocusStrengthOffset_GraveCorpseRelationship">
+            <offset>0.10</offset>
+          </li>
+          <li Class="FocusStrengthOffset_NearbyGraves">
+            <defs>
+              <li>Grave</li>
+              <li>Sarcophagus</li>
+            </defs>
+            <offsetPerBuilding>0.01</offsetPerBuilding>
+            <radius>9.9</radius>
+            <maxBuildings>4</maxBuildings>
+            <focusPerFullGrave>0.01</focusPerFullGrave>
+            <explanationKey>MeditationFocusPerGrave</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+    <costStuffCount>60</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <designationCategory>Misc</designationCategory>
+    <designationHotKey>Misc9</designationHotKey>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <ritualFocus>
+      <spectateDistance>1</spectateDistance>
+      <allowedSpectateSides>Vertical</allowedSpectateSides>
+    </ritualFocus>
+  </ThingDef>
+
+ 
+
   <!--============================ Spots =============================-->
 
+  <ThingDef ParentName="BuildingBase">
+    <defName>MarriageSpot</defName>
+    <label>marriage spot</label>
+    <description>Designates a spot where marriage ceremonies will take place. Spectators can watch from either side.</description>
+    <thingClass>Building_MarriageSpot</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/MarriageSpot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+    </statBases>
+    <useHitPoints>False</useHitPoints>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <size>(2,1)</size>
+    <designationCategory>Misc</designationCategory>
+    <passability>Standable</passability>
+    <building>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <designationHotKey>Misc10</designationHotKey>
+    <ritualFocus>
+      <spectateDistance>2</spectateDistance>
+      <allowedSpectateSides>Down</allowedSpectateSides>
+    </ritualFocus>
+    <placeWorkers>
+      <li>PlaceWorker_SpectatorPreview</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>True</drawPlaceWorkersWhileSelected>
+  </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
     <defName>PartySpot</defName>
@@ -301,8 +499,12 @@
       <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
       <ai_chillDestination>false</ai_chillDestination>
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <buildingTags>
+        <li>RitualFocus</li>
+      </buildingTags>
     </building>
     <designationHotKey>Misc11</designationHotKey>
   </ThingDef>
-  
+
+
 </Defs>

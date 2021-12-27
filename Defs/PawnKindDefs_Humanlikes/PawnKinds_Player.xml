@@ -7,7 +7,7 @@
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <isFighter>true</isFighter>
+    <isFighter>false</isFighter>
     <minGenerationAge>18</minGenerationAge>
     <maxGenerationAge>80</maxGenerationAge>
     <chemicalAddictionChance>0</chemicalAddictionChance>
@@ -21,6 +21,7 @@
     </apparelMoney>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <techHediffsChance>0</techHediffsChance>
+	  <initialWillRange>0~0</initialWillRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BasedAstro">
@@ -36,6 +37,7 @@
         </categories>
       </li>
     </backstoryFiltersOverride>
+	  <initialResistanceRange>13~21</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BasedAstro">
@@ -51,6 +53,7 @@
         </categories>
       </li>
     </backstoryFiltersOverride>
+	  <initialResistanceRange>13~21</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BasedAstro">
@@ -65,6 +68,7 @@
         </categories>
       </li>
     </backstoryFiltersOverride>
+	  <initialResistanceRange>13~21</initialResistanceRange>
   </PawnKindDef>
 
 </Defs>

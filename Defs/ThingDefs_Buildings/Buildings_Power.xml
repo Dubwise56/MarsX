@@ -1,431 +1,286 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="MinifiedBuildingBase">
-    <defName>SolarGenerator</defName>
-    <label>solar generator</label>
-    <description>Produces electricity from sunlight. Does not work in the dark or under artificial light.</description>
-    <thingClass>MarsX.SolarPanel_Dust</thingClass>
-    <graphicData>
-      <texPath>Things/Building/Power/SolarCollector</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(4,4)</drawSize>
-      <shadowData>
-        <volume>(3.5,0.75,3.4)</volume>
-        <offset>(0,0,0)</offset>
-      </shadowData>
-      <damageData>
-        <rect>(0,0.6,4,2.8)</rect>
-      </damageData>
-    </graphicData>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <castEdgeShadows>true</castEdgeShadows>
-    <rotatable>false</rotatable>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <fillPercent>0.5</fillPercent>
-    <canOverlapZones>false</canOverlapZones>
-    <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
-      <WorkToBuild>2500</WorkToBuild>
-      <Flammability>0.7</Flammability>
-      <Mass>18</Mass>
-    </statBases>
-    <tickerType>Normal</tickerType>
-    <size>(4,4)</size>
-    <costList>
-      <Steel>10</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
-    <costStuffCount>90</costStuffCount>
-    <stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerPlantSolar</compClass>
-        <basePowerConsumption>-1</basePowerConsumption>
-        <transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Power</designationCategory>
-    <designationHotKey>Misc5</designationHotKey>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-  </ThingDef>
+	<ThingDef ParentName="MinifiedBuildingBase">
+		<defName>SolarGenerator</defName>
+		<label>solar generator</label>
+		<description>Produces electricity from sunlight. Does not work in the dark or under artificial light.</description>
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/SolarPanel</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+			<damageData>
+				<rect>(0,0.6,4,2.8)</rect>
+			</damageData>
+		</graphicData>
+		<staticSunShadowHeight>0.00</staticSunShadowHeight>
+		<castEdgeShadows>true</castEdgeShadows>
+		<rotatable>true</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>0.7</Flammability>
+			<Mass>15</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3,2)</size>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<costStuffCount>90</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>MarsX.CompPowerPlantSolar</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<designationHotKey>Misc5</designationHotKey>
+		<researchPrerequisites>
+			<li>SolarPanels</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
 
 
-  <ThingDef ParentName="MinifiedBuildingBase">
-    <defName>Radioisotope_thermoelectric_generator</defName>
-    <thingClass>MarsX.Building_RTG</thingClass>
-    <label>R.T.G</label>
-    <description>An electrical generator that uses an array of thermocouples to convert the heat released by the decay of a suitable radioactive material into electricity</description>
-    <graphicData>
-      <texPath>Things/Building/RTG</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,1)</drawSize>
-      <damageData>
-        <rect>(0.05,0.05,0.95,0.95)</rect>
-      </damageData>
-    </graphicData>
-    <category>Building</category>
-    <tickerType>Normal</tickerType>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <selectable>true</selectable>
-    <fillPercent>0.20</fillPercent>
-    <pathCost>8</pathCost>
-    <size>(2,1)</size>
-    <costList>
-      <Steel>50</Steel>
-      <ComponentIndustrial>6</ComponentIndustrial>
-    </costList>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <!-- <designationCategory>Power</designationCategory>  -->
-    <rotatable>true</rotatable>
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>-12</Beauty>
-    </statBases>
-    <designationHotKey>Misc11</designationHotKey>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_HeatPusher">
-        <heatPerSecond>21</heatPerSecond>
-        <heatPushMaxTemperature>28</heatPushMaxTemperature>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-  </ThingDef>
-
-  <ThingDef ParentName="BuildingBase">
-    <defName>ReactorCore</defName>
-    <label>liquid metal fast reactor</label>
-    <thingClass>MarsX.reactorCore</thingClass>
-    <graphicData>
-      <texPath>Things/Building/core</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(3,3)</drawSize>
-      <damageData>
-        <rect>(0.3,0,5.4,6)</rect>
-      </damageData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <blockWind>false</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
-    <blockLight>false</blockLight>
-    <staticSunShadowHeight>0.00</staticSunShadowHeight>
-    <statBases>
-      <MaxHitPoints>850</MaxHitPoints>
-      <WorkToBuild>20000</WorkToBuild>
-      <Flammability>1.0</Flammability>
-      <Beauty>-40</Beauty>
-    </statBases>
-    <tickerType>Normal</tickerType>
-    <description>A liquid metal cooled nuclear reactor, liquid metal fast reactor or LMFR is an advanced type of nuclear reactor where the primary coolant is a liquid metal. The use of liquid metal as coolant allows for a compact design which makes it suitable for colonization projects.</description>
-    <size>(3,3)</size>
-    <costList>
-      <Steel>950</Steel>
-      <Aluminium>100</Aluminium>
-      <ComponentIndustrial>30</ComponentIndustrial>
-      <coreVessel>1</coreVessel>
-    </costList>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Steam</mode>
-      </li>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Cooling</mode>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <rotatable>false</rotatable>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Power</designationCategory>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <killedLeavings>
-      <!-- <ChunkRadioactiveSlag>6</ChunkRadioactiveSlag> -->
-    </killedLeavings>
-    <building>
-      <fixedStorageSettings>
-        <filter>
-          <categories>
-            <li>NuclearFuel</li>
-          </categories>
-          <thingDefs>
-            <li>UraniumNitride</li>
-          </thingDefs>
-        </filter>
-      </fixedStorageSettings>
-      <defaultStorageSettings>
-        <priority>Important</priority>
-        <filter>
-          <categories>
-            <li>NuclearFuel</li>
-          </categories>
-        </filter>
-      </defaultStorageSettings>
-    </building>
-    <constructEffect>ConstructMetal</constructEffect>
-    <designationHotKey>Misc6</designationHotKey>
-    <surfaceType>Item</surfaceType>
-  </ThingDef>
+	<ThingDef ParentName="BaseReactor" Class="Rimatomics.RimatomicsThingDef">
+		<defName>LMFR</defName>
+		<label>liquid metal fast reactor</label>
+		<description>A liquid metal cooled nuclear reactor, liquid metal fast reactor or LMFR is an advanced type of nuclear reactor where the primary coolant is a liquid metal. The use of liquid metal as coolant allows for a compact design which makes it suitable for colonization projects.</description>
+		<thingClass>MarsX.Building_LMFR</thingClass>
+		<graphicData>
+			<texPath>Things/Building/core</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.3,0,5.4,6)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-40</Beauty>
+		</statBases>
+		<size>(3,3)</size>
+		<costList>
+			<Steel>950</Steel>
+			<Aluminium>100</Aluminium>
+			<ComponentIndustrial>30</ComponentIndustrial>
+			<coreVessel>1</coreVessel>
+		</costList>
+		<designationCategory>Power</designationCategory>
+		<building>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>NuclearFuel</li>
+					</categories>
+					<thingDefs>
+						<li>UraniumNitride</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>NuclearFuel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
 
 
-  <ThingDef ParentName="BuildingBase">
-    <defName>Turbine</defName>
-    <label>Thermoelectric Generator</label>
-    <thingClass>MarsX.Thermocouple</thingClass>
-    <graphicData>
-      <texPath>Things/Building/thermocouple</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2.2,2.2)</drawSize>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
-    <blockLight>false</blockLight>
-    <staticSunShadowHeight>0.35</staticSunShadowHeight>
-    <statBases>
-      <MaxHitPoints>150</MaxHitPoints>
-      <WorkToBuild>12000</WorkToBuild>
-      <Flammability>1.0</Flammability>
-      <Beauty>-40</Beauty>
-    </statBases>
-    <tickerType>Normal</tickerType>
-    <description>A solid state device that converts heat directly into electrical energy, 4 TEG's will max the power output from 1 reactor, connect to a reactor core via heat pipes.</description>
-    <size>(2,1)</size>
-    <costList>
-      <Steel>425</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
-    </costList>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>HighVoltage</mode>
-      </li>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Steam</mode>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <rotatable>false</rotatable>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Power</designationCategory>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <constructEffect>ConstructMetal</constructEffect>
-    <designationHotKey>Misc6</designationHotKey>
-  </ThingDef>
+
+	<ThingDef ParentName="BasedPower"  Class="Rimatomics.RimatomicsThingDef">
+		<defName>CoolingRadiator</defName>
+		<label>Radiator</label>
+		<CoolingCapacityWatts>6000</CoolingCapacityWatts>
+		<description>Small air coolers designed to provide cooling for small nuclear reactors when resources or space is limited.\n25kW cooling capacity</description>
+		<thingClass>Rimatomics.Radiator</thingClass>
+		<graphicData>
+			<texPath>Rimatomics/Things/RimatomicsBuildings/nukeRadiator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(0.9, 0.9, 0.9)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<allowFlip>false</allowFlip>
+			<color>(0.23, 0.23, 0.23, 1)</color>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<blockLight>true</blockLight>
+		<holdsRoof>true</holdsRoof>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<pathCost>250</pathCost>
+		<size>(3,3)</size>
+		<costList>
+			<Steel>350</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li Class="Rimatomics.CompProperties_Pipe">
+				<mode>Cooling</mode>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>950</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="Rimatomics.CompProperties_Upgradable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+			<li>Rimatomics.PlaceWorker_ResearchStage</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase" Class="Rimatomics.RimatomicsThingDef">
+		<defName>Thermocouple</defName>
+		<label>TEG</label>
+		<description>Thermoelectric Generator. A solid state device that converts heat directly into electrical energy, 4 TEG's will max the power output from 1 reactor, connect to a reactor core via heat pipes.</description>
+		<thingClass>MarsX.Building_Thermocouple</thingClass>
+		<TurbineCapacityWatts>3000</TurbineCapacityWatts>
+		<graphicData>
+			<texPath>Things/Building/thermocouple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.2,2.2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>false</blockLight>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-40</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>425</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="Rimatomics.CompProperties_Pipe">
+				<mode>HighVoltage</mode>
+			</li>
+			<li Class="Rimatomics.CompProperties_Pipe">
+				<mode>Steam</mode>
+			</li>
+			<li Class="Rimatomics.CompProperties_Pipe">
+				<mode>ColdWater</mode>
+			</li>
+			<li Class="Rimatomics.CompProperties_Pipe">
+				<mode>Cooling</mode>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<rotatable>false</rotatable>
+		<designationCategory>Power</designationCategory>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<constructEffect>ConstructMetal</constructEffect>
+	</ThingDef>
 
 
-  <ThingDef ParentName="BuildingBase">
-    <defName>CoolingTower</defName>
-    <label>reactor radiator</label>
-    <thingClass>MarsX.MurcuryRadiator</thingClass>
-    <graphicData>
-      <texPath>Things/Building/rad</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(3,3)</drawSize>
-      <shadowData>
-        <volume>(0.3, 0.6, 0.3)</volume>
-        <offset>(0,0,-0.1)</offset>
-      </shadowData>
-    </graphicData>
-    <rotatable>false</rotatable>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
-    <blockLight>false</blockLight>
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1800</WorkToBuild>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <description>The radiator is required to control the temperature of the reactor core. 8 radiators will provide enough cooling 1 reactor, connect to a core via cooling pipes.</description>
-    <size>(3,2)</size>
-    <costList>
-      <Steel>450</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
-    </costList>
-    <tickerType>Normal</tickerType>
-    <designationCategory>Power</designationCategory>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Cooling</mode>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <designationHotKey>Misc6</designationHotKey>
-  </ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
-    <defName>Transformer</defName>
-    <label>High Voltage Transformer</label>
-    <thingClass>MarsX.Transformer</thingClass>
-    <graphicData>
-      <texPath>Things/Building/transformer</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2,2)</drawSize>
-      <shadowData>
-        <volume>(0.3, 0.6, 0.3)</volume>
-        <offset>(0,0,-0.1)</offset>
-      </shadowData>
-    </graphicData>
-    <rotatable>false</rotatable>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
-    <blockLight>false</blockLight>
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1800</WorkToBuild>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <description>Provides the final voltage transformation from the Thermoelectric Generators, stepping down the voltage used in the high voltage lines to the level used by power conduits.</description>
-    <size>(2,2)</size>
-    <costList>
-      <Steel>350</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
-    </costList>
-    <tickerType>Normal</tickerType>
-    <designationCategory>Power</designationCategory>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>HighVoltage</mode>
-      </li>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerPlant</compClass>
-        <basePowerConsumption>0</basePowerConsumption>
-        <transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <building>
-      <soundAmbient>transformer</soundAmbient>
-    </building>
-    <designationHotKey>Misc6</designationHotKey>
-  </ThingDef>
-
-  <ThingDef ParentName="PipeBase">
-    <defName>HighVoltage</defName>
-    <label>HighVoltage</label>
-    <description>Cable for transporting high voltage power from Thermoelectric Generators to Transformers. Can be placed under walls and other buildings.</description>
-    <graphicData>
-      <texPath>Things/Building/HighVoltage_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <linkType>Basic</linkType>
-      <linkFlags>
-        <li>Custom5</li>
-      </linkFlags>
-      <damageData>
-        <rect>(0,0.35,1,0.3)</rect>
-      </damageData>
-    </graphicData>
-    <building>
-      <blueprintGraphicData>
-        <texPath>Things/Building/HighVoltage_Atlas</texPath>
-      </blueprintGraphicData>
-    </building>
-    <uiIconPath>UI/HighVoltage</uiIconPath>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>HighVoltage</mode>
-      </li>
-    </comps>
-    <designationCategory>Power</designationCategory>
-    <placeWorkers>
-      <li>MarsX.PlaceWorker_HighVoltage</li>
-    </placeWorkers>
-  </ThingDef>
-
-
-  <ThingDef ParentName="PipeBase">
-    <defName>heatPipe</defName>
-    <label>Heat pipe</label>
-    <description>Pipes for transmitting heat from the reactor to thermoelectric generators. Can be placed under walls and other buildings.</description>
-    <graphicData>
-      <texPath>Things/Building/steamPipe_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <linkType>Basic</linkType>
-      <linkFlags>
-        <li>Custom5</li>
-      </linkFlags>
-      <damageData>
-        <rect>(0,0.35,1,0.3)</rect>
-      </damageData>
-    </graphicData>
-    <uiIconPath>UI/HeatPipe</uiIconPath>
-    <building>
-      <isInert>true</isInert>
-      <isEdifice>false</isEdifice>
-      <blueprintGraphicData>
-        <texPath>Things/Building/steamPipe_AtlasBP</texPath>
-      </blueprintGraphicData>
-    </building>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Steam</mode>
-      </li>
-    </comps>
-    <designationCategory>Power</designationCategory>
-    <placeWorkers>
-      <li>MarsX.PlaceWorker_HeatPipe</li>
-    </placeWorkers>
-  </ThingDef>
-
-  <ThingDef ParentName="PipeBase">
-    <defName>coolingPipe</defName>
-    <label>Cooling pipe</label>
-    <description>Pipes for transmitting coolant from the reactor to radiators. Can be placed under walls and other buildings.</description>
-    <category>Building</category>
-    <graphicData>
-      <texPath>Things/Building/coolingPipe_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <linkType>Basic</linkType>
-      <linkFlags>
-        <li>Custom5</li>
-      </linkFlags>
-      <damageData>
-        <rect>(0,0.35,1,0.3)</rect>
-      </damageData>
-    </graphicData>
-    <building>
-      <blueprintGraphicData>
-        <texPath>Things/Building/coolingPipe_AtlasBP</texPath>
-      </blueprintGraphicData>
-    </building>
-    <uiIconPath>UI/CoolingPipe</uiIconPath>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Cooling</mode>
-      </li>
-    </comps>
-    <designationCategory>Power</designationCategory>
-    <placeWorkers>
-      <li>MarsX.PlaceWorker_CoolingPipe</li>
-    </placeWorkers>
-  </ThingDef>
-
-
+	<ThingDef ParentName="BuildingBase" Class="Rimatomics.RimatomicsThingDef">
+		<defName>MarsTransformer</defName>
+		<label>High Voltage Transformer</label>
+		<thingClass>Rimatomics.Transformer</thingClass>
+		<graphicData>
+			<texPath>Things/Building/transformer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<blockLight>false</blockLight>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>Provides the final voltage transformation from the Thermoelectric Generators, stepping down the voltage used in the high voltage lines to the level used by power conduits.</description>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>350</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Power</designationCategory>
+		<comps>
+			<li Class="Rimatomics.CompProperties_Pipe">
+				<mode>HighVoltage</mode>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>0</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<soundAmbient>transformer</soundAmbient>
+		</building>
+	</ThingDef>
 
 
 </Defs>

@@ -2,57 +2,57 @@
 <Defs>
 	<!--=============== Mars specific ====================-->
 
-  <ThingDef ParentName="ResourceBase">
-    <defName>Iron</defName>
-    <label>iron</label>
-    <description>Iron ore can be smelted into steel using an electric smelter.</description>
-    <graphicData>
-      <texPath>Things/Resource/Steel</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <color>(255,180,180)</color>
-    </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
-    <soundDrop>Metal_Drop</soundDrop>
-    <statBases>
-      <MarketValue>1.9</MarketValue>
-      <Mass>0.5</Mass>
-      <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>1</SharpDamageMultiplier>
-      <BluntDamageMultiplier>1</BluntDamageMultiplier>
-    </statBases>
-    <useHitPoints>false</useHitPoints>
-    <healthAffectsPrice>false</healthAffectsPrice>
-    <slagDef>ChunkSlagSteel</slagDef>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <deepCommonality>4</deepCommonality>
-    <deepCountPerPortion>45</deepCountPerPortion>
-    <deepLumpSizeRange>20~30</deepLumpSizeRange>
-    <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
-    <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
-      <commonality>1.00</commonality>
-      <constructEffect>ConstructMetal</constructEffect>
-      <color>(152,152,175)</color>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
-      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-      <statFactors>
-        <MaxHitPoints>1</MaxHitPoints>
-        <Beauty>1</Beauty>
-        <Flammability>0.4</Flammability>
-      </statFactors>
-    </stuffProps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-  </ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Iron</defName>
+		<label>iron</label>
+		<description>Iron ore can be smelted into steel using an electric smelter.</description>
+		<graphicData>
+			<texPath>Things/Resource/Steel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255,180,180)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Mass>0.5</Mass>
+			<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<slagDef>ChunkSlagSteel</slagDef>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>4</deepCommonality>
+		<deepCountPerPortion>45</deepCountPerPortion>
+		<deepLumpSizeRange>20~30</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<commonality>1.00</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(152,152,175)</color>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>0.9</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>0</Flammability>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>Polymer</defName>
@@ -66,8 +66,8 @@
 		<soundInteract>Wood_Drop</soundInteract>
 		<soundDrop>Wood_Drop</soundDrop>
 		<statBases>
-      <Mass>0.06</Mass>
-      <MarketValue>2.0</MarketValue>
+			<Mass>0.06</Mass>
+			<MarketValue>2.0</MarketValue>
 			<SharpDamageMultiplier>1</SharpDamageMultiplier>
 			<BluntDamageMultiplier>1</BluntDamageMultiplier>
 		</statBases>
@@ -84,97 +84,67 @@
 			<color>(90,110,127)</color>
 			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>0.5</MaxHitPoints>
+				<WorkToMake>0.7</WorkToMake>
+				<WorkToBuild>0.7</WorkToBuild>
+				<Beauty>1</Beauty>
+				<Flammability>0.7</Flammability>
+			</statFactors>
 		</stuffProps>
 	</ThingDef>
 
-  <ThingDef ParentName="ResourceBase">
-    <defName>Aluminium</defName>
-    <label>aluminium</label>
-    <description>Aluminium and its alloys are vital to the aerospace industry and important in transportation and structures.</description>
-    <graphicData>
-      <texPath>Things/Resource/aluminium</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
-    <soundDrop>Metal_Drop</soundDrop>
-    <useHitPoints>false</useHitPoints>
-    <healthAffectsPrice>false</healthAffectsPrice>
-    <statBases>
-      <MarketValue>9</MarketValue>
-      <Mass>0.25</Mass>
-      <StuffPower_Armor_Sharp>1.14</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
-    </statBases>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <deepCommonality>1</deepCommonality>
-    <deepCountPerPortion>10</deepCountPerPortion>
-    <deepLumpSizeRange>2~10</deepLumpSizeRange>
-    <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
-    <stuffProps>
-      <categories>
-        <li>Metallic</li>
-      </categories>
-      <commonality>0.05</commonality>
-      <constructEffect>ConstructMetal</constructEffect>
-      <color>(160,178,181)</color>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
-      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-      <statFactors>
-        <MaxHitPoints>2.8</MaxHitPoints>
-        <Beauty>1</Beauty>
-        <Flammability>0</Flammability>
-        <WorkToMake>2.2</WorkToMake>
-        <WorkToBuild>2.2</WorkToBuild>
-        <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
-      </statFactors>
-    </stuffProps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-  </ThingDef>
-
-
-  <ThingDef ParentName="ResourceBase">
-		<defName>Inflatable</defName>
-		<label>Inflatable</label>
-		<description>Inflatable plastic, very thin and fradgile.</description>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Aluminium</defName>
+		<label>aluminium</label>
+		<description>Aluminium and its alloys are vital to the aerospace industry and important in transportation and structures.</description>
 		<graphicData>
-			<texPath>Things/Resource/inflatable</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Resource/aluminium</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
 		<statBases>
-      <Mass>0.06</Mass>
-      <MaxHitPoints>15</MaxHitPoints>
-			<MarketValue>27</MarketValue>
+			<MarketValue>9</MarketValue>
+			<Mass>0.25</Mass>
+			<StuffPower_Armor_Sharp>1.14</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
 		</statBases>
 		<thingCategories>
 			<li>ResourcesRaw</li>
 		</thingCategories>
+		<deepCommonality>1</deepCommonality>
+		<deepCountPerPortion>10</deepCountPerPortion>
+		<deepLumpSizeRange>2~10</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
 		<stuffProps>
 			<categories>
-				<li>Plastics</li>
+				<li>Metallic</li>
 			</categories>
+			<commonality>0.05</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
-			<color>(255,255,255)</color>
+			<color>(160,178,181)</color>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
 			<statFactors>
-				<MaxHitPoints>0.4</MaxHitPoints>
-				<Beauty>1.5</Beauty>
-				<Flammability>0.1</Flammability>
-				<WorkToBuild>2.0</WorkToBuild>
+				<MaxHitPoints>0.7</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>0</Flammability>
+				<WorkToMake>0.9</WorkToMake>
+				<WorkToBuild>0.9</WorkToBuild>
+				<MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
 
 
@@ -189,8 +159,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-      <Mass>0.06</Mass>
-      <MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.06</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
 			<MarketValue>0.5</MarketValue>
 			<Flammability>0.0</Flammability>
 			<DeteriorationRate>1</DeteriorationRate>
@@ -209,8 +179,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-      <Mass>0.06</Mass>
-      <MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.06</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
 			<MarketValue>0.5</MarketValue>
 			<Flammability>0.0</Flammability>
 			<DeteriorationRate>1</DeteriorationRate>
@@ -229,8 +199,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-      <Mass>0.06</Mass>
-      <MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.06</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
 			<MarketValue>0.5</MarketValue>
 			<Flammability>0.0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
@@ -249,8 +219,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-      <Mass>0.06</Mass>
-      <MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.06</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
 			<MarketValue>0.5</MarketValue>
 			<Flammability>0.0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
@@ -269,8 +239,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-      <Mass>0.06</Mass>
-      <MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.06</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
 			<MarketValue>0.5</MarketValue>
 			<Flammability>0.0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>

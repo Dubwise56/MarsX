@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ResearchTabDef>
+		<defName>DubsCentralHeating</defName>
+		<label>Dubs Central Heating</label>
+	</ResearchTabDef>
+
+	<ResearchProjectDef>
+		<defName>MultiSplitAirCon</defName>
+		<label>multi-split air conditioning</label>
+		<tab>DubsCentralHeating</tab>
+		<description>Build multi-split air conditioning systems with outdoor units piped to indoor units and freezers.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>AirConditioning</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>LogBoilers</defName>
+		<label>heating</label>
+		<tab>DubsCentralHeating</tab>
+		<description>Build log boilers which can be used to heat rooms and can be placed adjacent to baths to heat bathwater.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>CentralHeating</defName>
+		<label>central heating</label>
+		<tab>DubsCentralHeating</tab>
+		<description>Build central heating systems with radiators, hot water tanks, boilers and thermostats.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>LogBoilers</li>
+			<li>Electricity</li>
+		</prerequisites>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>GeothermalHeating</defName>
+		<label>Geothermal Heating</label>
+		<tab>DubsCentralHeating</tab>
+		<description>Build geothermal heaters which can be built over geysers to generate heat for central heating and hot water tanks.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>CentralHeating</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+
+</Defs>

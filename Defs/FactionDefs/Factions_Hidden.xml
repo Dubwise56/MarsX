@@ -10,6 +10,7 @@
     <pawnSingular>colonist</pawnSingular>
     <pawnsPlural>colonists</pawnsPlural>
     <techLevel>Industrial</techLevel>
+	  <allowedCultures><li>Astropolitan</li></allowedCultures>
     <backstoryFilters>
       <li>
         <categories>
@@ -29,10 +30,7 @@
       <li>ClassicStart</li>
       <li>ClassicStartTechprints</li>
     </startingTechprintsResearchTags>
-    <hairTags>
-      <li>Urban</li>
-    </hairTags>
-    <apparelStuffFilter>
+	  <apparelStuffFilter>
       <thingDefs>
         <li>Cloth</li>
       </thingDefs>
@@ -41,7 +39,7 @@
 
 
 
-  <FactionDef>
+  <FactionDef ParentName="FactionBase">
     <defName>NASA</defName>
     <label>NASA</label>
     <pawnSingular>NASA</pawnSingular>
@@ -62,10 +60,7 @@
     <rescueesCanJoin>true</rescueesCanJoin>
     <autoFlee>false</autoFlee>
     <geneticVariance>1</geneticVariance>
-    <hairTags>
-      <li>Urban</li>
-    </hairTags>
-    <apparelStuffFilter>
+	  <apparelStuffFilter>
       <thingDefs>
         <li>Synthread</li>
         <li>Hyperweave</li>

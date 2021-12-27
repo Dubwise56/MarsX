@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <SongDef Abstract="True" Name="BaseMarsSong">
+  <!--<SongDef Abstract="True" Name="BaseMarsSong">
     <volume>0.65</volume>
     <allowedTimeOfDay>Day</allowedTimeOfDay>
   </SongDef>
 
-  <!-- Day -->
+  --><!-- Day --><!--
   <SongDef ParentName="BaseMarsSong">
     <clipPath>Songs/01-M87</clipPath>
     <volume>0.65</volume>
@@ -177,7 +177,7 @@
   <SongDef ParentName="BaseMarsSong">
     <clipPath>Songs/stasis/10_Mars_bonus</clipPath>
     <volume>0.65</volume>
-  </SongDef>
+  </SongDef>-->
   
 
 

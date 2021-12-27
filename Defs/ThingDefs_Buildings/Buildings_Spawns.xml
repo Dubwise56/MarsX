@@ -73,7 +73,7 @@
       <Steel>30</Steel>
       <Aluminium>30</Aluminium>
       <Gold>30</Gold>
-      <Radioisotope_thermoelectric_generator>1</Radioisotope_thermoelectric_generator>
+		<RimatomicsRTG>1</RimatomicsRTG>
     </costList>
     <building>
       <claimable>false</claimable>

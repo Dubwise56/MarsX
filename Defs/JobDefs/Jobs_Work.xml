@@ -2,6 +2,12 @@
 <Defs>
 
 	<JobDef>
+		<defName>GenericResearch</defName>
+		<driverClass>Rimatomics.JobDriver_GenericResearch</driverClass>
+		<reportString>Researching at TargetA.</reportString>
+	</JobDef>
+
+	<JobDef>
 		<defName>Vomit</defName>
 		<driverClass>MarsX.JobDriver_Vomit</driverClass>
 		<playerInterruptible>false</playerInterruptible>
@@ -23,12 +29,6 @@
 	</JobDef>
 
 	<JobDef>
-		<defName>ShrinkPatient</defName>
-		<driverClass>MarsX.JobDriver_ShrinkPatient</driverClass>
-		<reportString>tending to TargetA.</reportString>
-	</JobDef>
-
-	<JobDef>
 		<defName>enterShip</defName>
 		<driverClass>MarsX.JobDriver_EnterShip</driverClass>
 		<reportString>entering TargetA.</reportString>
@@ -46,7 +46,7 @@
 		<reportString>equipping EVA suit at TargetA.</reportString>
 	</JobDef>
 
-	<JobDef>
+	<!--<JobDef>
 		<defName>havePoo</defName>
 		<driverClass>MarsX.JobDriver_havePoo</driverClass>
 		<reportString>having bowel movement at TargetA.</reportString>
@@ -68,42 +68,21 @@
 		<defName>washHands</defName>
 		<driverClass>MarsX.JobDriver_washHands</driverClass>
 		<reportString>washing hands at TargetA.</reportString>
-	</JobDef>
+	</JobDef>-->
+
 
 	<JobDef>
-		<defName>TendSelf</defName>
-		<driverClass>MarsX.JobDriver_TendSelf</driverClass>
-		<reportString>tending self at TargetA.</reportString>
+		<defName>LoadPasteToSuit</defName>
+		<driverClass>MarsX.JobDriver_LoadPasteToSuit</driverClass>
+		<reportString>restocking nutrient block in TargetB.</reportString>
 	</JobDef>
 
-	<JobDef>
-		<defName>HaulModuletoCore</defName>
-		<driverClass>MarsX.JobDriver_LoadFuelModule</driverClass>
-		<reportString>hauling fuel module to TargetA.</reportString>
-	</JobDef>
 
-  <JobDef>
-    <defName>LoadPasteToSuit</defName>
-    <driverClass>MarsX.JobDriver_LoadPasteToSuit</driverClass>
-    <reportString>restocking nutrient block in TargetB.</reportString>
-  </JobDef>
 
-		<JobDef>
-		<defName>RemoveFuelModule</defName>
-		<driverClass>MarsX.JobDriver_RemoveFuelModule</driverClass>
-		<reportString>removing fuel module from TargetA.</reportString>
-	</JobDef>
-	
 	<JobDef>
 		<defName>HaulSlushToMiwex</defName>
 		<driverClass>MarsX.JobDriver_HaulSlushToMiwex</driverClass>
 		<reportString>hauling slush to TargetA.</reportString>
-	</JobDef>
-
-	<JobDef>
-		<defName>ForceWear</defName>
-		<driverClass>MarsX.JobDriver_ForceWear</driverClass>
-		<reportString>wearing TargetA.</reportString>
 	</JobDef>
 
 	<JobDef>
@@ -113,15 +92,16 @@
 	</JobDef>
 
 
-  <JobDef>
-    <defName>TakeFromContainer</defName>
-    <driverClass>MarsX.JobDriver_TakeFromContainer</driverClass>
-    <reportString>taking item from TargetA.</reportString>
-  </JobDef>
+	<JobDef>
+		<defName>TakeFromContainer</defName>
+		<driverClass>MarsX.JobDriver_TakeFromContainer</driverClass>
+		<reportString>taking item from TargetA.</reportString>
+	</JobDef>
 
-	<!--   <JobDef>
-    <defName>Clean</defName>
-    <driverClass>MarsX.JobDriver_newCleanFilth</driverClass>
-    <reportString>cleaning TargetA.</reportString>
-  </JobDef> -->
+	<JobDef>
+		<defName>CleanEquipment</defName>
+		<driverClass>MarsX.JobDriver_CleanEquipment</driverClass>
+		<reportString>cleaning TargetA.</reportString>
+	</JobDef>
+
 </Defs>

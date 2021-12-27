@@ -22,7 +22,7 @@
     </diseases>
     <terrainsByFertility>
       <li>
-        <terrain>MoonDust</terrain>
+        <terrain>Soil</terrain>
         <min>-999</min>
         <max>999</max>
       </li>

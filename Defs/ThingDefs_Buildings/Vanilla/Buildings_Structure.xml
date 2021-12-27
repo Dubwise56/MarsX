@@ -50,6 +50,7 @@
     <placeWorkers>
       <li>PlaceWorker_DoorLearnOpeningSpeed</li>
     </placeWorkers>
+	  <defaultStuff>Aluminium</defaultStuff>
   </ThingDef>
 
   <ThingDef ParentName="DoorBase">
@@ -116,7 +117,8 @@
   <!--========================= Walls =============================-->
 
   <ThingDef ParentName="BuildingBase" Name="Wall">
-    <defName>Wall</defName>
+	  <defaultStuff>Aluminium</defaultStuff>
+	  <defName>Wall</defName>
     <label>wall</label>
     <description>An impassable wall. Capable of holding up a roof.</description>
     <thingClass>Building</thingClass>
@@ -200,7 +202,8 @@
   <!--============================== Misc ==============================-->
 
   <ThingDef ParentName="BuildingBase">
-    <defName>Column</defName>
+	  <defaultStuff>Aluminium</defaultStuff>
+	  <defName>Column</defName>
     <label>column</label>
     <description>A column capable of holding a roof. Does not block sight or movement and looks quite nice.</description>
     <designationCategory>Structure</designationCategory>

@@ -39,129 +39,6 @@
     <clearBuildingArea>false</clearBuildingArea>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <constructEffect>ConstructMetal</constructEffect>
-    <designationHotKey>Misc1</designationHotKey>
-    <placeWorkers>
-      <li>MarsX.PlaceWorker_CoolingPipe</li>
-    </placeWorkers>
-  </ThingDef>
-
-  <ThingDef ParentName="PipeBase">
-    <defName>waterPipe</defName>
-    <label>Water pipe</label>
-    <description>Water pipe for connecting water storage tanks to facilities that generate or require water.</description>
-    <graphicData>
-      <texPath>Things/Building/PipeMedium_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <linkType>Basic</linkType>
-      <linkFlags>
-        <li>Custom5</li>
-      </linkFlags>
-      <damageData>
-        <rect>(0,0.35,1,0.3)</rect>
-      </damageData>
-    </graphicData>
-    <building>
-      <blueprintGraphicData>
-        <texPath>Things/Building/PipeMedium_Atlas</texPath>
-      </blueprintGraphicData>
-    </building>
-    <uiIconPath>UI/WaterPipe</uiIconPath>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Water</mode>
-      </li>
-    </comps>
-    <designationCategory>Temperature</designationCategory>
-    <placeWorkers>
-      <li>MarsX.PlaceWorker_WaterPipe</li>
-    </placeWorkers>
-  </ThingDef>
-
-  <ThingDef ParentName="BuildingBase">
-    <defName>waterValve</defName>
-    <label>Water valve</label>
-    <thingClass>MarsX.Building_ValveWater</thingClass>
-    <description>Opens or closes connections between water pipes.</description>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>Standable</passability>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <building>
-      <ai_chillDestination>false</ai_chillDestination>
-      <isInert>true</isInert>
-      <isEdifice>false</isEdifice>
-    </building>
-    <graphicData>
-      <texPath>Things/Building/Valve</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Water</mode>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-    </comps>
-    <statBases>
-      <MaxHitPoints>80</MaxHitPoints>
-      <WorkToBuild>350</WorkToBuild>
-      <Flammability>1.0</Flammability>
-      <Beauty>-2</Beauty>
-    </statBases>
-    <costList>
-      <Steel>15</Steel>
-    </costList>
-    <rotatable>false</rotatable>
-    <selectable>true</selectable>
-    <designationCategory>Temperature</designationCategory>
-    <constructEffect>ConstructMetal</constructEffect>
-    <placeWorkers>
-      <li>MarsX.PlaceWorker_WaterPipe</li>
-    </placeWorkers>
-  </ThingDef>
-
-  <ThingDef ParentName="BuildingBase">
-    <defName>MoisturePump</defName>
-    <label>Irrigation pump</label>
-    <thingClass>MarsX.Building_fertilizerPump</thingClass>
-    <description>Pumps fresh water into growing soil from water tanks connected via pipes.</description>
-    <graphicData>
-      <texPath>Things/Building/Misc/MoisturePump</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shadowData>
-        <volume>(0.25, 0.5, 0.25)</volume>
-        <offset>(0,0,-0.1)</offset>
-      </shadowData>
-      <damageData>
-        <rect>(0.2,0.2,0.6,0.6)</rect>
-      </damageData>
-    </graphicData>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Water</mode>
-      </li>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>150</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-    </comps>
-    <tickerType>Normal</tickerType>
-    <altitudeLayer>Building</altitudeLayer>
-    <statBases>
-      <MaxHitPoints>50</MaxHitPoints>
-      <WorkToBuild>1500</WorkToBuild>
-      <Flammability>1.0</Flammability>
-      <Beauty>-8</Beauty>
-    </statBases>
-    <fillPercent>0.15</fillPercent>
-    <costList>
-      <Steel>75</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
-    </costList>
-    <specialDisplayRadius>5.9</specialDisplayRadius>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <pathCost>25</pathCost>
-    <designationCategory>Temperature</designationCategory>
-    <rotatable>false</rotatable>
   </ThingDef>
 
 
@@ -182,7 +59,7 @@
     </graphicData>
     <building>
       <blueprintGraphicData>
-        <texPath>Things/Building/PipeThin_Atlas</texPath>
+        <texPath>Things/Building/PipeThin_Atlas_Blueprint</texPath>
       </blueprintGraphicData>
     </building>
     <uiIconPath>UI/GasPipe</uiIconPath>
@@ -192,7 +69,7 @@
         <col>yellow</col>
       </li>
     </comps>
-    <designationCategory>Temperature</designationCategory>
+    <designationCategory>Chem</designationCategory>
     <placeWorkers>
       <li>MarsX.PlaceWorker_GasPipe</li>
     </placeWorkers>
@@ -227,7 +104,7 @@
     </costList>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
-    <designationCategory>Temperature</designationCategory>
+    <designationCategory>Chem</designationCategory>
     <constructEffect>ConstructMetal</constructEffect>
     <placeWorkers>
       <li>MarsX.PlaceWorker_GasPipe</li>
@@ -235,7 +112,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BasedWaterTower">
 		<defName>h2oStorageTank</defName>
 		<label>H2O Storage Tank</label>
 		<description>A tank for storing Water (H2O).</description>
@@ -263,26 +140,11 @@
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<comps>
-			<li Class="MarsX.CompProperties_Pipe">
-				<mode>Water</mode>
+			<li Class="DubsBadHygiene.CompProperties_WaterStorage">
+				<WaterStorageCap>8000</WaterStorageCap>
 			</li>
-			<li Class="MarsX.CompProperties_LiquidTank">
-				<compClass>MarsX.CompLiquidTank</compClass>
-				<compounds>
-					<li>H2O</li>
-				</compounds>	
-				<capacity>					
-					<li>100000</li>
-				</capacity>
-				<start>					
-					<li>0</li>
-				</start>
-			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
 		</comps>
-		<designationCategory>Ship</designationCategory>
-		<designationHotKey>Misc3</designationHotKey>
+		<designationCategory>Chem</designationCategory>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -324,8 +186,7 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
-		<designationCategory>Ship</designationCategory>
-		<designationHotKey>Misc3</designationHotKey>
+		<designationCategory>Chem</designationCategory>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -368,8 +229,7 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
-		<designationCategory>Ship</designationCategory>
-		<designationHotKey>Misc3</designationHotKey>
+		<designationCategory>Chem</designationCategory>
 	</ThingDef>
 
 	<ThingDef ParentName="MinifiedBuildingBase">
@@ -401,11 +261,10 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<comps>
 		</comps>
-		<designationHotKey>Misc3</designationHotKey>
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
-		<defName>WaterProduction</defName>
+		<defName>MIWEX</defName>
 		<label>MIWEX</label>
 		<description>Mars In-Situ Water Extractor (MIWEX) uses microwaves to heat martian soil and evaporate water molecules into a collector and removing toxic compounds such as perchlorates.</description>
 		<thingClass>MarsX.Building_IceCrystalExtractor</thingClass>
@@ -417,6 +276,7 @@
 				<rect>(0.05,0.05,0.95,0.95)</rect>
 			</damageData>
 		</graphicData>
+		<drawerType>RealtimeOnly</drawerType>
 		<category>Building</category>
 		<tickerType>Normal</tickerType>
 		<altitudeLayer>Building</altitudeLayer>
@@ -433,7 +293,7 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<designationCategory>Ship</designationCategory>
+		<designationCategory>Chem</designationCategory>
 		<rotatable>false</rotatable>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
@@ -441,22 +301,9 @@
 			<Flammability>0.0</Flammability>
 			<Beauty>-12</Beauty>
 		</statBases>
-		<designationHotKey>Misc11</designationHotKey>
 		<comps>
-			<li Class="MarsX.CompProperties_Pipe">
-				<mode>Water</mode>
-			</li>
-						<li Class="MarsX.CompProperties_LiquidTank">
-				<compClass>MarsX.CompLiquidTank</compClass>
-				<compounds>
-					<li>H2O</li>
-				</compounds>	
-				<capacity>					
-					<li>2000</li>
-				</capacity>
-				<start>					
-					<li>0</li>
-				</start>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+				<mode>Sewage</mode>
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -466,60 +313,58 @@
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 	</ThingDef>
-	
-		<ThingDef ParentName="BuildingBase">
-		<defName>atmosphericWaterGenerator</defName>
-		<label>AWG</label>
-		<description>The atmospheric water generator (AWG) is a device that extracts water from humid ambient air.</description>
-		<thingClass>MarsX.Building_AWG</thingClass>
+
+	<!--<ThingDef ParentName="BuildingBase">
+		<defName>WindTrap</defName>
+		<thingClass>MarsX.Building_windTrap</thingClass>
+		<label>Wind Trap</label>
+		<description>A large funnel designed to collect CO2 from the thin martian atmosphere for storing in tanks.</description>
 		<graphicData>
-			<texPath>Things/Building/AWG</texPath>
+			<texPath>Things/Building/windTrap</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(5,4)</drawSize>
+			<drawSize>(5,5)</drawSize>
+			<shadowData>
+				<volume>(0.2, 1.0, 0.8)</volume>
+			</shadowData>
 			<damageData>
-				<rect>(0.05,0.05,0.95,0.95)</rect>
+				<rect>(2,0.15,1,1.4)</rect>
 			</damageData>
 		</graphicData>
-		<category>Building</category>
-		<tickerType>Normal</tickerType>
 		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
+		<passability>Impassable</passability>
 		<blockWind>true</blockWind>
-		<castEdgeShadows>true</castEdgeShadows>
-		<selectable>true</selectable>
-		<fillPercent>0.20</fillPercent>
-		<pathCost>8</pathCost>
-		<size>(3,2)</size>
-		<costList>
-			<Steel>75</Steel>
-			<Aluminium>45</Aluminium>
-			<ComponentIndustrial>3</ComponentIndustrial>
-		</costList>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<designationCategory>Ship</designationCategory>
-		<rotatable>true</rotatable>
+		<fillPercent>0.5</fillPercent>
 		<statBases>
-			<MaxHitPoints>350</MaxHitPoints>
-			<WorkToBuild>1000</WorkToBuild>
-			<Flammability>0.0</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>3300</WorkToBuild>
+			<Flammability>0.4</Flammability>
 			<Beauty>-12</Beauty>
 		</statBases>
-		<designationHotKey>Misc11</designationHotKey>
+		<tickerType>Normal</tickerType>
+		<size>(3,3)</size>
+		<selectable>true</selectable>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<designationCategory>Chem</designationCategory>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<constructEffect>ConstructMetal</constructEffect>
+		<placeWorkers>
+			<li>MarsX.PlaceWorker_WindTrap</li>
+		</placeWorkers>
 		<comps>
 			<li Class="MarsX.CompProperties_Pipe">
-				<mode>Water</mode>
+				<mode>Gas</mode>
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>350</basePowerConsumption>
-      </li>
-			<li Class="CompProperties_Flickable"/>
+				<basePowerConsumption>335</basePowerConsumption>
+			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
-		<building>
-			<soundAmbient>Moxie_Ambience</soundAmbient>
-		</building>
-	</ThingDef>
+	</ThingDef>-->
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>FuelProduction</defName>
@@ -558,7 +403,6 @@
 			<Flammability>0.0</Flammability>
 			<Beauty>-12</Beauty>
 		</statBases>
-		<designationHotKey>Misc11</designationHotKey>
 		<comps>
 			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>

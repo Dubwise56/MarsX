@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>SalvagedComponent</defName>
+		<label>Salvaged Component</label>
+		<description>Damaged components that can be repaired at machining and component tables.</description>
+		<graphicData>
+			<texPath>Rimkit/SalvagedComponent</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>21</MarketValue>
+			<Mass>0.6</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedKit</defName>
+		<label>unfinished kit</label>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedBelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedKitStuff</defName>
+		<label>unfinished kit</label>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedBelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef Name="dubsApparelBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<drawerType>MapMeshOnly</drawerType>
+		<generateAllowChance>0</generateAllowChance>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints> 
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>-6</Beauty>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<wearPerDay>0</wearPerDay>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef Name="dubsApparelMakeableBase" ParentName="dubsApparelBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedKit</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="dubsApparelMakeableBase">
+		<defName>MedicineBag</defName>
+		<thingClass>Dubs_Rimkit.Medkit</thingClass>
+		<label>Medicine Bag</label>
+		<description>Allows the wearer to treat their own injuries or others without the need for beds, but not perform surgery. Also increases healing speed</description>
+		<graphicData>
+			<texPath>Rimkit/medicineBag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>150</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Reloadable">
+				<compClass>Dubs_Rimkit.CompMedkit</compClass>
+				<maxCharges>20</maxCharges>
+				<ammoDef>MedicineHerbal</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>medicine</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MarketValue>140</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MedicalOperationSpeed>0.06</MedicalOperationSpeed>
+			<MedicalTendSpeed>0.06</MedicalTendSpeed>
+			<MoveSpeed>-0.06</MoveSpeed>
+		</equippedStatOffsets>
+		<techLevel>Neolithic</techLevel>
+		<costList>
+			<MedicineHerbal>20</MedicineHerbal>
+		</costList>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<apparel>
+			<tags>
+				<li>MedicalKit</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Intellectual>2</Intellectual>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedKitStuff</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="dubsApparelMakeableBase">
+		<defName>MedicalKit</defName>
+		<thingClass>Dubs_Rimkit.Medkit</thingClass>
+		<label>Medkit</label>
+		<description>Allows the wearer to treat their own injuries or others without the need for beds, but not perform surgery. Also increases healing speed</description>
+		<graphicData>
+			<texPath>Rimkit/medkit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MarketValue>200</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<compClass>Dubs_Rimkit.CompMedkit</compClass>
+				<maxCharges>20</maxCharges>
+				<ammoDef>MedicineIndustrial</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>medicine</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<equippedStatOffsets>
+			<MedicalOperationSpeed>0.12</MedicalOperationSpeed>
+			<MedicalTendSpeed>0.12</MedicalTendSpeed>
+			<MoveSpeed>-0.12</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Cloth>20</Cloth>
+			<Steel>10</Steel>
+			<MedicineIndustrial>20</MedicineIndustrial>
+		</costList>
+		<apparel>
+			<tags>
+				<li>MedicalKit</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<skillRequirements>
+				<Intellectual>4</Intellectual>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Industrial</techLevel>
+	</ThingDef>
+
+
+
+
+	<ThingDef ParentName="dubsApparelMakeableBase">
+		<defName>UltraMedKit</defName>
+		<thingClass>Dubs_Rimkit.Medkit</thingClass>
+		<label>Glitterworld Medkit</label>
+		<description>Allows the wearer to treat their own injuries or others without the need for beds, but not perform surgery. Also increases healing speed</description>
+		<graphicData>
+			<texPath>Rimkit/glitterkit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>14000</WorkToMake>
+			<MarketValue>1500</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<compClass>Dubs_Rimkit.CompMedkit</compClass>
+				<maxCharges>20</maxCharges>
+				<ammoDef>MedicineUltratech</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>medicine</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<equippedStatOffsets>
+			<MedicalOperationSpeed>0.12</MedicalOperationSpeed>
+			<MedicalTendSpeed>0.12</MedicalTendSpeed>
+			<MoveSpeed>-0.06</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Cloth>20</Cloth>
+			<Steel>20</Steel>
+			<MedicineUltratech>20</MedicineUltratech>
+		</costList>
+		<apparel>
+			<tags>
+				<li>MedicalKit</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<techLevel>Ultra</techLevel>
+		<recipeMaker>
+			<skillRequirements>
+				<Medicine>8</Medicine>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef ParentName="dubsApparelMakeableBase">
+		<defName>DubsRepairKit</defName>
+		<thingClass>Dubs_Rimkit.GenericKit</thingClass>
+		<label>Repair Kit</label>
+		<description>Allows the wearer to salvage parts from broken down buildings while fixing them, success rate is based on skill, the kit also contains a supply of components, and increases construction stats.</description>
+		<graphicData>
+			<texPath>Rimkit/RepairKit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Reloadable">
+				<compClass>Dubs_Rimkit.Comp_Repairkit</compClass>
+				<maxCharges>3</maxCharges>
+				<ammoDef>ComponentIndustrial</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>component</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<statBases>
+			<WorkToMake>14000</WorkToMake>
+			<MarketValue>150</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.06</MoveSpeed>
+			<ConstructionSpeed>0.12</ConstructionSpeed>
+			<ConstructSuccessChance>0.12</ConstructSuccessChance>
+			<FixBrokenDownBuildingSuccessChance>0.12</FixBrokenDownBuildingSuccessChance>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<tags>
+				<li>RepairKit</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

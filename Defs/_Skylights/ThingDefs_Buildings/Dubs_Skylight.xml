@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BuildingBase">
+  <!--<ThingDef ParentName="BuildingBase">
     <thingClass>Dubs_Skylight.Building_skyLight</thingClass>
     <defName>Window</defName>
     <label>Window</label>
@@ -50,7 +50,7 @@
     <placeWorkers>
       <li>Dubs_Skylight.PlaceWorker_Skylight</li>
     </placeWorkers>
-  </ThingDef>
+  </ThingDef>-->
 
   <ThingDef Name="BasedSkyLight" Abstract="True">
     <label>SkyLight</label>

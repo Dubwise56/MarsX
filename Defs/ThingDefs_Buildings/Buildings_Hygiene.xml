@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MinifiedBuildingBase">
+		<defName>SewageProcessing</defName>
+		<label>MIST</label>
+		<description>Mars In-Situ Sewage Treatment (MIST) Uses a multi-filtration process of wet oxidation and carbon filters to create a closed loop sewage system.</description>
+		<!--<thingClass>MarsX.Building_SewageProcessing</thingClass>-->
+		<graphicData>
+			<texPath>Things/Building/sewageProc</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<selectable>true</selectable>
+		<pathCost>8</pathCost>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>155</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<designationCategory>Hygiene</designationCategory>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>17000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+			<Mass>30</Mass>
+		</statBases>
+		<comps>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="DubsBadHygiene.CompProperties_SepticTank">
+				<compClass>MarsX.CompUrineRecycle</compClass>
+				<TreatedPerDay>25</TreatedPerDay>
+				<capacity>10000</capacity>
+				<priority>2</priority>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

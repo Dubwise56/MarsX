@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <SongDef>
+  <!--<SongDef>
     <clipPath>Songs/Tension/alien_drone_003</clipPath>
     <volume>1.0</volume>
     <tense>true</tense>
@@ -29,6 +29,6 @@
     <clipPath>Songs/Tension/Chaos_Bringer</clipPath>
     <volume>1.0</volume>
     <tense>true</tense>
-  </SongDef>
+  </SongDef>-->
 
 </Defs>

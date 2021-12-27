@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  
+  <WorkGiverDef>
+    <defName>FixBrokenDownBuildingWithKit</defName>
+    <label>fix broken-down buildings with repair kit</label>
+    <giverClass>Dubs_Rimkit.WorkGiver_FixBrokenDownBuilding</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>130</priorityInType>
+    <verb>replace broken components with kit in</verb>
+    <gerund>replacing broken components with kit in</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+</Defs>

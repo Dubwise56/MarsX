@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<equippedKit>This colonist is equipped with a {0}</equippedKit>
+	<MedkitUses>Uses remaining</MedkitUses>
+	<TendInBed>Tend in bed</TendInBed>
+	<TendInBedDesc>Tend their own wounds in the nearest medical bed</TendInBedDesc>
+	<TendTarget>Tend Target</TendTarget>
+	<TendTargetDesc>Tend others wounds</TendTargetDesc>
+	<MedkitTendSelf>Tend Self</MedkitTendSelf>
+	<MedkitTendSelfDesc>Tend their own wounds on the spot</MedkitTendSelfDesc>
+	<UseKitForTendJob>Auto</UseKitForTendJob>
+	<UseKitForTendJobDesc>Automatically use the medkit for tending before trying to find medicine</UseKitForTendJobDesc>
+</LanguageData>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>TendSelf</defName>
+		<driverClass>Dubs_Rimkit.JobDriver_TendSelf</driverClass>
+		<reportString>tending to TargetA with kit.</reportString>
+	</JobDef>
+
+	<!--<JobDef>
+		<defName>Bandage</defName>
+		<driverClass>Dubs_Rimkit.JobDriver_Bandage</driverClass>
+		<reportString>Bandaging with kit.</reportString>
+	</JobDef>-->
+
+	<JobDef>
+		<defName>BandageOthers</defName>
+		<driverClass>Dubs_Rimkit.JobDriver_BandageOthers</driverClass>
+		<reportString>tending to TargetA with kit.</reportString>
+	</JobDef>
+
+
+	<JobDef>
+		<defName>FixBrokenDownBuildingRepairKit</defName>
+		<driverClass>Dubs_Rimkit.JobDriver_FixBrokenDownBuilding</driverClass>
+		<reportString>replacing broken components in TargetA with kit.</reportString>
+	</JobDef>
+
+</Defs>

@@ -1,414 +1,474 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingCategoryDef>
-    <defName>Storage</defName>
-    <label>Storage</label>
-    <parent>Items</parent>
-  </ThingCategoryDef>
-
-  <ThingDef Name="BaseStorageBox" ParentName="ResourceBase">
-    <defName>StorageBox</defName>
-    <label>Storage Box</label>
-    <description>A supply crate from Earth.</description>
-    <thingClass>MarsX.StorageBox</thingClass>
-    <graphicData>
-      <texPath>Things/Building/StorageBox</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2,2)</drawSize>
-      <color>(200, 10, 10)</color>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>false</castEdgeShadows>
-    <blockLight>false</blockLight>
-    <inspectorTabs>
-      <li>MarsX.ITab_ShipInventory</li>
-    </inspectorTabs>
-    <comps>
-      <li Class="CompProperties_Transporter">
-        <compClass>MarsX.CompCargo</compClass>
-        <restEffectiveness>0</restEffectiveness>
-        <massCapacity>150</massCapacity>
-        <max1PerGroup>true</max1PerGroup>
-        <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
-        <showOverallStats>false</showOverallStats>
-      </li>
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
-    </comps>
-    <statBases>
-      <Mass>50</Mass>
-      <MaxHitPoints>50</MaxHitPoints>
-      <WorkToBuild>800</WorkToBuild>
-      <Flammability>0.0</Flammability>
-    </statBases>
-    <drawGUIOverlay>false</drawGUIOverlay>
-    <stackLimit>1</stackLimit>
-    <thingCategories>
-      <li>Storage</li>
-    </thingCategories>
-    <size>(1,1)</size>
-    <rotatable>false</rotatable>
-    <costList>
-      <Steel>30</Steel>
-    </costList>
-    <building>
-      <isMealSource>true</isMealSource>
-      <isInert>true</isInert>
-      <fixedStorageSettings>
-        <filter>
-          <categories>
-          </categories>
-        </filter>
-      </fixedStorageSettings>
-      <defaultStorageSettings>
-        <filter>
-          <categories>
-          </categories>
-        </filter>
-      </defaultStorageSettings>
-    </building>
-  </ThingDef>
-
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>Clothes</defName>
-    <label>Clothes</label>
-    <Color>(40, 202, 204)</Color>
-    <Things>
-      <li>
-        <thing>Apparel_JumpSuit</thing>
-        <count>3</count>
-      </li>
-      <li>
-        <thing>Apparel_Jacket</thing>
-        <count>3</count>
-      </li>
-      <li>
-        <thing>Apparel_Tuque</thing>
-        <count>3</count>
-      </li>
-      <li>
-        <thing>Apparel_Pants</thing>
-        <count>3</count>
-      </li>
-      <li>
-        <thing>Apparel_BasicShirt</thing>
-        <count>3</count>
-      </li>
-      <li>
-        <thing>Apparel_CollarShirt</thing>
-        <count>3</count>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
-
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>EVA</defName>
-    <label>EVA</label>
-    <Color>(250, 66, 81)</Color>
-    <Things>
-      <li>
-        <thing>Apparel_EVAsuit</thing>
-      </li>
-      <li>
-        <thing>Apparel_EVAsuit</thing>
-      </li>
-      <li>
-        <thing>Apparel_EVAsuit</thing>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
-
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>Rations</defName>
-    <label>Rations</label>
-    <Color>(0, 178, 111)</Color>
-    <Things>
-      <li>
-        <thing>RationPack</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>RationPack</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>RationPack</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>RationPack</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>MealSurvivalPack</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>MealSurvivalPack</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>MealSurvivalPack</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>MealSurvivalPack</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>WetWipe</thing>
-        <count>75</count>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
+	<ThingCategoryDef>
+		<defName>Storage</defName>
+		<label>Storage</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
 
 
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>Beds</defName>
-    <label>Beds</label>
-    <Color>(142, 125, 229)</Color>
-    <Things>
-      <li>
-        <thing>Bed</thing>
-      </li>
-      <li>
-        <thing>Bed</thing>
-      </li>
-      <li>
-        <thing>Bed</thing>
-      </li>
-      <li>
-        <thing>Bed</thing>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
+	<MarsX.CargoCodeDef>
+		<defName>Uncategorized</defName>
+		<label>Uncategorized</label>
+		<Color>(230, 230, 230)</Color>
+	</MarsX.CargoCodeDef>
 
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>Construction</defName>
-    <label>Structural</label>
-    <Color>(255, 217, 101)</Color>
-    <Things>
-      <li>
-        <thing>Steel</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Steel</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Aluminium</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Aluminium</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Aluminium</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Polymer</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Polymer</thing>
-        <count>75</count>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
+	<MarsX.CargoCodeDef>
+		<defName>Equipment</defName>
+		<label>Equipment</label>
+		<Color>(171, 160, 0)</Color>
+	</MarsX.CargoCodeDef>
 
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>Glass</defName>
-    <label>Glass</label>
-    <Color>(70, 70, 200)</Color>
-    <Things>
-      <li>
-        <thing>GlassPane</thing>
-        <count>20</count>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
+	<MarsX.CargoCodeDef>
+		<defName>Construction</defName>
+		<label>Construction</label>
+		<Color>(158, 0, 57)</Color>
+	</MarsX.CargoCodeDef>
 
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>Tech</defName>
-    <label>Tech</label>
-    <Color>(70, 70, 70)</Color>
-    <Things>     
-      <li>
-        <thing>ComponentIndustrial</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>ComponentIndustrial</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>ComponentIndustrial</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>ComponentSpacer</thing>
-        <count>20</count>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
+	<MarsX.CargoCodeDef>
+		<defName>Food</defName>
+		<label>Food</label>
+		<Color>(0, 114, 54)</Color>
+	</MarsX.CargoCodeDef>
 
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>Tools</defName>
-    <label>Tools</label>
-    <Color>(211, 67, 237)</Color>
-    <Things>
-      <li>
-        <thing>Pickaxe</thing>
-        <count>2</count>
-      </li>
-      <li>
-        <thing>Trowel</thing>
-        <count>2</count>
-      </li>
-      <li>
-        <thing>Power_Drill</thing>
-        <count>2</count>
-      </li>
-      <li>
-        <thing>Hammer</thing>
-        <count>2</count>
-      </li>
-      <!--<li>
+	<MarsX.CargoCodeDef>
+		<defName>Medical</defName>
+		<label>Medical</label>
+		<Color>(0, 74, 128)</Color>
+	</MarsX.CargoCodeDef>
+
+	<ThingDef Name="BaseStorageBox" ParentName="ResourceBase">
+		<defName>StorageBox</defName>
+		<label>Storage Box</label>
+		<description>A supply crate from Earth.</description>
+		<thingClass>MarsX.StorageBox</thingClass>
+		<graphicData>
+			<texPath>Things/Building/StorageBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<blockLight>false</blockLight>
+		<inspectorTabs>
+			<li>MarsX.ITab_ShipInventory</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Transporter">
+				<compClass>MarsX.CompCargo</compClass>
+				<restEffectiveness>0</restEffectiveness>
+				<massCapacity>300</massCapacity>
+				<max1PerGroup>true</max1PerGroup>
+				<canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+				<showOverallStats>true</showOverallStats>
+			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<statBases>
+			<Mass>20</Mass>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<stackLimit>1</stackLimit>
+		<thingCategories>
+			<li>Storage</li>
+		</thingCategories>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<building>
+			<isMealSource>true</isMealSource>
+			<isInert>true</isInert>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<categories>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Clothes</defName>
+		<label>Clothes</label>
+		<CargoCode>Equipment</CargoCode>
+		<Things>
+			<li>
+				<thing>Apparel_JumpSuit</thing>
+				<count>3</count>
+			</li>
+			<li>
+				<thing>Apparel_Jacket</thing>
+				<count>3</count>
+			</li>
+			<li>
+				<thing>Apparel_Tuque</thing>
+				<count>3</count>
+			</li>
+			<li>
+				<thing>Apparel_Pants</thing>
+				<count>3</count>
+			</li>
+			<li>
+				<thing>Apparel_BasicShirt</thing>
+				<count>3</count>
+			</li>
+			<li>
+				<thing>Apparel_CollarShirt</thing>
+				<count>3</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
+
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>EVA</defName>
+		<label>EVA</label>
+		<CargoCode>Equipment</CargoCode>
+		<Things>
+			<li>
+				<thing>Apparel_EVAsuit</thing>
+			</li>
+			<li>
+				<thing>Apparel_EVAsuit</thing>
+			</li>
+			<li>
+				<thing>Apparel_EVAsuit</thing>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
+
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Rations</defName>
+		<label>Rations</label>
+		<CargoCode>Food</CargoCode>
+		<Things>
+			<li>
+				<thing>RationPack</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>RationPack</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>RationPack</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>RationPack</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>MealSurvivalPack</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>MealSurvivalPack</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>MealSurvivalPack</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>MealSurvivalPack</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>WetWipe</thing>
+				<count>75</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
+
+
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Beds</defName>
+		<label>Beds</label>
+		<CargoCode>Construction</CargoCode>
+		<Things>
+			<li>
+				<thing>Bedroll</thing>
+			</li>
+			<li>
+				<thing>Bedroll</thing>
+			</li>
+			<li>
+				<thing>Bedroll</thing>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
+
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Crate_Polymer</defName>
+		<label>Polymer</label>
+		<CargoCode>Construction</CargoCode>
+		<Things>
+			<li>
+				<thing>Polymer</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Polymer</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Polymer</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Polymer</thing>
+				<count>75</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
+
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Crate_Aluminium</defName>
+		<label>Aluminium</label>
+		<CargoCode>Construction</CargoCode>
+		<Things>
+			<li>
+				<thing>Aluminium</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Aluminium</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Aluminium</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Aluminium</thing>
+				<count>75</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
+
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Crate_Steel</defName>
+		<label>Steel</label>
+		<CargoCode>Construction</CargoCode>
+		<Things>
+			<li>
+				<thing>Steel</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Steel</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Steel</thing>
+				<count>75</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
+
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Glass</defName>
+		<label>Glass</label>
+		<CargoCode>Construction</CargoCode>
+		<Things>
+			<li>
+				<thing>GlassPane</thing>
+				<count>20</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
+
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Tech</defName>
+		<label>Tech</label>
+		<CargoCode>Construction</CargoCode>
+		<Things>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>ComponentSpacer</thing>
+				<count>20</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
+
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Tools</defName>
+		<label>Tools</label>
+		<CargoCode>Equipment</CargoCode>
+		<Things>
+			<li>
+				<thing>Pickaxe</thing>
+				<count>2</count>
+			</li>
+			<li>
+				<thing>Trowel</thing>
+				<count>2</count>
+			</li>
+			<li>
+				<thing>Power_Drill</thing>
+				<count>2</count>
+			</li>
+			<li>
+				<thing>Hammer</thing>
+				<count>2</count>
+			</li>
+			<!--<li>
         <thing>DubsRepairKit</thing>
         <count>2</count>
       </li>-->
-    </Things>
-  </MarsX.CargoContentsDef>
+		</Things>
+	</MarsX.CargoContentsDef>
 
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>Consumables</defName>
-    <label>Consumables</label>
-    <Color>(170, 170, 170)</Color>
-    <Things>
-      <li>
-        <thing>ComponentIndustrial</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>ComponentIndustrial</thing>
-        <count>20</count>
-      </li>
-      <li>
-        <thing>ComponentIndustrial</thing>
-        <count>20</count>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Consumables</defName>
+		<label>Consumables</label>
+		<CargoCode>Construction</CargoCode>
+		<Things>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<count>20</count>
+			</li>
+			<li>
+				<thing>ComponentIndustrial</thing>
+				<count>20</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
 
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>CarePackage</defName>
-    <label>Care Package</label>
-    <Color>(170, 170, 170)</Color>
-    <Things>
-      <li>
-        <thing>DriedFruit</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Mayo</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>BBQ</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Pemmican</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Ketchup</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Vicodin</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>Chocolate</thing>
-        <count>75</count>
-      </li>
-      <li>
-        <thing>WakeUp</thing>
-        <count>75</count>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>CarePackage</defName>
+		<label>Care Package</label>
+		<CargoCode>Food</CargoCode>
+		<Things>
+			<li>
+				<thing>DriedFruit</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Mayo</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>BBQ</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Pemmican</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Ketchup</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Vicodin</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>Chocolate</thing>
+				<count>75</count>
+			</li>
+			<li>
+				<thing>WakeUp</thing>
+				<count>75</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
 
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>Entertainment</defName>
-    <label>Entertainment</label>
-    <Color>(170, 170, 170)</Color>
-    <Things>
-      <li>
-        <thing>TubeTelevision</thing>
-        <count>1</count>
-      </li>
-      <li>
-        <thing>FlatscreenTelevision</thing>
-        <count>1</count>
-      </li>
-      <li>
-        <thing>Telescope</thing>
-        <count>1</count>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Entertainment</defName>
+		<label>Entertainment</label>
+		<CargoCode>Construction</CargoCode>
+		<Things>
+			<li>
+				<thing>TubeTelevision</thing>
+				<count>1</count>
+			</li>
+			<li>
+				<thing>FlatscreenTelevision</thing>
+				<count>1</count>
+			</li>
+			<li>
+				<thing>Telescope</thing>
+				<count>1</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
 
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>Medical</defName>
-    <label>Medical</label>
-    <Color>(170, 170, 170)</Color>
-    <Things>
-      <li>
-        <thing>Vicodin</thing>
-        <count>180</count>
-      </li>
-      <li>
-        <thing>MedicineIndustrial</thing>
-        <count>80</count>
-      </li>
-      <li>
-        <thing>MedicalKit</thing>
-        <count>2</count>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Medical</defName>
+		<label>Medical</label>
+		<CargoCode>Medical</CargoCode>
+		<Things>
+			<li>
+				<thing>Vicodin</thing>
+				<count>180</count>
+			</li>
+			<li>
+				<thing>MedicineIndustrial</thing>
+				<count>80</count>
+			</li>
+			<li>
+				<thing>MedicalKit</thing>
+				<count>2</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
 
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>Core</defName>
-    <label>Core</label>
-    <Color>(10, 10, 10)</Color>
-    <Things>
-      <li>
-        <thing>coreVessel</thing>
-        <count>1</count>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>Core</defName>
+		<label>Reactor Core</label>
+		<CargoCode>Construction</CargoCode>
+		<Things>
+			<li>
+				<thing>coreVessel</thing>
+				<count>1</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
 
-  <MarsX.CargoContentsDef ParentName="BaseStorageBox">
-    <defName>FuelModule</defName>
-    <label>Fuel Module</label>
-    <Color>(170, 170, 170)</Color>
-    <Things>
-      <li>
-        <thing>UraniumNitride</thing>
-        <count>1</count>
-      </li>
-    </Things>
-  </MarsX.CargoContentsDef>
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>FuelModule</defName>
+		<label>Nuclear Fuel Module</label>
+		<CargoCode>Construction</CargoCode>
+		<Things>
+			<li>
+				<thing>FuelRods</thing>
+				<count>2</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
 
 </Defs>

@@ -45,13 +45,14 @@
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
     </building>
     <costStuffCount>10</costStuffCount>
-    <pathCost>10</pathCost>
+    <pathCost>14</pathCost>
     <placeWorkers>
       <li>PlaceWorker_WatchArea</li>
     </placeWorkers>
     <designationCategory>Joy</designationCategory>
     <designationHotKey>Misc1</designationHotKey>
   </ThingDef>
+
 
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>ChessTable</defName>
@@ -97,7 +98,7 @@
       <li>Stony</li>
     </stuffCategories>
     <costStuffCount>70</costStuffCount>
-    <pathCost>50</pathCost>
+    <pathCost>30</pathCost>
     <passability>PassThroughOnly</passability>
     <designationCategory>Joy</designationCategory>
     <designationHotKey>Misc2</designationHotKey>
@@ -123,6 +124,7 @@
     <fillPercent>0.40</fillPercent>
     <building>
       <joyKind>Gaming_Cerebral</joyKind>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
     </building>
     <statBases>
       <MaxHitPoints>250</MaxHitPoints>
@@ -143,7 +145,7 @@
       <Cloth>50</Cloth>
       <WoodLog>25</WoodLog>
     </costList>
-    <pathCost>70</pathCost>
+    <pathCost>42</pathCost>
     <passability>PassThroughOnly</passability>
     <designationCategory>Joy</designationCategory>
     <designationHotKey>Misc5</designationHotKey>
@@ -179,6 +181,7 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <building>
       <joyKind>Gaming_Dexterity</joyKind>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
     </building>
     <statBases>
       <MaxHitPoints>250</MaxHitPoints>
@@ -199,7 +202,7 @@
       <Cloth>80</Cloth>
       <WoodLog>30</WoodLog>
     </costList>
-    <pathCost>70</pathCost>
+    <pathCost>42</pathCost>
     <passability>PassThroughOnly</passability>
     <designationCategory>Joy</designationCategory>
     <designationHotKey>Misc3</designationHotKey>
@@ -247,7 +250,7 @@
       <Mass>8</Mass>
       <JoyGainFactor>1.4</JoyGainFactor>
     </statBases>
-    <pathCost>70</pathCost>
+    <pathCost>50</pathCost>
     <passability>PassThroughOnly</passability>
     <size>(2,1)</size>
     <defaultPlacingRot>South</defaultPlacingRot>
@@ -260,6 +263,7 @@
       <watchBuildingStandDistanceRange>2~6</watchBuildingStandDistanceRange>
       <watchBuildingStandRectWidth>6</watchBuildingStandRectWidth>
       <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <effectWatching>WatchingTelevision</effectWatching>
     </building>
     <designationCategory>Joy</designationCategory>
     <placeWorkers>
@@ -316,7 +320,7 @@
       <Mass>10</Mass>
       <JoyGainFactor>1.6</JoyGainFactor>
     </statBases>
-    <pathCost>70</pathCost>
+    <pathCost>50</pathCost>
     <passability>PassThroughOnly</passability>
     <size>(3,1)</size>
     <building>
@@ -326,6 +330,7 @@
       <watchBuildingStandDistanceRange>2~7</watchBuildingStandDistanceRange>
       <watchBuildingStandRectWidth>7</watchBuildingStandRectWidth>
       <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <effectWatching>WatchingTelevision</effectWatching>
     </building>
     <placeWorkers>
       <li>PlaceWorker_WatchArea</li>
@@ -362,7 +367,7 @@
     <hasInteractionCell>true</hasInteractionCell>
     <interactionCellOffset>(0,0,1)</interactionCellOffset>
     <passability>PassThroughOnly</passability>
-    <pathCost>50</pathCost>
+    <pathCost>30</pathCost>
     <minifiedDef>MinifiedThing</minifiedDef>
     <socialPropernessMatters>true</socialPropernessMatters>
     <thingCategories>

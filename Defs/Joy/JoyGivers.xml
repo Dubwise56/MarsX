@@ -1,19 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <JoyGiverDef>
-    <defName>UsePC</defName>
-    <giverClass>JoyGiver_WatchBuilding</giverClass>
+  <!--<JoyGiverDef>
+    <defName>GenericResearch</defName>
+    <giverClass>Rimatomics.JoyGiver_GenericResearch</giverClass>
     <baseChance>2</baseChance>
     <canDoWhileInBed>false</canDoWhileInBed>
     <thingDefs>
-      <li>TubeTelevision</li>
+      <li>SimpleResearchBench</li>
+	    <li>SimpleResearchBench</li>
+	    <li>HiTechResearchBench</li>
+	    <li>AdvancedResearchBench</li>
+	    <li>ResearchReactor</li>
+        <li>PhysicsBench</li>
     </thingDefs>
-    <jobDef>UsePC</jobDef>
+    <jobDef>GenericResearch</jobDef>
     <joyKind>Study</joyKind>
     <requiredCapacities>
       <li>Sight</li>
     </requiredCapacities>
-  </JoyGiverDef>
+  </JoyGiverDef>-->
   
 </Defs>

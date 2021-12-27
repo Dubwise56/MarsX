@@ -4,9 +4,16 @@
 	<name>MarsX</name>
 	<author>Dubwise56</author>
 	<url></url>
-	  <supportedVersions>
-      <li>1.2</li>
-  </supportedVersions>
-  <packageId>Dubwise.MarsX</packageId>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<packageId>Dubwise.MarsX</packageId>
 	<description>Guide the next generation of Pioneers to the red planet on a journey of colonization and exploration.</description>
+	<incompatibleWith>
+		<li>Dubwise.DubsBadHygiene</li>
+		<li>Dubwise.Rimatomics</li>
+		<li>Dubwise.Rimefeller</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+	</incompatibleWith>
 </ModMetaData>

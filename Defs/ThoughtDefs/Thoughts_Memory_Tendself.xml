@@ -14,4 +14,29 @@
     </stages>
   </ThoughtDef>
 
+	<ThoughtDef>
+		<defName>ResearchCompleted</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Research Completed</label>
+				<description>The task was completed and the results are useful.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+	<ThoughtDef>
+		<defName>ResearchBreakthrough</defName>
+		<durationDays>4</durationDays>
+		<stages>
+			<li>
+				<label>Research Breakthrough</label>
+				<description>We made a major breakthrough on this research project.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
 </Defs>

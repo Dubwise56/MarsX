@@ -1,76 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  
-  <DesignationCategoryDef>
-    <defName>Orders</defName>
-    <label>orders</label>
-    <description>Designate specific interactions with specific things.</description>
-    <order>900</order>
-    <specialDesignatorClasses>
-	<li>MarsX.Designator_DigIcySand</li>
-	<li>MarsX.Designator_DigSand</li>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-      <li>Designator_Mine</li>
-      <li>Designator_Haul</li>
-      <li>Designator_PlantsCut</li>
-      <li>Designator_PlantsHarvest</li>
-      <li>Designator_PlantsHarvestWood</li>
-      <li>Designator_Hunt</li>
+	<DesignationCategoryDef>
+		<defName>Orders</defName>
+		<label>orders</label>
+		<description>Designate specific interactions with specific things.</description>
+		<order>900</order>
+		<specialDesignatorClasses>
+			<li>MarsX.Designator_DigIcySand</li>
+			<li>MarsX.Designator_DigSand</li>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+			<li>Designator_Mine</li>
+			<li>Designator_Haul</li>
+			<li>Designator_PlantsCut</li>
+			<li>Designator_PlantsHarvest</li>
+			<li>Designator_PlantsHarvestWood</li>
+			<!--<li>Designator_Hunt</li>
       <li>Designator_Slaughter</li>
-      <li>Designator_Tame</li>
-      <li>Designator_Uninstall</li>
-      <li>Designator_Claim</li>
-      <li>Designator_Strip</li>
-      <li>Designator_Open</li>
-      <li>Designator_PlanAdd</li>
-      <li>Designator_PlanRemove</li> 
-    </specialDesignatorClasses>
-  </DesignationCategoryDef>
+      <li>Designator_Tame</li>-->
+			<li>Designator_Uninstall</li>
+			<li>Designator_Claim</li>
+			<li>Designator_Strip</li>
+			<li>Designator_Open</li>
+			<li>Designator_PlanAdd</li>
+			<li>Designator_PlanRemove</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
 
-  <DesignationCategoryDef>
-    <defName>Blueprints</defName>
-    <label>Blueprints</label>
-    <description>Blueprints for prebuilt structures like habitats</description>
-    <order>800</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-  </DesignationCategoryDef>
-  
-    <DesignationCategoryDef>
-    <defName>Security</defName>
-    <label>research</label>
-    <description>Facilities for performing research in various fields of science.</description>
-    <order>300</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-  </DesignationCategoryDef>
-  
-  <DesignationCategoryDef>
-    <defName>Temperature</defName>
-    <label>Env.Control</label>
-    <description>Things for controlling temperature and atmosphere in the hab.</description>
-    <order>25</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-  </DesignationCategoryDef>
-  
-    <DesignationCategoryDef>
-    <defName>Ship</defName>
-    <label>Chem</label>
-    <description>Chemical compound production.</description>
-    <order>50</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-  </DesignationCategoryDef>
-  
+	<DesignationCategoryDef>
+		<defName>Structure</defName>
+		<label>structure</label>
+		<order>700</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>Blueprints</defName>
+		<label>Blueprints</label>
+		<description>Blueprints for prebuilt structures like habitats</description>
+		<order>800</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+
+	<DesignationCategoryDef>
+		<defName>Chem</defName>
+		<label>Chem</label>
+		<description>Chemical compound production.</description>
+		<order>50</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>LifeSupport</defName>
+		<label>Life Support</label>
+		<description>Life support buildings.</description>
+		<order>60</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
 </Defs>

@@ -23,13 +23,13 @@
       </li>
       <li>
         <label>pumped</label>
-        <description>I'm totally pumped!</description>
+        <description>Milk is for babies.</description>
         <baseMoodEffect>10</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
 
-  <ThoughtDef>
+  <!--<ThoughtDef>
     <defName>HygieneLevel</defName>
     <workerClass>MarsX.ThoughtWorker_Hygiene</workerClass>
     <stages>
@@ -71,7 +71,7 @@
         <baseMoodEffect>-5</baseMoodEffect>
       </li>
     </stages>
-  </ThoughtDef>
+  </ThoughtDef>-->
 
 
 </Defs>

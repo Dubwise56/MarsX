@@ -22,7 +22,7 @@
     </diseases>
     <terrainsByFertility>
       <li>
-        <terrain>EuropaIce</terrain>
+        <terrain>Ice</terrain>
         <min>-999</min>
         <max>999</max>
       </li>
@@ -42,7 +42,7 @@
         <perlinFrequency>0.027</perlinFrequency>
         <thresholds>
           <li>
-            <terrain>EuropaIce</terrain>
+            <terrain>Ice</terrain>
             <min>0.22</min>
             <max>999</max>
           </li>

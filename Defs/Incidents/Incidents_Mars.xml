@@ -3,7 +3,7 @@
 
   <!-- ANNOYING -->
 
-  <IncidentDef>
+  <!--<IncidentDef>
     <defName>Accident</defName>
     <label>Accident</label>
     <workerClass>MarsX.IncidentWorker_Accidents</workerClass>
@@ -13,7 +13,7 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <category>ThreatSmall</category>
-  </IncidentDef>
+  </IncidentDef>-->
 
 
   <!-- BAD EVENTS -->
@@ -115,7 +115,7 @@
   </IncidentDef>
 
 
-  <IncidentDef>
+  <!--<IncidentDef>
     <defName>suitBreach</defName>
     <label>suit breach</label>
     <workerClass>MarsX.IncidentWorker_SuitBreach</workerClass>
@@ -128,7 +128,7 @@
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
-  </IncidentDef>
+  </IncidentDef>-->
 
 
   <IncidentDef>

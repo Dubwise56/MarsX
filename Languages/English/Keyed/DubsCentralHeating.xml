@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Construction-->
+	<DesignatorRemovePlumbing>Remove pipes</DesignatorRemovePlumbing>
+	<DesignatorRemovePlumbingDesc>Designate sections of a pipe type for deconstruction.</DesignatorRemovePlumbingDesc>
+	<RemovePlumbing>Remove plumbing</RemovePlumbing>
+	<RemoveAirCon>Remove air-con</RemoveAirCon>
+
+	<!--Warnings-->
+	<LowCoolingCap>Low cooling capacity. You can increase the power of outdoor units.</LowCoolingCap>
+	<LowWaterTemp>Low water temp</LowWaterTemp>
+	<LowWaterTempDesc>The water temperature in this tank is too low; colonists expecting to use hot water may get annoyed.\n\nTurn on boilers, increase the heating capacity, or add another hot water tank.</LowWaterTempDesc>
+
+	<!--Heating-->
+	<WaterTemp>Water temp: {0}</WaterTemp>
+	<ConnectedHeatingCapacity>Connected demand/capacity: {0} / {1} U ({2})</ConnectedHeatingCapacity>
+	<ConnectedCoolingCapacity>Connected demand/capacity: {0} / {1} U ({2})</ConnectedCoolingCapacity>
+	<HeatingUnits>Heating usage: {0} U</HeatingUnits>
+	<CoolingUnits>Cooling usage: {0} U</CoolingUnits>
+	<HeatingMode>Heating units/power: {0} U / {1} W</HeatingMode>
+	<CoolingMode>Cooling units/power: {0} U / {1} W</CoolingMode>
+	<CoolingEfficiencyGood>Efficiency: {0}</CoolingEfficiencyGood>
+	<CoolingEfficiencyBad>Efficiency: {0} overheating</CoolingEfficiencyBad>
+	<TargetTemp>Minimum temp: {0}</TargetTemp>
+	<LowerPower>Reduce power</LowerPower>
+	<LowerPowerDesc>Reduce the heating capacity.</LowerPowerDesc>
+	<RaisePower>Increase power</RaisePower>
+	<RaisePowerDesc>Increase the heating capacity.</RaisePowerDesc>
+	<HotwaterCapacity>Hot water capacity: {0}</HotwaterCapacity>
+	<OverrideThermostat>Override thermostat</OverrideThermostat>
+	<OverrideThermostatDesc>Force the boiler to run continuously.</OverrideThermostatDesc>
+	<MustPlaceFreezerWithFreeSpaces>Exhaust vents must be kept clear!</MustPlaceFreezerWithFreeSpaces>
+	<SolarEfficiencyCold>Too cold</SolarEfficiencyCold>
+	<SolarEfficiencyRoof>Roofed</SolarEfficiencyRoof>
+	<SolarEfficiencyGood>Heating units (efficiency): {0} U ({1})</SolarEfficiencyGood>
+	<RadCurrentCap>Radiator temp: {0}</RadCurrentCap>
+	<ThermostatSetupWarning>Thermostat overridden by hot water tanks. Set all connected hot water tanks to thermostat mode.</ThermostatSetupWarning>
+	<HotWaterTankUseThermostat>Thermostat control</HotWaterTankUseThermostat>
+	<HotWaterTankUseThermostatDesc>Turn on boilers for 1 hour when the tank temperature is low. If this is disabled then boilers will run continuously and ignore room thermostats.</HotWaterTankUseThermostatDesc>
+
+	<!--Water-->
+	<CommandDesignateOpenCloseValveLabel>Toggle valve</CommandDesignateOpenCloseValveLabel>
+	<CommandDesignateOpenCloseValveDesc>Toggle the valve between open and closed.</CommandDesignateOpenCloseValveDesc>
+	<ValveClosed>Valve closed</ValveClosed>
+
+	<!--Mod Options-->
+	<dbh.restartconfirm>Restart</dbh.restartconfirm>
+	<dbh.ModRemove>Mod removal assist</dbh.ModRemove>
+	<dbh.ModRemoveDesc>Steps:\n\n1: Save your game immediately after pressing confirm\n2: Quit to the main menu and disable the mod and restart the game\n3: Load your save game, ignore any exceptions and save it again\nLoad the save game once more and there shouldn't be any exceptions related to missing bad hygiene defs or classes!</dbh.ModRemoveDesc>
+	<QuitToMenuToChange>Quit to main menu to change.</QuitToMenuToChange>
+	<CoolingEfficiency>Cooling efficiency</CoolingEfficiency>
+	<CoolingEfficiencyTip>Set if high temperature should affect cooling efficiency like standard AC</CoolingEfficiencyTip>
+	<MainFeatures>Main features</MainFeatures>
+	<ExperimentalFeatures>Experimental features</ExperimentalFeatures>
+	<dbh.ExtraFeatures>Extra features</dbh.ExtraFeatures>
+
+</LanguageData>

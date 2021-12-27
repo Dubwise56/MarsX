@@ -41,4 +41,26 @@
     <expandingIconPriority>6</expandingIconPriority>
   </MarsX.SpaceObjectDef>
 
+      
+	<WorldObjectDef>
+		<defName>Site</defName>
+		<worldObjectClass>Site</worldObjectClass>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconPriority>70</expandingIconPriority>
+		<!--<comps>
+			<li Class="WorldObjectCompProperties_Timeout" />
+			<li Class="WorldObjectCompProperties_DefeatAllEnemiesQuest" />
+			<li Class="WorldObjectCompProperties_ItemStashContents" />
+			<li Class="WorldObjectCompProperties_DownedRefugee" />
+			<li Class="WorldObjectCompProperties_PrisonerWillingToJoin" />
+			<li Class="WorldObjectCompProperties_FormCaravan" />
+			<li Class="WorldObjectCompProperties_TimedDetectionRaids" />
+			<li Class="WorldObjectCompProperties_EnterCooldown" />
+			<li Class="WorldObjectCompProperties_TimedMakeFactionHostile" />
+		</comps>-->
+		<IncidentTargetTags>
+			<li>Map_Misc</li>
+		</IncidentTargetTags>
+	</WorldObjectDef>
+
 </Defs>

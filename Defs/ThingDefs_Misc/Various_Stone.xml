@@ -62,10 +62,7 @@
 		<saveCompressible>false</saveCompressible>
 		<stackLimit>1</stackLimit>
 		<tickerType>Normal</tickerType>
-		<thingCategories>
-			<li>NuclearProduct</li>
-		</thingCategories> 
-		<alwaysHaulable>true</alwaysHaulable>
+	  <alwaysHaulable>true</alwaysHaulable>
 	</ThingDef>
 	
 	<ThingDef>
@@ -98,9 +95,6 @@
 		<saveCompressible>false</saveCompressible>
 		<stackLimit>1</stackLimit>
 		<tickerType>Normal</tickerType>
-		<thingCategories>
-			<li>NuclearProduct</li>
-		</thingCategories> 
 		<alwaysHaulable>true</alwaysHaulable>
 	</ThingDef>
 

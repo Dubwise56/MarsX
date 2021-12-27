@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
+	<ColonistsToLoad>Colonists</ColonistsToLoad>
+
   <EatFromContainer>Eat meal</EatFromContainer>
   <Crew>Crew</Crew>
   <Disembark>Disembark</Disembark>

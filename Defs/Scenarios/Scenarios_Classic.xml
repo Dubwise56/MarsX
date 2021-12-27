@@ -3,8 +3,8 @@
 
 	<ScenarioDef>
 		<defName>Colony</defName>
-    <label>Colony</label>
-		<description>Start with 3 colonists, 2 extra ships, and normal fleet timer speed.</description>
+		<label>Colony</label>
+		<description>The mission objective is to build a thriving colony</description>
 		<scenario>
 			<summary>Martian Colony (Normal)</summary>
 			<playerFaction>
@@ -12,24 +12,22 @@
 				<factionDef>PlayerColony</factionDef>
 			</playerFaction>
 			<parts>
-				<!-- STARTING MATERIALS -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>3</pawnCount>
 				</li>
 
-        <li Class="MarsX.ScenPart_Planet">
-          <def>ScenPart_Planet</def>
-          <planet>Mars</planet>
-        </li>
-
+				<li Class="MarsX.ScenPart_Planet">
+					<def>ScenPart_Planet</def>
+					<planet>Mars</planet>
+				</li>
 				<li Class="MarsX.ScenPart_ColonyMission">
 					<def>missionMode</def>
 					<MissionMode>Colony</MissionMode>
-					<shipCount>3</shipCount>
+					<shipCount>2</shipCount>
 					<fastMode>false</fastMode>
 				</li>
-      </parts>
+			</parts>
 		</scenario>
 	</ScenarioDef>
 </Defs>

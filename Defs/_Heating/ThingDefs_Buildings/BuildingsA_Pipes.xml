@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<DubsCentralHeating.DefExtensions>
+		<defName>DubsCentralHeatingExtensions</defName>
+	</DubsCentralHeating.DefExtensions>
+
+	<ThingDef Name="BasedHeatingMom" Abstract="True">
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<designationCategory>Temperature</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<SellPriceFactor>0.70</SellPriceFactor>
+		</statBases>
+		<defaultStuff>Steel</defaultStuff>
+	</ThingDef>
+
+
+  <!-- Pipes  -->
+  <ThingDef ParentName="BasedHeatingMom" Name="DubsHotPipeBase" Abstract="True">
+    <label>pipe</label>
+    <thingClass>DubsCentralHeating.Building_Pipe</thingClass>
+    <graphicData>
+      <texPath>DCH/Things/Building/radPipes_atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom7</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>DCH/Things/Building/SewagePipe_Atlas_Blueprint</texPath>
+      </blueprintGraphicData>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <altitudeLayer>Conduits</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>250</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <rotatable>false</rotatable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <placeWorkers>
+      <li>DubsCentralHeating.PlaceWorker_Pipe</li>
+    </placeWorkers>
+    <tickerType>Never</tickerType>
+    <drawerType>MapMeshOnly</drawerType>
+  </ThingDef>
+
+
+  <ThingDef ParentName="DubsHotPipeBase">
+    <defName>HeatingPipe</defName>
+    <label>Heating Pipe</label>
+    <description>Plumbing for connecting central heating.</description>
+    <uiIconPath>DCH/UI/Plumbing</uiIconPath>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+    <comps>
+      <li Class="DubsCentralHeating.CompProperties_Pipe">
+        <mode>Heating</mode>
+        <stuffed>true</stuffed>
+      </li>
+    </comps>
+    <researchPrerequisites>
+		<li MayRequire="dbhlitemode">Plumbing</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+</Defs>
