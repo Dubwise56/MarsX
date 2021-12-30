@@ -6,6 +6,7 @@
     <graphicData>
       <texPath>Things/Building/lightPanel</texPath>
     </graphicData>
+	  <rotatable>true</rotatable>
     <costList>
       <Steel>20</Steel>
     </costList>
