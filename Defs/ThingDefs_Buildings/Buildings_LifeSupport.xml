@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BuildingBase" Name="BaseLifeSupport" Abstract="True">
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <category>Building</category>
-    <tickerType>Normal</tickerType>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <selectable>true</selectable>
-    <fillPercent>0.20</fillPercent>
-    <pathCost>8</pathCost>
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>-12</Beauty>
-      <Mass>5</Mass>
-    </statBases>
-    <designationCategory>LifeSupport</designationCategory>
-  </ThingDef>
+	<ThingDef ParentName="BuildingBase" Name="BaseLifeSupport" Abstract="True">
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>8</pathCost>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+			<Mass>5</Mass>
+		</statBases>
+		<designationCategory>LifeSupport</designationCategory>
+	</ThingDef>
 
-  <!--<ThingDef ParentName="BaseLifeSupport">
+	<!--<ThingDef ParentName="BaseLifeSupport">
     <defName>airOutlet</defName>
     <label>Air Outlet</label>
     <description>An outlet which allows air to flow into a room from a MOXIE or AGS connected via gas pipes.</description>
@@ -58,249 +58,250 @@
       <li Class="CompProperties_Breakdownable"/>
     </comps>
   </ThingDef>-->
- 
-
-  <ThingDef ParentName="MinifiedBuildingBase">
-    <defName>SuitStation</defName>
-    <label>EVA Suit Station</label>
-    <description>Stores a single EVA suit, recharges the air tanks, and provides options for auto switching allowed areas.</description>
-    <thingClass>MarsX.Building_suitStation</thingClass>
-    <graphicData>
-      <texPath>Things/Building/SuitStation/SuitStation_Full</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,2)</drawSize>
-    </graphicData>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <thingCategories>
-      <li>BuildingsFurniture</li>
-    </thingCategories>
-    <category>Building</category>
-    <tickerType>Normal</tickerType>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <selectable>true</selectable>
-    <fillPercent>0.20</fillPercent>
-    <pathCost>8</pathCost>
-    <size>(1,1)</size>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <hasInteractionCell>true</hasInteractionCell>
-    <costList>
-      <Steel>50</Steel>
-      <ComponentIndustrial>6</ComponentIndustrial>
-    </costList>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <rotatable>true</rotatable>
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>-12</Beauty>
-      <Mass>75</Mass>
-    </statBases>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Gas</mode>
-      </li>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>215</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <designationCategory>Chem</designationCategory>
-  </ThingDef>
 
 
-  <ThingDef ParentName="MinifiedBuildingBase">
-    <defName>co2scrubber</defName>
-    <label>CO2 Scrubber</label>
-    <description>The CO2 Scrubber uses a fan to circulate air through a Lithium Hydroxide Cell that reacts with CO2 to produce Lithium Carbonate also known as Limestone.</description>
-    <thingClass>MarsX.Building_co2scrubber</thingClass>
-    <graphicData>
-      <texPath>Things/Building/co2Scrubber</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <damageData>
-        <rect>(0.234375,0,0.515625,0.984375)</rect>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-      <drawSize>(1.2,1.2)</drawSize>
-    </graphicData>
-    <size>(1,1)</size>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>40</pathCost>
-    <blockWind>true</blockWind>
-    <rotatable>false</rotatable>
-    <fillPercent>0.4</fillPercent>
-    <statBases>
-      <WorkToBuild>1000</WorkToBuild>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-	    <Mass>10</Mass>
-    </statBases>
-    <tickerType>Normal</tickerType>
+	<ThingDef ParentName="MinifiedBuildingBase">
+		<defName>SuitStation</defName>
+		<label>EVA Suit Station</label>
+		<description>Stores a single EVA suit, recharges the air tanks, and provides options for auto switching allowed areas.</description>
+		<thingClass>MarsX.Building_suitStation</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SuitStation/SuitStation_Full</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>8</pathCost>
+		<size>(1,1)</size>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+			<Mass>75</Mass>
+		</statBases>
+		<comps>
+			<li Class="MarsX.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>215</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationCategory>Chem</designationCategory>
+	</ThingDef>
 
-    <costList>
-      <Steel>65</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <placeWorkers>
-      <li>PlaceWorker_Heater</li>
-    </placeWorkers>
-    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>40</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <designationCategory>LifeSupport</designationCategory>
-    <designationHotKey>Misc3</designationHotKey>
-  </ThingDef>
 
-  <ThingDef ParentName="MinifiedBuildingBase">
-    <defName>Moxie</defName>
-    <label>Moxie</label>
-    <description>Mars Oxygen In-situ Experiment (Moxie) collects CO2 from the Martian atmosphere, compresses and stores it, then electrochemically splits the CO2 molecules into O2 and CO. The O2 is then analyzed for purity before being vented through available Air outlets while the toxic CO and other exhaust products are vented directly out of exhaust ports.</description>
-    <thingClass>MarsX.Building_MOXIE</thingClass>
-    <graphicData>
-      <texPath>Things/Building/moxie</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3,3)</drawSize>
-    </graphicData>
-    <size>(2,2)</size>
-    <category>Building</category>
-    <tickerType>Normal</tickerType>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <selectable>true</selectable>
-    <pathCost>8</pathCost>
-    <costList>
-      <Steel>50</Steel>
-      <ComponentIndustrial>6</ComponentIndustrial>
-    </costList>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <rotatable>true</rotatable>
-    <statBases>
-      <Mass>25</Mass>
-      <MaxHitPoints>150</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>-12</Beauty>
-    </statBases>
-    <designationHotKey>Misc11</designationHotKey>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Gas</mode>
-      </li>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>150</basePowerConsumption>
-      </li>
-      <li Class="MarsX.CompProperties_StorageTank">
-        <compClass>MarsX.CompStorageTank</compClass>
-        <compounds>
-          <li>O2</li>
-          <li>N2</li>
-          <li>CO2</li>
-        </compounds>
-        <capacity>
-          <li>1000</li>
-          <li>1000</li>
-          <li>100</li>
-        </capacity>
-        <start>
-          <li>0</li>
-          <li>0</li>
-          <li>0</li>
-        </start>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <building>
-      <soundAmbient>Moxie_Ambience</soundAmbient>
-    </building>
-  </ThingDef>
+	<ThingDef ParentName="MinifiedBuildingBase">
+		<defName>co2scrubber</defName>
+		<label>CO2 Scrubber</label>
+		<description>The CO2 Scrubber uses a fan to circulate air through a Lithium Hydroxide Cell that reacts with CO2 to produce Lithium Carbonate also known as Limestone.</description>
+		<thingClass>MarsX.Building_co2scrubber</thingClass>
+		<graphicData>
+			<texPath>Things/Building/co2Scrubber</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<blockWind>true</blockWind>
+		<rotatable>false</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Mass>10</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
 
-  <ThingDef ParentName="BuildingBase">
-    <defName>AGS</defName>
-    <label>AGS</label>
-    <description>The Atmosphere Generating System is a unit designed to electrochemically split CO2 molecules into O2 and CO as well as filtering out nitrogen and argon from the martian atmosphere to create breathable air.</description>
-    <thingClass>MarsX.Building_AGS</thingClass>
-    <graphicData>
-      <texPath>Things/Building/moxi</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(4,4)</drawSize>
-      <damageData>
-        <rect>(0.05,0.05,0.95,0.95)</rect>
-      </damageData>
-    </graphicData>
-    <category>Building</category>
-    <tickerType>Normal</tickerType>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <selectable>true</selectable>
-    <fillPercent>0.20</fillPercent>
-    <pathCost>8</pathCost>
-    <size>(4,3)</size>
-    <costList>
-      <Steel>140</Steel>
-      <Aluminium>45</Aluminium>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <designationCategory>LifeSupport</designationCategory>
-    <rotatable>false</rotatable>
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>-12</Beauty>
-    </statBases>
-    <designationHotKey>Misc11</designationHotKey>
-    <comps>
-      <li Class="MarsX.CompProperties_Pipe">
-        <mode>Gas</mode>
-      </li>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>600</basePowerConsumption>
-      </li>
-      <li Class="MarsX.CompProperties_StorageTank">
-        <compClass>MarsX.CompStorageTank</compClass>
-        <compounds>
-          <li>O2</li>
-          <li>N2</li>
-          <li>CO2</li>
-        </compounds>
-        <capacity>
-          <li>10000</li>
-          <li>10000</li>
-          <li>1000</li>
-        </capacity>
-        <start>
-          <li>0</li>
-          <li>0</li>
-          <li>0</li>
-        </start>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <building>
-      <soundAmbient>Moxie_Ambience</soundAmbient>
-    </building>
-  </ThingDef>
+		<costList>
+			<Steel>65</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>40</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationCategory>LifeSupport</designationCategory>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+
+	<ThingDef ParentName="MinifiedBuildingBase">
+		<defName>Moxie</defName>
+		<label>Moxie</label>
+		<description>Mars Oxygen In-situ Experiment (Moxie) collects CO2 from the Martian atmosphere, compresses and stores it, then electrochemically splits the CO2 molecules into O2 and CO. The O2 is then analyzed for purity before being vented through available Air outlets while the toxic CO and other exhaust products are vented directly out of exhaust ports.</description>
+		<thingClass>MarsX.Building_MOXIE</thingClass>
+		<graphicData>
+			<texPath>Things/Building/moxie</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<pathCost>8</pathCost>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+		<statBases>
+			<Mass>25</Mass>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<designationHotKey>Misc11</designationHotKey>
+		<comps>
+			<li Class="MarsX.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="MarsX.CompProperties_StorageTank">
+				<compClass>MarsX.CompStorageTank</compClass>
+				<compounds>
+					<li>O2</li>
+					<li>N2</li>
+					<li>CO2</li>
+				</compounds>
+				<capacity>
+					<li>1000</li>
+					<li>1000</li>
+					<li>100</li>
+				</capacity>
+				<start>
+					<li>0</li>
+					<li>0</li>
+					<li>0</li>
+				</start>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<soundAmbient>Moxie_Ambience</soundAmbient>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AGS</defName>
+		<label>AGS</label>
+		<description>The Atmosphere Generating System is a unit designed to electrochemically split CO2 molecules into O2 and CO as well as filtering out nitrogen and argon from the martian atmosphere to create breathable air.</description>
+		<thingClass>MarsX.Building_AGS</thingClass>
+		<graphicData>
+			<texPath>Things/Building/moxi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>8</pathCost>
+		<size>(4,3)</size>
+		<costList>
+			<Steel>140</Steel>
+			<Aluminium>140</Aluminium>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<designationCategory>LifeSupport</designationCategory>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<designationHotKey>Misc11</designationHotKey>
+		<comps>
+			<li Class="MarsX.CompProperties_Pipe">
+				<mode>Gas</mode>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>600</basePowerConsumption>
+			</li>
+			<li Class="MarsX.CompProperties_StorageTank">
+				<compClass>MarsX.CompStorageTank</compClass>
+				<compounds>
+					<li>O2</li>
+					<li>N2</li>
+					<li>CO2</li>
+				</compounds>
+				<capacity>
+					<li>10000</li>
+					<li>10000</li>
+					<li>1000</li>
+				</capacity>
+				<start>
+					<li>0</li>
+					<li>0</li>
+					<li>0</li>
+				</start>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<soundAmbient>Moxie_Ambience</soundAmbient>
+		</building>
+	</ThingDef>
 
 	<ThingDef ParentName="BaseLifeSupport">
 		<defName>OGS</defName>
@@ -314,8 +315,9 @@
 		</graphicData>
 		<size>(2,2)</size>
 		<costList>
-			<Steel>10</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>150</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
@@ -362,8 +364,9 @@
 		</thingCategories>
 		<size>(3,2)</size>
 		<costList>
-			<Steel>10</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>150</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<rotatable>true</rotatable>
@@ -392,7 +395,7 @@
 
 
 
-  
+
 	<ThingDef ParentName="DubsHotPipeBase">
 		<defName>airPipe</defName>
 		<label>air pipe</label>

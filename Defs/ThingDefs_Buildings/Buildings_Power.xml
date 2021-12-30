@@ -79,9 +79,9 @@
 		</statBases>
 		<size>(3,3)</size>
 		<costList>
-			<Steel>950</Steel>
-			<Aluminium>100</Aluminium>
-			<ComponentIndustrial>30</ComponentIndustrial>
+			<Steel>450</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>4</ComponentSpacer>
 			<coreVessel>1</coreVessel>
 		</costList>
 		<designationCategory>Power</designationCategory>
