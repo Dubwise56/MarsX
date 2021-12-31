@@ -90,7 +90,6 @@
       <li>
         <label>initial-hidden</label>
         <becomeVisible>false</becomeVisible>
-
       </li>
       <li>
         <label>minor</label>

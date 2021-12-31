@@ -36,7 +36,7 @@
       <li>ElectricSmelter</li>
     </recipeUsers>
   </RecipeDef>
-  
+	
   <RecipeDef>
     <defName>MakeSoil</defName>
     <label>create soil</label>
@@ -58,6 +58,14 @@
         </filter>
         <count>30</count>
       </li>
+	    <li>
+		    <filter>
+			    <thingDefs>
+				    <li>Biosolids</li>
+			    </thingDefs>
+		    </filter>
+		    <count>10</count>
+	    </li>
     </ingredients>
     <!-- Switched to standard products so we can do "do until you have X"
     <specialProducts>

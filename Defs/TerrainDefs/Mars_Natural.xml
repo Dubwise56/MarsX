@@ -82,26 +82,83 @@
 
 
   <TerrainDef ParentName="NaturalTerrainBase">
-    <defName>Soil</defName>
-    <label>soil</label>
-    <texturePath>Terrain/tilledSoilDry</texturePath>
-    <edgeType>FadeRough</edgeType>
-    <renderPrecedence>340</renderPrecedence>
-    <pathCost>2</pathCost>
-    <statBases>
-      <Beauty>-1</Beauty>
-      <Cleanliness>-1</Cleanliness>
-    </statBases>
-    <affordances>
-      <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-      <li>Light</li>
-      <li>Diggable</li>
-    </affordances>
-    <generatedFilth>Filth_Sand</generatedFilth>
-    <fertility>1.0</fertility>
-    <takeFootprints>True</takeFootprints>
+	  <defName>Soil</defName>
+	  <label>soil</label>
+	  <texturePath>DBH/Terrain/tilledSoilDry</texturePath>
+	  <edgeType>FadeRough</edgeType>
+	  <renderPrecedence>340</renderPrecedence>
+	  <pathCost>2</pathCost>
+	  <statBases>
+		  <Beauty>-3</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-1</Cleanliness>
+	  </statBases>
+	  <scatterType>Rocky</scatterType>
+	  <affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+	  </affordances>
+	  <generatedFilth>Filth_Dirt</generatedFilth>
+	  <fertility>0.55</fertility>
+	  <takeFootprints>True</takeFootprints>
+	  <tools>
+		  <li>
+			  <label>dirt</label>
+			  <capacities>
+				  <li>KickMaterialInEyes</li>
+			  </capacities>
+			  <hediff>DirtInEyes</hediff>
+			  <cooldownTime>1.5</cooldownTime>
+		  </li>
+	  </tools>
+	  <tags>
+		  <li>Soil</li>
+	  </tags>
+	  <costList>
+		  <SoilBag>30</SoilBag>
+	  </costList>
+	  <designationCategory>Production</designationCategory>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+	  <defName>SoilDead</defName>
+	  <label>dead soil</label>
+	  <texturePath>Terrain/Surfaces/Soil</texturePath>
+	  <edgeType>FadeRough</edgeType>
+	  <renderPrecedence>340</renderPrecedence>
+	  <pathCost>2</pathCost>
+	  <statBases>
+		  <Beauty>-3</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-1</Cleanliness>
+	  </statBases>
+	  <scatterType>Rocky</scatterType>
+	  <affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+	  </affordances>
+	  <generatedFilth>Filth_Dirt</generatedFilth>
+	  <fertility>0</fertility>
+	  <takeFootprints>True</takeFootprints>
+	  <tools>
+		  <li>
+			  <label>dirt</label>
+			  <capacities>
+				  <li>KickMaterialInEyes</li>
+			  </capacities>
+			  <hediff>DirtInEyes</hediff>
+			  <cooldownTime>1.5</cooldownTime>
+		  </li>
+	  </tools>
+	  <tags>
+		  <li>Soil</li>
+	  </tags>
   </TerrainDef>
 
 
@@ -219,89 +276,6 @@
     <fertility>0.06</fertility>
     <takeFootprints>True</takeFootprints>
   </TerrainDef>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--<TerrainDef Name="SoilBase"  ParentName="NaturalTerrainBase" Abstract="True">
-    <layerable>true</layerable>
-    <affordances>
-      <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-      <li>GrowSoil</li>
-      <li>Diggable</li>
-    </affordances>
-    <edgeType>FadeRough</edgeType>
-    <renderPrecedence>320</renderPrecedence>
-    <statBases>
-      <WorkToBuild>135</WorkToBuild>
-    </statBases>
-    <fertility>0</fertility>
-    <constructEffect>ConstructDirt</constructEffect>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <generatedFilth>Filth_Sand</generatedFilth>
-    <takeFootprints>True</takeFootprints>
-  </TerrainDef>
-
-  <TerrainDef ParentName="SoilBase">
-    <defName>SoilDry</defName>
-    <label>dry soil</label>
-    <texturePath>Terrain/tilledSoilDry</texturePath>
-    <fertility>0.55</fertility>
-    <costList>
-      <SoilBag>30</SoilBag>
-    </costList>
-    <designationCategory>Production</designationCategory>
-  </TerrainDef>
-
-  <TerrainDef  ParentName="SoilBase">
-    <defName>SoilDead</defName>
-    <label>dead soil</label>
-    <texturePath>Terrain/tilledSoilDead</texturePath>
-    <fertility>
-      0.0
-    </fertility>
-  </TerrainDef >
-  <TerrainDef ParentName="SoilBase">
-    <defName>SoilParched</defName>
-    <label>parched soil</label>
-    <texturePath>Terrain/tilledSoilParched</texturePath>
-    <fertility>0.5</fertility>
-  </TerrainDef>
-  <TerrainDef ParentName="SoilBase">
-    <defName>SoilDamp</defName>
-    <label>damp soil</label>
-    <texturePath>Terrain/tilledSoilDamp</texturePath>
-    <fertility>0.8</fertility>
-  </TerrainDef>
-  <TerrainDef ParentName="SoilBase">
-    <defName>SoilWatered</defName>
-    <label>watered soil</label>
-    <texturePath>Terrain/tilledSoilWatered</texturePath>
-    <fertility>0.9</fertility>
-  </TerrainDef>
-  <TerrainDef ParentName="SoilBase">
-    <defName>SoilWellWatered</defName>
-    <label>well watered soil</label>
-    <texturePath>Terrain/tilledSoilWell</texturePath>
-    <fertility>1.0</fertility>
-  </TerrainDef>-->
-
-
 
 
 </Defs>

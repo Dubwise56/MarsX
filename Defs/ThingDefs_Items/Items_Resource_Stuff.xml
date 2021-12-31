@@ -157,6 +157,7 @@
 		<graphicData>
 			<texPath>Things/Resource/WetWipe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.6, 0.6)</drawSize>
 		</graphicData>
 		<statBases>
 			<Mass>0.06</Mass>

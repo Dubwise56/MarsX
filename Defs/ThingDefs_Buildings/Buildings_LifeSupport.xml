@@ -233,7 +233,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>AGS</defName>
 		<label>AGS</label>
-		<description>The Atmosphere Generating System is a unit designed to electrochemically split CO2 molecules into O2 and CO as well as filtering out nitrogen and argon from the martian atmosphere to create breathable air.</description>
+		<description>The Atmosphere Generating System is a unit designed to electrochemically split CO2 molecules into O2 and CO as well as filtering out nitrogen and argon from the martian atmosphere to create breathable air. High power usage which may require nuclear power</description>
 		<thingClass>MarsX.Building_AGS</thingClass>
 		<graphicData>
 			<texPath>Things/Building/moxi</texPath>
@@ -275,7 +275,7 @@
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>600</basePowerConsumption>
+				<basePowerConsumption>1000</basePowerConsumption>
 			</li>
 			<li Class="MarsX.CompProperties_StorageTank">
 				<compClass>MarsX.CompStorageTank</compClass>

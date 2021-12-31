@@ -42,6 +42,11 @@
 			<li Class="DubsBadHygiene.CompProperties_Pipe">
 				<mode>Sewage</mode>
 			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
 			<li Class="DubsBadHygiene.CompProperties_SepticTank">
 				<compClass>MarsX.CompUrineRecycle</compClass>
 				<TreatedPerDay>25</TreatedPerDay>
