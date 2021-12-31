@@ -85,26 +85,6 @@
 			<coreVessel>1</coreVessel>
 		</costList>
 		<designationCategory>Power</designationCategory>
-		<building>
-			<fixedStorageSettings>
-				<filter>
-					<categories>
-						<li>NuclearFuel</li>
-					</categories>
-					<thingDefs>
-						<li>UraniumNitride</li>
-					</thingDefs>
-				</filter>
-			</fixedStorageSettings>
-			<defaultStorageSettings>
-				<priority>Important</priority>
-				<filter>
-					<categories>
-						<li>NuclearFuel</li>
-					</categories>
-				</filter>
-			</defaultStorageSettings>
-		</building>
 	</ThingDef>
 
 

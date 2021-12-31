@@ -2,69 +2,6 @@
 <Defs>
 
 
-  <ThingDef ParentName="ChunkBase" Name="ChunkRockBase" Abstract="True">
-    <description>A chunk of rock. Can be cut into usable stone blocks.</description>
-    <graphicData>
-      <texPath>Things/Rocks</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <flipExtraRotation>80</flipExtraRotation>
-    </graphicData>
-    <thingCategories>
-      <li>StoneChunks</li>
-    </thingCategories>
-  </ThingDef>
-
-
-  <ThingDef ParentName="ChunkRockBase">
-    <defName>ChunkSandstone</defName>
-    <label>sandstone chunk</label>
-    <graphicData>
-      <color>(126,104,94)</color>
-    </graphicData>
-    <statBases>
-      <Mass>20</Mass>
-    </statBases>
-    <soundDrop>ChunkRock_Drop</soundDrop>
-    <butcherProducts>
-      <BlocksSandstone>20</BlocksSandstone>
-    </butcherProducts>
-  </ThingDef>
-
-
-  <ThingDef>
-		<defName>UraniumNitride</defName>
-		<label>Nuclear Fuel Module</label>
-		<graphicData>
-			<texPath>Things/Resource/plutonium</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<thingClass>ThingWithComps</thingClass>
-		<soundDrop>ChunkSlag_Drop</soundDrop>
-		<category>Item</category>
-		<altitudeLayer>Item</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<statBases>
-			<MaxHitPoints>80</MaxHitPoints>
-			<Flammability>10</Flammability>
-			<Beauty>-10</Beauty>
-			<Cleanliness>-2</Cleanliness>
-			<MarketValue>10.42</MarketValue>
-			<Mass>55</Mass>
-		</statBases>
-		<comps>
-					<li Class="MarsX.CompProperties_NuclearFuel" />
-			<li Class="CompProperties_Forbiddable" />
-		</comps>
-		<selectable>true</selectable>
-		<pathCost>55</pathCost>
-		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
-		<randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
-		<saveCompressible>false</saveCompressible>
-		<stackLimit>1</stackLimit>
-		<tickerType>Normal</tickerType>
-	  <alwaysHaulable>true</alwaysHaulable>
-	</ThingDef>
-	
 	<ThingDef>
 		<defName>coreVessel</defName>
 		<label>Nuclear core components</label>
@@ -97,7 +34,6 @@
 		<tickerType>Normal</tickerType>
 		<alwaysHaulable>true</alwaysHaulable>
 	</ThingDef>
-
 
 
 
