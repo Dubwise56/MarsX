@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--    <ThingDef ParentName="BuildingBase">
+	<!--    <ThingDef ParentName="BuildingBase">
     <defName>Thing_AirCell</defName>
     <label>Thing_AirCell</label>
 	<thingClass>MarsX.Thing_AirCell</thingClass>
@@ -18,112 +18,112 @@
     </building>
   </ThingDef>
  -->
-  <ThingDef ParentName="BuildingBase">
-    <defName>detachedGlower</defName>
-    <label>detachedGlower</label>
-    <description>detachedGlower</description>
-    <graphicData>
-      <texPath>Things/God</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <comps>
-      <li Class="CompProperties_Glower">
-        <glowRadius>4.9</glowRadius>
-        <glowColor>(250,250,350,0)</glowColor>
-      </li>
-    </comps>
-    <selectable>false</selectable>
-    <building>
-      <isEdifice>false</isEdifice>
-      <isInert>true</isInert>
-    </building>
-  </ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>detachedGlower</defName>
+		<label>detachedGlower</label>
+		<description>detachedGlower</description>
+		<graphicData>
+			<texPath>Things/God</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4.9</glowRadius>
+				<glowColor>(250,250,350,0)</glowColor>
+			</li>
+		</comps>
+		<selectable>false</selectable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<isInert>true</isInert>
+		</building>
+	</ThingDef>
 
-  <ThingDef Name="RoverBase" ParentName="BuildingBase">
-    <defName>Curiosity</defName>
-    <thingClass>Building</thingClass>
-    <label>Curiosity</label>
-    <description>Curiosity is a car-sized robotic rover.</description>
-    <graphicData>
-      <texPath>Things/Building/curiosity</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(5,5)</drawSize>
-    </graphicData>
-    <category>Building</category>
-    <tickerType>Normal</tickerType>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <selectable>true</selectable>
-    <fillPercent>0.20</fillPercent>
-    <pathCost>8</pathCost>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <rotatable>true</rotatable>
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>-12</Beauty>
-    </statBases>
-    <killedLeavings>
-      <ChunkSlagSteel>2</ChunkSlagSteel>
-    </killedLeavings>
-    <size>(3,3)</size>
-    <costList>
-      <ComponentIndustrial>30</ComponentIndustrial>
-      <Steel>30</Steel>
-      <Aluminium>30</Aluminium>
-      <Gold>30</Gold>
-		<RimatomicsRTG>1</RimatomicsRTG>
-    </costList>
-    <building>
-      <claimable>false</claimable>
-      <alwaysDeconstructible>true</alwaysDeconstructible>
-    </building>
-  </ThingDef>
+	<ThingDef Name="RoverBase" ParentName="BuildingBase">
+		<defName>Curiosity</defName>
+		<thingClass>Building</thingClass>
+		<label>Curiosity</label>
+		<description>Curiosity is a car-sized robotic rover.</description>
+		<graphicData>
+			<texPath>Things/Building/curiosity</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>8</pathCost>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</killedLeavings>
+		<size>(3,3)</size>
+		<costList>
+			<RimatomicsRTG>1</RimatomicsRTG>
+			<ComponentSpacer>4</ComponentSpacer>
+			<ComponentIndustrial>20</ComponentIndustrial>
+			<Aluminium>135</Aluminium>
+			<Gold>30</Gold>
+		</costList>
+		<building>
+			<claimable>false</claimable>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+	</ThingDef>
 
-  <ThingDef ParentName="RoverBase">
-    <defName>Perseverance</defName>
-    <thingClass>Building</thingClass>
-    <label>Perseverance</label>
-    <description>Perseverance is a car-sized robotic rover.</description>
-  </ThingDef>
+	<ThingDef ParentName="RoverBase">
+		<defName>Perseverance</defName>
+		<thingClass>Building</thingClass>
+		<label>Perseverance</label>
+		<description>Perseverance is a car-sized robotic rover.</description>
+	</ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
-    <defName>Monolith</defName>
-    <thingClass>MarsX.Monolith</thingClass>
-    <label>Monolith</label>
-    <description>Unknown</description>
-    <graphicData>
-      <texPath>Things/Building/monolith</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,2)</drawSize>
-      <damageData>
-        <rect>(0.05,0.05,0.95,0.95)</rect>
-      </damageData>
-    </graphicData>
-    <category>Building</category>
-    <tickerType>Rare</tickerType>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <selectable>true</selectable>
-    <fillPercent>0.20</fillPercent>
-    <pathCost>8</pathCost>
-    <size>(1,2)</size>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <rotatable>true</rotatable>
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>-12</Beauty>
-    </statBases>
-    <killedLeavings>
-    </killedLeavings>
-    <building>
-      <claimable>false</claimable>
-      <alwaysDeconstructible>false</alwaysDeconstructible>
-    </building>
-    <designationHotKey>Misc11</designationHotKey>
-  </ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Monolith</defName>
+		<thingClass>MarsX.Monolith</thingClass>
+		<label>Monolith</label>
+		<description>Unknown</description>
+		<graphicData>
+			<texPath>Things/Building/monolith</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,2)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Rare</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>8</pathCost>
+		<size>(1,2)</size>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<killedLeavings>
+		</killedLeavings>
+		<building>
+			<claimable>false</claimable>
+			<alwaysDeconstructible>false</alwaysDeconstructible>
+		</building>
+		<designationHotKey>Misc11</designationHotKey>
+	</ThingDef>
 
 </Defs>

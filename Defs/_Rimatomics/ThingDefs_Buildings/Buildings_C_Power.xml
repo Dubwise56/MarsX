@@ -4,8 +4,8 @@
   <ThingDef ParentName="BasedPower"  Class="Rimatomics.RimatomicsThingDef">
     <defName>RimatomicsRTG</defName>
     <thingClass>Rimatomics.Building_RTG</thingClass>
-    <label>R.T.G</label>
-    <description>An electrical generator that uses an array of thermocouples to convert the heat released by the decay of a suitable radioactive material into electricity.</description>
+    <label>MMRTG</label>
+    <description>The multi-mission radioisotope thermoelectric generator (MMRTG) is an electrical generator that uses an array of thermocouples to convert the heat released by the decay of plutonium into electricity.</description>
 	  <designationCategory></designationCategory>
 	  <tradeTags>
       <li>Rimatomics</li>
@@ -43,7 +43,7 @@
     <statBases>
       <MarketValue>2600</MarketValue>
       <MaxHitPoints>150</MaxHitPoints>
-      <Mass>20</Mass>
+      <Mass>50</Mass>
       <WorkToBuild>20000</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Beauty>-12</Beauty>
@@ -59,7 +59,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerPlant</compClass>
-        <basePowerConsumption>-1200</basePowerConsumption>
+        <basePowerConsumption>-120</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
       <li Class="CompProperties_HeatPusher">

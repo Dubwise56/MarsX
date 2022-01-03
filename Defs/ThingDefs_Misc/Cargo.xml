@@ -451,6 +451,7 @@
 		<defName>Core</defName>
 		<label>Reactor Core</label>
 		<CargoCode>Construction</CargoCode>
+		<MaxPerShip>1</MaxPerShip>
 		<Things>
 			<li>
 				<thing>coreVessel</thing>
@@ -471,4 +472,17 @@
 		</Things>
 	</MarsX.CargoContentsDef>
 
+	<MarsX.CargoContentsDef ParentName="BaseStorageBox">
+		<defName>MMRTG</defName>
+		<label>MMRTG</label>
+		<CargoCode>Equipment</CargoCode>
+		<MaxPerShip>1</MaxPerShip>
+		<Things>
+			<li>
+				<thing>RimatomicsRTG</thing>
+				<count>1</count>
+			</li>
+		</Things>
+	</MarsX.CargoContentsDef>
+	
 </Defs>

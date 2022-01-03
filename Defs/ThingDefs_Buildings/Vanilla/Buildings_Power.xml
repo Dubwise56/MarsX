@@ -160,7 +160,7 @@
     <comps>
       <li Class="CompProperties_Battery">
         <storedEnergyMax>600</storedEnergyMax>
-        <efficiency>0.5</efficiency>
+        <efficiency>0.95</efficiency>
         <shortCircuitInRain>true</shortCircuitInRain>
         <transmitsPower>true</transmitsPower>
       </li>
