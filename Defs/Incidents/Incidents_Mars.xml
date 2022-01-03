@@ -131,26 +131,26 @@
   </IncidentDef>-->
 
 
-  <IncidentDef>
+  <!--<IncidentDef>
     <defName>ToxicVenting</defName>
     <label>Toxic venting</label>
     <workerClass>MarsX.IncidentWorker_ToxicVenting</workerClass>
-    <letterLabel>Suit breach</letterLabel>
-    <letterText>An air outlet has broken down and is venting toxic gas.</letterText>
+    <letterLabel>Toxic venting</letterLabel>
+    <letterText>An air outlet has broken down and is venting toxic CO gas.</letterText>
     <letterDef>NegativeEvent</letterDef>
     <baseChance>0.2</baseChance>
     <category>Misc</category>
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
-  </IncidentDef>
+  </IncidentDef>-->
 
   <IncidentDef>
     <defName>CO2Venting</defName>
     <label>CO2 venting</label>
     <workerClass>MarsX.IncidentWorker_co2Venting</workerClass>
-    <letterLabel>Suit breach</letterLabel>
-    <letterText>An air outlet has broken down and is venting too much CO2.</letterText>
+    <letterLabel>CO2 Venting</letterLabel>
+    <letterText>An air outlet has broken down and is venting CO2 into the cabin.</letterText>
     <letterDef>NegativeEvent</letterDef>
     <baseChance>0.2</baseChance>
     <category>Misc</category>

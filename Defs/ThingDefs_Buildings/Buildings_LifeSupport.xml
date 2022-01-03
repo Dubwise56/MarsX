@@ -497,6 +497,7 @@
 				<mode>Air</mode>
 			</li>
 			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<researchPrerequisites>
 			<li MayRequire="dbhlitemode">MultiSplitAirCon</li>

@@ -369,7 +369,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>FuelProduction</defName>
 		<label>MISPP</label>
-		<description>The Mars In-Situ Propellant Plant (MISPP) manufactures methane propellant from H2O and CO2 via the Sabatier process.</description>
+		<description>The Mars In-Situ Propellant Plant (MISPP) manufactures methane propellant from H2O and CO2 via the Sabatier process, must be placed outside to extract co2 from the atmosphere.</description>
 		<thingClass>MarsX.Building_FuelProduction</thingClass>
 		<graphicData>
 			<texPath>Things/Building/mispp/mispp0</texPath>
@@ -407,8 +407,8 @@
 			<li Class="MarsX.CompProperties_Pipe">
 				<mode>Gas</mode>
 			</li>
-			<li Class="MarsX.CompProperties_Pipe">
-				<mode>Water</mode>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+				<mode>Sewage</mode>
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
