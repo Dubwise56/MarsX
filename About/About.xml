@@ -10,6 +10,13 @@
 	<packageId>Dubwise.MarsX</packageId>
 	<description>Guide the next generation of Pioneers to the red planet on a journey of colonization and exploration.</description>
 	<incompatibleWith>
+		<li>Dubwise.DubsBadHygiene.Lite</li>
+		<li>Dubwise.DubsBreakMod</li>
+		<li>Dubwise.DubsCentralHeating</li>
+		<li>Dubwise.DubsMintMenus</li>
+		<li>dubwise.dubsmintminimap</li>
+		<li>Dubwise.DubsRimkit</li>
+		<li>Dubwise.DubsSkylights</li>
 		<li>Dubwise.DubsBadHygiene</li>
 		<li>Dubwise.Rimatomics</li>
 		<li>Dubwise.Rimefeller</li>
