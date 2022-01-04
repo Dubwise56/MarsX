@@ -61,7 +61,7 @@
 		</colorGenerator>
 	</ThingDef>
 
-	<!--<ThingDef Name="ApparelArmorHelmetPowerBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+	<ThingDef Name="ApparelArmorHelmetPowerBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
 		<techLevel>Spacer</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -133,7 +133,7 @@
 				<li>SpacerMilitary</li>
 			</tags>
 		</apparel>
-	</ThingDef>-->
+	</ThingDef>
 
 
 

@@ -112,7 +112,7 @@
 				</start>
 			</li>
 			<li Class="DubsBadHygiene.CompProperties_WaterStorage">
-				<WaterStorageCap>100000</WaterStorageCap>
+				<WaterStorageCap>1800</WaterStorageCap>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>

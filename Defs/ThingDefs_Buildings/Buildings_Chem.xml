@@ -269,7 +269,7 @@
 		<description>Mars In-Situ Water Extractor (MIWEX) uses microwaves to heat martian soil and evaporate water molecules into a collector and removing toxic compounds such as perchlorates.</description>
 		<thingClass>MarsX.Building_IceCrystalExtractor</thingClass>
 		<graphicData>
-			<texPath>Things/Building/miwex/miwex_1</texPath>
+			<texPath>Things/Building/miwex</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(6,5)</drawSize>
 			<damageData>
@@ -372,7 +372,7 @@
 		<description>The Mars In-Situ Propellant Plant (MISPP) manufactures methane propellant from H2O and CO2 via the Sabatier process, must be placed outside to extract co2 from the atmosphere.</description>
 		<thingClass>MarsX.Building_FuelProduction</thingClass>
 		<graphicData>
-			<texPath>Things/Building/mispp/mispp0</texPath>
+			<texPath>Things/Building/mispp</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(5,4)</drawSize>
 			<damageData>
