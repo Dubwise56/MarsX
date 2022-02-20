@@ -680,23 +680,13 @@
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <recipes>
       <li>CookMealSimple</li>
-      <li>CookMealFine</li>
-      <li>CookMealFine_Veg</li>
-      <li>CookMealFine_Meat</li>
-      <li>CookMealLavish</li>
-      <li>CookMealLavish_Veg</li>
-      <li>CookMealLavish_Meat</li>
-      <li>CookMealSurvival</li>
+	    <li>CookMealFine_Veg</li>
+	    <li>CookMealLavish_Veg</li>
+	    <li>CookMealSurvival</li>
       <li>CookMealSimpleBulk</li>
-      <li>CookMealFineBulk</li>
-      <li>CookMealFineBulk_Veg</li>
-      <li>CookMealFineBulk_Meat</li>
-      <li>CookMealLavishBulk</li>
-      <li>CookMealLavishBulk_Veg</li>
-      <li>CookMealLavishBulk_Meat</li>
-      <li>CookMealSurvivalBulk</li>
-      <li>Make_Pemmican</li>
-      <li>Make_PemmicanBulk</li>
+	    <li>CookMealFineBulk_Veg</li>
+	    <li>CookMealLavishBulk_Veg</li>
+	    <li>CookMealSurvivalBulk</li>
     </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
